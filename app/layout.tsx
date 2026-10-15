@@ -62,6 +62,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="shortcut icon" href="/favicon.ico" sizes="any" />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
+        <Script id="spendback-pixel-config" strategy="beforeInteractive">
+          {`window.s$Tracker = window.s$Tracker || {};window.s$Tracker['siteIdentifier'] = '1f1c8a3d-51c1-68b4-9376-f655be0f93fc';`}
+        </Script>
+        <Script
+          src="https://tag.pixel.spendback.ai/static/js/pixel.spendback.js"
+          strategy="beforeInteractive"
+        />
       </head>
       <body>
         <Script src="/cookie-consent.js" strategy="beforeInteractive" />

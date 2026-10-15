@@ -694,6 +694,16 @@ export function PrivacyPage() {
             deletion is processed, we may retain limited information necessary to comply with legal
             obligations, resolve disputes, prevent fraud, and enforce our agreements.
           </Text>
+          <Title order={3} className={classes.tercaryTitle}>
+            Data Deletion
+          </Title>
+          <Text className={classes.text}>
+            To disconnect your Facebook Page or Instagram account from Stone Systems, or to have
+            the connection data deleted, email <strong>support@stonesystems.io</strong> (or ask
+            your account manager). We remove the stored Page connection within 48 hours. Stone
+            Systems stores only the Page access token, Page name and linked Instagram account
+            needed to publish posts you approved; no other Facebook data is kept.
+          </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
             12. Your Privacy Rights
