@@ -21,7 +21,7 @@ export function DpaPage() {
 
           <Text className={classes.text}>
             This Data Processing Addendum (&quot;<strong>DPA</strong>&quot;) forms part of the
-            agreement between <strong>Stonesystems LLC</strong> (&quot;<strong>Processor</strong>
+            agreement between <strong>Stone Systems LLC</strong> (&quot;<strong>Processor</strong>
             ,&quot; &quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;
             <strong>our</strong>&quot;) and the business entity using our Services (&quot;
             <strong>Controller</strong>,&quot; &quot;<strong>you</strong>,&quot; or &quot;

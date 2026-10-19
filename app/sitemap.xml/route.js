@@ -34,6 +34,7 @@ export async function GET() {
     'contact',
     'privacy-policy',
     'terms',
+    'sms',
     'blog',
   ];
 

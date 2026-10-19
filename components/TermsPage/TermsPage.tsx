@@ -3,7 +3,7 @@ import classes from './TermsPage.module.css';
 import { getPolicyReviewInfo } from '@/lib/policyReview';
 
 export function TermsPage() {
-  const review = getPolicyReviewInfo('2026-05-07');
+  const review = getPolicyReviewInfo('2026-10-19');
 
   return (
     <div className={classes.outer}>
@@ -24,11 +24,11 @@ export function TermsPage() {
 
           <Text className={classes.text}>
             These Terms of Service constitute an agreement between you and{' '}
-            <strong>MVH Management Consultancy LLC</strong>, doing business as Stone Systems.
-            These Terms of Service (&quot;<strong>Terms</strong>&quot;) bind Stone Systems
-            (&quot;<strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;
-            <strong>our</strong>&quot;) and you, the individual or entity using our Services
-            (&quot;<strong>you</strong>,&quot; &quot;<strong>Client</strong>,&quot; or &quot;
+            <strong>Stone Systems LLC</strong> (&quot;<strong>Stone Systems</strong>&quot;). These
+            Terms of Service (&quot;<strong>Terms</strong>&quot;) bind Stone Systems (&quot;
+            <strong>we</strong>,&quot; &quot;<strong>us</strong>,&quot; or &quot;
+            <strong>our</strong>&quot;) and you, the individual or entity using our Services (&quot;
+            <strong>you</strong>,&quot; &quot;<strong>Client</strong>,&quot; or &quot;
             <strong>your</strong>&quot;). By purchasing, accessing, or using any of our Services —
             or by checking the agreement box at checkout — you confirm that you have read,
             understood, and agree to be bound by these Terms and our{' '}
@@ -519,25 +519,31 @@ export function TermsPage() {
             18.1 SMS Disclosure
           </Title>
           <Text className={classes.text}>
-            By opting in to our SMS services, you agree to receive text messages related to{' '}
+            By opting in to our SMS program, you agree to receive text messages from Stone Systems
+            LLC related to{' '}
             <strong>
-              notifications, marketing offers, account authentication (2FA), and other
-              service-related communications
+              appointment confirmations and reminders, onboarding and support, account and billing
+              notices, and replies to messages you send us
             </strong>
-            . Message frequency may vary. Standard <strong>message and data rates apply</strong>{' '}
-            according to your mobile carrier&apos;s terms.
+            . We send promotional texts only if you have separately agreed to receive them. Message
+            frequency varies. <strong>Message and data rates may apply.</strong>
           </Text>
           <Text className={classes.text}>
             To opt out of SMS communications, reply <strong>STOP</strong> to any message you
-            receive. For assistance, text <strong>HELP</strong> for support.
+            receive. For assistance, reply <strong>HELP</strong> or contact{' '}
+            <strong>support@stonesystems.io</strong>. Full program details are on our{' '}
+            <a href="/sms">SMS Program Terms</a> page.
           </Text>
           <Title order={3} className={classes.tercaryTitle}>
             18.2 Messaging Consent
           </Title>
           <Text className={classes.text}>
-            You must explicitly consent to receive messages from Stone Systems. Consent may be given
-            through our website sign-up forms, paper forms, or verbally through customer service
-            interactions.
+            You must explicitly consent before we text you. We collect consent verbally on a
+            recorded phone call: after you book an appointment with us, our team asks whether we may
+            text you and texts you only if you say yes. If you text one of our business numbers
+            first, we reply to your messages. The exact consent script is published on our{' '}
+            <a href="/sms">SMS Program Terms</a> page. Consent to receive text messages is not a
+            condition of any purchase.
           </Text>
           <Title order={3} className={classes.tercaryTitle}>
             18.3 Message Types and Frequency
@@ -553,7 +559,8 @@ export function TermsPage() {
           <Text className={classes.text}>
             Stone Systems does not guarantee that messages will be delivered without delays or
             failures. Such issues can occur due to factors outside our control, such as network
-            problems or device compatibility.
+            problems or device compatibility. Carriers are not liable for delayed or undelivered
+            messages.
           </Text>
           <Title order={3} className={classes.tercaryTitle}>
             18.5 Compliance
@@ -813,7 +820,7 @@ export function TermsPage() {
             30. Contact
           </Title>
           <Text className={classes.text}>
-            <strong>Stonesystems LLC</strong>
+            <strong>Stone Systems LLC</strong>
             <br />
             Email: legal@stonesystems.io
             <br />

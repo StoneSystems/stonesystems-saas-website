@@ -1,0 +1,15 @@
+.script {
+  margin: 0 0 1rem;
+  padding: 1rem 1.25rem;
+  border-left: 4px solid var(--blue);
+  background-color: rgba(31, 34, 54, 0.04);
+  border-radius: 4px;
+}
+
+.scriptLine {
+  margin-bottom: 0.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
