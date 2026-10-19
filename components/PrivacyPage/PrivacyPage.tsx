@@ -3,7 +3,7 @@ import classes from './PrivacyPage.module.css';
 import { getPolicyReviewInfo } from '@/lib/policyReview';
 
 export function PrivacyPage() {
-  const review = getPolicyReviewInfo('2026-09-10');
+  const review = getPolicyReviewInfo('2026-10-19');
 
   return (
     <div className={classes.outer}>
@@ -24,17 +24,21 @@ export function PrivacyPage() {
 
           <Text className={classes.text}>
             This Privacy Policy applies to the Stone Systems websites, services, and mobile
-            application, operated by <strong>MVH Management Consultancy LLC</strong>, doing
-            business as Stone Systems (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;). It
-            describes how we collect, use, and disclose your information when you respond to our
-            advertisements, visit our websites — including <strong>stonesystems.io</strong>,{' '}
-            <strong>grow.stonesystems.io</strong>, <strong>app.stonesystems.io</strong>, and{' '}
-            <strong>app1.stonesystems.io</strong> (collectively, the &quot;Sites&quot;) — contact
-            us, use our products and services (the &quot;Services&quot;), or use the{' '}
-            <strong>Stonesystems mobile app</strong> for iOS and Android and its web version at{' '}
-            <strong>app1.stonesystems.io</strong> (the &quot;App&quot;). It also tells you about
-            your privacy rights and how the law protects you. By using the Services or the App, you
-            agree to the collection and use of information in accordance with this Privacy Policy.
+            application, operated by <strong>Stone Systems LLC</strong> (&quot;Stone Systems,&quot;
+            &quot;we,&quot; &quot;us,&quot; &quot;our&quot;). It describes how we collect, use, and
+            disclose your information when you respond to our advertisements, visit our websites —
+            including <strong>stonesystems.io</strong>, <strong>grow.stonesystems.io</strong>,{' '}
+            <strong>app.stonesystems.io</strong>, and <strong>app1.stonesystems.io</strong>{' '}
+            (collectively, the &quot;Sites&quot;) — contact us, use our products and services (the
+            &quot;Services&quot;), or use the <strong>Stonesystems mobile app</strong> for iOS and
+            Android and its web version at <strong>app1.stonesystems.io</strong> (the
+            &quot;App&quot;). It also tells you about your privacy rights and how the law protects
+            you. By using the Services or the App, you agree to the collection and use of
+            information in accordance with this Privacy Policy.
+          </Text>
+          <Text className={classes.text}>
+            The Stonesystems mobile app is published on the App Store and Google Play by MVH
+            Management Consultancy LLC.
           </Text>
           <Text className={classes.text}>
             This Policy includes specific disclosures required by the laws of California, Colorado,
@@ -93,11 +97,21 @@ export function PrivacyPage() {
             2.1 Messages we send you
           </Title>
           <Text className={classes.text}>
-            We value your privacy and are committed to protecting your personal information. When
-            you provide your mobile number, you consent to receive SMS messages related to our
-            services, including notifications, account communications, and (if you opt in) marketing
-            offers. Your mobile opt-in <strong>will not</strong> be shared with third parties for
-            marketing purposes.
+            We value your privacy and are committed to protecting your personal information. We send
+            text messages only to people who have agreed to receive them, as described on our{' '}
+            <a href="/sms">SMS Program Terms</a> page. These include appointment confirmations and
+            reminders, onboarding and support messages, account and billing notices, and replies to
+            messages you send us. We send promotional texts only if you have separately agreed to
+            receive them.
+          </Text>
+          <Text className={classes.text}>
+            <strong>
+              No mobile information will be shared with third parties or affiliates for marketing or
+              promotional purposes.
+            </strong>{' '}
+            All the categories of sharing described in this Privacy Policy exclude text messaging
+            originator opt-in data and consent; this information will not be shared with any third
+            parties, excluding the service providers that deliver our text messages.
           </Text>
           <ul className={classes.list}>
             <li className={classes.listItem}>
@@ -112,13 +126,17 @@ export function PrivacyPage() {
               us.
             </li>
             <li className={classes.listItem}>
-              <strong>Cost:</strong> Standard message and data rates apply per your carrier&apos;s
-              terms.
+              <strong>Cost:</strong> Message and data rates may apply.
+            </li>
+            <li className={classes.listItem}>
+              <strong>Delivery:</strong> Carriers are not liable for delayed or undelivered
+              messages.
             </li>
           </ul>
           <Text className={classes.text}>
-            Phone numbers may be processed by service providers (such as our SMS sender and CRM,
-            GoHighLevel) only to deliver the messages you have consented to receive.
+            Phone numbers may be processed by service providers (our SMS senders Twilio and Signal
+            House, and our CRM, GoHighLevel) only to deliver the messages you have consented to
+            receive.
           </Text>
 
           <Title order={3} className={classes.tercaryTitle}>
@@ -287,8 +305,8 @@ export function PrivacyPage() {
               notifications in the App.
             </li>
             <li className={classes.listItem}>
-              <strong>From our business customers</strong> — when a business adds you as an owner
-              or staff member of its account, or when a business&apos;s leads contact it (their
+              <strong>From our business customers</strong> — when a business adds you as an owner or
+              staff member of its account, or when a business&apos;s leads contact it (their
               messages and calls reach us through the business&apos;s phone number).
             </li>
             <li className={classes.listItem}>
@@ -297,7 +315,8 @@ export function PrivacyPage() {
             </li>
             <li className={classes.listItem}>
               <strong>From service providers</strong> — including our CRM (GoHighLevel), payment
-              processor (Stripe), telephony carrier (Signal House), and analytics providers.
+              processor (Stripe), telephony carriers (Twilio and Signal House), and analytics
+              providers.
             </li>
             <li className={classes.listItem}>
               <strong>From publicly available sources</strong> — business directories, public
@@ -329,8 +348,8 @@ export function PrivacyPage() {
             </li>
             <li className={classes.listItem}>
               <strong>Advertising</strong> — measure ad performance, build lookalike audiences,
-              retarget visitors of our Sites. This is &quot;sharing&quot; under California law —
-              see <strong>Section 7</strong>. This does not apply to the App.
+              retarget visitors of our Sites. This is &quot;sharing&quot; under California law — see{' '}
+              <strong>Section 7</strong>. This does not apply to the App.
             </li>
             <li className={classes.listItem}>
               <strong>Quality assurance and training</strong> — review and use recordings of our own
@@ -698,11 +717,11 @@ export function PrivacyPage() {
             Data Deletion
           </Title>
           <Text className={classes.text}>
-            To disconnect your Facebook Page or Instagram account from Stone Systems, or to have
-            the connection data deleted, email <strong>support@stonesystems.io</strong> (or ask
-            your account manager). We remove the stored Page connection within 48 hours. Stone
-            Systems stores only the Page access token, Page name and linked Instagram account
-            needed to publish posts you approved; no other Facebook data is kept.
+            To disconnect your Facebook Page or Instagram account from Stone Systems, or to have the
+            connection data deleted, email <strong>support@stonesystems.io</strong> (or ask your
+            account manager). We remove the stored Page connection within 48 hours. Stone Systems
+            stores only the Page access token, Page name and linked Instagram account needed to
+            publish posts you approved; no other Facebook data is kept.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
@@ -972,7 +991,7 @@ export function PrivacyPage() {
             20. Contact Us
           </Title>
           <Text className={classes.text}>
-            <strong>MVH Management Consultancy LLC</strong>, doing business as Stone Systems
+            <strong>Stone Systems LLC</strong>
             <br />
             Email: privacy@stonesystems.io
             <br />

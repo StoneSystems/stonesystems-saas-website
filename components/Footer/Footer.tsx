@@ -122,6 +122,9 @@ export function Footer() {
           <Text<'a'> className={classes.specialLink} component="a" href="/privacy-policy">
             Privacy Policy
           </Text>
+          <Text<'a'> className={classes.specialLink} component="a" href="/sms">
+            SMS Terms
+          </Text>
           <Text<'a'> className={classes.specialLink} component="a" href="/dpa">
             DPA
           </Text>
@@ -192,9 +195,7 @@ export function Footer() {
             <IconBrandInstagram style={{ width: rem(24), height: rem(24) }} stroke={2} />
           </ActionIcon>
         </Group>
-        <Text className={classes.copyright}>
-          © 2026 Stone Systems. Stone Systems is a brand of MVH Management Consultancy LLC.
-        </Text>
+        <Text className={classes.copyright}>© 2026 Stone Systems LLC. All rights reserved.</Text>
       </Container>
     </footer>
   );

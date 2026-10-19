@@ -13,6 +13,11 @@ export const SUBPROCESSORS: SubprocessorRow[] = [
     location: 'United States',
   },
   {
+    name: 'Twilio Inc.',
+    serviceProvided: 'SMS/MMS and voice delivery for messages and calls we send to you',
+    location: 'United States',
+  },
+  {
     name: 'Stripe, Inc.',
     serviceProvided: 'Payment processing and billing',
     location: 'United States',
