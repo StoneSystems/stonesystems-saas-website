@@ -54,7 +54,7 @@ const data = [
   {
     cardTitle: 'We Have Proof',
     cardDescription:
-      "We already know what's working and have all the <a href='/testimonials'>reviews & testimonials</a> to back it up.",
+      "We already know what's working and have all the <a href='/results'>reviews & testimonials</a> to back it up.",
     imageSrc: '/images/why/shield.svg',
   },
   {

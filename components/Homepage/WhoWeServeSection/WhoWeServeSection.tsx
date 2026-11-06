@@ -144,7 +144,7 @@ export function WhoWeServeSection() {
             </Container>
             <Button
               component="a"
-              href="/trades-we-serve"
+              href="/trades"
               mx="auto"
               bg="var(--yellow)"
               size={mobile ? 'lg' : 'xl'}

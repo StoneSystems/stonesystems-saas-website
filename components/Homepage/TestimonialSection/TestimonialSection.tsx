@@ -51,7 +51,7 @@ function Card({
         <Text className={classes.testimonial}>{testimonial}</Text>
         <div className={classes.bottomDiv}>
           <Text className={classes.personName}>{personName}</Text>
-          <Flex component="a" href="/testimonials" className={classes.linkDiv}>
+          <Flex component="a" href="/results" className={classes.linkDiv}>
             <Text className={classes.testimonialsLink}>See All</Text>
             <IconArrowRight />
           </Flex>
