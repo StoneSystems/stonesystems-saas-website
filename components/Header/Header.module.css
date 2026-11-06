@@ -1,9 +1,11 @@
+/* The desktop bar shows from 69em (1104px). Below that, phones and tablets use the drawer. */
+
 .stickyHeader {
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
 
 .header {
@@ -14,6 +16,18 @@
   display: flex;
   justify-content: center;
   background-color: var(--white);
+}
+
+.desktopOnly {
+  @media (max-width: 68.99em) {
+    display: none !important;
+  }
+}
+
+.mobileOnly {
+  @media (min-width: 69em) {
+    display: none !important;
+  }
 }
 
 .link,
@@ -27,9 +41,9 @@
   text-decoration: none;
   color: var(--blue);
   font-weight: 500;
-  font-size: 17px;
+  font-size: 15px;
 
-  @media (max-width: 48em) {
+  @media (max-width: 68.99em) {
     height: rem(60px);
     width: 100%;
     font-size: 22px;
@@ -46,6 +60,11 @@
       stroke: var(--yellow);
     }
   }
+}
+
+.linkCurrent {
+  color: var(--yellow);
+  box-shadow: inset 0 rem(-3px) 0 0 var(--yellow);
 }
 
 .linkLogin {
@@ -66,7 +85,7 @@
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
   }
 
-  @media (max-width: 48em) {
+  @media (max-width: 68.99em) {
     > div {
       padding: 0 15px !important;
     }
@@ -82,8 +101,13 @@
   margin: calc(var(--mantine-spacing-md) * -1);
   margin-top: var(--mantine-spacing-sm);
   padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
-  padding-bottom: var(--mantine-spacing-xl);
   border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
+
+.dropdownFooterText {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue);
 }
 
 .sublinkTitle {
@@ -95,28 +119,12 @@
   font-size: 14px;
 }
 
-.button,
-.button2 {
-  font-size: 17px !important;
+.button {
+  font-size: 15px !important;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .button:hover {
   background-color: var(--dark-yellow) !important;
-}
-
-.button2:hover {
-  color: var(--dark-yellow) !important;
-}
-
-.mobileButton {
-  width: 100%;
-}
-
-
-@media (min-width: 48em) {
-  .logoImage {
-    display: none;
-  }
 }

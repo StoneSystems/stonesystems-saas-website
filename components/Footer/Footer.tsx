@@ -8,23 +8,15 @@ import classes from './Footer.module.css';
 
 const data = [
   {
-    title: 'Links',
+    title: 'Company',
     links: [
-      { label: 'Pricing', link: '/pricing' },
-      { label: 'Testimonials', link: '/testimonials' },
-      { label: 'Our Work', link: '/our-work' },
-      { label: 'Press', link: '/press' },
-      { label: 'Log in', link: 'https://app.stonesystems.io' },
-    ],
-  },
-  {
-    title: 'About',
-    links: [
-      { label: 'Our Process', link: '/our-process' },
-      { label: 'Trades We Serve', link: '/trades-we-serve' },
+      { label: 'Results', link: '/results' },
+      { label: 'Trades', link: '/trades' },
+      { label: 'About Us', link: '/about-us' },
+      { label: 'Blog', link: '/blog' },
       { label: 'Careers', link: '/careers' },
-      { label: 'Partners', link: '/partners' },
       { label: 'Contact', link: '/contact' },
+      { label: 'Log in', link: 'https://app.stonesystems.io' },
     ],
   },
   {

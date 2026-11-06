@@ -116,6 +116,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
               />
             </>
           )}
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption -- client testimonials have no caption files */}
           <video
             width={width}
             height={height}
@@ -130,7 +131,6 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
             onPause={onPause}
           >
             <source src={src} type={type} />
-            <track kind="captions" />
             Your browser does not support the video tag.
           </video>
         </>
