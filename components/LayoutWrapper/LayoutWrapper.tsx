@@ -12,13 +12,7 @@ import { CTANoWave } from '../CTA-No-Wave/CTA';
 export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
 
-  const shouldShowOurProcessSection = ![
-    '/our-process',
-    '/partners',
-    '/about-us',
-    '/careers',
-    '/',
-  ].includes(pathname);
+  const shouldShowOurProcessSection = !['/about-us', '/careers', '/'].includes(pathname);
 
   const showNothing = ['/vsl'].includes(pathname);
 
