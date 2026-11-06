@@ -46,16 +46,11 @@ export function Feature5() {
     <div className={classes.outer}>
       <Container size="xl">
         <div className={classes.inner}>
-          <Image
-            alt="website animation"
-            unoptimized={true}
-            src={PhoneImage}
-            className={classes.image}
-          />
+          <Image alt="website animation" unoptimized src={PhoneImage} className={classes.image} />
           <div className={classes.content}>
             <Title className={classes.title}>Local SEO</Title>
             <Text className={classes.description} mt="md">
-              "Rank number one on Google in a week!"
+              &quot;Rank number one on Google in a week!&quot;
               <br /> Just kidding, SEO takes time...
             </Text>
             <Flex mt="lg" direction="column">

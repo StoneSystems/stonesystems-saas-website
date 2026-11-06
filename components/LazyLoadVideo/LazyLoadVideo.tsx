@@ -71,12 +71,13 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
         }
       };
     }
+    return undefined;
   }, [isIntersecting]);
 
   // Fullscreen change handler
   useEffect(() => {
     const handleFullscreenChange = () => {
-      const fullscreenElement = document.fullscreenElement;
+      const { fullscreenElement } = document;
 
       if (fullscreenElement === videoRef.current) {
         onFullscreenChange?.(true); // Video is in fullscreen mode
@@ -129,6 +130,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
             onPause={onPause}
           >
             <source src={src} type={type} />
+            <track kind="captions" />
             Your browser does not support the video tag.
           </video>
         </>

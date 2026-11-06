@@ -6,6 +6,7 @@
   background-size: 100%;
   padding-bottom: 146px;
   margin-bottom: -1px !important;
+
   @media (max-width: 30em) {
     padding-bottom: 75px;
   }
@@ -18,7 +19,7 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
 }
 
 .mainTitle {

@@ -23,12 +23,14 @@ export default function FunctionalWebsitePage() {
     },
     {
       title: 'Mobile Friendly',
-      description: `87% of customers search for local businesses on their mobile devices. Ensuring your website loads and functions properly on mobile is our top priority. Our mobile optimizations include clear call-to-actions, hyperlinked phone numbers, and quick load speeds.`,
+      description:
+        '87% of customers search for local businesses on their mobile devices. Ensuring your website loads and functions properly on mobile is our top priority. Our mobile optimizations include clear call-to-actions, hyperlinked phone numbers, and quick load speeds.',
       icon: '/images/features/device-mobile.svg',
     },
     {
       title: 'Instantly Starts SMS Conversations',
-      description: `We aim to create SMS conversations with potential customers, eliminating the need for email back-and-forths for quotes. Each of our websites includes functional quote forms and a chat widget that instantly starts a text conversation with customers. They’ll receive instant confirmation messages when they reach out, and by capturing their phone number, we ensure you can contact them directly, even if they leave your website.`,
+      description:
+        'We aim to create SMS conversations with potential customers, eliminating the need for email back-and-forths for quotes. Each of our websites includes functional quote forms and a chat widget that instantly starts a text conversation with customers. They’ll receive instant confirmation messages when they reach out, and by capturing their phone number, we ensure you can contact them directly, even if they leave your website.',
       icon: '/images/features/device-mobile-message.svg',
     },
   ];

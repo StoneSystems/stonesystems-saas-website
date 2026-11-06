@@ -1,9 +1,9 @@
 'use client';
 
 import { Container, Flex, SimpleGrid, Text, Title, useMantineTheme } from '@mantine/core';
-import classes from './ValuesSection.module.css';
 import { useMediaQuery } from '@mantine/hooks';
 import Image from 'next/image';
+import classes from './ValuesSection.module.css';
 
 export function ValuesSection() {
   const theme = useMantineTheme();
@@ -48,8 +48,8 @@ export function ValuesSection() {
                     Humor
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We're serious about results, but our team meetings might as well be stand-up
-                    gigs.
+                    We&apos;re serious about results, but our team meetings might as well be
+                    stand-up gigs.
                   </Text>
                 </div>
               </Flex>
@@ -83,8 +83,8 @@ export function ValuesSection() {
                     Humility
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    We’re perfect, we've never made a mistake, right? (But… if we do, you know we’ll
-                    fix it right away).
+                    We’re perfect, we&apos;ve never made a mistake, right? (But… if we do, you know
+                    we’ll fix it right away).
                   </Text>
                 </div>
               </Flex>
@@ -101,7 +101,7 @@ export function ValuesSection() {
                     Integrity
                   </Title>
                   <Text c="dimmed" className={classes.aboutDescription}>
-                    When we say we'll do something we do it. It's that simple.
+                    When we say we&apos;ll do something we do it. It&apos;s that simple.
                   </Text>
                 </div>
               </Flex>

@@ -52,12 +52,7 @@ export function Feature3() {
   return (
     <Container size="xl">
       <div className={classes.inner}>
-        <Image
-          alt="website animation"
-          unoptimized={true}
-          src={PhoneImage}
-          className={classes.image}
-        />
+        <Image alt="website animation" unoptimized src={PhoneImage} className={classes.image} />
 
         <div className={classes.content}>
           <Title className={classes.title}>Missed Call Text Back</Title>

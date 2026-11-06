@@ -17,16 +17,16 @@ export function Faq() {
               When am I going to start seeing results?
             </Accordion.Control>
             <Accordion.Panel bg="white" className={classes.itemDescription}>
-              This will completely depend on what else you're doing for advertising, how long you've
-              been in business, the quality of your work, and of course that you commit to using our
-              system. If you think you're going to close your eyes and pay us $297/month a month to
-              solve all your problems, we’re probably not the right fit for you. We cannot stress
-              this enough... you have to be doing multiple forms of advertising. Stone Systems is
-              meant to provide you a simple, yet extremely effective foundational marketing system
-              to help grow and expand your business. We’re here to build your online business
-              foundation, not perform miracles. <br />
+              This will completely depend on what else you&apos;re doing for advertising, how long
+              you&apos;ve been in business, the quality of your work, and of course that you commit
+              to using our system. If you think you&apos;re going to close your eyes and pay us
+              $297/month a month to solve all your problems, we’re probably not the right fit for
+              you. We cannot stress this enough... you have to be doing multiple forms of
+              advertising. Stone Systems is meant to provide you a simple, yet extremely effective
+              foundational marketing system to help grow and expand your business. We’re here to
+              build your online business foundation, not perform miracles. <br />
               <strong>
-                <br /> "Explain how you help me grow my business"
+                <br /> &quot;Explain how you help me grow my business&quot;
                 <br />
                 <br />
                 Sure...
@@ -40,9 +40,9 @@ export function Faq() {
                 3. Do you believe that instantly following up with incoming leads will make you look
                 more professional, therefore leading to more business? <br />
                 <br />
-                4. Do you believe making sure you're making the most of every customer you work with
-                by putting them into automated re-marketing campaigns will make them more likely to
-                work with you again <br />
+                4. Do you believe making sure you&apos;re making the most of every customer you work
+                with by putting them into automated re-marketing campaigns will make them more
+                likely to work with you again <br />
                 <br />
                 5. Do you believe offering discounts for friends of your past customers will
                 increase the number of referrals you get?
@@ -53,7 +53,7 @@ export function Faq() {
                 <br />
                 <br />
                 7. Do you believe having these systems in place is important to grow your business?
-                <br /> <br /> If you believe any of those things can grow your business, that's
+                <br /> <br /> If you believe any of those things can grow your business, that&apos;s
                 exactly what we can help you with.
               </strong>
             </Accordion.Panel>
@@ -64,8 +64,8 @@ export function Faq() {
             </Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
               Our only interest is keeping you for 10+ years. We believe the best way to do that is
-              to be priced affordably. We believe if we don't overcharge and provide you with
-              excellent service, you'll never have a reason to leave.
+              to be priced affordably. We believe if we don&apos;t overcharge and provide you with
+              excellent service, you&apos;ll never have a reason to leave.
             </Accordion.Panel>
           </Accordion.Item>
 
@@ -74,8 +74,8 @@ export function Faq() {
               What happens if I decide to cancel my membership with Stone Systems?
             </Accordion.Control>
             <Accordion.Panel className={classes.itemDescription}>
-              We'll be extremely sad to see you go, but after a good cry we'll bounce back. However,
-              you will lose access to all the features we set up for you.
+              We&apos;ll be extremely sad to see you go, but after a good cry we&apos;ll bounce
+              back. However, you will lose access to all the features we set up for you.
             </Accordion.Panel>
           </Accordion.Item>
 

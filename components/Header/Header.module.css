@@ -1,5 +1,4 @@
 .stickyHeader {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -34,6 +33,7 @@
     height: rem(60px);
     width: 100%;
     font-size: 22px;
+
     @mixin hover {
       color: var(--blue);
     }
@@ -41,6 +41,7 @@
 
   @mixin hover {
     color: var(--yellow);
+
     svg {
       stroke: var(--yellow);
     }
@@ -64,10 +65,12 @@
   @mixin hover {
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
   }
+
   @media (max-width: 48em) {
     > div {
       padding: 0 15px !important;
     }
+
     @mixin hover {
       background-color: transparent;
     }
@@ -98,6 +101,7 @@
   cursor: pointer;
   transition: all 0.3s;
 }
+
 .button:hover {
   background-color: var(--dark-yellow) !important;
 }

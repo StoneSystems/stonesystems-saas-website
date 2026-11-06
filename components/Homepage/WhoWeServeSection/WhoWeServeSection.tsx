@@ -3,10 +3,10 @@
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
 import { Paper, Title, useMantineTheme, Container, AspectRatio, Button } from '@mantine/core';
-import classes from './WhoWeServeSection.module.css';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
 import Image from 'next/image';
+import classes from './WhoWeServeSection.module.css';
 
 interface CardProps {
   tradeName: string;
@@ -18,20 +18,20 @@ interface CardProps {
 function Card({ tradeName, imageSrc, tradeName2, imageSrc2 }: CardProps) {
   return (
     <>
-      <Paper mb={'var(--space-40'} className={classes.card}>
+      <Paper mb="var(--space-40" className={classes.card}>
         <AspectRatio ratio={16 / 9} className={classes.video}>
           <Image width={245} height={200} src={imageSrc} alt={tradeName} />
         </AspectRatio>
-        <Title pt={'sm'} mx={'auto'} order={3} className={classes.tradeName}>
+        <Title pt="sm" mx="auto" order={3} className={classes.tradeName}>
           {tradeName}
         </Title>
       </Paper>
 
-      <Paper mb={'var(--space-40'} className={classes.card}>
+      <Paper mb="var(--space-40" className={classes.card}>
         <AspectRatio ratio={16 / 9} className={classes.video}>
           <Image width={245} height={200} src={imageSrc2} alt={tradeName} />
         </AspectRatio>
-        <Title pt={'sm'} mx={'auto'} order={3} className={classes.tradeName}>
+        <Title pt="sm" mx="auto" order={3} className={classes.tradeName}>
           {tradeName2}
         </Title>
       </Paper>
@@ -145,7 +145,7 @@ export function WhoWeServeSection() {
             <Button
               component="a"
               href="/trades-we-serve"
-              mx={'auto'}
+              mx="auto"
               bg="var(--yellow)"
               size={mobile ? 'lg' : 'xl'}
               className={classes.button}

@@ -1,9 +1,9 @@
 'use client';
 
 import { Container, Title, Accordion, SimpleGrid, Text, useMantineTheme } from '@mantine/core';
-import classes from './JobsSection.module.css';
 import { IconArrowRightToArc } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
+import classes from './JobsSection.module.css';
 
 export function JobsSection() {
   const theme = useMantineTheme();

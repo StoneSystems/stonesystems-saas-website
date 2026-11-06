@@ -23,7 +23,8 @@ export default function BusinessPhonePage() {
     },
     {
       title: 'Separate Personal and Business',
-      description: `By using separate phone numbers for personal and business calls, you keep your professional interactions organized and ensure privacy. This helps you maintain a clear boundary between work and personal life, improves your response time for business calls, and presents a professional image to clients.`,
+      description:
+        'By using separate phone numbers for personal and business calls, you keep your professional interactions organized and ensure privacy. This helps you maintain a clear boundary between work and personal life, improves your response time for business calls, and presents a professional image to clients.',
       icon: '/images/features/divide.svg',
     },
   ];

@@ -16,7 +16,6 @@ import {
   Collapse,
   ScrollArea,
   rem,
-  useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import {
@@ -180,7 +179,6 @@ export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [productLinksOpened, { toggle: toggleProductLinks }] = useDisclosure(false);
   const [aboutLinksOpened, { toggle: toggleAboutLinks }] = useDisclosure(false);
-  const theme = useMantineTheme();
 
   const productLinks = productData.map((item) => <LinkButton key={item.title} {...item} />);
 
@@ -286,7 +284,7 @@ export function Header() {
               height={81}
             />
           </a>
-          <Burger size={'lg'} opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+          <Burger size="lg" opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
         </Group>
       </header>
 

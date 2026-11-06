@@ -8,7 +8,7 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: calc(var(--space-40) * 2) 0 0 0;
+  padding: calc(var(--space-40) * 2) 0 0;
 
   @media (max-width: 30em) {
     font-size: rem(28px);

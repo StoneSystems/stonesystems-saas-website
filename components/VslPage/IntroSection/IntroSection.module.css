@@ -1,6 +1,7 @@
 .outer {
   background-color: var(--gray);
   padding-top: var(--space-40);
+
   @media (max-width: 30em) {
     padding-top: 0;
   }
@@ -8,6 +9,7 @@
 
 .card {
   padding: 1rem;
+
   video{
     border-radius: 10px;
   }
@@ -23,6 +25,6 @@
 
   @media (max-width: 30em) {
     font-size: rem(28px);
-    padding: calc(var(--space-40)/2) 0;
+    padding: calc(var(--space-40) / 2) 0;
   }
 }

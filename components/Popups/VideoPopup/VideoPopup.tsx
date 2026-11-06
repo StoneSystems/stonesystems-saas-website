@@ -1,9 +1,9 @@
 'use client';
 
 import { Container, Title, useMantineTheme } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import classes from './VideoPopup.module.css';
 import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
-import { useMediaQuery } from '@mantine/hooks';
 
 export function VideoPopup({
   videoSrc,

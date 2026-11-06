@@ -1,7 +1,7 @@
 'use client';
 
 import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
-import { IconBrandYoutube, IconBrandInstagram, IconPhone } from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import Image from 'next/image';
 import { bookingUrl } from '@/lib/site';
 import classes from './Footer.module.css';

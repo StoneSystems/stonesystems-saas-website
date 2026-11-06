@@ -9,11 +9,6 @@
     width: 100%;
   }
   
-  .image {
-    width: 100%;
-    height: auto;
-  }
-  
   .video {
     width: 100%;
     height: auto;
@@ -36,6 +31,7 @@
     0% {
       transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
       transform: translate(-50%, -50%) rotate(360deg);
     }

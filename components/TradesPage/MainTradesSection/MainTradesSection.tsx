@@ -1,9 +1,9 @@
 'use client';
 
 import { useMediaQuery } from '@mantine/hooks';
-import { Paper, Text, Title, useMantineTheme, Container, SimpleGrid } from '@mantine/core';
-import classes from './MainTradesSection.module.css';
+import { Paper, Title, useMantineTheme, Container, SimpleGrid } from '@mantine/core';
 import Image from 'next/image';
+import classes from './MainTradesSection.module.css';
 
 interface CardProps {
   tradeName: string;

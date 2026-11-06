@@ -87,6 +87,7 @@ export function BlogGrid({ posts }: BlogGridProps) {
           <Group gap={6}>
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
               <button
+                type="button"
                 key={n}
                 onClick={() => setPage(n)}
                 className={`${classes.pageNumber} ${n === page ? classes.pageNumberActive : ''}`}

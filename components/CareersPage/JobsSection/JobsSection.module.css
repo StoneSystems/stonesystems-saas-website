@@ -16,6 +16,7 @@
   background-color: var(--yellow);
   border-radius: var(--border-radius-md);
   padding: calc(var(--space-40) / 2);
+
   @media (max-width: 30em) {
     font-size: rem(28px);
   }
@@ -30,12 +31,15 @@
 .itemTitle {
   font-size: 26px;
   color: var(--blue);
+
   @media (max-width: 30em) {
     font-size: 22px;
   }
+
   > * {
     font-weight: 600 !important;
   }
+
   svg {
     height: 30px !important;
     width: 30px !important;
@@ -74,6 +78,7 @@
   display: flex;
   align-items: center;
   margin-left: 20px;
+
   svg {
     min-width: 24px;
     stroke: var(--yellow);
@@ -82,6 +87,7 @@
 
 .column {
   padding: var(--space-40);
+
   @media (max-width: 30em) {
     padding: 0;
   }

@@ -29,15 +29,19 @@
 .itemTitle {
   font-size: 26px;
   color: var(--blue);
+
   @media (max-width: 30em) {
     font-size: 19px;
   }
+
   > * {
     font-weight: 600 !important;
+
     @media (max-width: 30em) {
     font-weight: 800 !important;
     }
   }
+
   svg {
     height: 30px !important;
     width: 30px !important;

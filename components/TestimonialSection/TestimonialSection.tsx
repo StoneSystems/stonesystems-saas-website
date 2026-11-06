@@ -4,9 +4,9 @@ import { useState, useRef, useEffect } from 'react';
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { Paper, Text, Container, Title, Image, Flex } from '@mantine/core';
+import { IconArrowRight } from '@tabler/icons-react';
 import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 import classes from './TestimonialSection.module.css';
-import { IconArrowRight } from '@tabler/icons-react';
 
 interface CardProps {
   testimonial: string;
@@ -32,7 +32,7 @@ function Card({
       <LazyLoadVideo
         src={videoSrc}
         poster={videoThumbnail}
-        alt={personName + ' testimonial'}
+        alt={`${personName} testimonial`}
         type="video/mp4"
         width="100%"
         height="auto"
@@ -63,31 +63,36 @@ function Card({
 
 const data = [
   {
-    testimonial: `"Highly recommended, they are here to help us contractors that don't like to deal with the website stuff. It feels like you have partner looking out for you that's actually helping you succeed."`,
+    testimonial:
+      '"Highly recommended, they are here to help us contractors that don\'t like to deal with the website stuff. It feels like you have partner looking out for you that\'s actually helping you succeed."',
     videoSrc: '/videos/Adam1.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Adam1.png',
     personName: '-Adam',
   },
   {
-    testimonial: `"I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems"`,
+    testimonial:
+      "\"I've been working with stonesystems for the last few months and it's been absolutely amazing. If you're out there and you need someone that's gonna be there for you... we love working with stonesystems\"",
     videoSrc: '/videos/Dale.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Dale.png',
     personName: '-Dale',
   },
   {
-    testimonial: `"Shoutout to Kai and Remy for an amazing job that they did doing my website. I've been a pain in the butt every now and then but they did it right. Check them out, you won't be dissapointed."`,
+    testimonial:
+      '"Shoutout to Kai and Remy for an amazing job that they did doing my website. I\'ve been a pain in the butt every now and then but they did it right. Check them out, you won\'t be dissapointed."',
     videoSrc: '/videos/George.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/George.png',
     personName: '-George',
   },
   {
-    testimonial: `"If you are looking for someone to get that phone ringing, they're the right fit for you! I'm so happy with them!"`,
+    testimonial:
+      '"If you are looking for someone to get that phone ringing, they\'re the right fit for you! I\'m so happy with them!"',
     videoSrc: '/videos/Cody.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Cody.jpg',
     personName: '-Cody',
   },
   {
-    testimonial: `"They are the absolute best at what they do. They built me a new website and within 10 day's I got my first unpaid for Lead! Best money spent with Kai and StoneSystems"`,
+    testimonial:
+      '"They are the absolute best at what they do. They built me a new website and within 10 day\'s I got my first unpaid for Lead! Best money spent with Kai and StoneSystems"',
     videoSrc: '/videos/Armando2.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Armando.jpg',
     personName: '-Armando',
@@ -100,7 +105,8 @@ const data = [
     personName: '-James',
   },
   {
-    testimonial: `"Ever since he implemented the new website and landing pages, it's been nothing but great and our conversion has gone way up. We started getting calls almost immediately."`,
+    testimonial:
+      '"Ever since he implemented the new website and landing pages, it\'s been nothing but great and our conversion has gone way up. We started getting calls almost immediately."',
     videoSrc: '/videos/Manny.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Manny.jpg',
     personName: '-Manny',
@@ -128,7 +134,8 @@ const data = [
     personName: '-Frank',
   },
   {
-    testimonial: `"I've seen a significant improvement in my business. Stone Systems has made my life so much easier!"`,
+    testimonial:
+      '"I\'ve seen a significant improvement in my business. Stone Systems has made my life so much easier!"',
     videoSrc: '/videos/David.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/David.jpg',
     personName: '-David',
@@ -141,7 +148,8 @@ const data = [
     personName: '-Rick',
   },
   {
-    testimonial: `"Their business marketing systems have helped us a lot. Anytime I need anything I can always give them a call. They're super helpful with everything they do, I would recommend them to anybody"`,
+    testimonial:
+      '"Their business marketing systems have helped us a lot. Anytime I need anything I can always give them a call. They\'re super helpful with everything they do, I would recommend them to anybody"',
     videoSrc: '/videos/Luckie.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Luckie.jpg',
     personName: '-Luckie',
@@ -154,31 +162,36 @@ const data = [
     personName: '-Lopaka',
   },
   {
-    testimonial: `"It's been great and all I needed was one sale a month to pay for the service. Since I signed up i've gotten quite a bit more than that. I would recommend them to anyone!"`,
+    testimonial:
+      '"It\'s been great and all I needed was one sale a month to pay for the service. Since I signed up i\'ve gotten quite a bit more than that. I would recommend them to anyone!"',
     videoSrc: '/videos/Adam.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Adam.jpg',
     personName: '-Adam',
   },
   {
-    testimonial: `"They made me a brand new website, super professional and it's been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"`,
+    testimonial:
+      '"They made me a brand new website, super professional and it\'s been absolutely amazing. I cannot say enough good things about theme. It turned those 100s of viewers into 100s of clients!"',
     videoSrc: '/videos/Mason.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/Mason.jpg',
     personName: '-Mason',
   },
   {
-    testimonial: `"First i thought it was a scam, but then it turns out they're just a really good company at a really good price. I would recommend them to anyone!"`,
+    testimonial:
+      '"First i thought it was a scam, but then it turns out they\'re just a really good company at a really good price. I would recommend them to anyone!"',
     videoSrc: '/videos/Matt.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/Matt.jpg',
     personName: '-Matt',
   },
   {
-    testimonial: `"They've made it so easy with all their automations and the awesome website. I can't thank them enough and you should all definitely check them out"`,
+    testimonial:
+      '"They\'ve made it so easy with all their automations and the awesome website. I can\'t thank them enough and you should all definitely check them out"',
     videoSrc: '/videos/RyanSmith.mov#t=0.1',
     videoThumbnail: '/images/thumbnails/RyanSmith.jpg',
     personName: '-Ryan',
   },
   {
-    testimonial: `"He really got everything going well. I'm getting organic leads now that don't cost me any money. I would recommend them to anyone!"`,
+    testimonial:
+      '"He really got everything going well. I\'m getting organic leads now that don\'t cost me any money. I would recommend them to anyone!"',
     videoSrc: '/videos/William.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/William.jpg',
     personName: '-Scott',
@@ -251,7 +264,7 @@ export function TestimonialSection() {
     <div className={classes.outer}>
       <Container size="lg">
         <Title className={classes.mainTitle}>
-          The proof is in the pudding... <br /> Let's see what our clients have to say
+          The proof is in the pudding... <br /> Let&apos;s see what our clients have to say
         </Title>
       </Container>
       <Container size="responsive">
