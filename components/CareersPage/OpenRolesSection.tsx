@@ -60,8 +60,9 @@ export function OpenRolesSection({ title, roles }: Props) {
           </Title>
           {roles.length > 0 ? (
             <SimpleGrid cols={{ base: 1, md: 3 }} spacing="lg">
-              {roles.map((role) => (
-                <RoleCard key={role.href} role={role} />
+              {roles.map((role, index) => (
+                // eslint-disable-next-line react/no-array-index-key -- two roles may share a link
+                <RoleCard key={`${role.href}-${index}`} role={role} />
               ))}
             </SimpleGrid>
           ) : (

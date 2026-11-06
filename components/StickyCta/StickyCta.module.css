@@ -42,6 +42,7 @@
 
 .spacer {
   height: calc(rem(60px) + env(safe-area-inset-bottom));
+  background-color: var(--blue); /* same as the footer above it */
 
   @media (min-width: 69em) {
     display: none;
