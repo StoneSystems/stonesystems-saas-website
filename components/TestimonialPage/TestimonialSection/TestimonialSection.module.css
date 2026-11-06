@@ -91,6 +91,10 @@
 .topCta {
   margin: calc(var(--space-40) * -0.5) 0 var(--space-40);
   padding: 0 var(--mantine-spacing-md);
+
+  @media (max-width: 30em) {
+    margin-top: 0;
+  }
 }
 
 .topCtaButton {

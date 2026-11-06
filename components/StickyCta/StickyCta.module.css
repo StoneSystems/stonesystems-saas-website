@@ -39,3 +39,11 @@
 .visible {
   transform: translateY(0);
 }
+
+.spacer {
+  height: calc(rem(56px) + env(safe-area-inset-bottom));
+
+  @media (min-width: 69em) {
+    display: none;
+  }
+}

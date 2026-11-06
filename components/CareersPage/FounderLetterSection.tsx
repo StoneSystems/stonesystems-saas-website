@@ -19,13 +19,15 @@ export function FounderLetterSection({ title, subtitle, blocks, signature }: Pro
             {subtitle && <p className={classes.muted}>{subtitle}</p>}
           </div>
           <article className={classes.letter}>
-            {blocks.map((block) =>
+            {blocks.map((block, index) =>
               block.kind === 'quote' ? (
-                <blockquote key={block.text} className={classes.quote}>
+                // eslint-disable-next-line react/no-array-index-key -- static list, duplicates allowed
+                <blockquote key={index} className={classes.quote}>
                   {block.text}
                 </blockquote>
               ) : (
-                <p key={block.text} className={classes.body}>
+                // eslint-disable-next-line react/no-array-index-key -- static list, duplicates allowed
+                <p key={index} className={classes.body}>
                   {block.text}
                 </p>
               )

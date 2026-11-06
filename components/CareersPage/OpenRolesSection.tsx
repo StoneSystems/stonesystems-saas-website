@@ -27,7 +27,8 @@ function RoleCard({ role }: { role: HiringRole }) {
               {role.details.map((detail, index) => {
                 const Icon = detailIcons[index] ?? IconPointFilled;
                 return (
-                  <li key={detail} className={classes.detail}>
+                  // eslint-disable-next-line react/no-array-index-key -- static list, duplicates allowed
+                  <li key={index} className={classes.detail}>
                     <Icon size={16} stroke={1.75} aria-hidden="true" />
                     <span>{detail}</span>
                   </li>

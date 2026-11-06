@@ -33,13 +33,19 @@ export function StickyCta() {
 
   useEffect(() => {
     if (hidden) return undefined;
-    const onScroll = () => setVisible(window.scrollY > window.innerHeight * 0.8);
+    const onScroll = () => {
+      const show = window.scrollY > window.innerHeight * 0.8;
+      setVisible(show);
+      // Lets a global style move the chat bubble up while the bar is on screen.
+      document.body.classList.toggle('has-sticky-cta', show);
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll);
     return () => {
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onScroll);
+      document.body.classList.remove('has-sticky-cta');
     };
   }, [hidden]);
 
@@ -75,16 +81,20 @@ export function StickyCta() {
   if (hidden) return null;
 
   return (
-    <a
-      href={bookingUrl('sticky-mobile')}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={visible ? `${classes.bar} ${classes.visible}` : classes.bar}
-      style={{ bottom }}
-      aria-hidden={!visible}
-      tabIndex={visible ? 0 : -1}
-    >
-      Book A Call
-    </a>
+    <>
+      {/* Keeps the page's last lines (footer copyright) reachable above the fixed bar. */}
+      <div className={classes.spacer} aria-hidden="true" />
+      <a
+        href={bookingUrl('sticky-mobile')}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={visible ? `${classes.bar} ${classes.visible}` : classes.bar}
+        style={{ bottom }}
+        aria-hidden={!visible}
+        tabIndex={visible ? 0 : -1}
+      >
+        Book A Call
+      </a>
+    </>
   );
 }

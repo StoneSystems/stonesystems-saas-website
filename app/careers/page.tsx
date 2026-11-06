@@ -5,7 +5,7 @@ import { OpenRolesSection } from '@/components/CareersPage/OpenRolesSection';
 import { ValuesSection } from '@/components/CareersPage/ValuesSection';
 import { HiringStepsSection } from '@/components/CareersPage/HiringStepsSection';
 import { FounderLetterSection } from '@/components/CareersPage/FounderLetterSection';
-import { getHiringContent, HIRING_REVALIDATE_SECONDS } from '@/lib/hiring';
+import { getHiringContent } from '@/lib/hiring';
 import classes from '@/components/CareersPage/Careers.module.css';
 
 // The handwritten signature font, loaded for this page only (decision 45).
@@ -16,8 +16,9 @@ const signatureFont = Caveat({
   variable: '--font-signature',
 });
 
-// Re-read hiring.stonesystems.io at most every 5 minutes (decision 42).
-export const revalidate = HIRING_REVALIDATE_SECONDS;
+// Re-read hiring.stonesystems.io at most every 5 minutes (decision 42). Literal on purpose so Next
+// can always read it; keep equal to HIRING_REVALIDATE_SECONDS in lib/hiring.ts.
+export const revalidate = 300;
 
 export const metadata: Metadata = {
   title: 'Stone Systems - Careers',

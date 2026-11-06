@@ -1,5 +1,10 @@
 import snapshot from '@/data/hiring-snapshot.json';
-import { HIRING_ORIGIN, HiringContent, parseHiringPage } from './hiring-parse';
+import {
+  HIRING_ORIGIN,
+  HiringContent,
+  MAX_HIRING_PAGE_BYTES,
+  parseHiringPage,
+} from './hiring-parse';
 
 export type {
   HiringContent,
@@ -31,6 +36,9 @@ export async function getHiringContent(): Promise<HiringResult> {
     });
     if (!response.ok) throw new Error(`hiring page responded ${response.status}`);
     const html = await response.text();
+    if (html.length > MAX_HIRING_PAGE_BYTES) {
+      throw new Error(`hiring page too large (${html.length})`);
+    }
     return { content: parseHiringPage(html), source: 'live' };
   } catch (error) {
     console.warn('[careers] using the saved hiring snapshot:', (error as Error).message);
