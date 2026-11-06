@@ -52,7 +52,7 @@
   margin-right: 3rem;
 }
 
-.wrapper:nth-of-type(3) {
+.wrapperNoTitle {
   margin-top: 1.74rem;
 
   @media (max-width: 48em) {

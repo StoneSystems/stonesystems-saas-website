@@ -54,8 +54,11 @@ export function Footer() {
     ));
 
     return (
-      <div className={classes.wrapper} key={group.title || `group-${groupIndex}`}>
-        <Text className={classes.title}>{group.title}</Text>
+      <div
+        className={group.title ? classes.wrapper : `${classes.wrapper} ${classes.wrapperNoTitle}`}
+        key={group.title || `group-${groupIndex}`}
+      >
+        {group.title && <Text className={classes.title}>{group.title}</Text>}
         {links}
       </div>
     );

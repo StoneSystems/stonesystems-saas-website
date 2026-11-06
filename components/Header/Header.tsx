@@ -17,7 +17,8 @@ import {
   ScrollArea,
   rem,
 } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
+import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import {
   IconDeviceMobileVibration,
@@ -141,6 +142,12 @@ export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [productLinksOpened, { toggle: toggleProductLinks }] = useDisclosure(false);
   const pathname = usePathname();
+  const desktop = useMediaQuery('(min-width: 69em)');
+
+  // If the window grows to desktop size while the menu is open, close it so the page is not left locked.
+  useEffect(() => {
+    if (desktop) closeDrawer();
+  }, [desktop, closeDrawer]);
 
   const productLinks = productData.map((item) => <LinkButton key={item.title} {...item} />);
   const productsCurrent = (pathname ?? '').startsWith('/features/');
@@ -161,14 +168,18 @@ export function Header() {
   return (
     <Box className={classes.stickyHeader}>
       <header className={classes.header}>
-        <Group justify="space-between" w="100%" maw={rem(1440)} h="100%" wrap="nowrap">
+        <Group justify="space-between" w="100%" maw={rem(1328)} h="100%" wrap="nowrap">
           <Group h="100%" gap={0} wrap="nowrap" className={classes.desktopOnly}>
             <a href="/" className={classes.link}>
               <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
             </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
-                <a href="#" className={linkClass(productsCurrent)}>
+                <a
+                  href="#"
+                  className={linkClass(productsCurrent)}
+                  aria-current={productsCurrent ? 'page' : undefined}
+                >
                   <Center inline>
                     <Box component="span" ml="sm" mr={5}>
                       Products
@@ -238,11 +249,12 @@ export function Header() {
             <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
           </a>
           <Burger
-            size="lg"
+            size="xl"
             opened={drawerOpened}
             onClick={toggleDrawer}
             className={classes.mobileOnly}
-            aria-label="Open menu"
+            aria-label="Menu"
+            aria-expanded={drawerOpened}
           />
         </Group>
       </header>
@@ -250,8 +262,10 @@ export function Header() {
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
+        position="right"
         size="100%"
         padding="md"
+        classNames={{ content: classes.drawerContent }}
         title={
           <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
         }
@@ -262,23 +276,28 @@ export function Header() {
         className={classes.mobileOnly}
         zIndex={1000000}
       >
-        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+        <ScrollArea h={`calc(100dvh - ${rem(80)} - ${rem(130)})`} mx="-md">
           <Divider my="sm" />
 
           <a href="/" className={classes.link}>
             Home
           </a>
-          <UnstyledButton onClick={toggleProductLinks}>
+          <UnstyledButton onClick={toggleProductLinks} aria-expanded={productLinksOpened}>
             <Center inline>
               <Box className={linkClass(productsCurrent)} component="span" mr={5}>
                 Products
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
+              <IconChevronDown
+                style={{ width: rem(16), height: rem(16) }}
+                color="#000000"
+                className={productLinksOpened ? classes.chevronOpen : classes.chevron}
+              />
             </Center>
           </UnstyledButton>
           <Collapse in={productLinksOpened}>{productLinks}</Collapse>
           {pageLinks}
-
+        </ScrollArea>
+        <div className={classes.drawerFooter}>
           <a href="https://app.stonesystems.io" className={classes.linkLogin}>
             Log in
           </a>
@@ -290,7 +309,7 @@ export function Header() {
           >
             Book A Call
           </a>
-        </ScrollArea>
+        </div>
       </Drawer>
     </Box>
   );

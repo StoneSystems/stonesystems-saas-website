@@ -33,6 +33,7 @@
 .link,
 .linkModal,
 .linkLogin {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
@@ -42,6 +43,11 @@
   color: var(--blue);
   font-weight: 500;
   font-size: 15px;
+
+  &:focus-visible {
+    outline: rem(2px) solid var(--blue);
+    outline-offset: rem(-4px);
+  }
 
   @media (max-width: 68.99em) {
     height: rem(60px);
@@ -62,13 +68,48 @@
   }
 }
 
+/* Current page: dark text (contrast) with one yellow cue — an underline in the bar, a left accent in the drawer. */
 .linkCurrent {
-  color: var(--yellow);
-  box-shadow: inset 0 rem(-3px) 0 0 var(--yellow);
+  font-weight: 600;
+
+  @media (min-width: 69em) {
+    &::after {
+      content: '';
+      position: absolute;
+      left: var(--mantine-spacing-md);
+      right: 0;
+      bottom: 0;
+      height: rem(3px);
+      background: var(--yellow);
+    }
+  }
+
+  @media (max-width: 68.99em) {
+    box-shadow: inset rem(4px) 0 0 0 var(--yellow);
+  }
 }
 
-.linkLogin {
-  color: var(--yellow);
+/* Tablets get a right-anchored panel instead of a full-width phone menu. */
+.drawerContent {
+  @media (min-width: 48em) {
+    max-width: rem(420px) !important;
+    flex-basis: rem(420px) !important;
+  }
+}
+
+/* Log in in the drawer is plain dark text so only Book A Call is yellow. */
+.drawerFooter {
+  margin: 0 calc(var(--mantine-spacing-md) * -1);
+  border-top: rem(1px) solid var(--mantine-color-gray-3);
+}
+
+.chevron,
+.chevronOpen {
+  transition: transform 0.2s;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
 }
 
 .linkModal {
@@ -123,6 +164,11 @@
   font-size: 15px !important;
   cursor: pointer;
   transition: all 0.3s;
+
+  &:focus-visible {
+    outline: rem(2px) solid var(--blue);
+    outline-offset: rem(2px);
+  }
 }
 
 .button:hover {
