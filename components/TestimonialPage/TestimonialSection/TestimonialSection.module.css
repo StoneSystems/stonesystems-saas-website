@@ -86,3 +86,19 @@
   width: rem(22px);
   height: rem(22px);
 }
+
+/* Phase 5 (25b): one Book A Call directly under the page heading. */
+.topCta {
+  margin: calc(var(--space-40) * -0.5) 0 var(--space-40);
+  padding: 0 var(--mantine-spacing-md);
+}
+
+.topCtaButton {
+  border-radius: var(--border-radius-sm);
+  background-color: var(--yellow);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--dark-yellow) !important;
+  }
+}

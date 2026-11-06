@@ -1,8 +1,19 @@
 'use client';
 
 import { useMediaQuery } from '@mantine/hooks';
-import { Paper, Text, Title, useMantineTheme, Container, SimpleGrid, Image } from '@mantine/core';
+import {
+  Paper,
+  Text,
+  Title,
+  useMantineTheme,
+  Container,
+  SimpleGrid,
+  Image,
+  Button,
+  Center,
+} from '@mantine/core';
 import Script from 'next/script';
+import { bookingUrl } from '@/lib/site';
 import classes from './TestimonialSection.module.css';
 import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 
@@ -348,6 +359,18 @@ export function TestimonialSection() {
         <br />
         Let&apos;s see what our clients have to say
       </Title>
+      <Center className={classes.topCta}>
+        <Button
+          component="a"
+          href={bookingUrl('results-top')}
+          target="_blank"
+          rel="noopener noreferrer"
+          size="xl"
+          className={classes.topCtaButton}
+        >
+          Book A Call
+        </Button>
+      </Center>
       <Container size="xl">
         <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>

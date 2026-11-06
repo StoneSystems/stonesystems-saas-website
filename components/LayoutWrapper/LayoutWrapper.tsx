@@ -7,6 +7,7 @@ import { CTA } from '@/components/CTA-Wave/CTA';
 import { TestimonialSection } from '@/components/TestimonialSection/TestimonialSection';
 import { Footer } from '@/components/Footer/Footer';
 import { Header } from '@/components/Header/Header';
+import { StickyCta } from '@/components/StickyCta/StickyCta';
 import { CTANoWave } from '../CTA-No-Wave/CTA';
 
 export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -29,6 +30,7 @@ export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ childre
         </>
       )}
       <Footer />
+      <StickyCta />
     </>
   );
 };
