@@ -1,5 +1,5 @@
 # Simplify Site Navigation
-Status: NOT STARTED — Phases 1, 2, 3, 5 ready to build; Phase 4 blocked on OQ-24b; OQ-25e and OQ-26 open
+Status: IN PROGRESS — Phases 1–5 CODE-COMPLETE 2026-11-06 on branch feat/simplify-site-navigation (not pushed, not merged); Final A-Z pass pending
 Research: 1
 
 ## User stories
@@ -10,7 +10,7 @@ Research: 1
 - As the hiring team, I change a role on hiring.stonesystems.io and the main site's Careers page shows the change within five minutes without anyone touching this repo. — Phase 4
 
 ## Research
-Tier 1 (edits to existing pages plus one rebuilt page). To be written to `sprints/simplify-site-navigation/research/RESEARCH.md` by the first invocation, before Phase 1 builds. This repo has no `DESIGN.md`, no `docs/design/references/`, and no `.cursor/rules/`; the baseline is the live site itself.
+Tier 1 (edits to existing pages plus one rebuilt page). Written 2026-11-06: [research/RESEARCH.md](research/RESEARCH.md) with baseline screenshots in `research/screenshots/baseline/`, the hiring site in `research/screenshots/hiring/`, and per-phase passes in `research/screenshots/phase3|phase4|phase5/`. This repo has no `DESIGN.md`, no `docs/design/references/`, and no `.cursor/rules/`; the baseline is the live site itself.
 Known before research (verified 2026-11-05):
 - Site is Next.js 14 app router + Mantine 7, Sora font, brand tokens in `globals.css` (`--yellow #e8a743`, `--blue #1f2236`, `--gray #f1f1f1`).
 - Header links are 17px, bar is locked to a fixed 83em width, About and Products are hover dropdowns; the desktop bar shows from 768px up; below that a full-screen drawer.
@@ -110,7 +110,8 @@ npm run build                        # next build — must complete
 All four must be green before a phase is marked done. The blog page talks to Sanity at build time; if the build fails only because `SANITY_API_TOKEN` is missing locally, record that and verify the blog page renders in `npm run dev` instead — do not touch the blog to make the build pass (see OQ-26).
 Rule files for the step-1 reload and the step-6 reviewer brief: this repo has none, so reload this doc's Locked decisions and Invariants instead and hand the reviewer this doc plus the diff.
 
-## Phase 1 — Delete five pages, forward old addresses home, fix homepage press cards
+## Phase 1 — Delete five pages, forward old addresses home, fix homepage press cards — CODE-COMPLETE 2026-11-06
+Shipped in commits af10160 (phase) and 800884c (lint baseline). Gate: lint 0 errors, typecheck clean, jest no tests (passes), build OK. Fresh-context code review: no High; Medium 1 = header/footer still linked the deleted pages until Phase 3 (accepted, Phase 3 shipped before any merge); Medium 2 = `package-lock.json` had been rewritten by `npm install --legacy-peer-deps` inside the lint commit → restored to master's lock in 7e64732; Low = `<track>` captions tag on every video → replaced by a lint exception in 7e64732; Low = press card had no guard for an empty publisher link → all 8 entries have one, left as is. Lint-baseline commit verified behaviour-neutral item by item by the reviewer.
 Done means: `/pricing`, `/our-work`, `/our-process`, `/partners`, `/press` and `/press/<anything>` all permanently forward to the homepage; no file in the repo still points at them; the homepage "In The News" cards (unchanged look, unchanged heading) open the publisher's article in a new tab with no added icon, and the "View All Press" button is gone; the partner logo strip, the 3-step block, the FAQ pricing question and the low-price card still render on the homepage.
 Files:
 - delete `app/pricing/`, `app/our-work/`, `app/our-process/`, `app/partners/`, `app/press/` (including `app/press/[slug]/`)
@@ -118,14 +119,15 @@ Files:
 - delete `content/press/`, `lib/markdown.ts`, `public/images/websites/`
 - keep `public/images/partners/` (homepage strip), `data/blogs.json` (untouched, decision 28), `components/Homepage/PartnersSection/`, `components/Homepage/Our Process/`, `components/ProcessSection/`
 - edit `components/Blog/BlogCard/BlogCard.tsx` (card links to the entry's publisher link, new tab, safe rel; no visual change), `components/Blog/BlogSection/BlogSection.tsx` (remove the View All Press button only), `components/LayoutWrapper/LayoutWrapper.tsx` (drop `/our-process` and `/partners` from the address list), `next.config.mjs` (permanent forwards for the five addresses and `/press/:slug` to `/`)
-- [ ] Pages, components, press write-ups and website screenshots deleted; nothing imports them
-- [ ] Old addresses permanently forward to the homepage (checked in the browser for each of the six patterns)
-- [ ] Homepage press cards open the publisher article in a new tab; no card points at `/press/...`; cards look the same as before
-- [ ] "View All Press" button removed; "In The News" / "Stone Systems in the Press" heading and four cards still show
-- [ ] Partner logo strip, 3-step block, FAQ pricing question and low-price card unchanged on the homepage
-- [ ] Gate green
+- [x] Pages, components, press write-ups and website screenshots deleted; nothing imports them
+- [x] Old addresses permanently forward to the homepage (checked in the browser for each of the six patterns)
+- [x] Homepage press cards open the publisher article in a new tab; no card points at `/press/...`; cards look the same as before
+- [x] "View All Press" button removed; "In The News" / "Stone Systems in the Press" heading and four cards still show
+- [x] Partner logo strip, 3-step block, FAQ pricing question and low-price card unchanged on the homepage
+- [x] Gate green
 
-## Phase 2 — Rename Testimonials → Results and Trades We Serve → Trades; update Google's page list
+## Phase 2 — Rename Testimonials → Results and Trades We Serve → Trades; update Google's page list — CODE-COMPLETE 2026-11-06
+Shipped in commit d847a5b. Gate green (lint 0, typecheck clean, no tests, build OK). Three videos on /results played to 2s in a real browser; the Google-reviews widget loads. Fresh-context code review: VERDICT approve, no findings (verified page components identical to master, no redirect loops, sitemap exact, `reviews & testimonials` wording untouched).
 Done means: `/results` shows the video testimonial grid, its current heading word for word, and the Google-reviews widget, with "Results" in the tab title; `/trades` shows the trades page unchanged with "Trades" in the tab title; `/testimonials` and `/trades-we-serve` permanently forward to the new addresses; every homepage and shared link that pointed at the old addresses points at the new ones with its wording unchanged; the sitemap lists exactly: home, results, about-us, trades, careers, privacy-policy, terms, sms, blog, plus blog posts.
 Files:
 - move `app/testimonials/page.tsx` → `app/results/page.tsx`; move `app/trades-we-serve/page.tsx` → `app/trades/page.tsx`; update both pages' metadata titles ("Stone Systems - Results", "Stone Systems - Trades")
@@ -135,29 +137,34 @@ Files:
 - edit `components/Homepage/WhoWeServeSection/WhoWeServeSection.tsx` (link → `/trades`)
 - edit `next.config.mjs` (permanent forwards `/testimonials` → `/results`, `/trades-we-serve` → `/trades`)
 - edit `app/sitemap.xml/route.js` (static list: '', results, about-us, trades, careers, privacy-policy, terms, sms, blog; blog posts unchanged; contact dropped)
-- [ ] `/results` and `/trades` render; old addresses permanently forward
-- [ ] Tab titles say Results / Trades; on-page headings unchanged
-- [ ] All "See All" and "reviews & testimonials" links land on Results; the homepage trades link lands on Trades; wording unchanged
-- [ ] Sitemap lists exactly the pages above
-- [ ] Every video on `/results` still plays (spot-check three) and the Google-reviews widget loads
-- [ ] Gate green
+- [x] `/results` and `/trades` render; old addresses permanently forward
+- [x] Tab titles say Results / Trades; on-page headings unchanged
+- [x] All "See All" and "reviews & testimonials" links land on Results; the homepage trades link lands on Trades; wording unchanged
+- [x] Sitemap lists exactly the pages above
+- [x] Every video on `/results` still plays (spot-check three) and the Google-reviews widget loads
+- [x] Gate green
 
-## Phase 3 — Header, mobile menu, footer (includes extras 25c and 25d)
+## Phase 3 — Header, mobile menu, footer (includes extras 25c and 25d) — CODE-COMPLETE 2026-11-06
+Shipped in commits b3e3205 (phase) and 7e64732 (review fixes). Gate green after both. Design loop: 3 passes recorded (`research/screenshots/phase3/pass1..pass3`).
+- Pass 1 (pass1/): bar fits on one line from 1104px; current page highlighted; drawer on 390/768/1024; dropdown footer line. Subtraction pass: nothing of ours to remove ("Systems & Features" heading is pre-existing).
+- Pass 2 (pass2/): footer columns verified (Company / Products / unnamed aligned), exact switch at 1103→1104px, Products highlighted on a product page, all three Book A Call destinations and tags verified in the DOM.
+- Pass 3 (pass3/) after fresh-context reviews: current page now dark text + centred yellow underline (was yellow text, 2.09:1 contrast and same colour as hover); drawer uses a left accent instead of a full-width rule; Log in in the drawer is dark; Log in / Book A Call pinned to the drawer's bottom so expanding Products no longer pushes Book A Call off screen; chevron rotates + aria-expanded; tablet drawer is a 420px right-side panel; burger target 42px; focus styles; aria-current on Products; menu closes itself if the window grows to desktop; bar capped at 1328px so it aligns with the content column.
+- Reviews: code reviewer VERDICT approve (Lows: drawer-open-then-resize lock, 0.16px breakpoint gap, aria-expanded on burger — all fixed). Design reviewer: "passes the bar: no — current-page link yellow on white at 2.09:1" → fixed as above; other items (asymmetric underline, drawer rule, gold Log in, tablet drawer width, burger size, focus ring, maw) fixed; copy duplication in the dropdown line is locked by 25c (noted). Journey reviewer: "Story completed cold: no — Book A Call covered by the privacy banner in the phone drawer" → pre-existing (banner z-index 2147483000 is above everything, Invariant I keeps it untouched) → ❓ flagged; Products expansion pushing the CTA away → fixed (pinned footer); Careers-in-bar and hover-vs-click dropdown are locked decisions → ❓ noted for Manu.
 Done means: from about 1100px wide upwards the bar shows Logo, Products ▾, Results, Trades, About, Blog, Careers, Log In (plain dark-blue text), Book A Call (the only yellow element) on one line at 1280px and 1440px with no wrapping and no About dropdown; the current page's link is highlighted; the Products dropdown is identical to today except for a "Not sure which system you need? Book a call" line with a button at its bottom; below about 1100px (phones and tablets) the hamburger drawer shows Home, Products (expandable), Results, Trades, About, Blog, Careers, Log in, Book A Call (full-width yellow bar at the bottom); the footer shows one "Company" column (Results, Trades, About Us, Blog, Careers, Contact, Log in) plus the two unchanged Products columns and the unchanged legal row.
 Files:
 - edit `components/Header/Header.tsx` (remove `aboutData` and the About dropdown; add plain links; current-page highlight from the address; Log In as plain link; dropdown footer line with Book A Call tagged `products-dropdown`; same flat list in the drawer; drawer shown up to the new breakpoint)
 - edit `components/Header/Header.module.css` (link text 15px, Book A Call large, Log In medium, bar width fluid with a max, active-link style, dropdown footer style; logo untouched)
 - edit `theme.ts` only if a custom breakpoint (~1100px) must be registered for the show/hide switch; otherwise the switch lives in `Header.module.css`
 - edit `components/Footer/Footer.tsx` (column data), `components/Footer/Footer.module.css` only if the three-column layout needs it
-- [ ] Desktop bar fits on one line at 1280px and 1440px; at 1024px and 768px the drawer is used instead; screenshots recorded
-- [ ] Sizes exactly as decision 35; logo unchanged
-- [ ] Current page highlighted in the bar; Products highlighted on product pages
-- [ ] Products dropdown unchanged apart from the new bottom line; its button opens the calendar tagged `products-dropdown`
-- [ ] Log In is plain dark-blue text and still opens app.stonesystems.io; Book A Call keeps its destination and `header-nav` tag
-- [ ] Drawer shows the flat list; Products still expands; Log in and Book A Call at the bottom as today
-- [ ] Footer Company column as specified; Products columns and legal row unchanged
-- [ ] UI loop: minimum three passes recorded under Design decisions
-- [ ] Gate green
+- [x] Desktop bar fits on one line at 1280px and 1440px; at 1024px and 768px the drawer is used instead; screenshots recorded
+- [x] Sizes exactly as decision 35; logo unchanged
+- [x] Current page highlighted in the bar; Products highlighted on product pages
+- [x] Products dropdown unchanged apart from the new bottom line; its button opens the calendar tagged `products-dropdown`
+- [x] Log In is plain dark-blue text and still opens app.stonesystems.io; Book A Call keeps its destination and `header-nav` tag
+- [x] Drawer shows the flat list; Products still expands; Log in and Book A Call at the bottom as today
+- [x] Footer Company column as specified; Products columns and legal row unchanged
+- [x] UI loop: minimum three passes recorded under Design decisions
+- [x] Gate green
 
 ## Phase 4 — Careers page, read live from hiring.stonesystems.io  (BLOCKED until OQ-24b is answered)
 Done means: `/careers` shows the hiring site's headline, open roles, "What we work by", "How hiring works" and the letter from Michael, styled to match the hiring page's own sections (Option A), under this site's header and above this site's footer, with no CTA block and no testimonial carousel; the roles (and, per OQ-24b, the other sections) are read from hiring.stonesystems.io with a cache of at most 5 minutes, so a role change there appears here within 5 minutes without a code change; each role card goes to the absolute `https://hiring.stonesystems.io/<role>-intake` address in the same tab; careers@stonesystems.io appears once under Open roles; zero roles shows "No open roles right now" plus the email; when the hiring site cannot be read, the saved snapshot is shown, never an error; Michael's signature uses the Caveat font; tab title is "Stone Systems - Careers".
@@ -208,4 +215,4 @@ Files:
 ## Open questions
 - ❓ FLAG FOR Manu (OQ-24b): Read the values, hiring steps and Michael's letter live from the hiring site too, or copy them once into the snapshot and only read the roles live? Proposed: read everything live so the two pages never drift. Phase 4 is blocked on this one word.
 - ❓ FLAG FOR Manu (OQ-25e): Hide the homepage "In The News" block on phones to shorten the page. Accept / reject? (Only remaining extra without an answer.)
-- ❓ FLAG FOR Manu (OQ-26): Local builds may need the blog's Sanity access token to complete. If it is not available in the local environment, is verifying the blog in the dev server an acceptable substitute for that one page? (CI has the token and builds on every pull request.)
+- ~~OQ-26~~ Resolved 2026-11-06: the production build completes locally without a Sanity token (all 55 blog posts built). No question left.
