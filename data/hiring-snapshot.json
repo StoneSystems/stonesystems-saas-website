@@ -1,0 +1,131 @@
+{
+  "hero": {
+    "title": "Own the work. Find a way.",
+    "subtitle": "Remote, full-time roles serving contractor businesses across the US and Canada."
+  },
+  "openings": {
+    "title": "Open roles",
+    "roles": [
+      {
+        "title": "Customer Success Manager",
+        "description": "You're the person our clients talk to after they sign: onboarding, support, and growth.",
+        "details": [
+          "OTE $3,000–$7,000/month",
+          "Monday–Saturday (Sunday optional)"
+        ],
+        "cta": "See the role",
+        "href": "https://hiring.stonesystems.io/csm-intake"
+      },
+      {
+        "title": "Appointment Setter",
+        "description": "You're the first voice a contractor hears from us. You qualify them, schedule the call, and confirm it.",
+        "details": [
+          "$4,000–$10,000/month",
+          "Monday–Saturday (Sunday optional)"
+        ],
+        "cta": "See the role",
+        "href": "https://hiring.stonesystems.io/setter-intake"
+      },
+      {
+        "title": "Closer",
+        "description": "Setters fill your calendar. You run the calls, handle objections, and close.",
+        "details": [
+          "$10,000–$20,000/month",
+          "Monday–Saturday (Sunday optional)"
+        ],
+        "cta": "See the role",
+        "href": "https://hiring.stonesystems.io/closer-intake"
+      }
+    ]
+  },
+  "values": {
+    "title": "What we work by",
+    "items": [
+      {
+        "title": "Clients Come First",
+        "body": "We always put our clients first. Every campaign, message, and result should go above and beyond what they expect."
+      },
+      {
+        "title": "Own Everything",
+        "body": "We take full responsibility for what we do, good or bad. No blaming, no excuses. Just fix it and move forward."
+      },
+      {
+        "title": "Find a Way",
+        "body": "We're problem-solvers. Instead of waiting for answers, we look for solutions with what we have."
+      },
+      {
+        "title": "Move Fast",
+        "body": "We act quickly, learn quickly, and keep improving by taking action fast."
+      },
+      {
+        "title": "Be Honest and Open",
+        "body": "We're real with each other and with clients. That honesty builds trust and keeps everyone on the same page."
+      }
+    ]
+  },
+  "process": {
+    "title": "How hiring works",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Apply",
+        "body": "One page, one question at a time, and a short Loom video at the end."
+      },
+      {
+        "number": "02",
+        "title": "We review",
+        "body": "A person reads every application. We'll get back to you within 48 hours."
+      },
+      {
+        "number": "03",
+        "title": "Group interview",
+        "body": "If it looks like a fit, you meet us and a few other candidates on one call."
+      },
+      {
+        "number": "04",
+        "title": "Personal interview",
+        "body": "The people you would work with, one on one."
+      },
+      {
+        "number": "05",
+        "title": "Offer",
+        "body": "A start date and the details, in writing."
+      }
+    ]
+  },
+  "letter": {
+    "title": "A letter from Michael",
+    "subtitle": "What Michael looks for in the people he hires, in his own words.",
+    "blocks": [
+      {
+        "kind": "paragraph",
+        "text": "When I think about who should join Stone Systems, I start with the five values we work by. Anyone who joins takes them on too."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Out of those five, one question matters most to me:"
+      },
+      {
+        "kind": "quote",
+        "text": "\"When something goes wrong and nobody has the answer yet, will this person take full responsibility and look for a solution with what we have?\""
+      },
+      {
+        "kind": "paragraph",
+        "text": "The people who answer yes are problem-solvers. When they make a mistake, they say so, fix it and move forward, with no blaming and no excuses. That is what we mean by Own Everything. And when the answer isn't there, they don't sit and wait for it; they Find a Way with what they have."
+      },
+      {
+        "kind": "paragraph",
+        "text": "Here is what that means once you are here. Clients Come First: every campaign, every message and every result should go above and beyond what our clients expect, and you will hold your own work to that line. We Move Fast, so you will act quickly, learn quickly and keep improving by taking action. And we expect you to Be Honest and Open, with each other and with clients, because that honesty builds trust and keeps everyone on the same page."
+      },
+      {
+        "kind": "paragraph",
+        "text": "That is not the right fit for everyone, and it doesn't need to be. If you would rather wait for answers, or leave the result to someone else, you will be happier somewhere else, and I would rather be honest about that now than later."
+      },
+      {
+        "kind": "paragraph",
+        "text": "If you read that question and already knew your answer, choose a role on this page and apply. I want to hear from you."
+      }
+    ],
+    "signature": "Michael"
+  }
+}
