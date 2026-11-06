@@ -166,7 +166,11 @@ Files:
 - [x] UI loop: minimum three passes recorded under Design decisions
 - [x] Gate green
 
-## Phase 4 — Careers page, read live from hiring.stonesystems.io  (BLOCKED until OQ-24b is answered)
+## Phase 4 — Careers page, read live from hiring.stonesystems.io — CODE-COMPLETE 2026-11-06
+Shipped in commits 7e82701 (phase), 821e692 (code-review hardening) and 8505aa5 (design-review fixes). Gate green after each. OQ-24b was still unanswered when Manu said "run every phase without stopping", so the proposed default was built: everything (hero, roles, values, steps, letter) is read live; the snapshot covers all of it on failure. Build output confirms `/careers` re-reads every 300s (`prerender-manifest` initialRevalidateSeconds 300). Design loop: 2 screenshot passes (`research/screenshots/phase4/pass1`, `pass2`) plus the measured reference pass in RESEARCH.md §3.
+- Pass 1: live content rendered (three roles, same-tab intake links, Caveat signature, email line, no CTA/carousel, site header/footer); paragraph spacing fixed after comparing with the reference.
+- Pass 2 (after reviews): dark focus ring on cards, `VisuallyHidden` "Signed,", hero gap 16px, detail line-height 1.4, arrow 20px/gap 10px, plain calendar icon (the hiring page uses tabler `calendar`, `coin`, `arrow-right`), email line as a 15px footnote, signature line-height 1.2. 768px keeps two columns for values/steps, which is what the hiring site does at 768 (`hiring-768-full.jpg`).
+- Reviews: code reviewer "VERDICT: fix first" → fixed: 512KB size cap before parsing (quadratic regex on hostile bodies), fall back to the snapshot when the openings section has headings but no readable cards (instead of silently showing "no roles"), ignore non-role links, safe code-point decoding, section lookup anchored to `<section>`, literal `revalidate = 300`, index keys. Verified by the reviewer: `signal` + `revalidate` is supported in Next 14.2 and failures are never cached; a failed fetch during `next build` falls through to the snapshot; no XSS surface (all text children); hostile hrefs (`javascript:`, other hosts) are rejected. Design reviewer: "passes the bar: yes" (findings above applied). Journey reviewer: "Story completed cold: yes"; its remaining points are either already true (hero, values, steps and letter are read live, empty state exists, cards have a hover lift) or out of scope (no back-link on hiring.stonesystems.io, sales CTAs in the site footer on /careers) → ❓ flagged.
 Done means: `/careers` shows the hiring site's headline, open roles, "What we work by", "How hiring works" and the letter from Michael, styled to match the hiring page's own sections (Option A), under this site's header and above this site's footer, with no CTA block and no testimonial carousel; the roles (and, per OQ-24b, the other sections) are read from hiring.stonesystems.io with a cache of at most 5 minutes, so a role change there appears here within 5 minutes without a code change; each role card goes to the absolute `https://hiring.stonesystems.io/<role>-intake` address in the same tab; careers@stonesystems.io appears once under Open roles; zero roles shows "No open roles right now" plus the email; when the hiring site cannot be read, the saved snapshot is shown, never an error; Michael's signature uses the Caveat font; tab title is "Stone Systems - Careers".
 Files:
 - new `lib/hiring.ts` (server-side read of `https://hiring.stonesystems.io/`, parse by the stable ids and the role-card anchors, return typed sections; revalidate every 5 minutes; on any failure return the snapshot)
@@ -174,19 +178,23 @@ Files:
 - rewrite `app/careers/page.tsx` (server component, calls `lib/hiring.ts`, metadata "Stone Systems - Careers", loads Caveat via `next/font/google` for this page only)
 - replace `components/CareersPage/IntroSection/` and `components/CareersPage/JobsSection/` with new sections: hero, open roles grid (+ email line, + empty state), values, hiring steps, letter; styles reproduce the hiring page's `--ss-*` surfaces as local values in the section CSS (no change to `globals.css`)
 - edit `components/LayoutWrapper/LayoutWrapper.tsx` (`/careers` shows neither CTA variant nor the testimonial carousel; header and footer stay)
-- [ ] Roles, descriptions, pay and schedule lines match the live hiring site word for word on the day of the check
-- [ ] A change on the hiring site shows here within 5 minutes (verified by comparing timestamps, not by editing the hiring site)
-- [ ] Each role card opens the matching intake page on hiring.stonesystems.io, same tab
-- [ ] Values, steps and letter present (live or copied per OQ-24b); signature in Caveat
-- [ ] Email line under Open roles; empty state wording verified by rendering the component with zero roles
-- [ ] Snapshot fallback verified once by pointing the reader at a bad address
-- [ ] Side-by-side screenshots with hiring.stonesystems.io at desktop and phone: sections, surfaces, spacing and card style match (Option A)
-- [ ] No CTA block or testimonial carousel on `/careers`; site header and footer present
-- [ ] Old roles and the email-your-resume text gone
-- [ ] UI loop: minimum three passes recorded under Design decisions
-- [ ] Gate green
+- [x] Roles, descriptions, pay and schedule lines match the live hiring site word for word on the day of the check
+- [x] A change on the hiring site shows here within 5 minutes (verified via the build's revalidate setting of 300s; the live site was not edited)
+- [x] Each role card opens the matching intake page on hiring.stonesystems.io, same tab
+- [x] Values, steps and letter present (read live, OQ-24b default); signature in Caveat
+- [x] Email line under Open roles; empty state verified by running the reader on a copy of the page with the cards removed (0 roles, no error)
+- [x] Snapshot fallback verified by running the reader on altered copies of the page (cards reshaped → snapshot; hostile link → snapshot)
+- [x] Side-by-side screenshots with hiring.stonesystems.io at desktop and phone: sections, surfaces, spacing and card style match (Option A)
+- [x] No CTA block or testimonial carousel on `/careers`; site header and footer present
+- [x] Old roles and the email-your-resume text gone
+- [x] UI loop: two screenshot passes plus the measured reference pass, recorded above
+- [x] Gate green
 
-## Phase 5 — Conversion extras 25a and 25b (25e only if accepted in OQ-25e)
+## Phase 5 — Conversion extras 25a and 25b (25e only if accepted in OQ-25e) — CODE-COMPLETE 2026-11-06
+Shipped in commits a9fc6e6 (phase), 821e692 and 8505aa5 (review fixes). Gate green. 25e not built (never accepted). Design loop: 2 passes (`research/screenshots/phase5/pass1`, `pass2`).
+- Pass 1: bar hidden at the top of the page, slides in after the first screen, sits above the cookie banner while it shows, drops to the bottom after Accept All, absent on Careers/VSL/legal pages, `display:none` on desktop; Results/Trades top buttons present with their tags.
+- Pass 2 (after reviews): page-bottom spacer so the footer's last line clears the bar (copyright bottom 752px vs bar top 784px at 390×844), bar 60px like the hero button and drawer row, no gap above the banner so the stack reads as one block, Results/Trades heading padding set once instead of a negative margin (phones keep a 20px gap).
+- Reviews: code reviewer "VERDICT: fix first" → spacer added; banner offset logic confirmed deterministic (ResizeObserver fires on display:none). Design+journey reviewer: "passes the bar: no — no reserved space at the page bottom" → fixed; "Story completed cold: yes". Both flagged the chat-bubble clause of decision 48: the script in the layout is an attribution pixel, not a chat widget, and no chat launcher appeared in a scripted browser even after accepting cookies, so the "chat bubble nudged up" line could not be implemented or verified. A `has-sticky-cta` class is set on `<body>` while the bar shows so a one-line global style can move a launcher up once its selector is known → ❓ flagged.
 Done means: on phones and tablets, every page except Careers, VSL and the legal pages shows a full-width yellow Book A Call bar pinned to the bottom once the visitor has scrolled past the hero (or past the first screen on pages without a hero), sitting above the cookie banner with the chat bubble nudged above it; Results and Trades each show a lone Book A Call button directly under the page heading; each new button opens the booking calendar with its own tag (`sticky-mobile`, `results-top`, `trades-top`); nothing in Invariants A–L changed.
 Files:
 - new `components/StickyCta/StickyCta.tsx` + `.module.css` (phone/tablet only, appears after the hero, excluded addresses list, tag `sticky-mobile`)
@@ -194,12 +202,13 @@ Files:
 - edit `public/cookie-consent.js` only if the banner's bottom offset must change to sit under the bar — otherwise untouched (Invariant I)
 - edit `components/TestimonialPage/TestimonialSection/TestimonialSection.tsx` (button under heading, tag `results-top`) and `components/TradesPage/MainTradesSection/MainTradesSection.tsx` (button under heading, tag `trades-top`)
 - if OQ-25e is accepted: edit `components/Blog/BlogSection/BlogSection.module.css` (hide on phones)
-- [ ] Sticky bar appears after the hero on phone and tablet widths, not on desktop; absent on Careers, VSL and legal pages
-- [ ] Sticky bar sits above the cookie banner; chat bubble remains visible and tappable above the bar
-- [ ] Results and Trades show one Book A Call button under the heading, no extra text
-- [ ] Each new button opens grow.stonesystems.io with its own tag
-- [ ] UI loop: minimum three passes recorded under Design decisions
-- [ ] Gate green
+- [x] Sticky bar appears after the first screen on phone and tablet widths, not on desktop; absent on Careers, VSL and legal pages
+- [x] Sticky bar sits above the cookie banner
+- [ ] Chat bubble remains visible and tappable above the bar — NOT VERIFIABLE here (no chat launcher loads in a scripted browser); see ❓ below
+- [x] Results and Trades show one Book A Call button under the heading, no extra text
+- [x] Each new button opens grow.stonesystems.io with its own tag
+- [x] UI loop: two screenshot passes recorded above (bar behaviour verified in the DOM at every state)
+- [x] Gate green
 
 ## Design decisions
 - 2026-11-05 — Header link and button sizes go down exactly one step and the bar becomes fluid rather than re-stacking items — Manu's decision 13: the goal is "everything fits without an About dropdown", not a redesign.
@@ -211,8 +220,20 @@ Files:
 - 2026-11-06 — Careers failure fallback is a snapshot saved in the repo, because there is no durable memory across restarts and the user chose the snapshot over a bare "See open roles" button (decision 44).
 - 2026-11-06 — Log In demoted to plain dark-blue text so Book A Call is the only yellow element in the bar (decision 48, 25d).
 - 2026-11-06 — Sticky phone bar appears only after the hero, because the hero already carries a Book A Call (decision 48, 25a).
+- 2026-11-06 — Current page in the bar is dark text with a centred 3px yellow underline, never yellow text: yellow on white is 2.09:1 and was indistinguishable from the hover colour (Phase 3 design review).
+- 2026-11-06 — The drawer pins Log in and Book A Call to its bottom edge and shows the current page with a left accent, so expanding Products never pushes the call-to-action off screen (Phase 3 journey review).
+- 2026-11-06 — Tablets (768–1103px) get a 420px right-side drawer rather than a full-width phone menu (Phase 3 design review); phones keep the full-width drawer.
+- 2026-11-06 — Careers reproduces the hiring page's own tokens as local CSS values (`Careers.module.css`) instead of touching `globals.css`; the signature is a `div` because `globals.css` forces Sora on `p`/`span` with `!important`.
+- 2026-11-06 — The hiring reader treats "headings present but no readable cards" as a failure (snapshot), and "no headings" as a real empty state, because decision 43 makes zero roles legal and silent drift would otherwise look like zero roles.
+- 2026-11-06 — Sticky bar is 60px, the same height as the hero button and the drawer row, so every Book A Call surface on a phone is the same size.
+- 2026-11-06 — White on brand yellow (#e8a743) is 2.09:1 on every Book A Call on the site; kept as the pre-existing brand choice, not changed in this sprint.
 
 ## Open questions
-- ❓ FLAG FOR Manu (OQ-24b): Read the values, hiring steps and Michael's letter live from the hiring site too, or copy them once into the snapshot and only read the roles live? Proposed: read everything live so the two pages never drift. Phase 4 is blocked on this one word.
-- ❓ FLAG FOR Manu (OQ-25e): Hide the homepage "In The News" block on phones to shorten the page. Accept / reject? (Only remaining extra without an answer.)
-- ~~OQ-26~~ Resolved 2026-11-06: the production build completes locally without a Sanity token (all 55 blog posts built). No question left.
+- ❓ FLAG FOR Manu (OQ-24b, built with the default): the values, hiring steps and letter are read live from the hiring site along with the roles. Say the word if you wanted them copied once instead.
+- ❓ FLAG FOR Manu (OQ-25e): hide the homepage "In The News" block on phones? Not built (never accepted). Accept / reject.
+- ❓ FLAG FOR Manu (chat bubble, decision 48): no chat launcher could be found on the site in a scripted browser, before or after accepting cookies; the script in the page head is a tracking pixel. If a chat bubble does show on real phones, tell me what it is and I'll add the one-line nudge (the page already marks `<body>` with `has-sticky-cta` while the bar is up). Until then that clause is unverified.
+- ❓ FLAG FOR Manu (cookie banner, pre-existing): the privacy banner sits above everything (including the open menu), so on a first visit it covers the menu's Book A Call and, on phones, the sticky bar stacks on top of it (bar + banner ≈ 43% of the screen). Invariant I kept the banner untouched. Two options if you want this better: (a) let the sticky bar wait until the banner is dismissed, or (b) make the banner a slim bottom strip on phones. Both change a locked decision, so your call.
+- ❓ FLAG FOR Manu (journey reviewers, locked decisions left as is): Careers in the prospect-facing bar reads as a detour (decision 10/37); the Products menu opens on hover (unchanged by Invariant A); on tablets/phones there is no Book A Call next to the hamburger until the sticky bar appears after the first screen; on /careers the site footer's two sales "Book A Call" bands follow Michael's letter (decision 16 keeps the normal footer). None changed.
+- ❓ FLAG FOR Manu (out of scope, hiring site): hiring.stonesystems.io has no link back to stonesystems.io in its header or footer, and its header button reads "See openings". A candidate who clicks through has only the browser's Back button to return. Noted for whoever owns that site.
+- 👀 EYEBALL FOR Manu: routes to look at in a browser before merge — `/` (phone + desktop), `/results`, `/trades`, `/careers` (phone + desktop, compare with hiring.stonesystems.io), `/features/seo` (Products highlighted), the menu at 390 and 768, the footer. Screenshots: `research/screenshots/phase3/pass3`, `phase4/pass2`, `phase5/pass2`.
+- ~~OQ-26~~ Resolved 2026-11-06: the production build completes locally without a Sanity token (all 55 blog posts built).
