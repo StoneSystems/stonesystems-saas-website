@@ -1,10 +1,10 @@
 import { Container, SimpleGrid, Title } from '@mantine/core';
-import { IconArrowRight, IconCalendarEvent, IconCoin, IconPointFilled } from '@tabler/icons-react';
+import { IconArrowRight, IconCalendar, IconCoin, IconPointFilled } from '@tabler/icons-react';
 import type { HiringRole } from '@/lib/hiring';
 import classes from './Careers.module.css';
 
 const CAREERS_EMAIL = 'careers@stonesystems.io';
-const detailIcons = [IconCoin, IconCalendarEvent];
+const detailIcons = [IconCoin, IconCalendar];
 
 interface Props {
   title: string;
@@ -38,7 +38,7 @@ function RoleCard({ role }: { role: HiringRole }) {
           )}
           <span className={classes.cta}>
             {role.cta}
-            <IconArrowRight size={18} stroke={2} aria-hidden="true" />
+            <IconArrowRight size={20} stroke={2} aria-hidden="true" />
           </span>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import { Container, Title } from '@mantine/core';
+import { Container, Title, VisuallyHidden } from '@mantine/core';
 import type { HiringContent } from '@/lib/hiring';
 import classes from './Careers.module.css';
 
@@ -32,7 +32,8 @@ export function FounderLetterSection({ title, subtitle, blocks, signature }: Pro
                 </p>
               )
             )}
-            <div className={classes.signature} aria-label={`Signed, ${signature}`}>
+            <div className={classes.signature}>
+              <VisuallyHidden>Signed, </VisuallyHidden>
               {signature}
             </div>
           </article>

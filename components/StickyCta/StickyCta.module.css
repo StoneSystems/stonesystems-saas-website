@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: rem(56px);
+  min-height: rem(60px);
   padding: var(--mantine-spacing-sm) var(--mantine-spacing-md);
   padding-bottom: calc(var(--mantine-spacing-sm) + env(safe-area-inset-bottom));
   background-color: var(--yellow);
@@ -41,7 +41,7 @@
 }
 
 .spacer {
-  height: calc(rem(56px) + env(safe-area-inset-bottom));
+  height: calc(rem(60px) + env(safe-area-inset-bottom));
 
   @media (min-width: 69em) {
     display: none;

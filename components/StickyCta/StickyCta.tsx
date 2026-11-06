@@ -58,7 +58,7 @@ export function StickyCta() {
       const banner = document.querySelector<HTMLElement>(COOKIE_BANNER);
       const rect = banner?.getBoundingClientRect();
       const overlap = rect && rect.height > 0 ? window.innerHeight - rect.top : 0;
-      setBottom(overlap > 0 ? overlap + 8 : 0);
+      setBottom(overlap > 0 ? overlap : 0);
       if (banner && banner !== watched && typeof ResizeObserver !== 'undefined') {
         bannerObserver?.disconnect();
         bannerObserver = new ResizeObserver(measure);

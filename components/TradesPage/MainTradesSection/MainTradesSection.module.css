@@ -27,7 +27,7 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: calc(var(--space-40) * 2) 0 var(--space-40) 0;
+  padding: calc(var(--space-40) * 2) 0 calc(var(--space-40) / 2);
 
   @media (max-width: 30em) {
     font-size: rem(28px);
@@ -50,12 +50,8 @@
 
 /* Phase 5 (25b): one Book A Call directly under the page heading. */
 .topCta {
-  margin: calc(var(--space-40) * -0.5) 0 var(--space-40);
+  margin: 0 0 var(--space-40);
   padding: 0 var(--mantine-spacing-md);
-
-  @media (max-width: 30em) {
-    margin-top: 0;
-  }
 }
 
 .topCtaButton {

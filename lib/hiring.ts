@@ -41,6 +41,7 @@ export async function getHiringContent(): Promise<HiringResult> {
     }
     return { content: parseHiringPage(html), source: 'live' };
   } catch (error) {
+    // eslint-disable-next-line no-console -- intentional server-side notice when the live read fails
     console.warn('[careers] using the saved hiring snapshot:', (error as Error).message);
     return { content: snapshot as HiringContent, source: 'snapshot' };
   }
