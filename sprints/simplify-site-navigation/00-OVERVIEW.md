@@ -15,7 +15,7 @@ Known before research (verified 2026-11-05):
 - Site is Next.js 14 app router + Mantine 7, Sora font, brand tokens in `globals.css` (`--yellow #e8a743`, `--blue #1f2236`, `--gray #f1f1f1`).
 - Header links are 17px, bar is locked to a fixed 83em width, About and Products are hover dropdowns; the desktop bar shows from 768px up; below that a full-screen drawer.
 - Shared bottom-of-page blocks (CTA, 3-step process, testimonial carousel) are injected by `components/LayoutWrapper/LayoutWrapper.tsx` based on the current address.
-- Results page heading is "The proof is in the pudding... Let's see what our clients have to say" and the page embeds a live Google-reviews widget from links.stonesystems.io below the grid. Trades page headings are "Serving all these trades and more..." and "All Trades by Category".
+- Results page heading is "The proof is in the pudding... Let's see what our clients have to say" and the page embeds a live Google-reviews widget from reputationhub.site (GoHighLevel default domain; the links.stonesystems.io white-label host was repointed to api.stonesystems.io and 404s) below the grid. Trades page headings are "Serving all these trades and more..." and "All Trades by Category".
 - Homepage press cards read `data/blogs.json` (8 entries, 4 featured, every entry has a publisher link); cards already open in a new tab but point at `/press/<slug>`.
 - hiring.stonesystems.io is also Next.js + Mantine + Sora with the same brand colours. It is server-rendered: sections carry stable ids (`#openings`, `#openings-title`, `#values-title`, `#process-title`, `#letter-title`, `#hero-title`), each role is an `<a href="/csm-intake|/setter-intake|/closer-intake">` card containing an `<h3>` title, a description `<p>`, pay and schedule lines. Section surfaces use its own tokens (`--ss-surface-paper`, `--ss-surface-ink`, `--ss-surface-grey`, `--ss-ink-muted`, `--ss-border`). Title: "Careers at Stone Systems". Values: Clients Come First, Own Everything, Find a Way, Move Fast, Be Honest and Open. Hiring steps: Apply, We review, Group interview, Personal interview, Offer. Letter signed "Michael" in the Caveat handwritten font.
 Research pass must produce: screenshots of the current header at 768px, 1024px, 1280px and 1440px wide and at 390px with the drawer open; screenshots of every page touched (home, testimonials, trades-we-serve, careers, about-us, blog) and of hiring.stonesystems.io at desktop + phone; a saved copy of the hiring page HTML for the reader to be written against; the exact values of the hiring site's `--ss-*` tokens so Phase 4 can match them.
@@ -88,6 +88,7 @@ Product (confirmed by Manu, 2026-11-06):
 Product (confirmed by Manu, 2026-11-10, after seeing the branch locally):
 51. Contact is in the top bar and the drawer, after Careers, and takes the visitor straight to the booking funnel at grow.stonesystems.io (tag `header-contact`), same tab. Supersedes 12 for the bar; the footer Contact link is unchanged.
 52. Navigation text goes back to 17px (links and Book A Call). To keep one line, the desktop bar now starts at 1200px; 1024px tablets use the drawer. Links never wrap.
+53. "Home" is the first link in the bar (after the logo) and in the drawer, going to the site root, highlighted on the homepage (Manu, 2026-11-10).
 
 ## Invariants this sprint promises
 - A. Products pages and the Products dropdown stay exactly as they are (the only addition is the 25c line at the bottom of the dropdown).
@@ -243,6 +244,7 @@ Files:
 - ~~OQ-26~~ Resolved 2026-11-06: the production build completes locally without a Sanity token (all 55 blog posts built).
 
 ## Amendment — 2026-11-10 (after Manu's local review)
+- "Home" added as the first bar link (the drawer already had it); highlighted on `/`. Fits at 1200px with a 22px gap before Log In.
 - Nav link and Book A Call text back to 17px; links and buttons never wrap. Contact added to the bar and the drawer, linking straight to the funnel with tag `header-contact`. With the larger text plus Contact the bar no longer fit at 1104px (Log In wrapped, Book A Call clipped), so the desktop bar now starts at 1200px and everything below uses the drawer; the sticky bar and the menu share the new 75em switch. Verified at 1199 (drawer), 1200, 1280, 1366 (one line, no wrapping); screenshots in `research/screenshots/phase3/pass4`. Gate green (lint 0, typecheck, tests, build).
 
 ## FINAL A-Z REVIEW — 2026-11-06

@@ -375,13 +375,13 @@ export function TestimonialSection() {
         <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>
       <Script
-        src="https://links.stonesystems.io/reputation/assets/review-widget.js"
+        src="https://reputationhub.site/reputation/assets/review-widget.js"
         strategy="afterInteractive"
       />
       <iframe
         title="Google reviews"
         className="lc_reviews_widget"
-        src="https://links.stonesystems.io/reputation/widgets/review_widget/8wzvpSrP8kH1ViALeGlE"
+        src="https://reputationhub.site/reputation/widgets/review_widget/8wzvpSrP8kH1ViALeGlE"
         frameBorder="0"
         scrolling="no"
         style={{ minWidth: '100%', width: '100%' }}

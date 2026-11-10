@@ -175,6 +175,13 @@ export function Header() {
             <a href="/" className={classes.link}>
               <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
             </a>
+            <a
+              href="/"
+              className={linkClass(pathname === '/')}
+              aria-current={pathname === '/' ? 'page' : undefined}
+            >
+              Home
+            </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
                 <a
@@ -281,7 +288,11 @@ export function Header() {
         <ScrollArea h={`calc(100dvh - ${rem(80)} - ${rem(130)})`} mx="-md">
           <Divider my="sm" />
 
-          <a href="/" className={classes.link}>
+          <a
+            href="/"
+            className={linkClass(pathname === '/')}
+            aria-current={pathname === '/' ? 'page' : undefined}
+          >
             Home
           </a>
           <UnstyledButton onClick={toggleProductLinks} aria-expanded={productLinksOpened}>
