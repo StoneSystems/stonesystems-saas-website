@@ -1,4 +1,4 @@
-import { Title, Container, Button, Group } from '@mantine/core';
+import { Title, Container, Group } from '@mantine/core';
 import { BlogCard, BlogPost } from '@/components/Blog/BlogCard/BlogCard';
 import blogs from '@/data/blogs.json';
 import classes from './BlogSection.module.css';
@@ -16,15 +16,6 @@ export function BlogSection() {
               Stone Systems in the Press
             </Title>
           </div>
-          <Button
-            component="a"
-            href="/press"
-            className={classes.viewAll}
-            variant="outline"
-            size="md"
-          >
-            View All Press
-          </Button>
         </Group>
 
         <div className={classes.grid}>

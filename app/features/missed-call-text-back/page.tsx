@@ -23,7 +23,8 @@ export default function MissedCallTextBackPage() {
     },
     {
       title: 'Be available 24/7',
-      description: `Our system is online 24/7, ensuring you never miss an opportunity. Even if you miss a call after hours, we'll promptly respond to all potential leads. This way, you can rest easy knowing that every inquiry is being addressed, keeping your business running smoothly around the clock.`,
+      description:
+        "Our system is online 24/7, ensuring you never miss an opportunity. Even if you miss a call after hours, we'll promptly respond to all potential leads. This way, you can rest easy knowing that every inquiry is being addressed, keeping your business running smoothly around the clock.",
       icon: '/images/features/clock-24.svg',
     },
   ];

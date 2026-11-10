@@ -54,7 +54,7 @@ const data = [
   {
     cardTitle: 'We Have Proof',
     cardDescription:
-      "We already know what's working and have all the <a href='/testimonials'>reviews & testimonials</a> to back it up.",
+      "We already know what's working and have all the <a href='/results'>reviews & testimonials</a> to back it up.",
     imageSrc: '/images/why/shield.svg',
   },
   {
@@ -74,7 +74,7 @@ export function WhyChooseUsSection() {
       <div className={classes.outer}>
         <Container size="lg">
           <Title className={classes.mainTitle}>
-            Why we’re "totally unique"... <br /> just like everyone else, right?
+            Why we’re &quot;totally unique&quot;... <br /> just like everyone else, right?
           </Title>
           <Container size="lg">
             <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>

@@ -1,9 +1,9 @@
 'use client';
 
 import { Text, Paper, Container, SimpleGrid, Title, useMantineTheme } from '@mantine/core';
-import classes from './EmployeeSection.module.css';
 import { useMediaQuery } from '@mantine/hooks';
 import Image from 'next/image';
+import classes from './EmployeeSection.module.css';
 
 interface CardProps {
   name: string;
@@ -13,7 +13,7 @@ interface CardProps {
 
 function Card({ name, title, imageSrc }: CardProps) {
   return (
-    <Paper py={'lg'} radius="md" bg="var(--white)">
+    <Paper py="lg" radius="md" bg="var(--white)">
       <Image className={classes.avatar} src={imageSrc} width={200} height={200} alt={name} />
       <Text className={classes.name} ta="center" mt="md">
         {name}

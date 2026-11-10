@@ -71,12 +71,13 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
         }
       };
     }
+    return undefined;
   }, [isIntersecting]);
 
   // Fullscreen change handler
   useEffect(() => {
     const handleFullscreenChange = () => {
-      const fullscreenElement = document.fullscreenElement;
+      const { fullscreenElement } = document;
 
       if (fullscreenElement === videoRef.current) {
         onFullscreenChange?.(true); // Video is in fullscreen mode
@@ -115,6 +116,7 @@ const LazyLoadVideo: React.FC<LazyLoadVideoProps> = ({
               />
             </>
           )}
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption -- client testimonials have no caption files */}
           <video
             width={width}
             height={height}

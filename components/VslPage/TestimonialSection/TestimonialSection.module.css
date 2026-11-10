@@ -5,7 +5,7 @@
 
 .personName {
   font-family:
-    Greycliff CF,
+    "Greycliff CF",
     sans-serif;
   font-weight: 900;
   color: var(--mantine-color-black);
@@ -31,7 +31,8 @@
 
 .video {
   width: 100%;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 0;
+
   video {
     min-width: 386px;
     max-height: 217px;
@@ -39,6 +40,7 @@
     width: 100%;
     background-color: black;
   }
+
   img {
     border-radius: 10px;
     min-width: 386px;
@@ -49,12 +51,14 @@
     height: auto;
     display: block;
   }
+
   @media (max-width: 30em) {
     video,
     img {
       min-width: 100%;
     }
   }
+
   .star {
     width: rem(22px);
     height: rem(22px);

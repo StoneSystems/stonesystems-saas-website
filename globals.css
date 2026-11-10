@@ -1,6 +1,6 @@
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  --black: #000;
+  --white: #fff;
   --gray: #f1f1f1;
   --yellow: #e8a743;
   --dark-yellow: #c88318;
@@ -37,6 +37,7 @@ h6 {
     'Segoe UI Symbol',
     'Noto Color Emoji' !important;
 }
+
 p,
 a,
 ul,

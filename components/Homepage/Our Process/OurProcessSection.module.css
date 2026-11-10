@@ -6,10 +6,12 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+
   @media (max-width: 30em) {
     padding-bottom: 75px;
   }
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -56,6 +58,7 @@
   position: relative;
   top: -2.5rem;
   right: -11.5rem;
+
   @media (max-width: 30em) {
     display: none;
   }
@@ -63,6 +66,7 @@
 
 .iconThing {
   z-index: 2;
+
   @media (max-width: 30em) {
     margin-bottom: 10px;
   }

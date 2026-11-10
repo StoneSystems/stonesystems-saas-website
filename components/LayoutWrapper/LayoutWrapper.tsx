@@ -7,20 +7,16 @@ import { CTA } from '@/components/CTA-Wave/CTA';
 import { TestimonialSection } from '@/components/TestimonialSection/TestimonialSection';
 import { Footer } from '@/components/Footer/Footer';
 import { Header } from '@/components/Header/Header';
+import { StickyCta } from '@/components/StickyCta/StickyCta';
 import { CTANoWave } from '../CTA-No-Wave/CTA';
 
 export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const pathname = usePathname();
 
-  const shouldShowOurProcessSection = ![
-    '/our-process',
-    '/partners',
-    '/about-us',
-    '/careers',
-    '/',
-  ].includes(pathname);
+  const shouldShowOurProcessSection = !['/about-us', '/'].includes(pathname);
 
-  const showNothing = ['/vsl'].includes(pathname);
+  // Careers (decision 18) and VSL show no CTA block and no testimonial carousel.
+  const showNothing = ['/vsl', '/careers'].includes(pathname);
 
   return (
     <>
@@ -34,6 +30,7 @@ export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ childre
         </>
       )}
       <Footer />
+      <StickyCta />
     </>
   );
 };

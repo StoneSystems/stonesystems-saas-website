@@ -41,9 +41,9 @@ export function OurProcessSection() {
                 (20 mins)
               </Text>
               <Text className={classes.stepDescription}>
-                It's actually a sales call, we just didn't want to scare you. But seriously... we'll
-                answer all your questions, show you any features you have questions about, and show
-                you live client accounts & results.
+                It&apos;s actually a sales call, we just didn&apos;t want to scare you. But
+                seriously... we&apos;ll answer all your questions, show you any features you have
+                questions about, and show you live client accounts & results.
               </Text>
             </Flex>
             <Flex direction="column" align="center" ta="center" px="2rem">
@@ -63,7 +63,7 @@ export function OurProcessSection() {
               </Text>
               <Text className={classes.stepDescription}>
                 Fill out a basic onboarding form with your business details. After we have the
-                correct information, we'll get to work on building your new website & marketing
+                correct information, we&apos;ll get to work on building your new website & marketing
                 system.
               </Text>
             </Flex>
@@ -83,9 +83,9 @@ export function OurProcessSection() {
                 <br /> (25 mins)
               </Text>
               <Text className={classes.stepDescription}>
-                We'll walk you through your new website & marketing system, answer any questions you
-                have, and show you how "everything" works... And by everything, we’re really just
-                talking about pressing two buttons.
+                We&apos;ll walk you through your new website & marketing system, answer any
+                questions you have, and show you how &quot;everything&quot; works... And by
+                everything, we’re really just talking about pressing two buttons.
               </Text>
             </Flex>
           </SimpleGrid>

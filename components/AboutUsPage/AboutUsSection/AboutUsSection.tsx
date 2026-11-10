@@ -10,9 +10,9 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import Image from 'next/image';
-import classes from './AboutUsSection.module.css';
-import { IconBrandYoutube, IconBrandInstagram, IconBrandGoogle } from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import { useMediaQuery } from '@mantine/hooks';
+import classes from './AboutUsSection.module.css';
 
 export function AboutUsSection() {
   const theme = useMantineTheme();
@@ -53,13 +53,7 @@ export function AboutUsSection() {
               Stone Systems is operated by Stone Systems LLC. The Stonesystems mobile app is
               published on the App Store and Google Play by MVH Management Consultancy LLC.
             </Text>
-            <Group
-              gap={0}
-              className={classes.social}
-              mt={'1rem'}
-              justify="flex-start"
-              wrap="nowrap"
-            >
+            <Group gap={0} className={classes.social} mt="1rem" justify="flex-start" wrap="nowrap">
               <ActionIcon
                 component="a"
                 href="https://www.youtube.com/@StoneSystemsGMB"

@@ -9,13 +9,13 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
 }
 
 .tradeName {
   text-align: center;
   font-family:
-    Greycliff CF,
+    "Greycliff CF",
     sans-serif;
   font-weight: 900;
   color: var(--mantine-color-black);
@@ -53,6 +53,7 @@
 
 .video {
   width: 100%;
+
   img {
     border-radius: 10px 10px 0 0;
   }
@@ -62,6 +63,7 @@
   padding-bottom: 35px;
   border-bottom: 1px solid lightgray;
   margin-bottom: 30px;
+
   &:last-of-type {
     border-bottom: none;
     margin-bottom: 0;

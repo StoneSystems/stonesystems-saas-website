@@ -23,12 +23,14 @@ export default function MarketingCampaignsPage() {
     },
     {
       title: 'Contractor Holiday Promos',
-      description: `Share a list of at least 150 past customers or leads, and we’ll run a holiday promo campaign to bring them back. We’ll offer special discounts or incentives to rekindle their interest and boost your seasonal sales.`,
+      description:
+        'Share a list of at least 150 past customers or leads, and we’ll run a holiday promo campaign to bring them back. We’ll offer special discounts or incentives to rekindle their interest and boost your seasonal sales.',
       icon: '/images/features/christmas-ball.svg',
     },
     {
       title: 'Contractor Customer Nurture',
-      description: `Give us a list of at least 150 past clients or leads, and we’ll run a customer nurture campaign to re-engage them. We’ll send personalized follow-ups and offers to keep your services top-of-mind and encourage repeat business.`,
+      description:
+        'Give us a list of at least 150 past clients or leads, and we’ll run a customer nurture campaign to re-engage them. We’ll send personalized follow-ups and offers to keep your services top-of-mind and encourage repeat business.',
       icon: '/images/features/calendar-clock.svg',
     },
   ];

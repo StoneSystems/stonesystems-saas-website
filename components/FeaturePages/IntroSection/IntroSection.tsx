@@ -1,18 +1,8 @@
 'use client';
 
-import {
-  Container,
-  Title,
-  Text,
-  Flex,
-  Grid,
-  Paper,
-  SimpleGrid,
-  useMantineTheme,
-  Image,
-} from '@mantine/core';
-import classes from './IntroSection.module.css';
+import { Container, Title, Text, Flex, Grid, Paper, SimpleGrid, Image } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
+import classes from './IntroSection.module.css';
 import LazyLoadVideo from '@/components/LazyLoadVideo/LazyLoadVideo';
 
 interface FeatureProps {
@@ -32,11 +22,10 @@ export function IntroSection({
   videoSrc,
   videoThumbnail,
 }: FeatureProps) {
-  const theme = useMantineTheme();
-  const mobile = useMediaQuery(`(max-width: 600px)`);
+  const mobile = useMediaQuery('(max-width: 600px)');
   const benefitsContent = benefits.map((benefit) => (
     <Paper className={classes.featureInfo} radius="md" key={benefit.title}>
-      <Flex align={'center'} mb={'sm'}>
+      <Flex align="center" mb="sm">
         <Image src={benefit.icon} className={classes.icon} />
         <Title order={3} className={classes.infoTitle}>
           {benefit.title}

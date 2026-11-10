@@ -37,7 +37,8 @@ export default function SEOPage() {
     },
     {
       title: 'Monthly SEO Reporting',
-      description: `Each month, you'll receive a detailed SEO report covering key metrics such as traffic trends, keyword rankings, backlink growth, and site health. Our reports will also include insights into content performance, competitor comparisons, and local SEO metrics. We’ll highlight any technical issues and provide actionable recommendations to keep your SEO strategy on track and continuously improving.`,
+      description:
+        "Each month, you'll receive a detailed SEO report covering key metrics such as traffic trends, keyword rankings, backlink growth, and site health. Our reports will also include insights into content performance, competitor comparisons, and local SEO metrics. We’ll highlight any technical issues and provide actionable recommendations to keep your SEO strategy on track and continuously improving.",
       icon: '/images/features/report.svg',
     },
   ];

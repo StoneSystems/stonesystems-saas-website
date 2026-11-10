@@ -21,9 +21,9 @@ export function Hero() {
             </Flex>
             <Flex className={classes.textDiv}>
               <Text className={classes.description}>
-                Cut the bullsh*t, Marketing isn't rocket science. <br /> No agency... (including
-                ours) has the miracle solution to all your problems. We'll give you the tools to win
-                but you need to commit to using them!
+                Cut the bullsh*t, Marketing isn&apos;t rocket science. <br /> No agency...
+                (including ours) has the miracle solution to all your problems. We&apos;ll give you
+                the tools to win but you need to commit to using them!
               </Text>
               <div className={classes.buttonDiv}>
                 <Flex>

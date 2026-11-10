@@ -1,6 +1,6 @@
 'use client';
 
-import { Container, Text, Title } from '@mantine/core';
+import { Container, Title } from '@mantine/core';
 import classes from './IntroSection.module.css';
 
 export function IntroSection() {

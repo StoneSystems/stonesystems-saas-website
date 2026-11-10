@@ -6,6 +6,7 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+
   @media (max-width: 30em) {
     padding-bottom: 75px;
   }
@@ -19,6 +20,7 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+
   @media (max-width: 30em) {
     padding-bottom: 75px;
   }
@@ -53,11 +55,13 @@
 
 .video {
   padding: 15px 20px;
+
   video, img {
     border-radius: 10px;
     border: 10px solid var(--blue);
 
   }
+
   @media (max-width: 30em) {
     padding: 15px 10px;
   }
@@ -70,6 +74,7 @@
 
 .statistic {
   padding: 10px;
+
   p {
     font-size: 18px;
   }
@@ -77,6 +82,7 @@
 
 .statistic:nth-of-type(2) {
   margin: 5px 0;
+
   @media (max-width: 30em) {
     margin: 2.5px 0;
   }
@@ -84,6 +90,7 @@
 
 .statistic:nth-of-type(1) {
   margin-bottom: 5px;
+
   @media (max-width: 30em) {
     margin-top: 20px;
     margin-bottom: 2.5px;
@@ -92,6 +99,7 @@
 
 .statistic:nth-of-type(3) {
   margin-top: 5px;
+
   @media (max-width: 30em) {
     margin-top: 2.5px;
   }
@@ -102,6 +110,7 @@
   font-weight: 700;
   margin-bottom: 10px;
   text-align: center;
+
   @media (max-width: 30em) {
     font-size: 24px;
   }
@@ -116,6 +125,7 @@
 .featureInfo {
   margin-top: 10px;
   padding: 40px;
+
   p {
     font-size: 18px;
   }
@@ -124,14 +134,12 @@
 .featureInfo:nth-of-type(odd) {
   margin-right: 5px;
 }
-.featureInfo:nth-of-type(even) {
-  margin-left: 5x;
-}
 
 .infoTitle {
   font-size: 28px;
-  margin: 5px 0 15px 0;
+  margin: 5px 0 15px;
   color: var(--yellow);
+
   @media (max-width: 30em) {
     font-size: 24px;
   }
@@ -141,6 +149,7 @@
   width: 80px;
   height: 80px;
   margin-right: 1rem;
+
   @media (max-width: 30em) {
     width: 60px;
     height: 60px;

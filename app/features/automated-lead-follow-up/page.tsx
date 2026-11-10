@@ -23,12 +23,14 @@ export default function AutomatedSMSLeadFollowUpPage() {
     },
     {
       title: 'Missed Call Text Back',
-      description: `When a customer misses your call, we automatically send them a text to let them know you tried to reach them and start the conversation. This makes you stand out and reassures them that you're ready to help. Plus, you'll get a notification so you can follow up quickly.`,
+      description:
+        "When a customer misses your call, we automatically send them a text to let them know you tried to reach them and start the conversation. This makes you stand out and reassures them that you're ready to help. Plus, you'll get a notification so you can follow up quickly.",
       icon: '/images/features/device-mobile-vibration.svg',
     },
     {
       title: 'Instagram & Facebook Auto Responder',
-      description: `When a customer messages you on Facebook or Instagram, we automatically message back to let them know you'll get back to them as soon as possible. This makes you stand out and reassures them that you're ready to help. Plus, you'll get a notification so you can follow up quickly.`,
+      description:
+        "When a customer messages you on Facebook or Instagram, we automatically message back to let them know you'll get back to them as soon as possible. This makes you stand out and reassures them that you're ready to help. Plus, you'll get a notification so you can follow up quickly.",
       icon: '/images/features/brand-facebook.svg',
     },
   ];

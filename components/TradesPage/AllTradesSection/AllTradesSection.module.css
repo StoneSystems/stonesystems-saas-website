@@ -10,12 +10,13 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
 }
 
 .allTrades {
   display: flex;
   align-items: center;
+
   img {
     width: 20px;
     height: 20px;
@@ -54,6 +55,7 @@
 
 .video {
   width: 100%;
+
   iframe {
     border-radius: 10px 10px 0 0;
     width: 100%;
