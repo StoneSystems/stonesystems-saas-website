@@ -19,8 +19,10 @@
     stroke: var(--yellow);
   }
 }
+
 .icon:hover {
   background-color: transparent;
+
   svg {
     stroke: var(--dark-yellow);
   }

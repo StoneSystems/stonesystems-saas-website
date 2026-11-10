@@ -9,7 +9,7 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
 }
 
 .tradeName {
@@ -27,7 +27,7 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: calc(var(--space-40) * 2) 0 var(--space-40) 0;
+  padding: calc(var(--space-40) * 2) 0 calc(var(--space-40) / 2);
 
   @media (max-width: 30em) {
     font-size: rem(28px);
@@ -46,4 +46,20 @@
 .video {
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+
+/* Phase 5 (25b): one Book A Call directly under the page heading. */
+.topCta {
+  margin: 0 0 var(--space-40);
+  padding: 0 var(--mantine-spacing-md);
+}
+
+.topCtaButton {
+  border-radius: var(--border-radius-sm);
+  background-color: var(--yellow);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--dark-yellow) !important;
+  }
 }

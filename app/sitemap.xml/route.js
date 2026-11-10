@@ -23,15 +23,10 @@ export async function GET() {
 
   const staticPages = [
     '',
-    'pricing',
-    'testimonials',
-    'our-work',
+    'results',
     'about-us',
-    'our-process',
-    'trades-we-serve',
+    'trades',
     'careers',
-    'partners',
-    'contact',
     'privacy-policy',
     'terms',
     'sms',

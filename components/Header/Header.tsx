@@ -16,9 +16,10 @@ import {
   Collapse,
   ScrollArea,
   rem,
-  useMantineTheme,
 } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import { useDisclosure, useMediaQuery } from '@mantine/hooks';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import {
   IconDeviceMobileVibration,
   IconStarFilled,
@@ -28,14 +29,13 @@ import {
   IconChevronDown,
   IconAppWindow,
   IconFileAnalytics,
-  IconHeartHandshake,
-  IconMail,
-  IconNotebook,
-  IconTimeline,
-  IconUsers,
   IconDeviceMobile,
   IconX,
-  IconTools,
+  IconUsers,
+  IconTool,
+  IconNews,
+  IconBriefcase,
+  IconPhoneCall,
 } from '@tabler/icons-react';
 import Image from 'next/image';
 import { bookingUrl } from '@/lib/site';
@@ -98,62 +98,58 @@ const productData = [
   },
 ];
 
+// The About dropdown. "About Us" leads the list so the page is reachable from the phone menu too.
 const aboutData = [
   {
     icon: IconUsers,
     title: 'About Us',
-    description: 'Get to know StoneSystems',
+    description: 'Who we are and why we do this',
     href: '/about-us',
   },
   {
-    icon: IconTimeline,
-    title: 'Our Process',
-    description: 'Discover how we work',
-    href: '/our-process',
+    icon: IconTool,
+    title: 'Trades',
+    description: 'The trades we build systems for',
+    href: '/trades',
   },
   {
-    icon: IconTools,
-    title: 'Trades We Serve',
-    description: 'Who we work with',
-    href: '/trades-we-serve',
+    icon: IconNews,
+    title: 'Blog',
+    description: 'Tips, stories and updates',
+    href: '/blog',
   },
   {
-    icon: IconNotebook,
+    icon: IconBriefcase,
     title: 'Careers',
-    description: 'Join the team',
+    description: 'Open roles and how we hire',
     href: '/careers',
   },
   {
-    icon: IconHeartHandshake,
-    title: 'Partners',
-    description: 'Meet our partners',
-    href: '/partners',
-  },
-  {
-    icon: IconMail,
+    icon: IconPhoneCall,
     title: 'Contact',
-    description: 'Chat with us',
-    href: '/contact',
-  },
-  {
-    icon: IconNotebook,
-    title: 'Press',
-    description: 'Stone Systems in the news',
-    href: '/press',
+    description: 'Book a call with our team',
+    // Contact goes straight to the booking funnel (same destination as /contact).
+    href: bookingUrl('header-contact'),
+    external: true,
   },
 ];
+
+const navLinks = [{ label: 'Results', href: '/results' }];
 
 interface LinkProps {
   icon: any;
   title: string;
   description: string;
   href: string;
+  external?: boolean;
 }
 
 const LinkButton = (item: LinkProps) => (
   <UnstyledButton
     component="a"
     href={item.href}
+    target={item.external ? '_blank' : undefined}
+    rel={item.external ? 'noopener noreferrer' : undefined}
     pt="md"
     pb="md"
     pr="xl"
@@ -176,27 +172,75 @@ const LinkButton = (item: LinkProps) => (
   </UnstyledButton>
 );
 
+function isCurrent(pathname: string | null, href: string) {
+  return pathname === href || (pathname ?? '').startsWith(`${href}/`);
+}
+
 export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [productLinksOpened, { toggle: toggleProductLinks }] = useDisclosure(false);
   const [aboutLinksOpened, { toggle: toggleAboutLinks }] = useDisclosure(false);
-  const theme = useMantineTheme();
+  const pathname = usePathname();
+  const desktop = useMediaQuery('(min-width: 75em)');
+
+  // If the window grows to desktop size while the menu is open, close it so the page is not left locked.
+  useEffect(() => {
+    if (desktop) closeDrawer();
+  }, [desktop, closeDrawer]);
 
   const productLinks = productData.map((item) => <LinkButton key={item.title} {...item} />);
-
   const aboutLinks = aboutData.map((item) => <LinkButton key={item.title} {...item} />);
+  const productsCurrent = (pathname ?? '').startsWith('/features/');
+  const aboutCurrent = aboutData.some((item) => !item.external && isCurrent(pathname, item.href));
+  const linkClass = (current: boolean) =>
+    current ? `${classes.link} ${classes.linkCurrent}` : classes.link;
+
+  const pageLinks = navLinks.map((item) => (
+    <a
+      key={item.href}
+      href={item.href}
+      className={linkClass(isCurrent(pathname, item.href))}
+      aria-current={isCurrent(pathname, item.href) ? 'page' : undefined}
+    >
+      {item.label}
+    </a>
+  ));
 
   return (
     <Box className={classes.stickyHeader}>
       <header className={classes.header}>
-        <Group justify="space-between" w="83em" h="100%">
-          <Group h="100%" gap={0} visibleFrom="sm">
+        <Group justify="space-between" w="100%" maw={rem(1328)} h="100%" wrap="nowrap">
+          <Group
+            h="100%"
+            gap={0}
+            wrap="nowrap"
+            className={`${classes.desktopOnly} ${classes.barStart}`}
+          >
             <a href="/" className={classes.link}>
               <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
             </a>
+          </Group>
+
+          <Group
+            h="100%"
+            gap={0}
+            wrap="nowrap"
+            className={`${classes.desktopOnly} ${classes.barCenter}`}
+          >
+            <a
+              href="/"
+              className={linkClass(pathname === '/')}
+              aria-current={pathname === '/' ? 'page' : undefined}
+            >
+              Home
+            </a>
             <HoverCard width={1000} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <a
+                  href="#"
+                  className={linkClass(productsCurrent)}
+                  aria-current={productsCurrent ? 'page' : undefined}
+                >
                   <Center inline>
                     <Box component="span" ml="sm" mr={5}>
                       Products
@@ -214,24 +258,38 @@ export function Header() {
                 <SimpleGrid cols={3} spacing={0}>
                   {productLinks}
                 </SimpleGrid>
+
+                <div className={classes.dropdownFooter}>
+                  <Group justify="space-between" align="center" wrap="nowrap">
+                    <Text className={classes.dropdownFooterText}>
+                      Not sure which system you need? Book a call
+                    </Text>
+                    <Button
+                      component="a"
+                      href={bookingUrl('products-dropdown')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={classes.button}
+                      size="md"
+                      bg="var(--yellow)"
+                      color="var(--gray)"
+                    >
+                      Book A Call
+                    </Button>
+                  </Group>
+                </div>
               </HoverCard.Dropdown>
             </HoverCard>
 
-            <a href="/pricing" className={classes.link}>
-              Pricing
-            </a>
-            <a href="/testimonials" className={classes.link}>
-              Testimonials
-            </a>
-            <a href="/our-work" className={classes.link}>
-              Our Work
-            </a>
-            <a href="/blog" className={classes.link}>
-              Blog
-            </a>
-            <HoverCard width={350} position="bottom" radius="md" shadow="md" withinPortal>
+            {pageLinks}
+
+            <HoverCard width={430} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <a
+                  href="/about-us"
+                  className={linkClass(aboutCurrent)}
+                  aria-current={aboutCurrent ? 'page' : undefined}
+                >
                   <Center inline>
                     <Box component="span" mr={5}>
                       About
@@ -242,6 +300,10 @@ export function Header() {
               </HoverCard.Target>
 
               <HoverCard.Dropdown style={{ overflow: 'hidden' }}>
+                <Text fw={500}>Stone Systems</Text>
+
+                <Divider my="sm" />
+
                 <SimpleGrid cols={1} spacing={0}>
                   {aboutLinks}
                 </SimpleGrid>
@@ -249,52 +311,53 @@ export function Header() {
             </HoverCard>
           </Group>
 
-          <Group visibleFrom="sm">
-            <Button
-              className={classes.button2}
-              c="var(--yellow)"
-              size="lg"
-              variant="default"
-              bg="transparent"
-              bd="none"
-              component="a"
+          <Group
+            wrap="nowrap"
+            justify="flex-end"
+            className={`${classes.desktopOnly} ${classes.barEnd}`}
+          >
+            <a
               href="https://app.stonesystems.io"
               target="_blank"
+              rel="noopener noreferrer"
+              className={classes.link}
             >
               Log In
-            </Button>
+            </a>
             <Button
               component="a"
               href={bookingUrl('header-nav')}
               target="_blank"
               rel="noopener noreferrer"
               className={classes.button}
-              size="xl"
+              size="lg"
               bg="var(--yellow)"
               color="var(--gray)"
             >
               Book A Call
             </Button>
           </Group>
-          <a href="/">
-            <Image
-              loading="eager"
-              className={classes.logoImage}
-              src="/images/newlogo.png"
-              alt="logo"
-              width={200}
-              height={81}
-            />
+          <a href="/" className={classes.mobileOnly}>
+            <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
           </a>
-          <Burger size={'lg'} opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="sm" />
+          <Burger
+            size="xl"
+            opened={drawerOpened}
+            onClick={toggleDrawer}
+            className={classes.mobileOnly}
+            aria-label="Menu"
+            aria-expanded={drawerOpened}
+          />
         </Group>
       </header>
 
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
+        position="right"
         size="100%"
         padding="md"
+        classNames={{ content: classes.drawerContent }}
         title={
           <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
         }
@@ -302,46 +365,48 @@ export function Header() {
           icon: <IconX size={40} stroke={1.5} />,
           size: 'xl',
         }}
-        hiddenFrom="sm"
+        className={classes.mobileOnly}
         zIndex={1000000}
       >
-        <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
+        <ScrollArea h={`calc(100dvh - ${rem(80)} - ${rem(130)})`} mx="-md">
           <Divider my="sm" />
 
-          <a href="/" className={classes.link}>
+          <a
+            href="/"
+            className={linkClass(pathname === '/')}
+            aria-current={pathname === '/' ? 'page' : undefined}
+          >
             Home
           </a>
-          <UnstyledButton onClick={toggleProductLinks}>
+          <UnstyledButton onClick={toggleProductLinks} aria-expanded={productLinksOpened}>
             <Center inline>
-              <Box className={classes.link} component="span" mr={5}>
+              <Box className={linkClass(productsCurrent)} component="span" mr={5}>
                 Products
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
+              <IconChevronDown
+                style={{ width: rem(16), height: rem(16) }}
+                color="#000000"
+                className={productLinksOpened ? classes.chevronOpen : classes.chevron}
+              />
             </Center>
           </UnstyledButton>
           <Collapse in={productLinksOpened}>{productLinks}</Collapse>
-          <a href="/pricing" className={classes.link}>
-            Pricing
-          </a>
-          <a href="/testimonials" className={classes.link}>
-            Testimonials
-          </a>
-          <a href="/our-work" className={classes.link}>
-            Our Work
-          </a>
-          <a href="/blog" className={classes.link}>
-            Blog
-          </a>
-          <UnstyledButton onClick={toggleAboutLinks}>
+          {pageLinks}
+          <UnstyledButton onClick={toggleAboutLinks} aria-expanded={aboutLinksOpened}>
             <Center inline>
-              <Box className={classes.link} component="span" mr={5}>
+              <Box className={linkClass(aboutCurrent)} component="span" mr={5}>
                 About
               </Box>
-              <IconChevronDown style={{ width: rem(16), height: rem(16) }} color="#000000" />
+              <IconChevronDown
+                style={{ width: rem(16), height: rem(16) }}
+                color="#000000"
+                className={aboutLinksOpened ? classes.chevronOpen : classes.chevron}
+              />
             </Center>
           </UnstyledButton>
           <Collapse in={aboutLinksOpened}>{aboutLinks}</Collapse>
-
+        </ScrollArea>
+        <div className={classes.drawerFooter}>
           <a href="https://app.stonesystems.io" className={classes.linkLogin}>
             Log in
           </a>
@@ -353,7 +418,7 @@ export function Header() {
           >
             Book A Call
           </a>
-        </ScrollArea>
+        </div>
       </Drawer>
     </Box>
   );

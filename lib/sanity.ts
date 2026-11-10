@@ -66,4 +66,5 @@ export const SINGLE_POST_QUERY = `*[_type == "blogPost" && slug.current == $slug
   status
 }`;
 
-export const ALL_SLUGS_QUERY = `*[_type == "blogPost" && status == "Published"] { "slug": slug.current }`;
+export const ALL_SLUGS_QUERY =
+  '*[_type == "blogPost" && status == "Published"] { "slug": slug.current }';

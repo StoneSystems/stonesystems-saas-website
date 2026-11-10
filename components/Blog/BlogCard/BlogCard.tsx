@@ -33,12 +33,7 @@ function formatDate(dateStr: string): string {
 
 export function BlogCard({ post }: BlogCardProps) {
   return (
-    <a
-      href={`/press/${post.slug}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={classes.card}
-    >
+    <a href={post.externalUrl} target="_blank" rel="noopener noreferrer" className={classes.card}>
       <div className={classes.imageWrapper}>
         {post.imageUrl ? (
           <Image

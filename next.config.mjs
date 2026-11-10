@@ -12,6 +12,14 @@ export default withBundleAnalyzer({
   experimental: {
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
+  async redirects() {
+    const home = ['/pricing', '/our-work', '/our-process', '/partners', '/press', '/press/:slug*'];
+    return [
+      ...home.map((source) => ({ source, destination: '/', permanent: true })),
+      { source: '/testimonials', destination: '/results', permanent: true },
+      { source: '/trades-we-serve', destination: '/trades', permanent: true },
+    ];
+  },
   images: {
     remotePatterns: [
       {

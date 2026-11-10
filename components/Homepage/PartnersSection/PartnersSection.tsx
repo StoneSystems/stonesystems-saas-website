@@ -4,9 +4,9 @@ import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { useMediaQuery } from '@mantine/hooks';
 import { Title, Container, useMantineTheme } from '@mantine/core';
-import classes from './PartnersSection.module.css';
 import { useRef } from 'react';
 import Image from 'next/image';
+import classes from './PartnersSection.module.css';
 
 const data = [
   {

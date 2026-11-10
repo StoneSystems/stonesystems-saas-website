@@ -23,12 +23,14 @@ export default function StarMagicFunnelPage() {
     },
     {
       title: 'Ask For Reviews In One Click',
-      description: `We keep things simple. Just enter your customer's name and phone number, click submit, and our system handles the rest.`,
+      description:
+        "We keep things simple. Just enter your customer's name and phone number, click submit, and our system handles the rest.",
       icon: '/images/features/click.svg',
     },
     {
       title: 'Contractor Review Injector',
-      description: `If you have a list of past customers, we can run our "Contractor Review Injector" campaign to gradually request reviews from your entire list of previous clients.`,
+      description:
+        'If you have a list of past customers, we can run our "Contractor Review Injector" campaign to gradually request reviews from your entire list of previous clients.',
       icon: '/images/features/vaccine.svg',
     },
   ];

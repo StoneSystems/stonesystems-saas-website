@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: calc(var(--space-40) * 2);
+
   @media (max-width: 62em) {
     flex-direction: column;
   }
@@ -44,6 +45,7 @@
 .description {
   font-style: italic;
   font-size: 20px;
+
   @media (max-width: 30em) {
     font-size: 18px;
   }
@@ -53,6 +55,7 @@
   border-radius: var(--border-radius-sm);
   margin-top: var(--space-40);
   transition: all 0.3s;
+
   @media (max-width: 30em) {
     flex: 1;
   }
@@ -81,6 +84,7 @@
   margin-bottom: 5px;
   color: var(--yellow);
   margin-left: 5px;
+
   @media (max-width: 30em) {
     font-size: 16px;
   }
@@ -90,6 +94,7 @@
   font-size: 16px;
   line-height: 1.625;
   margin-bottom: 10px;
+
   @media (max-width: 30em) {
     font-size: 15px;
   }

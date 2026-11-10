@@ -39,7 +39,7 @@ export function Feature4() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const [opened, { close, open }] = useDisclosure(false);
-  const items = features.map((feature, index) => (
+  const items = features.map((feature) => (
     <div key={feature.title}>
       <Flex>
         <IconRosetteDiscountCheckFilled color="var(--yellow)" />
@@ -81,12 +81,7 @@ export function Feature4() {
               />
             </Modal>
           </div>
-          <Image
-            alt="website animation"
-            unoptimized={true}
-            src={PhoneImage}
-            className={classes.image}
-          />
+          <Image alt="website animation" unoptimized src={PhoneImage} className={classes.image} />
         </div>
       </Container>
     </div>

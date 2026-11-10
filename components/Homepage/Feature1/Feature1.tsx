@@ -56,12 +56,7 @@ export function Feature1() {
         Simple systems that actually work <br /> No degrees required, just a hard hat
       </Title>
       <div className={classes.inner}>
-        <Image
-          alt="website animation"
-          unoptimized={true}
-          src={PhoneImage}
-          className={classes.image}
-        />
+        <Image alt="website animation" unoptimized src={PhoneImage} className={classes.image} />
         <div className={classes.content}>
           <Title className={classes.title}>Functional Website</Title>
           <Text className={classes.description} mt="md">

@@ -1,0 +1,258 @@
+/* Reproduces the hiring.stonesystems.io section styling (decision 41) with local values. */
+
+.page {
+  --ink: #1f2236;
+  --ink-muted: #5c6075;
+  --paper: #fff;
+  --grey: #f1f1f1;
+  --border: #dee2e6;
+  --section: 40px;
+  --reading: 760px;
+
+  color: var(--ink);
+
+  p {
+    margin: 0;
+  }
+}
+
+.section {
+  padding-block: var(--section);
+
+  @media (min-width: 62em) {
+    padding-block: calc(var(--section) * 2);
+  }
+}
+
+.paper {
+  background: var(--paper);
+}
+
+.grey {
+  background: var(--grey);
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.centered {
+  align-items: center;
+  text-align: center;
+}
+
+.heroStack {
+  gap: 16px;
+}
+
+.headStack {
+  gap: 8px;
+}
+
+.h1 {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.2;
+  max-width: var(--reading);
+
+  @media (min-width: 62em) {
+    font-size: 50px;
+  }
+}
+
+.lead {
+  font-size: 21px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+  max-width: var(--reading);
+}
+
+.h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.muted {
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.body {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  display: block;
+  height: 100%;
+  padding: 20px;
+  border: rem(1px) solid var(--border);
+  border-radius: 10px;
+  background: var(--paper);
+  color: inherit;
+  text-decoration: none;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+
+  &:hover {
+    border-color: var(--yellow);
+    transform: translateY(-2px);
+  }
+
+  &:focus-visible {
+    outline: rem(3px) solid var(--ink);
+    outline-offset: 2px;
+    border-color: var(--yellow);
+  }
+}
+
+.cardInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  height: 100%;
+}
+
+.cardTop {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink-muted);
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ink);
+  transition: color 0.15s;
+}
+
+.card:hover .cta,
+.card:focus-visible .cta {
+  color: var(--dark-yellow);
+}
+
+.email {
+  margin-top: -16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+
+  a {
+    color: var(--ink);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.empty {
+  padding: 20px;
+  border: rem(1px) dashed var(--border);
+  border-radius: 10px;
+  background: var(--paper);
+}
+
+.stepNumber {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--ink-muted);
+}
+
+.letter {
+  width: 100%;
+  max-width: var(--reading);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: rem(1px) solid var(--border);
+  border-radius: 10px;
+  background: var(--paper);
+  text-align: left;
+
+  @media (min-width: 62em) {
+    padding: 40px;
+  }
+}
+
+.quote {
+  margin: 0;
+  padding-left: var(--mantine-spacing-md);
+  border-left: rem(3px) solid var(--yellow);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* A div, not a p: globals.css forces Sora on p/span with !important. */
+.signature {
+  margin-top: 8px;
+  font-family: var(--font-signature), cursive;
+  font-size: 36px;
+  line-height: 1.2;
+}

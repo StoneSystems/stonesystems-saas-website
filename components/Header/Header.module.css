@@ -1,10 +1,11 @@
+/* The desktop bar shows from 75em (1200px). Below that, phones and tablets use the drawer. */
+
 .stickyHeader {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
   background-color: white;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 }
 
 .header {
@@ -17,9 +18,34 @@
   background-color: var(--white);
 }
 
+.desktopOnly {
+  @media (max-width: 74.99em) {
+    display: none !important;
+  }
+}
+
+.mobileOnly {
+  @media (min-width: 75em) {
+    display: none !important;
+  }
+}
+
+/* Desktop bar: logo left, links in the true centre, Log In + Book A Call right.
+   The two outer parts share the leftover space equally so the links sit mid-bar. */
+.barStart,
+.barEnd {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.barCenter {
+  flex: 0 0 auto;
+}
+
 .link,
 .linkModal,
 .linkLogin {
+  position: relative;
   display: flex;
   align-items: center;
   height: 100%;
@@ -29,11 +55,18 @@
   color: var(--blue);
   font-weight: 500;
   font-size: 17px;
+  white-space: nowrap;
 
-  @media (max-width: 48em) {
+  &:focus-visible {
+    outline: rem(2px) solid var(--blue);
+    outline-offset: rem(-4px);
+  }
+
+  @media (max-width: 74.99em) {
     height: rem(60px);
     width: 100%;
     font-size: 22px;
+
     @mixin hover {
       color: var(--blue);
     }
@@ -41,14 +74,55 @@
 
   @mixin hover {
     color: var(--yellow);
+
     svg {
       stroke: var(--yellow);
     }
   }
 }
 
-.linkLogin {
-  color: var(--yellow);
+/* Current page: dark text (contrast) with one yellow cue — an underline in the bar, a left accent in the drawer. */
+.linkCurrent {
+  font-weight: 600;
+
+  @media (min-width: 75em) {
+    &::after {
+      content: '';
+      position: absolute;
+      left: var(--mantine-spacing-md);
+      right: 0;
+      bottom: 0;
+      height: rem(3px);
+      background: var(--yellow);
+    }
+  }
+
+  @media (max-width: 74.99em) {
+    box-shadow: inset rem(4px) 0 0 0 var(--yellow);
+  }
+}
+
+/* Tablets get a right-anchored panel instead of a full-width phone menu. */
+.drawerContent {
+  @media (min-width: 48em) {
+    max-width: rem(420px) !important;
+    flex-basis: rem(420px) !important;
+  }
+}
+
+/* Log in in the drawer is plain dark text so only Book A Call is yellow. */
+.drawerFooter {
+  margin: 0 calc(var(--mantine-spacing-md) * -1);
+  border-top: rem(1px) solid var(--mantine-color-gray-3);
+}
+
+.chevron,
+.chevronOpen {
+  transition: transform 0.2s;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
 }
 
 .linkModal {
@@ -64,10 +138,12 @@
   @mixin hover {
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
   }
-  @media (max-width: 48em) {
+
+  @media (max-width: 74.99em) {
     > div {
       padding: 0 15px !important;
     }
+
     @mixin hover {
       background-color: transparent;
     }
@@ -79,8 +155,13 @@
   margin: calc(var(--mantine-spacing-md) * -1);
   margin-top: var(--mantine-spacing-sm);
   padding: var(--mantine-spacing-md) calc(var(--mantine-spacing-md) * 2);
-  padding-bottom: var(--mantine-spacing-xl);
   border-top: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+}
+
+.dropdownFooterText {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--blue);
 }
 
 .sublinkTitle {
@@ -92,27 +173,18 @@
   font-size: 14px;
 }
 
-.button,
-.button2 {
+.button {
   font-size: 17px !important;
+  white-space: nowrap;
   cursor: pointer;
   transition: all 0.3s;
+
+  &:focus-visible {
+    outline: rem(2px) solid var(--blue);
+    outline-offset: rem(2px);
+  }
 }
+
 .button:hover {
   background-color: var(--dark-yellow) !important;
-}
-
-.button2:hover {
-  color: var(--dark-yellow) !important;
-}
-
-.mobileButton {
-  width: 100%;
-}
-
-
-@media (min-width: 48em) {
-  .logoImage {
-    display: none;
-  }
 }

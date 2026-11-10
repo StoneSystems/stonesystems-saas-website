@@ -8,6 +8,7 @@ export function CalendarPopup() {
     <>
       <Container size="xl">
         <iframe
+          title="Book a call"
           src="https://link.stonesystems.io/widget/booking/hUF685Mpy55WxvsB3UV1"
           style={{ width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
           scrolling="no"

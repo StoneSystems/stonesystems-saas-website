@@ -7,10 +7,12 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+
   @media (max-width: 30em) {
     padding-bottom: 75px;
   }
 }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
   border-radius: 10px;
   text-align: center;
 
@@ -60,52 +62,65 @@
 
 .video {
   width: 100%;
+
   img {
     border-radius: 10px 10px 0 0;
     width: 100%;
   }
+
   @media (max-width: 30em) {
     width: calc(100vw - 130px);
     font-size: rem(28px);
   }
 }
+
 .root {
   margin: 0 3.5rem;
+
   @media (max-width: 30em) {
     margin: 0 1.5rem;
   }
+
   .controls {
     top: calc(50% - 100px / 2);
     padding: 0;
+
     .control {
       box-shadow: none;
       opacity: 1;
       background-color: transparent;
       border: none;
+
       svg {
         transition: all 0.3s;
         width: 100px !important;
         height: 100px !important;
         stroke: var(--yellow);
+
         @media (max-width: 30em) {
           width: 50px !important;
           height: 50px !important;
         }
       }
     }
+
     .control:nth-of-type(1) {
       margin-left: -4.5rem;
+
       @media (max-width: 30em) {
         margin-left: -2.5rem;
       }
     }
+
     .control:hover {
       svg {
         stroke: var(--dark-yellow) !important;
       }
     }
+
     .control:nth-of-type(2) {
       margin-right: -4.5rem;
+
       @media (max-width: 30em) {
         margin-right: -2.5rem;
       }

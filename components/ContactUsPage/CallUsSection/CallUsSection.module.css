@@ -7,6 +7,7 @@
   background-color: var(--blue);
   padding: 3rem;
   border-radius: 10px;
+
   @media (max-width: 30em) {
     margin: 0 10px;
   }
@@ -19,19 +20,19 @@
   align-items: flex-start;
   background-size: cover;
   background-position: center;
-  padding: 0 0 1rem 0;
+  padding: 0 0 1rem;
 }
 
 .mainTitle {
   color: var(--white);
   font-family:
-    Greycliff CF,
+    "Greycliff CF",
     var(--mantine-font-family);
   font-size: rem(52px);
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 1rem;
 
   @media (max-width: 30em) {
     font-size: rem(28px);
@@ -44,9 +45,11 @@
   line-height: 1.5;
   color: var(--white);
   margin-bottom: var(--mantine-spacing-lg);
+
   @media (max-width: 30em) {
     margin-bottom: 1rem;
   }
+
   a {
     text-decoration: none;
     color: var(--white);
@@ -66,9 +69,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   &:last-of-type {
     border: none;
   }
+
   @media (max-width: 30em) {
     border-right: none;
     border-bottom: 1px solid var(--border-color);

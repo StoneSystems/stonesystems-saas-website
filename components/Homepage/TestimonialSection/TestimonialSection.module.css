@@ -6,6 +6,7 @@
   background-size: 100%;
   padding-bottom: 148px;
   margin-bottom: -1px !important;
+
   @media (max-width: 30em) {
     padding-bottom: 20px;
   }
@@ -32,6 +33,7 @@
     padding: var(--space-40) 0;
   }
 }
+
 .description {
   font-family: var(--mantine-font-family);
   font-size: 21px;
@@ -42,6 +44,7 @@
 
 .video {
   width: 100%;
+
   iframe {
     border-radius: 10px;
     width: 100%;
@@ -51,8 +54,9 @@
 
 .testimonial {
   padding: 0 1rem !important;
-  margin: 20px 0 0 0 !important;
+  margin: 20px 0 0 !important;
   font-size: 18px !important;
+
   @media (max-width: 30em) {
     font-size: 16px !important;
   }
@@ -65,21 +69,25 @@
   height: 100%;
   background-color: var(--white);
   margin-bottom: 40px;
+
   @media (max-width: 30em) {
     flex-direction: column;
     height: fit-content;
     max-height: 100%;
     padding: 10px;
   }
+
   video {
     border-radius: 10px;
     min-width: 250px;
     max-height: 210px;
     background: black;
+
     @media (min-width: 30em) {
       max-width: 250px;
     }
   }
+
   img {
     border-radius: 10px;
     min-width: 250px;
@@ -90,6 +98,7 @@
     height: 100%;
     display: block;
   }
+
   .star {
     width: rem(22px);
     height: rem(22px);
@@ -108,41 +117,51 @@
 
 .root {
   margin: 0 3.5rem;
+
   @media (max-width: 30em) {
     margin: 0 1.5rem;
   }
+
   .controls {
     top: calc(50% - 100px / 2);
     padding: 0;
+
     .control {
       box-shadow: none;
       opacity: 1;
       background-color: transparent;
       border: none;
+
       svg {
         transition: all 0.3s;
         width: 100px !important;
         height: 100px !important;
         stroke: var(--yellow);
+
         @media (max-width: 30em) {
           width: 50px !important;
           height: 50px !important;
         }
       }
     }
+
     .control:nth-of-type(1) {
       margin-left: -4.5rem;
+
       @media (max-width: 30em) {
         margin-left: -2.5rem;
       }
     }
+
     .control:hover {
       svg {
         stroke: var(--dark-yellow) !important;
       }
     }
+
     .control:nth-of-type(2) {
       margin-right: -4.5rem;
+
       @media (max-width: 30em) {
         margin-right: -2.5rem;
       }
@@ -159,7 +178,6 @@
 
 .testimonialsLink {
   font-weight: 900 !important;
-  color: var(--mantine-color-black) !important;
   line-height: 1.2 !important;
   font-size: rem(16px) !important;
   margin: var(--mantine-spacing-sm) 0 0 20px !important;
@@ -171,6 +189,7 @@
 .linkDiv {
   align-items: end;
   text-decoration: none;
+
   svg {
     margin-left: 5px;
     width: 20px;
@@ -178,10 +197,12 @@
     stroke: var(--yellow);
     transition: all 0.3s;
   }
+
   &:hover {
     svg {
       stroke: var(--dark-yellow);
     }
+
     .testimonialsLink {
       color: var(--dark-yellow) !important;
     }

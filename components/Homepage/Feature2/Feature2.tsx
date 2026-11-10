@@ -39,7 +39,7 @@ export function Feature2() {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
   const [opened, { close, open }] = useDisclosure(false);
-  const items = features.map((feature, index) => (
+  const items = features.map((feature) => (
     <div key={feature.title}>
       <Flex>
         <IconRosetteDiscountCheckFilled color="var(--yellow)" />
@@ -56,8 +56,8 @@ export function Feature2() {
           <div className={classes.content}>
             <Title className={classes.title}>5-Star Magic Review Funnel</Title>
             <Text className={classes.description} mt="md">
-              "Sure I'll leave you a review", but the truth is people forget. We’ll 'gently' remind
-              them for a few weeks until they remember.
+              &quot;Sure I&apos;ll leave you a review&quot;, but the truth is people forget. We’ll
+              &apos;gently&apos; remind them for a few weeks until they remember.
             </Text>
             <Flex mt="lg" direction="column">
               {items}
@@ -81,12 +81,7 @@ export function Feature2() {
               />
             </Modal>
           </div>
-          <Image
-            unoptimized={true}
-            alt="website animation"
-            src={PhoneImage}
-            className={classes.image}
-          />
+          <Image unoptimized alt="website animation" src={PhoneImage} className={classes.image} />
         </div>
       </Container>
     </div>

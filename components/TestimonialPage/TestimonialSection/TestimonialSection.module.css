@@ -5,7 +5,7 @@
 
 .personName {
   font-family:
-    Greycliff CF,
+    "Greycliff CF",
     sans-serif;
   font-weight: 900;
   color: var(--mantine-color-black);
@@ -21,7 +21,7 @@
   line-height: 1.2;
   font-weight: 900;
   text-align: center;
-  padding: calc(var(--space-40) * 2) 0 var(--space-40) 0;
+  padding: calc(var(--space-40) * 2) 0 calc(var(--space-40) / 2);
 
   @media (max-width: 30em) {
     font-size: rem(28px);
@@ -31,7 +31,8 @@
 
 .video {
   width: 100%;
-  padding: 1rem 1rem 0 1rem;
+  padding: 1rem 1rem 0;
+
   video {
     min-width: 386px;
     max-height: 217px;
@@ -39,6 +40,7 @@
     width: 100%;
     background-color: black;
   }
+
   img {
     border-radius: 10px;
     min-width: 386px;
@@ -49,12 +51,14 @@
     height: auto;
     display: block;
   }
+
   @media (max-width: 30em) {
     video,
     img {
       min-width: 100%;
     }
   }
+
   .star {
     width: rem(22px);
     height: rem(22px);
@@ -81,4 +85,20 @@
 .star {
   width: rem(22px);
   height: rem(22px);
+}
+
+/* Phase 5 (25b): one Book A Call directly under the page heading. */
+.topCta {
+  margin: 0 0 var(--space-40);
+  padding: 0 var(--mantine-spacing-md);
+}
+
+.topCtaButton {
+  border-radius: var(--border-radius-sm);
+  background-color: var(--yellow);
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--dark-yellow) !important;
+  }
 }

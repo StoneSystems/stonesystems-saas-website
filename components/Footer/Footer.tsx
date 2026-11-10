@@ -1,30 +1,22 @@
 'use client';
 
 import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
-import { IconBrandYoutube, IconBrandInstagram, IconPhone } from '@tabler/icons-react';
+import { IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import Image from 'next/image';
 import { bookingUrl } from '@/lib/site';
 import classes from './Footer.module.css';
 
 const data = [
   {
-    title: 'Links',
+    title: 'Company',
     links: [
-      { label: 'Pricing', link: '/pricing' },
-      { label: 'Testimonials', link: '/testimonials' },
-      { label: 'Our Work', link: '/our-work' },
-      { label: 'Press', link: '/press' },
-      { label: 'Log in', link: 'https://app.stonesystems.io' },
-    ],
-  },
-  {
-    title: 'About',
-    links: [
-      { label: 'Our Process', link: '/our-process' },
-      { label: 'Trades We Serve', link: '/trades-we-serve' },
+      { label: 'Results', link: '/results' },
+      { label: 'Trades', link: '/trades' },
+      { label: 'About Us', link: '/about-us' },
+      { label: 'Blog', link: '/blog' },
       { label: 'Careers', link: '/careers' },
-      { label: 'Partners', link: '/partners' },
       { label: 'Contact', link: '/contact' },
+      { label: 'Log in', link: 'https://app.stonesystems.io' },
     ],
   },
   {
@@ -62,8 +54,11 @@ export function Footer() {
     ));
 
     return (
-      <div className={classes.wrapper} key={group.title || `group-${groupIndex}`}>
-        <Text className={classes.title}>{group.title}</Text>
+      <div
+        className={group.title ? classes.wrapper : `${classes.wrapper} ${classes.wrapperNoTitle}`}
+        key={group.title || `group-${groupIndex}`}
+      >
+        {group.title && <Text className={classes.title}>{group.title}</Text>}
         {links}
       </div>
     );

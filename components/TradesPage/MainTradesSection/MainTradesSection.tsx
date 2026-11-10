@@ -1,9 +1,18 @@
 'use client';
 
 import { useMediaQuery } from '@mantine/hooks';
-import { Paper, Text, Title, useMantineTheme, Container, SimpleGrid } from '@mantine/core';
-import classes from './MainTradesSection.module.css';
+import {
+  Paper,
+  Title,
+  useMantineTheme,
+  Container,
+  SimpleGrid,
+  Button,
+  Center,
+} from '@mantine/core';
 import Image from 'next/image';
+import { bookingUrl } from '@/lib/site';
+import classes from './MainTradesSection.module.css';
 
 interface CardProps {
   tradeName: string;
@@ -116,6 +125,18 @@ export function MainTradesSection() {
   return (
     <div className={classes.outer}>
       <Title className={classes.mainTitle}>Serving all these trades and more...</Title>
+      <Center className={classes.topCta}>
+        <Button
+          component="a"
+          href={bookingUrl('trades-top')}
+          target="_blank"
+          rel="noopener noreferrer"
+          size="xl"
+          className={classes.topCtaButton}
+        >
+          Book A Call
+        </Button>
+      </Center>
       <Container size="lg">
         <SimpleGrid cols={mobile ? 1 : 3}>{slides}</SimpleGrid>
       </Container>
