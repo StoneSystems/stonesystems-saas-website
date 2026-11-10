@@ -1,0 +1,76 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6080
+			},
+			"text": " very grateful with Oscar Corral. He did a great job. I'm not very savvy with computers."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,080",
+				"to": "00:00:11,000"
+			},
+			"offsets": {
+				"from": 6080,
+				"to": 11000
+			},
+			"text": " He explained everything so well that it was easy for me to understand and I really appreciate"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,000",
+				"to": "00:00:16,840"
+			},
+			"offsets": {
+				"from": 11000,
+				"to": 16840
+			},
+			"text": " his patience with me and I appreciate him going through the whole process with me. It's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,840",
+				"to": "00:00:18,840"
+			},
+			"offsets": {
+				"from": 16840,
+				"to": 18840
+			},
+			"text": " been a great experience."
+		}
+	]
+}

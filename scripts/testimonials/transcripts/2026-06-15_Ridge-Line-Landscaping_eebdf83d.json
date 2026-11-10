@@ -1,0 +1,219 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,660"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5660
+			},
+			"text": " Hey, just wanted to know a quick review for Asheville Redstone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,660",
+				"to": "00:00:06,660"
+			},
+			"offsets": {
+				"from": 5660,
+				"to": 6660
+			},
+			"text": " My name is Johnny."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,660",
+				"to": "00:00:09,260"
+			},
+			"offsets": {
+				"from": 6660,
+				"to": 9260
+			},
+			"text": " Ritz Lyons, my company's name."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,260",
+				"to": "00:00:10,980"
+			},
+			"offsets": {
+				"from": 9260,
+				"to": 10980
+			},
+			"text": " I got to work with Ashley."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,980",
+				"to": "00:00:14,420"
+			},
+			"offsets": {
+				"from": 10980,
+				"to": 14420
+			},
+			"text": " She's been amazing through the entire process that I've worked with her."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,420",
+				"to": "00:00:16,700"
+			},
+			"offsets": {
+				"from": 14420,
+				"to": 16700
+			},
+			"text": " I had another agent that I worked with before."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,700",
+				"to": "00:00:21,460"
+			},
+			"offsets": {
+				"from": 16700,
+				"to": 21460
+			},
+			"text": " It's a little shaky with him, but she ended up taking over my account and from that point"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,460",
+				"to": "00:00:25,060"
+			},
+			"offsets": {
+				"from": 21460,
+				"to": 25060
+			},
+			"text": " on, man, my experience with her was nothing but amazing."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,060",
+				"to": "00:00:26,540"
+			},
+			"offsets": {
+				"from": 25060,
+				"to": 26540
+			},
+			"text": " She had answers to all my questions."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,540",
+				"to": "00:00:29,940"
+			},
+			"offsets": {
+				"from": 26540,
+				"to": 29940
+			},
+			"text": " If she wasn't sure about something, she made sure she found out the answer for me."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,940",
+				"to": "00:00:32,300"
+			},
+			"offsets": {
+				"from": 29940,
+				"to": 32300
+			},
+			"text": " She got things taken care of quickly for me."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,300",
+				"to": "00:00:38,140"
+			},
+			"offsets": {
+				"from": 32300,
+				"to": 38140
+			},
+			"text": " Her communication was awesome through everything, and I've just been a pleasure to work with."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,140",
+				"to": "00:00:42,420"
+			},
+			"offsets": {
+				"from": 38140,
+				"to": 42420
+			},
+			"text": " So I just wanted to drop her a little review here and just whoever gets to work with her"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,420",
+				"to": "00:00:47,800"
+			},
+			"offsets": {
+				"from": 42420,
+				"to": 47800
+			},
+			"text": " next is going to be very fortunate to have such an awesome personal work with and make"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,800",
+				"to": "00:00:50,620"
+			},
+			"offsets": {
+				"from": 47800,
+				"to": 50620
+			},
+			"text": " things stress-free and your experience awesome."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,620",
+				"to": "00:00:53,780"
+			},
+			"offsets": {
+				"from": 50620,
+				"to": 53780
+			},
+			"text": " Much love to her and the system and her helping us out."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:53,780",
+				"to": "00:00:54,140"
+			},
+			"offsets": {
+				"from": 53780,
+				"to": 54140
+			},
+			"text": " Thanks."
+		}
+	]
+}

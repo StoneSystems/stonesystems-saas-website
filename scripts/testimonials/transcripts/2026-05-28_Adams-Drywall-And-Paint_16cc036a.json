@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4000
+			},
+			"text": " Alright, you can go ahead and start my mat. Go ahead."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,000",
+				"to": "00:00:09,800"
+			},
+			"offsets": {
+				"from": 4000,
+				"to": 9800
+			},
+			"text": " Hey, this is Richard Adams. We've got him's drywall and paint. I've been working with"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,800",
+				"to": "00:00:15,520"
+			},
+			"offsets": {
+				"from": 9800,
+				"to": 15520
+			},
+			"text": " stone systems since the first of the year, and everything's been going great, and you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,520",
+				"to": "00:00:19,480"
+			},
+			"offsets": {
+				"from": 15520,
+				"to": 19480
+			},
+			"text": " know, they've done what they said they were going to do, and it made a really nice website,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,480",
+				"to": "00:00:24,240"
+			},
+			"offsets": {
+				"from": 19480,
+				"to": 24240
+			},
+			"text": " and it's really helped when they really beef up Google to help all your situations, so"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,240",
+				"to": "00:00:27,380"
+			},
+			"offsets": {
+				"from": 24240,
+				"to": 27380
+			},
+			"text": " trust them, but do what they said they're going to do, and they're a lot more affordable"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,380",
+				"to": "00:00:31,380"
+			},
+			"offsets": {
+				"from": 27380,
+				"to": 31380
+			},
+			"text": " than everybody else. Alright, my mat."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,380",
+				"to": "00:00:32,380"
+			},
+			"offsets": {
+				"from": 31380,
+				"to": 32380
+			},
+			"text": " Yup, that's good. Thank you so much."
+		}
+	]
+}

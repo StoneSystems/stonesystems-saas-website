@@ -1,0 +1,109 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3680
+			},
+			"text": " My name's Sean Price, my company's Fresh Air Solutions and Tech."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:08,160"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 8160
+			},
+			"text": " We're an air duct cleaning and over mediator here in Indianapolis, Indiana."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,160",
+				"to": "00:00:15,840"
+			},
+			"offsets": {
+				"from": 8160,
+				"to": 15840
+			},
+			"text": " We reached out to Stone Systems and Sebastian in particular regarding updating our website"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,840",
+				"to": "00:00:22,080"
+			},
+			"offsets": {
+				"from": 15840,
+				"to": 22080
+			},
+			"text": " and getting us more ready for Google Ads. We had a good review history, which had us a great start,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,080",
+				"to": "00:00:27,520"
+			},
+			"offsets": {
+				"from": 22080,
+				"to": 27520
+			},
+			"text": " but we'd hit a plateau and these guys were able to push us beyond that and we're really,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,520",
+				"to": "00:00:31,920"
+			},
+			"offsets": {
+				"from": 27520,
+				"to": 31920
+			},
+			"text": " really looking forward to the future. Awesome. Thank you so much, John. You're really"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,920",
+				"to": "00:00:38,480"
+			},
+			"offsets": {
+				"from": 31920,
+				"to": 38480
+			},
+			"text": " appreciated. Thank you for that. And I genuinely make that shit too."
+		}
+	]
+}

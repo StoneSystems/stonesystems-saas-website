@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:07,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 7200
+			},
+			"text": " I thought it would be at least parts of it would be a little bit quicker, but quickly"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,200",
+				"to": "00:00:13,680"
+			},
+			"offsets": {
+				"from": 7200,
+				"to": 13680
+			},
+			"text": " realized that it was actually better if it wasn't that quick. Um, because we would rather"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,560",
+				"to": "00:00:22,000"
+			},
+			"offsets": {
+				"from": 14560,
+				"to": 22000
+			},
+			"text": " all the teas be crossed and as we dotted, you know, along the way, um, since the switch from Kenneth"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,000",
+				"to": "00:00:31,520"
+			},
+			"offsets": {
+				"from": 22000,
+				"to": 31520
+			},
+			"text": " to you, man, man, out of Zoom calls with you once a month for the rest of my life,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,520",
+				"to": "00:00:36,080"
+			},
+			"offsets": {
+				"from": 31520,
+				"to": 36080
+			},
+			"text": " happily. Like, you want to be friends? We'll just, we'll just do Zoom calls just to sit here and chat."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,800",
+				"to": "00:00:43,200"
+			},
+			"offsets": {
+				"from": 36800,
+				"to": 43200
+			},
+			"text": " Um, I didn't, I can tell you, I didn't expect that. I did not expect that and genuinely,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,240",
+				"to": "00:00:50,960"
+			},
+			"offsets": {
+				"from": 44240,
+				"to": 50960
+			},
+			"text": " like, genuinely as a, like, you know, a good person on this fucking planet, it's hard to find that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,960",
+				"to": "00:00:57,600"
+			},
+			"offsets": {
+				"from": 50960,
+				"to": 57600
+			},
+			"text": " So I appreciate you. Um, and it's clear that you care. Um, just, just like exactly what I'm"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:57,600",
+				"to": "00:01:01,600"
+			},
+			"offsets": {
+				"from": 57600,
+				"to": 61600
+			},
+			"text": " talking about, you know, me and Blake trying to make sure it offered everybody else. It seems like"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:01,600",
+				"to": "00:01:04,880"
+			},
+			"offsets": {
+				"from": 61600,
+				"to": 64880
+			},
+			"text": " you're the exact same way and that's why we vibe so freaking well."
+		}
+	]
+}

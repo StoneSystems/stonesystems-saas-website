@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,480"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5480
+			},
+			"text": " what's up guys I just wanted to thank and give a quick shout out to Sebastian over"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,480",
+				"to": "00:00:10,440"
+			},
+			"offsets": {
+				"from": 5480,
+				"to": 10440
+			},
+			"text": " at Stone Systems he was my customer service rep and he was lovely he was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,440",
+				"to": "00:00:15,280"
+			},
+			"offsets": {
+				"from": 10440,
+				"to": 15280
+			},
+			"text": " communicative he was friendly he was concise he booked her on my schedule and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,280",
+				"to": "00:00:20,280"
+			},
+			"offsets": {
+				"from": 15280,
+				"to": 20280
+			},
+			"text": " I hope anyone watching who wants to work with Stone Systems realizes they're"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,280",
+				"to": "00:00:23,400"
+			},
+			"offsets": {
+				"from": 20280,
+				"to": 23400
+			},
+			"text": " professional they make good websites that made me a beautiful website and as a"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,400",
+				"to": "00:00:27,840"
+			},
+			"offsets": {
+				"from": 23400,
+				"to": 27840
+			},
+			"text": " contractor in the modern day and age you need you need AI in your website let's"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,840",
+				"to": "00:00:31,280"
+			},
+			"offsets": {
+				"from": 27840,
+				"to": 31280
+			},
+			"text": " be honest you need to compete with the other guys you need the systems in place"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,280",
+				"to": "00:00:34,640"
+			},
+			"offsets": {
+				"from": 31280,
+				"to": 34640
+			},
+			"text": " it just makes you money at the end of the day so I just wanted to give a quick"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,640",
+				"to": "00:00:38,280"
+			},
+			"offsets": {
+				"from": 34640,
+				"to": 38280
+			},
+			"text": " thank you and appreciate it"
+		}
+	]
+}

@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,180"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3180
+			},
+			"text": " if you could just share a little bit about your experience."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,180",
+				"to": "00:00:07,360"
+			},
+			"offsets": {
+				"from": 3180,
+				"to": 7360
+			},
+			"text": " And how do you like the website?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,360",
+				"to": "00:00:10,000"
+			},
+			"offsets": {
+				"from": 7360,
+				"to": 10000
+			},
+			"text": " And overall, what's like working with us so far?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,000",
+				"to": "00:00:14,520"
+			},
+			"offsets": {
+				"from": 10000,
+				"to": 14520
+			},
+			"text": " I know you just started by like, go ahead, the floor is yours."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,520",
+				"to": "00:00:18,000"
+			},
+			"offsets": {
+				"from": 14520,
+				"to": 18000
+			},
+			"text": " I like the experience working with stone systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,000",
+				"to": "00:00:20,240"
+			},
+			"offsets": {
+				"from": 18000,
+				"to": 20240
+			},
+			"text": " The website went up really fast."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,240",
+				"to": "00:00:23,560"
+			},
+			"offsets": {
+				"from": 20240,
+				"to": 23560
+			},
+			"text": " All the changes I requested were done immediately."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,560",
+				"to": "00:00:25,520"
+			},
+			"offsets": {
+				"from": 23560,
+				"to": 25520
+			},
+			"text": " It's a great bunch of people to work with,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,520",
+				"to": "00:00:28,800"
+			},
+			"offsets": {
+				"from": 25520,
+				"to": 28800
+			},
+			"text": " and I'm looking forward to our long-lasting relationship."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,800",
+				"to": "00:00:29,720"
+			},
+			"offsets": {
+				"from": 28800,
+				"to": 29720
+			},
+			"text": " Thank you so much, man."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,720",
+				"to": "00:00:31,480"
+			},
+			"offsets": {
+				"from": 29720,
+				"to": 31480
+			},
+			"text": " Your name with the company?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,480",
+				"to": "00:00:34,200"
+			},
+			"offsets": {
+				"from": 31480,
+				"to": 34200
+			},
+			"text": " My name is Carlos Rodriguez, and my company is worth the new."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,200",
+				"to": "00:00:35,480"
+			},
+			"offsets": {
+				"from": 34200,
+				"to": 35480
+			},
+			"text": " Thank you so much, Carlos."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,480",
+				"to": "00:00:38,120"
+			},
+			"offsets": {
+				"from": 35480,
+				"to": 38120
+			},
+			"text": " I look forward to continue helping you out as well."
+		}
+	]
+}

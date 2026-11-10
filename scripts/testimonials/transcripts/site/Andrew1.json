@@ -1,0 +1,109 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3800
+			},
+			"text": " Hey everyone, Andrew from Sergeant Painters here, just wanted to reach out and give a shout"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,800",
+				"to": "00:00:06,560"
+			},
+			"offsets": {
+				"from": 3800,
+				"to": 6560
+			},
+			"text": " out to Kai from Stone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,560",
+				"to": "00:00:12,640"
+			},
+			"offsets": {
+				"from": 6560,
+				"to": 12640
+			},
+			"text": " He does a great job, he is thorough, professional, and his systems are out of this world."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,640",
+				"to": "00:00:15,920"
+			},
+			"offsets": {
+				"from": 12640,
+				"to": 15920
+			},
+			"text": " So if you're looking to just take your business to the next level, or if you're just looking"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,920",
+				"to": "00:00:19,080"
+			},
+			"offsets": {
+				"from": 15920,
+				"to": 19080
+			},
+			"text": " for a consultation, just somebody to talk to and see what they can do for you, I'd definitely"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,080",
+				"to": "00:00:20,080"
+			},
+			"offsets": {
+				"from": 19080,
+				"to": 20080
+			},
+			"text": " reach out to Kai."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,080",
+				"to": "00:00:21,160"
+			},
+			"offsets": {
+				"from": 20080,
+				"to": 21160
+			},
+			"text": " He is a great guy."
+		}
+	]
+}

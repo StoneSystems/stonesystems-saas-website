@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5360
+			},
+			"text": " I looked at the website that they put together for me. I was quite impressed and with the level"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,360",
+				"to": "00:00:11,840"
+			},
+			"offsets": {
+				"from": 5360,
+				"to": 11840
+			},
+			"text": " of service and patience and expertise. I don't have a lot of experience with the computers and all"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,840",
+				"to": "00:00:20,480"
+			},
+			"offsets": {
+				"from": 11840,
+				"to": 20480
+			},
+			"text": " that and Mr. Sanchez did a very good job of explaining things and being patient with me and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,480",
+				"to": "00:00:27,280"
+			},
+			"offsets": {
+				"from": 20480,
+				"to": 27280
+			},
+			"text": " helping me get through it to understand it. And so I would recommend it to others that are looking"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,280",
+				"to": "00:00:30,540"
+			},
+			"offsets": {
+				"from": 27280,
+				"to": 30540
+			},
+			"text": " to further their website presence."
+		}
+	]
+}

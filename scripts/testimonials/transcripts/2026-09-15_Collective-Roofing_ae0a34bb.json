@@ -1,0 +1,274 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,500"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2500
+			},
+			"text": " Honestly, the website looks great."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,500",
+				"to": "00:00:04,600"
+			},
+			"offsets": {
+				"from": 2500,
+				"to": 4600
+			},
+			"text": " The support's good, it's here."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,600",
+				"to": "00:00:07,240"
+			},
+			"offsets": {
+				"from": 4600,
+				"to": 7240
+			},
+			"text": " And so, again, it's just, I guess,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,240",
+				"to": "00:00:09,080"
+			},
+			"offsets": {
+				"from": 7240,
+				"to": 9080
+			},
+			"text": " you have to keep running the machine."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,080",
+				"to": "00:00:11,440"
+			},
+			"offsets": {
+				"from": 9080,
+				"to": 11440
+			},
+			"text": " You know, you can't just do a little bit"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,440",
+				"to": "00:00:13,200"
+			},
+			"offsets": {
+				"from": 11440,
+				"to": 13200
+			},
+			"text": " and then think that it's just gonna keep running"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,200",
+				"to": "00:00:15,080"
+			},
+			"offsets": {
+				"from": 13200,
+				"to": 15080
+			},
+			"text": " on its own and it's like, you gotta keep fueling it."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,080",
+				"to": "00:00:17,520"
+			},
+			"offsets": {
+				"from": 15080,
+				"to": 17520
+			},
+			"text": " So, you know, it's just these good reminders,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,520",
+				"to": "00:00:19,520"
+			},
+			"offsets": {
+				"from": 17520,
+				"to": 19520
+			},
+			"text": " hey, be these reviews, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,520",
+				"to": "00:00:21,600"
+			},
+			"offsets": {
+				"from": 19520,
+				"to": 21600
+			},
+			"text": " you gotta get reviews, get reviews, get reviews,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,600",
+				"to": "00:00:24,960"
+			},
+			"offsets": {
+				"from": 21600,
+				"to": 24960
+			},
+			"text": " 'cause I did like, you showed me that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,960",
+				"to": "00:00:28,600"
+			},
+			"offsets": {
+				"from": 24960,
+				"to": 28600
+			},
+			"text": " I was like, hey, your last review was about three weeks ago."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,600",
+				"to": "00:00:30,560"
+			},
+			"offsets": {
+				"from": 28600,
+				"to": 30560
+			},
+			"text": " He has one, two days ago."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,560",
+				"to": "00:00:33,760"
+			},
+			"offsets": {
+				"from": 30560,
+				"to": 33760
+			},
+			"text": " You see, you know, and the fact that Google does see that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,760",
+				"to": "00:00:36,560"
+			},
+			"offsets": {
+				"from": 33760,
+				"to": 36560
+			},
+			"text": " and it's like, okay, who's more relevant right now?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,560",
+				"to": "00:00:38,000"
+			},
+			"offsets": {
+				"from": 36560,
+				"to": 38000
+			},
+			"text": " That makes a huge factor."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,000",
+				"to": "00:00:41,200"
+			},
+			"offsets": {
+				"from": 38000,
+				"to": 41200
+			},
+			"text": " So, I'm definitely gonna take note of that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,200",
+				"to": "00:00:44,600"
+			},
+			"offsets": {
+				"from": 41200,
+				"to": 44600
+			},
+			"text": " And anytime, you know, just reviews, reviews, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,600",
+				"to": "00:00:45,840"
+			},
+			"offsets": {
+				"from": 44600,
+				"to": 45840
+			},
+			"text": " let's just keep pumping 'em."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,840",
+				"to": "00:00:47,640"
+			},
+			"offsets": {
+				"from": 45840,
+				"to": 47640
+			},
+			"text": " Just 'cause we have 100 reviews doesn't mean"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,640",
+				"to": "00:00:49,280"
+			},
+			"offsets": {
+				"from": 47640,
+				"to": 49280
+			},
+			"text": " we should stop there, you know?"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,280",
+				"to": "00:00:50,480"
+			},
+			"offsets": {
+				"from": 49280,
+				"to": 50480
+			},
+			"text": " Let's just keep going."
+		}
+	]
+}

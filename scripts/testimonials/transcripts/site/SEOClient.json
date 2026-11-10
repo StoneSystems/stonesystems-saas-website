@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:09,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 9000
+			},
+			"text": " A just wanted to give a shout out to Stone Systems and especially Sebastian and say thank you for helping us out with our SEO."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,000",
+				"to": "00:00:19,000"
+			},
+			"offsets": {
+				"from": 9000,
+				"to": 19000
+			},
+			"text": " We actually had a lot of trouble trying to get something taken care of with some other outfits and when we reached out to them they were not only very attentive but very knowledgeable and."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,000",
+				"to": "00:00:36,000"
+			},
+			"offsets": {
+				"from": 19000,
+				"to": 36000
+			},
+			"text": " We've had great success, lots more reviews and a lot more review and things are moving along really really well so if you have any inclination to reach out to somebody else for some help in this area definitely reach out to Stone Systems is very much worth the time."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,000",
+				"to": "00:00:37,000"
+			},
+			"offsets": {
+				"from": 36000,
+				"to": 37000
+			},
+			"text": " Yes."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,000",
+				"to": "00:00:38,000"
+			},
+			"offsets": {
+				"from": 37000,
+				"to": 38000
+			},
+			"text": " Thank you very much."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,000",
+				"to": "00:00:48,000"
+			},
+			"offsets": {
+				"from": 38000,
+				"to": 48000
+			},
+			"text": " [BLANK_AUDIO]"
+		}
+	]
+}

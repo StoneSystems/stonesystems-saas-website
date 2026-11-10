@@ -345,6 +345,503 @@ const data = [
     videoThumbnail: '/images/thumbnails/SEOClient.jpg',
     personName: '-Client',
   },
+  {
+    testimonial:
+      '"Our website looks great. It\'s been really nice and easy to communicate, and I feel very comfortable and confident that we\'re going to be working together for a long time. These guys make this stuff simple and easy for me to understand."',
+    videoSrc: '/videos/MalcolmBrosRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/MalcolmBrosRoofing.jpg',
+    personName: '-Barry',
+  },
+  {
+    testimonial:
+      "\"I've been working with Stone Systems since the first of the year and everything's been going great. They've done what they said they were going to do, made a really nice website, and really beefed up Google. They're a lot more affordable than everybody else.\"",
+    videoSrc: '/videos/AdamsDrywallAndPaint.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AdamsDrywallAndPaint.jpg',
+    personName: '-Richard',
+  },
+  {
+    testimonial:
+      "\"I've been with Stone Systems for a little over a month now and I'm seeing some great ROI. It's really helped me further my online presence with Facebook and Google. Ashley has been fantastic, very responsive. I definitely recommend them.\"",
+    videoSrc: '/videos/EdwardsSealcoatingAndAsphaltRepairs.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/EdwardsSealcoatingAndAsphaltRepairs.jpg',
+    personName: '-William',
+  },
+  {
+    testimonial:
+      '"Shout out to Oscar and Stone Systems for doing a phenomenal job on my website and social media marketing. You guys have propelled my business forward and I couldn\'t thank you enough."',
+    videoSrc: '/videos/ASBRenovationDesignBuild.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/ASBRenovationDesignBuild.jpg',
+    personName: '-Steve',
+  },
+  {
+    testimonial:
+      '"We really needed some help getting leads and building the business more. Just spent some great time with Sebastian from Stone Systems. I was very impressed and I\'m very excited for where we\'re going."',
+    videoSrc: '/videos/OutInConcrete.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/OutInConcrete.jpg',
+    personName: '-Jenny',
+  },
+  {
+    testimonial:
+      '"Oscar is killing it. Stone Systems is really, really impressive so far. The way Oscar took care of the website and how everything is being handled, 100%."',
+    videoSrc: '/videos/KenaiConstruction.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/KenaiConstruction.jpg',
+    personName: '-Brian',
+  },
+  {
+    testimonial:
+      "\"I've been in business for over 30 years and I've done my share of marketing. In a short amount of time there's already buzz with my company. I'm already seeing new interest, and that's really what I signed on for.\"",
+    videoSrc: '/videos/GroundworksFlooring.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GroundworksFlooring.jpg',
+    personName: '-Marvin',
+  },
+  {
+    testimonial:
+      '"Ashley has been amazing through the entire process. She had answers to all my questions, got things taken care of quickly, and her communication was awesome through everything. It\'s been a pleasure to work with her."',
+    videoSrc: '/videos/RidgeLineLandscaping.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RidgeLineLandscaping.jpg',
+    personName: '-Johnny',
+  },
+  {
+    testimonial:
+      '"I\'m not very savvy with computers. Oscar explained everything so well that it was easy for me to understand, and I really appreciate his patience going through the whole process with me. It\'s been a great experience."',
+    videoSrc: '/videos/FourSeasonsPaintingServices.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/FourSeasonsPaintingServices.jpg',
+    personName: '-Hector',
+  },
+  {
+    testimonial:
+      "\"They said it would take seven days, then I got a text: 'We're ready to go, we're three days ahead.' The new website looks fantastic, way better than what I had before. I know gutter guards, not computers, and that's why I'm glad to have these guys helping me.\"",
+    videoSrc: '/videos/AffordableGutterGuardsColorado.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AffordableGutterGuardsColorado.jpg',
+    personName: '-Donald',
+  },
+  {
+    testimonial:
+      '"Stone Systems started helping me out a couple weeks ago and they\'ve been great. Sebastian\'s been awesome, very helpful, always there when you need him. And man, the website is great. We love it."',
+    videoSrc: '/videos/AlliedRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AlliedRoofing.jpg',
+    personName: '-Miguel',
+  },
+  {
+    testimonial:
+      '"The last person that helped me turned into an absolute nightmare, and I\'m not a tech guy whatsoever. Oscar completely made me feel at ease and went above and beyond anything I could have expected. I knew my business was getting more views."',
+    videoSrc: '/videos/BrunnerBuilders513.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/BrunnerBuilders513.jpg',
+    personName: '-Ash',
+  },
+  {
+    testimonial:
+      '"We got a Google denial for our business account and Oscar has been instrumental in working with Google to get our verification back up. I cannot say enough about his communication, his persistence, and his work ethic, even on his days off."',
+    videoSrc: '/videos/RawlingsHeatingAndAC.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RawlingsHeatingAndAC.jpg',
+    personName: '-Lori',
+  },
+  {
+    testimonial:
+      '"They helped build me an amazing website and get me on the map. Hopefully over the next couple months I\'ll be top three in Google and start getting leads without pounding the pavement. Sebastian answers all my questions, typically within an hour."',
+    videoSrc: '/videos/BullsEyeExteriors.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/BullsEyeExteriors.jpg',
+    personName: '-Brady',
+  },
+  {
+    testimonial:
+      "\"I appreciate all your work on the website and everything you've done to help us. It looks amazing. It's nine o'clock at night and these guys are getting back to me, helping me out and trying to help us grow our business.\"",
+    videoSrc: '/videos/TheBsRenovationsAndUpgrades.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/TheBsRenovationsAndUpgrades.jpg',
+    personName: '-Derrick',
+  },
+  {
+    testimonial:
+      '"They helped me get ranked number one in my local area. They\'ve been nothing but amazing, and their AI automation has helped me get much more free time for my company. Thank you Andreas and Stone Systems."',
+    videoSrc: '/videos/Rescreening4Less.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/Rescreening4Less.jpg',
+    personName: '-Ryan',
+  },
+  {
+    testimonial:
+      '"With you guys taking care of the web page there is more traffic, more of everything, and a better product. Some leads are word-of-mouth people who didn\'t have my number, went straight to the web page and contacted me. Before, it was a struggle and we got nothing."',
+    videoSrc: '/videos/GregsRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GregsRoofing.jpg',
+    personName: '-Greg',
+  },
+  {
+    testimonial:
+      '"He helped me with all the questions I had and the whole process went perfectly smooth. My website is up and rolling and I\'m a happy customer."',
+    videoSrc: '/videos/EverClearPools.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/EverClearPools.jpg',
+    personName: '-Mavrick',
+  },
+  {
+    testimonial:
+      '"I was looking for a company that could help me generate leads and build my website back up. They charge a pretty reasonable cost, and in the first 30 days you get your money back if you\'re not satisfied. They\'ve been nothing but easy to deal with."',
+    videoSrc: '/videos/WBPaving.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/WBPaving.jpg',
+    personName: '-Carlo',
+  },
+  {
+    testimonial:
+      '"I saw Kai\'s ads on Facebook. I thought everybody else was full of it, but I got on a call with them and Sebastian got me hooked up. We got the website rocking on the first day, so I\'m really stoked about this."',
+    videoSrc: '/videos/MountainManRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/MountainManRoofing.jpg',
+    personName: '-John',
+  },
+  {
+    testimonial:
+      '"Been working with Brian. He\'s been great, honest, trustworthy, to the point. And I can see a great line of success for Stone Systems and American Power Wash moving forward."',
+    videoSrc: '/videos/AmericanPowerWashingExteriorServices.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AmericanPowerWashingExteriorServices.jpg',
+    personName: '-Andrew',
+  },
+  {
+    testimonial:
+      '"We are really happy with the work Sebastian has put into our website and our logo design. We appreciate all the time and effort he has put into helping us. We highly recommend not only Stone Systems, but Sebastian."',
+    videoSrc: '/videos/BlueJPaintStain.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/BlueJPaintStain.jpg',
+    personName: '-Paul',
+  },
+  {
+    testimonial:
+      '"Within three weeks we launched a website, cleaned up my Google listing, and now I\'m showing up on the front page of Google in my city. On day 15 I received my first lead, a good quality lead in the cities I like to work in. You won\'t be wasting your money."',
+    videoSrc: '/videos/CorleyContemporaryPainting.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/CorleyContemporaryPainting.jpg',
+    personName: '-Matt',
+  },
+  {
+    testimonial:
+      '"Really happy to be on board with these guys. We\'re kind of at a plateau right now, and I think these guys are going to take us to the next step. Looking forward to the partnership."',
+    videoSrc: '/videos/ZippysACAndIce.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/ZippysACAndIce.jpg',
+    personName: '-Dwayne',
+  },
+  {
+    testimonial:
+      '"Working with Miguel over at Stone Systems. He\'s doing a great job onboarding me and I\'m looking forward to my service with them."',
+    videoSrc: '/videos/CalabreseTreeCare.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/CalabreseTreeCare.jpg',
+    personName: '-Steve',
+  },
+  {
+    testimonial:
+      "\"Working with these guys has been a blast. Super easy, super fun. They're good guys, they'll take care of you. I'm excited to see where they bring us.\"",
+    videoSrc: '/videos/ReignHomeServices.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/ReignHomeServices.jpg',
+    personName: '-Chris',
+  },
+  {
+    testimonial:
+      '"This is a new adventure for myself and my son, and we\'ve started this new process with Stone Systems. Our new CSM is very clear, open-minded, and very honest. I\'m looking forward to getting this process going."',
+    videoSrc: '/videos/TruNorthPipe.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/TruNorthPipe.jpg',
+    personName: '-Wes',
+  },
+  {
+    testimonial:
+      '"Fantastic job Sebastian did on the call. Thank you for being professional, amazing, and helpful. He knew what he was talking about, made it easy, and made me feel more relaxed and excited about everything."',
+    videoSrc: '/videos/FloorKandyCoatings.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/FloorKandyCoatings.jpg',
+    personName: '-John',
+  },
+  {
+    testimonial:
+      '"Shout out to Stone Systems for really looking out for me. They did a really good job and it hasn\'t even been a month. This is an honest review: I was very skeptical at first, but it has been nothing but positive. Five out of five."',
+    videoSrc: '/videos/WilliamsDirtWork.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/WilliamsDirtWork.jpg',
+    personName: '-Hunter',
+  },
+  {
+    testimonial:
+      '"Meeting with Stone Systems, getting information, and getting on board and up and running has been a pleasurable experience. I hope to do more with them in the future."',
+    videoSrc: '/videos/HernandezTileAndConstruction.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/HernandezTileAndConstruction.jpg',
+    personName: '-Ron',
+  },
+  {
+    testimonial:
+      '"The onboarding process was pretty straightforward. Miguel did a good job explaining everything and answered any technical questions. I was very impressed with the presentation."',
+    videoSrc: '/videos/LivingAirDesign.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/LivingAirDesign.jpg',
+    personName: '-Jacob',
+  },
+  {
+    testimonial:
+      '"Our major problem was not getting to calls immediately, and customers would move on. Streamlining everything through the website and the instant text-back will really help us increase our revenue and sales. Everything promised in the contract is coming through."',
+    videoSrc: '/videos/LighthouseExterminators.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/LighthouseExterminators.jpg',
+    personName: '-Dan',
+  },
+  {
+    testimonial:
+      '"Miguel did an extremely good job explaining everything, going over the details, what is needed from me and what is expected from them. So far I\'m completely satisfied, and the price is very fair."',
+    videoSrc: '/videos/FlesnerEnergy.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/FlesnerEnergy.jpg',
+    personName: '-Jerry',
+  },
+  {
+    testimonial:
+      '"They did an excellent job changing the appearance, the flow, and the overall vibe of the website. We\'re very excited to see what kind of traffic that\'s going to bring us. Very pleased with the responsiveness and attention to detail."',
+    videoSrc: '/videos/GatorStrong.mp4#t=6',
+    videoThumbnail: '/images/thumbnails/GatorStrong.jpg',
+    personName: '-Mike',
+  },
+  {
+    testimonial:
+      '"Stone Systems really helped us get our website set up and answered all the questions we had. If you\'re looking to have a company optimize your business, your profile, or your Google listing, I would highly recommend Stone Systems."',
+    videoSrc: '/videos/AmericanTreeService.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AmericanTreeService.jpg',
+    personName: '-Gregg',
+  },
+  {
+    testimonial:
+      '"Stone Systems is helping me get my business up and going. It\'s been very, very easy and the communication has been awesome."',
+    videoSrc: '/videos/PVTrimmers.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/PVTrimmers.jpg',
+    personName: '-Revell',
+  },
+  {
+    testimonial:
+      "\"I've been an HVAC owner a long time and always been skeptical about marketing, especially things you find online. Took a chance, and so far it's been really cool. They've walked me through everything. Very simple, very easy for someone who is not marketing smart at all.\"",
+    videoSrc: '/videos/NorthTexasEnvironmental.mp4#t=1.3',
+    videoThumbnail: '/images/thumbnails/NorthTexasEnvironmental.jpg',
+    personName: '-David',
+  },
+  {
+    testimonial:
+      '"I looked at the website they put together for me and I was quite impressed with the level of service, patience, and expertise. I don\'t have a lot of experience with computers, and they did a very good job of explaining things and being patient with me."',
+    videoSrc: '/videos/RoofcheckRoofing.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/RoofcheckRoofing.jpg',
+    personName: '-Tony',
+  },
+  {
+    testimonial:
+      '"I highly recommend Stone Systems. The onboarding was an amazing experience. It\'s going to bring me a lot of opportunity. It\'s a straightforward system and very user-friendly."',
+    videoSrc: '/videos/HartmanPacificConstructionHPC.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/HartmanPacificConstructionHPC.jpg',
+    personName: '-Richard',
+  },
+  {
+    testimonial:
+      '"We\'ve been very pleased with Stone Systems so far. We\'re very excited to get our website up and going and get some more leads from it. Daniel has been extremely helpful throughout the whole process."',
+    videoSrc: '/videos/AceKimbleServices.mp4#t=1.3',
+    videoThumbnail: '/images/thumbnails/AceKimbleServices.jpg',
+    personName: '-Amanda',
+  },
+  {
+    testimonial:
+      "\"I've been with other people who promised me everything in the world, and at the end of the day I didn't see things moving. Now it's totally different. You're handling my account from A to Z and keeping it real with me. You're definitely looking out for me.\"",
+    videoSrc: '/videos/AllAboutConstruction.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AllAboutConstruction.jpg',
+    personName: '-Raul',
+  },
+  {
+    testimonial:
+      "\"I would rather all the T's be crossed and the I's dotted along the way. I'd happily do Zoom calls with you once a month for the rest of my life. I didn't expect that, and it's clear that you care.\"",
+    videoSrc: '/videos/GrandStrandDisposal.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GrandStrandDisposal.jpg',
+    personName: '-Blake',
+  },
+  {
+    testimonial:
+      '"Just finished my onboarding call with Miguel. He was great, helpful, made it seamless, and I\'m excited to get started."',
+    videoSrc: '/videos/IrishRoofingCompany.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/IrishRoofingCompany.jpg',
+    personName: '-Dina',
+  },
+  {
+    testimonial:
+      '"The website went up really fast. All the changes I requested were done immediately. It\'s a great bunch of people to work with, and I\'m looking forward to our long-lasting relationship."',
+    videoSrc: '/videos/RoofRenu.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RoofRenu.jpg',
+    personName: '-Carlos',
+  },
+  {
+    testimonial:
+      '"Everything\'s going pretty smooth. They were very transparent with me. I think I\'m going to enjoy this service. Miguel did a wonderful job, great guy."',
+    videoSrc: '/videos/U1stServices.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/U1stServices.jpg',
+    personName: '-PJ',
+  },
+  {
+    testimonial:
+      '"We had a good review history, which gave us a great start, but we\'d hit a plateau. These guys were able to push us beyond that with an updated website and getting us ready for Google Ads. We\'re really looking forward to the future."',
+    videoSrc: '/videos/FreshAirSolutionsAndTech.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/FreshAirSolutionsAndTech.jpg',
+    personName: '-Sean',
+  },
+  {
+    testimonial:
+      '"Honestly, the website looks great and the support is good. You showed me my last review was three weeks ago and the competitor had one two days ago. Google sees that, and it\'s a huge factor. Just because we have 100 reviews doesn\'t mean we should stop."',
+    videoSrc: '/videos/CollectiveRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/CollectiveRoofing.jpg',
+    personName: '-Jordi',
+  },
+  {
+    testimonial:
+      '"I highly recommend Miguel. He really helped out getting this thing launched. I have a good feeling about it. He did a great job and these guys are awesome. Definitely use them."',
+    videoSrc: '/videos/QueueElectricalContractors.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/QueueElectricalContractors.jpg',
+    personName: '-Benson',
+  },
+  {
+    testimonial:
+      "\"I get one or two leads almost daily now and I'm able to convert them into jobs. Other marketing companies always wanted more money. With you guys it's been honest, you do what you say. Some people even find me through ChatGPT now, so I know it's working.\"",
+    videoSrc: '/videos/BLTreeAndLawnService.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/BLTreeAndLawnService.jpg',
+    personName: '-Breyson',
+  },
+  {
+    testimonial:
+      '"I\'ve been with Stone Systems for about three months. The onboarding was super easy and Zach is very responsive, I get a response back within 12 to 15 hours. I\'ve been getting clients calling me, and my website is just night and day."',
+    videoSrc: '/videos/GetOutOfDodge.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GetOutOfDodge.jpg',
+    personName: '-Dodge',
+  },
+  {
+    testimonial:
+      "\"I've worked with other marketing companies where I didn't get deadlines or execution, just throwing money to the wind. Here it's been great communication, step-by-step plans, and I know what they're going to do and when. It's nice to know everything is being spent well.\"",
+    videoSrc: '/videos/PlumbAddictServices.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/PlumbAddictServices.jpg',
+    personName: '-Jordan',
+  },
+  {
+    testimonial:
+      '"I like the honesty. When I saw you guys on social media I could tell you don\'t BS. So far I\'m happy with everything, and I will definitely refer you to other contractors like myself."',
+    videoSrc: '/videos/GeekBayConstruction.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GeekBayConstruction.jpg',
+    personName: '-Gabriel',
+  },
+  {
+    testimonial:
+      '"Everything\'s been easy with you guys. You\'ve been real helpful with everything and guided me through things, which is nice."',
+    videoSrc: '/videos/NicksPropertyMaintenance.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/NicksPropertyMaintenance.jpg',
+    personName: '-Nick',
+  },
+  {
+    testimonial:
+      '"Big shout out to Stone Systems. As a contractor, I would highly recommend them for marketing. They have been completely awesome so far."',
+    videoSrc: '/videos/JunkheadDemolition.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/JunkheadDemolition.jpg',
+    personName: '-Will',
+  },
+  {
+    testimonial:
+      '"I just want to thank Miguel for helping me through everything. Very easy-going guy, answered all my questions. Couldn\'t ask for a better CSM."',
+    videoSrc: '/videos/LCBCustomKitchenInstalls.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/LCBCustomKitchenInstalls.jpg',
+    personName: '-Steven',
+  },
+  {
+    testimonial:
+      '"Stone Systems has really helped me put together my business. Dave helped me with Google and just about everything else. I strongly suggest you try these guys out, you won\'t be sorry."',
+    videoSrc: '/videos/PatchmasterSealcoating.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/PatchmasterSealcoating.jpg',
+    personName: '-Tony',
+  },
+  {
+    testimonial:
+      '"Miguel with Stone Systems helped us out tremendously getting our Google page verified and our website up and running."',
+    videoSrc: '/videos/PatriotPatioSolutions.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/PatriotPatioSolutions.jpg',
+    personName: '-Jacob',
+  },
+  {
+    testimonial:
+      '"They built my website and had it up within a week, and the support has been awesome. The phone has started to ring. I\'ve gone through four companies in the past five years, and this is the first company I\'ve actually gotten results with."',
+    videoSrc: '/videos/RenewPaverSealing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RenewPaverSealing.jpg',
+    personName: '-Stephen',
+  },
+  {
+    testimonial:
+      '"I had a really good experience working with Miguel and the team at Stone Systems. The onboarding process was very simple and straightforward. I really like how they work and run their business."',
+    videoSrc: '/videos/RiseTile.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RiseTile.jpg',
+    personName: '-Vladik',
+  },
+  {
+    testimonial:
+      "\"He's gone above and beyond. The website looks good, he's been very informative, he's answered all my questions and concerns, and I've been happy so far.\"",
+    videoSrc: '/videos/FreshwaterFinish.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/FreshwaterFinish.jpg',
+    personName: '-Troy',
+  },
+  {
+    testimonial:
+      '"A very great job by Stone Systems. Miguel has been doing a great job and we have great communication, which I really appreciate. I believe this is going to work real good for me."',
+    videoSrc: '/videos/AllianceDesignAndConstruction.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/AllianceDesignAndConstruction.jpg',
+    personName: '-Jorge',
+  },
+  {
+    testimonial:
+      "\"It's been a pleasure working with Danny and Stone Systems. He's been a great help getting our website up and running, he's very responsive, and he's already put out a couple of fires for us. Looking forward to seeing the results once we go live.\"",
+    videoSrc: '/videos/TheHomeTeamPropertyServices.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/TheHomeTeamPropertyServices.jpg',
+    personName: '-Corey',
+  },
+  {
+    testimonial:
+      "\"First time I have a guy guiding me through the process. Other guys just told me 'your page is live' in a message, no meeting, no guidance. This is so much better. On a scale of one to ten, I'd give you guys a twenty.\"",
+    videoSrc: '/videos/SLPainting.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/SLPainting.jpg',
+    personName: '-Salvador',
+  },
+  {
+    testimonial:
+      "\"I've been using Stone Systems for a few months now and I'm getting leads from ChatGPT, which is working really well. Miguel did a fantastic job on my website. If you're thinking about having someone do your website, it's a great opportunity.\"",
+    videoSrc: '/videos/Windowpros.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/Windowpros.jpg',
+    personName: '-Windowpros',
+  },
+  {
+    testimonial:
+      "\"He's helped me transform my website and I'm really excited about where it's going. If you're considering somebody to put up a website and do your SEO and all that techy stuff, reach out to Stone Systems. They are great at communicating and you never have problems reaching them.\"",
+    videoSrc: '/videos/LucasManagement.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/LucasManagement.jpg',
+    personName: '-Tyrone',
+  },
+  {
+    testimonial:
+      '"Miguel helped me get my website back up and running and looking good, ready to get some clients coming in. I appreciate Miguel for all the hard work."',
+    videoSrc: '/videos/RivasRoofing.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RivasRoofing.jpg',
+    personName: '-Erik',
+  },
+  {
+    testimonial:
+      '"They set up a good website that\'s easy to navigate, and it\'s already bringing leads just a week or two in. Really happy with them. Simple process, and it was easy to onboard."',
+    videoSrc: '/videos/RodriguezRodentDefense.mp4#t=0.7',
+    videoThumbnail: '/images/thumbnails/RodriguezRodentDefense.jpg',
+    personName: '-Ruben',
+  },
+  {
+    testimonial:
+      '"Miguel helped me a lot setting up my Google business profile and explained everything very thoroughly. I would recommend Miguel and Stone Systems."',
+    videoSrc: '/videos/RehConstruction.mp4#t=1.3',
+    videoThumbnail: '/images/thumbnails/RehConstruction.jpg',
+    personName: '-Kaw',
+  },
+  {
+    testimonial:
+      '"I highly recommend Miguel. He helped me with my business and answered all the questions I had. If you need any support or advertising for your business, going with Miguel and Stone Systems is a really good option."',
+    videoSrc: '/videos/GenesisPropertyDevelopment.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GenesisPropertyDevelopment.jpg',
+    personName: '-Gabriel',
+  },
+  {
+    testimonial:
+      "\"They're doing a great job with the website. They're very clear, they know their stuff, and they know marketing. The website looks great and I'm looking forward to what we have next.\"",
+    videoSrc: '/videos/GladiatorLandscapingAndDesign.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/GladiatorLandscapingAndDesign.jpg',
+    personName: '-John',
+  },
+  {
+    testimonial:
+      '"We\'re working with Miguel at Stone Systems. They optimized our website, it looks great, and we\'re excited to see what the results are going to be."',
+    videoSrc: '/videos/RoofingSpecialistsOfOhio.mp4#t=0.1',
+    videoThumbnail: '/images/thumbnails/RoofingSpecialistsOfOhio.jpg',
+    personName: '-James',
+  },
 ];
 
 export function TestimonialSection() {

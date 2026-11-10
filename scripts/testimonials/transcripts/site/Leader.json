@@ -1,0 +1,208 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,540"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5540
+			},
+			"text": " Well, you guys been here here with why I just want to give a quick shout out to the boys over at stone systems"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,640",
+				"to": "00:00:11,100"
+			},
+			"offsets": {
+				"from": 5640,
+				"to": 11100
+			},
+			"text": " For helping us out a lot. They took our website from pretty basic to a high end"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,100",
+				"to": "00:00:13,840"
+			},
+			"offsets": {
+				"from": 11100,
+				"to": 13840
+			},
+			"text": " Which is really good for when our clients go to go check us out online"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,840",
+				"to": "00:00:16,560"
+			},
+			"offsets": {
+				"from": 13840,
+				"to": 16560
+			},
+			"text": " I think as entrepreneurs we try and do a lot of things ourselves"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,560",
+				"to": "00:00:19,760"
+			},
+			"offsets": {
+				"from": 16560,
+				"to": 19760
+			},
+			"text": " But sometimes it helps a lot to hire people that specialize in those certain fields"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,480",
+				"to": "00:00:24,840"
+			},
+			"offsets": {
+				"from": 20480,
+				"to": 24840
+			},
+			"text": " Another thing they did was they created like an automated an automatic response"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,840",
+				"to": "00:00:29,840"
+			},
+			"offsets": {
+				"from": 24840,
+				"to": 29840
+			},
+			"text": " So when people try and like color text me when I'm on the job so I can't answer it'll hit them right back"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,840",
+				"to": "00:00:31,760"
+			},
+			"offsets": {
+				"from": 29840,
+				"to": 31760
+			},
+			"text": " So they don't feel like they're being neglected or whatever"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,760",
+				"to": "00:00:37,440"
+			},
+			"offsets": {
+				"from": 31760,
+				"to": 37440
+			},
+			"text": " Which is really good I think as well and the other thing which I think is freaking genius is he created this funnel"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,440",
+				"to": "00:00:40,120"
+			},
+			"offsets": {
+				"from": 37440,
+				"to": 40120
+			},
+			"text": " So I text people link to drop into review on Google"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,000",
+				"to": "00:00:45,400"
+			},
+			"offsets": {
+				"from": 41000,
+				"to": 45400
+			},
+			"text": " Instead of you know just anything if they write anything less than a four-star review"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,400",
+				"to": "00:00:47,880"
+			},
+			"offsets": {
+				"from": 45400,
+				"to": 47880
+			},
+			"text": " It just goes off into you know the abyss"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,880",
+				"to": "00:00:53,560"
+			},
+			"offsets": {
+				"from": 47880,
+				"to": 53560
+			},
+			"text": " But it's like four or five stars then that goes to our guru view which is nice because sometimes you can't tell the clients"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:53,600",
+				"to": "00:00:59,160"
+			},
+			"offsets": {
+				"from": 53600,
+				"to": 59160
+			},
+			"text": " You know they might be all good to you and then they might just be having a bad day and just freaking rip you on those reviews"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:59,160",
+				"to": "00:01:06,480"
+			},
+			"offsets": {
+				"from": 59160,
+				"to": 66480
+			},
+			"text": " So shout out the boys stone systems. They have amazing prices. I can't say more than a good enough more than enough good things about those guys"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:06,600",
+				"to": "00:01:09,680"
+			},
+			"offsets": {
+				"from": 66600,
+				"to": 69680
+			},
+			"text": " Thank you for helping us out then leader why I just don't model"
+		}
+	]
+}
