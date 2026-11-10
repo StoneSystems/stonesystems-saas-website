@@ -276,8 +276,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2022770,
-      "posterBytes": 44838
-    }
+      "posterBytes": 45876
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-05-28_Adams-Drywall-And-Paint_16cc036a.mp4",
@@ -314,8 +315,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1714063,
-      "posterBytes": 36139
-    }
+      "posterBytes": 37421
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-01_Edwards-Sealcoating-and-Asphalt-Repairs_b5cec239.mpg4",
@@ -351,8 +353,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 786079,
-      "posterBytes": 12570
-    }
+      "posterBytes": 13877
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-02_ASB-Renovation-Design-Build-LLC_520ea865.mp4",
@@ -390,8 +393,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 259586,
-      "posterBytes": 7647
-    }
+      "posterBytes": 7864
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-02_Out-In-Concrete_519d0b92.mp4",
@@ -429,8 +433,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 243912,
-      "posterBytes": 5378
-    }
+      "posterBytes": 5594
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-05_Kenai-Construction_72888c2b.mp4",
@@ -468,8 +473,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3484957,
-      "posterBytes": 98243
-    }
+      "posterBytes": 96128
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-12_Groundworks-Flooring-LLC_105adb2f.mov",
@@ -505,8 +511,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 483314,
-      "posterBytes": 6303
-    }
+      "posterBytes": 6409
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-15_Ridge-Line-Landscaping_eebdf83d.mov",
@@ -536,8 +543,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7693677,
-      "posterBytes": 58503
-    }
+      "posterBytes": 52500
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-17_Four-Seasons-Painting-Services_b9e7caf4.mp4",
@@ -574,8 +582,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 664748,
-      "posterBytes": 35533
-    }
+      "posterBytes": 36052
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-18_Affordable-Gutter-Guards-Colorado_8d0e2c88.mp4",
@@ -605,8 +614,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7986658,
-      "posterBytes": 69180
-    }
+      "posterBytes": 69250
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-22_Allied-Roofing_c369fee0.mp4",
@@ -642,8 +652,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 275546,
-      "posterBytes": 5603
-    }
+      "posterBytes": 5650
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-22_Brunner-Builders-513_cba097fd.mp4",
@@ -673,8 +684,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1056548,
-      "posterBytes": 6836
-    }
+      "posterBytes": 7289
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-27_Rawlings-Heating-And-AC_ab244f8d.mp4",
@@ -710,8 +722,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7993408,
-      "posterBytes": 56269
-    }
+      "posterBytes": 72049
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-06-29_BullsEye-Exteriors_da6ad3b1.mp4",
@@ -748,8 +761,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 370697,
-      "posterBytes": 5047
-    }
+      "posterBytes": 5033
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-01_The-Bs-renovations-and-upgrades_eb6b148d.mp4",
@@ -787,8 +801,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2125945,
-      "posterBytes": 72784
-    }
+      "posterBytes": 75689
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-02_Rescreening-4-Less_d49c84aa.mp4",
@@ -818,8 +833,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 704476,
-      "posterBytes": 18852
-    }
+      "posterBytes": 19098
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-03_Gregs-Roofing-LLC_df044eed.mp4",
@@ -858,8 +874,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2027538,
-      "posterBytes": 28732
-    }
+      "posterBytes": 28454
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-06_EverClearPools_bc481ef9.mp4",
@@ -895,8 +912,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 781678,
-      "posterBytes": 33913
-    }
+      "posterBytes": 34016
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-07_WB-Paving_982ff698.mp4",
@@ -934,8 +952,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 729503,
-      "posterBytes": 13189
-    }
+      "posterBytes": 13477
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-14_Mountain-Man-Roofing_777517e2.mp4",
@@ -973,8 +992,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1635501,
-      "posterBytes": 46179
-    }
+      "posterBytes": 49226
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-07-24_American-Power-Washing-Exterior-Services_83fe6f98.mpg",
@@ -1011,8 +1031,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 316413,
-      "posterBytes": 2822
-    }
+      "posterBytes": 2892
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-01_Blue-J-Paint-Stain_9252b5f0.mp4",
@@ -1050,8 +1071,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2417909,
-      "posterBytes": 56527
-    }
+      "posterBytes": 65498
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-10_Corley-Contemporary-Painting-Inc_ee0d186d.mp4",
@@ -1081,8 +1103,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 401117,
-      "posterBytes": 2285
-    }
+      "posterBytes": 2408
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-15_Zippys-AC-and-Ice_2755ca46.mp4",
@@ -1120,8 +1143,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 986805,
-      "posterBytes": 39073
-    }
+      "posterBytes": 40586
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-16_Calabrese-Tree-Care-LLC_a179f25a.mp4",
@@ -1151,8 +1175,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 742467,
-      "posterBytes": 41573
-    }
+      "posterBytes": 45622
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-16_Calabrese-Tree-Care-LLC_e31adeb2.mp4",
@@ -1205,8 +1230,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 717281,
-      "posterBytes": 39987
-    }
+      "posterBytes": 39368
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-16_Tru-North-Pipe_6bfb3f5e.mp4",
@@ -1243,8 +1269,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2133557,
-      "posterBytes": 67378
-    }
+      "posterBytes": 69203
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-19_Floor-Kandy-Coatings_ac36f5b6.mp4",
@@ -1280,8 +1307,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 245798,
-      "posterBytes": 4797
-    }
+      "posterBytes": 4934
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-19_Williams-Dirt-Work-LLC_bf77acef.mp4",
@@ -1319,8 +1347,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 184246,
-      "posterBytes": 2831
-    }
+      "posterBytes": 2854
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-24_Hernandez-Tile-and-Construction-LLC_44120e0b.mp4",
@@ -1350,8 +1379,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1345736,
-      "posterBytes": 40374
-    }
+      "posterBytes": 40806
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-25_Living-Air-Design_2ebb57ff.mp4",
@@ -1381,8 +1411,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 649576,
-      "posterBytes": 42882
-    }
+      "posterBytes": 44252
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-26_Lighthouse-Exterminators-LLC_dea51a8d.mp4",
@@ -1418,8 +1449,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 4514474,
-      "posterBytes": 50327
-    }
+      "posterBytes": 47744
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-27_Flesner-Energy-LLC_0a0a7417.mp4",
@@ -1457,8 +1489,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 798072,
-      "posterBytes": 24797
-    }
+      "posterBytes": 26252
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-27_Gator-Strong_8b6b6901.mp4",
@@ -1496,8 +1529,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 793496,
-      "posterBytes": 24158
-    }
+      "posterBytes": 16159
+    },
+    "posterTimeSec": 6
   },
   {
     "source": "2026-08-28_American-tree-service_8b4f23cf.mp4",
@@ -1534,8 +1568,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 700926,
-      "posterBytes": 30813
-    }
+      "posterBytes": 32296
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-28_PV-Trimmers_77167a0f.mp4",
@@ -1565,8 +1600,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1082297,
-      "posterBytes": 77253
-    }
+      "posterBytes": 81578
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-08-31_North-Texas-Environmental_b3d48789.mp4",
@@ -1603,8 +1639,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2275098,
-      "posterBytes": 37359
-    }
+      "posterBytes": 47292
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-01_Roofcheck-roofing_f0d80197.mp4",
@@ -1641,8 +1678,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1832232,
-      "posterBytes": 69073
-    }
+      "posterBytes": 73411
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-02_Hartman-Pacific-Construction-HPC_4a2bdd6f.mp4",
@@ -1672,8 +1710,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 719474,
-      "posterBytes": 35680
-    }
+      "posterBytes": 34747
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-08_AceKimble-Services_226eb63a.mp4",
@@ -1703,8 +1742,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1643901,
-      "posterBytes": 94259
-    }
+      "posterBytes": 65508
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-08_All-About-Construction-Inc_8dcc5963.mp4",
@@ -1741,8 +1781,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2462872,
-      "posterBytes": 36389
-    }
+      "posterBytes": 38522
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-09_Grand-Strand-Disposal_1fa987c3.mp4",
@@ -1772,8 +1813,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 4196009,
-      "posterBytes": 50428
-    }
+      "posterBytes": 51109
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-09_Irish-Roofing-Company_78f455ba.mp4",
@@ -1803,8 +1845,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 779402,
-      "posterBytes": 64484
-    }
+      "posterBytes": 64760
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-09_RoofRenu-LLC_3ea8cdbb.mp4",
@@ -1841,8 +1884,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2635878,
-      "posterBytes": 70290
-    }
+      "posterBytes": 72709
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-13_U-1st-Services-llc_c06ed84f.mp4",
@@ -1872,8 +1916,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 906163,
-      "posterBytes": 22560
-    }
+      "posterBytes": 24462
+    },
+    "posterTimeSec": 9
   },
   {
     "source": "2026-09-14_Fresh-Air-Solutions-and-Tech-LLC_8899e53e.mp4",
@@ -1910,8 +1955,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1890031,
-      "posterBytes": 68218
-    }
+      "posterBytes": 70071
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-15_Collective-Roofing_ae0a34bb.mp4",
@@ -1941,8 +1987,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 4046601,
-      "posterBytes": 39596
-    }
+      "posterBytes": 40454
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-16_Queue-Electrical-contractors_b4c5bbcb.mp4",
@@ -1972,8 +2019,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 685676,
-      "posterBytes": 30971
-    }
+      "posterBytes": 33843
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-17_BL-Tree-and-Lawn-Service_028475f3.mp4",
@@ -2003,8 +2051,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 8638835,
-      "posterBytes": 51334
-    }
+      "posterBytes": 51046
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-18_Smiths-Home-and-Property-Solutions_c0e3cac1.mov",
@@ -2089,8 +2138,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2827161,
-      "posterBytes": 33060
-    }
+      "posterBytes": 33130
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-22_Kingdom-Construction-Remodeling_629b38bb.mov",
@@ -2151,8 +2201,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2367477,
-      "posterBytes": 30206
-    }
+      "posterBytes": 28312
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-24_Northeast-development_92200eea.mov",
@@ -2260,8 +2311,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2736812,
-      "posterBytes": 19077
-    }
+      "posterBytes": 18398
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-29_Nicks-Property-Maintenance_d93410f1.mp4",
@@ -2291,8 +2343,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1030044,
-      "posterBytes": 25140
-    }
+      "posterBytes": 27614
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-30_Junkhead-Demolition-LLC_9e6e7e62.mov",
@@ -2322,8 +2375,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 819094,
-      "posterBytes": 77346
-    }
+      "posterBytes": 85890
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-30_LCB-Custom-Kitchen-Installs_ce80dd97.mp4",
@@ -2353,8 +2407,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 513773,
-      "posterBytes": 35175
-    }
+      "posterBytes": 35122
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-30_Patchmaster-Sealcoating_c306dcca.mp4",
@@ -2384,8 +2439,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 595146,
-      "posterBytes": 27835
-    }
+      "posterBytes": 27895
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-30_Patriot-Patio-Solutions-LLC_aa0eeb12.mp4",
@@ -2415,8 +2471,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 357516,
-      "posterBytes": 33839
-    }
+      "posterBytes": 33581
+    },
+    "posterTimeSec": 3.74
   },
   {
     "source": "2026-09-30_Renew-Paver-Sealing_f4743cd7.mp4",
@@ -2454,8 +2511,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3115189,
-      "posterBytes": 34047
-    }
+      "posterBytes": 34237
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-09-30_Rise-Tile_18312efd.mp4",
@@ -2485,8 +2543,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 597666,
-      "posterBytes": 34523
-    }
+      "posterBytes": 34842
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-01_Freshwater-Finish_9d02b8a2.mp4",
@@ -2516,8 +2575,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1048971,
-      "posterBytes": 66426
-    }
+      "posterBytes": 66804
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-05_Alliance-Design-and-Construction-LLC_23555b81.mp4",
@@ -2547,8 +2607,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2161443,
-      "posterBytes": 33935
-    }
+      "posterBytes": 33353
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-06_The-Home-Team-Property-Services_7ae2e4de.mp4",
@@ -2585,8 +2646,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3914720,
-      "posterBytes": 49312
-    }
+      "posterBytes": 54827
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-08_SL-Painting-LLC_f639f9bb.mp4",
@@ -2616,8 +2678,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3495597,
-      "posterBytes": 35675
-    }
+      "posterBytes": 38724
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-09_Windowpros-LLC_74812be9.mp4",
@@ -2654,8 +2717,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1241945,
-      "posterBytes": 33232
-    }
+      "posterBytes": 35849
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-15_Lucas-Management-LLC_e71fe71c.mov",
@@ -2692,8 +2756,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7227534,
-      "posterBytes": 52319
-    }
+      "posterBytes": 58204
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-16_Rivas-Roofing_6cac6786.mp4",
@@ -2723,8 +2788,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 753030,
-      "posterBytes": 75523
-    }
+      "posterBytes": 78300
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-16_Rodriguez-Rodent-Defense-LLC_d9c3f369.mp4",
@@ -2761,8 +2827,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 831884,
-      "posterBytes": 23404
-    }
+      "posterBytes": 23560
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-20_Reh-construction-LLC_8acd8050.mp4",
@@ -2800,8 +2867,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1087465,
-      "posterBytes": 46999
-    }
+      "posterBytes": 19895
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-27_Genesis-Property-Development_e94184f7.mp4",
@@ -2838,8 +2906,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1653519,
-      "posterBytes": 41987
-    }
+      "posterBytes": 43753
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-27_Gladiator-Landscaping-and-Design-LLC_39d27c39.mp4",
@@ -2869,8 +2938,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 898327,
-      "posterBytes": 19618
-    }
+      "posterBytes": 24903
+    },
+    "posterTimeSec": 5.0
   },
   {
     "source": "2026-10-29_JJC-Pressure-and-Softwash_9424a6e3.mp4",
@@ -2994,7 +3064,8 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1308525,
-      "posterBytes": 41154
-    }
+      "posterBytes": 42229
+    },
+    "posterTimeSec": 5.0
   }
 ]
