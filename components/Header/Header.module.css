@@ -1,4 +1,4 @@
-/* The desktop bar shows from 69em (1104px). Below that, phones and tablets use the drawer. */
+/* The desktop bar shows from 75em (1200px). Below that, phones and tablets use the drawer. */
 
 .stickyHeader {
   position: sticky;
@@ -19,13 +19,13 @@
 }
 
 .desktopOnly {
-  @media (max-width: 68.99em) {
+  @media (max-width: 74.99em) {
     display: none !important;
   }
 }
 
 .mobileOnly {
-  @media (min-width: 69em) {
+  @media (min-width: 75em) {
     display: none !important;
   }
 }
@@ -42,14 +42,15 @@
   text-decoration: none;
   color: var(--blue);
   font-weight: 500;
-  font-size: 15px;
+  font-size: 17px;
+  white-space: nowrap;
 
   &:focus-visible {
     outline: rem(2px) solid var(--blue);
     outline-offset: rem(-4px);
   }
 
-  @media (max-width: 68.99em) {
+  @media (max-width: 74.99em) {
     height: rem(60px);
     width: 100%;
     font-size: 22px;
@@ -72,7 +73,7 @@
 .linkCurrent {
   font-weight: 600;
 
-  @media (min-width: 69em) {
+  @media (min-width: 75em) {
     &::after {
       content: '';
       position: absolute;
@@ -84,7 +85,7 @@
     }
   }
 
-  @media (max-width: 68.99em) {
+  @media (max-width: 74.99em) {
     box-shadow: inset rem(4px) 0 0 0 var(--yellow);
   }
 }
@@ -126,7 +127,7 @@
     background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-7));
   }
 
-  @media (max-width: 68.99em) {
+  @media (max-width: 74.99em) {
     > div {
       padding: 0 15px !important;
     }
@@ -161,7 +162,8 @@
 }
 
 .button {
-  font-size: 15px !important;
+  font-size: 17px !important;
+  white-space: nowrap;
   cursor: pointer;
   transition: all 0.3s;
 

@@ -1,5 +1,5 @@
 # Simplify Site Navigation
-Status: DONE 2026-11-06 — Phases 1–5 CODE-COMPLETE, Final A-Z review approved; branch feat/simplify-site-navigation (not pushed, not merged); open ❓ flags for Manu below
+Status: DONE 2026-11-06, amended 2026-11-10 (decisions 51–52: 17px nav text, Contact in the bar, desktop bar from 1200px); branch feat/simplify-site-navigation (not pushed, not merged); open ❓ flags for Manu below
 Research: 1
 
 ## User stories
@@ -39,7 +39,7 @@ Product (confirmed by Manu, 2026-11-05):
 9. The 3-step "What working with us looks like" block stays everywhere it appears today.
 10. Desktop top navigation, left to right: Logo, Products (dropdown, unchanged), Results, Trades, About, Blog, Careers. Right side: Log In, Book A Call. No dropdown for About.
 11. "About" in the bar is a plain link to the existing About Us page.
-12. Contact is not in the top bar. It lives in the footer only and keeps forwarding straight to the booking calendar.
+12. ~~Contact is not in the top bar.~~ Superseded by 51 on 2026-11-10: Contact is the last link in the bar and the drawer and goes straight to the booking funnel. The footer Contact link stays and still forwards to the calendar.
 13. Header text shrinks one step, Log In / Book A Call buttons shrink slightly, logo stays the same size, and the bar flexes to the screen width so nothing wraps on a 13-inch laptop.
 14. Mobile hamburger menu mirrors the flat list: Home, Products (expandable), Results, Trades, About, Blog, Careers, Log in, Book A Call.
 15. Footer: "Links" and "About" columns collapse into one "Company" column: Results, Trades, About Us, Blog, Careers, Contact, Log in. Two Products columns unchanged. Legal links row unchanged.
@@ -63,8 +63,8 @@ Product (confirmed by Manu, 2026-11-06):
 31. Link labels pointing at Results keep their wording ("See All", "reviews & testimonials"); only destinations change.
 32. Google's page list drops Contact. Legal pages that are missing from the list today stay missing (out of scope).
 33. No new Results or Trades links are added to the homepage; the bar and footer are the entry points.
-34. Tablets get the hamburger menu: the desktop bar appears only from about 1100px wide; below that, phones and tablets share the drawer.
-35. Header sizes are locked: link text 17px → 15px, Book A Call button extra-large → large, Log In button large → medium. Logo unchanged.
+34. Tablets get the hamburger menu: the desktop bar appears only from 1200px wide (was ~1100px until 2026-11-10; the larger text plus Contact no longer fit at 1104px); below that, phones and tablets share the drawer.
+35. Header sizes: link text stays 17px as before and Book A Call text 17px (Manu, 2026-11-10: "it doesn't need to be that small"); Book A Call button large; Log In plain text. Logo unchanged.
 36. The current page is highlighted in the desktop bar (e.g. "Results" marked while on Results). Products is highlighted on any product page.
 37. Careers looks identical to the other bar links. No quieter styling.
 38. Footer merged column heading is "Company"; order is Results, Trades, About Us, Blog, Careers, Contact, Log in. The two Products columns keep today's layout, including the second one having no heading.
@@ -84,6 +84,10 @@ Product (confirmed by Manu, 2026-11-06):
     - 25d Log In in the bar becomes a plain text link in the same dark blue as the other links, so Book A Call is the only yellow element.
 49. Tracking tags for the new buttons: `sticky-mobile`, `results-top`, `trades-top`, `products-dropdown`.
 50. 25c and 25d are built in Phase 3 (same header files). 25a and 25b are Phase 5.
+
+Product (confirmed by Manu, 2026-11-10, after seeing the branch locally):
+51. Contact is in the top bar and the drawer, after Careers, and takes the visitor straight to the booking funnel at grow.stonesystems.io (tag `header-contact`), same tab. Supersedes 12 for the bar; the footer Contact link is unchanged.
+52. Navigation text goes back to 17px (links and Book A Call). To keep one line, the desktop bar now starts at 1200px; 1024px tablets use the drawer. Links never wrap.
 
 ## Invariants this sprint promises
 - A. Products pages and the Products dropdown stay exactly as they are (the only addition is the 25c line at the bottom of the dropdown).
@@ -237,6 +241,9 @@ Files:
 - ❓ FLAG FOR Manu (out of scope, hiring site): hiring.stonesystems.io has no link back to stonesystems.io in its header or footer, and its header button reads "See openings". A candidate who clicks through has only the browser's Back button to return. Noted for whoever owns that site.
 - 👀 EYEBALL FOR Manu: routes to look at in a browser before merge — `/` (phone + desktop), `/results`, `/trades`, `/careers` (phone + desktop, compare with hiring.stonesystems.io), `/features/seo` (Products highlighted), the menu at 390 and 768, the footer. Screenshots: `research/screenshots/phase3/pass3`, `phase4/pass2`, `phase5/pass2`.
 - ~~OQ-26~~ Resolved 2026-11-06: the production build completes locally without a Sanity token (all 55 blog posts built).
+
+## Amendment — 2026-11-10 (after Manu's local review)
+- Nav link and Book A Call text back to 17px; links and buttons never wrap. Contact added to the bar and the drawer, linking straight to the funnel with tag `header-contact`. With the larger text plus Contact the bar no longer fit at 1104px (Log In wrapped, Book A Call clipped), so the desktop bar now starts at 1200px and everything below uses the drawer; the sticky bar and the menu share the new 75em switch. Verified at 1199 (drawer), 1200, 1280, 1366 (one line, no wrapping); screenshots in `research/screenshots/phase3/pass4`. Gate green (lint 0, typecheck, tests, build).
 
 ## FINAL A-Z REVIEW — 2026-11-06
 One fresh-context reviewer read this whole doc and the whole branch against master (11 commits, 255 files including sprint docs and screenshots) as one system, and ran the gate itself.

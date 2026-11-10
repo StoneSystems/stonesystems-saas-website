@@ -99,6 +99,8 @@ const navLinks = [
   { label: 'About', href: '/about-us' },
   { label: 'Blog', href: '/blog' },
   { label: 'Careers', href: '/careers' },
+  // Contact goes straight to the booking funnel (same destination as /contact).
+  { label: 'Contact', href: bookingUrl('header-contact') },
 ];
 
 interface LinkProps {
@@ -142,7 +144,7 @@ export function Header() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [productLinksOpened, { toggle: toggleProductLinks }] = useDisclosure(false);
   const pathname = usePathname();
-  const desktop = useMediaQuery('(min-width: 69em)');
+  const desktop = useMediaQuery('(min-width: 75em)');
 
   // If the window grows to desktop size while the menu is open, close it so the page is not left locked.
   useEffect(() => {

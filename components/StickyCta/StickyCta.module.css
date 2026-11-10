@@ -31,7 +31,7 @@
     outline-offset: rem(-5px);
   }
 
-  @media (min-width: 69em) {
+  @media (min-width: 75em) {
     display: none;
   }
 }
@@ -44,7 +44,7 @@
   height: calc(rem(60px) + env(safe-area-inset-bottom));
   background-color: var(--blue); /* same as the footer above it */
 
-  @media (min-width: 69em) {
+  @media (min-width: 75em) {
     display: none;
   }
 }
