@@ -89,6 +89,7 @@ Product (confirmed by Manu, 2026-11-10, after seeing the branch locally):
 51. Contact is in the top bar and the drawer, after Careers, and takes the visitor straight to the booking funnel at grow.stonesystems.io (tag `header-contact`), same tab. Supersedes 12 for the bar; the footer Contact link is unchanged.
 52. Navigation text goes back to 17px (links and Book A Call). To keep one line, the desktop bar now starts at 1200px; 1024px tablets use the drawer. Links never wrap.
 53. "Home" is the first link in the bar (after the logo) and in the drawer, going to the site root, highlighted on the homepage (Manu, 2026-11-10).
+54. "About" is a dropdown like Products, in the bar and the drawer, holding About Us, Trades, Blog, Careers and Contact (Contact to the funnel, tag `header-contact`). The bar reads Home, Products, Results, About. On desktop the About word itself still opens the About Us page; About is highlighted on any page inside it. Supersedes 9/51 for the bar; the About dropdown question from 25e is now answered by this (Manu, 2026-11-10).
 
 ## Invariants this sprint promises
 - A. Products pages and the Products dropdown stay exactly as they are (the only addition is the 25c line at the bottom of the dropdown).
@@ -244,6 +245,7 @@ Files:
 - ~~OQ-26~~ Resolved 2026-11-06: the production build completes locally without a Sanity token (all 55 blog posts built).
 
 ## Amendment — 2026-11-10 (after Manu's local review)
+- "About" became a dropdown (decision 54): the bar is Home, Products, Results, About; About holds About Us, Trades, Blog, Careers, Contact with an icon and a one-line description each, in the same panel style as Products. In the drawer, About expands the same list under it. Verified at 1200 and 1440 (desktop panel) and 390 (drawer); gate green.
 - "Home" added as the first bar link (the drawer already had it); highlighted on `/`. Fits at 1200px with a 22px gap before Log In.
 - Nav link and Book A Call text back to 17px; links and buttons never wrap. Contact added to the bar and the drawer, linking straight to the funnel with tag `header-contact`. With the larger text plus Contact the bar no longer fit at 1104px (Log In wrapped, Book A Call clipped), so the desktop bar now starts at 1200px and everything below uses the drawer; the sticky bar and the menu share the new 75em switch. Verified at 1199 (drawer), 1200, 1280, 1366 (one line, no wrapping); screenshots in `research/screenshots/phase3/pass4`. Gate green (lint 0, typecheck, tests, build).
 
