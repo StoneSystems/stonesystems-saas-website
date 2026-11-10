@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5000
+			},
+			"text": " a very good, very great job by a STEM system."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,520",
+				"to": "00:00:12,720"
+			},
+			"offsets": {
+				"from": 9520,
+				"to": 12720
+			},
+			"text": " Definitely, Miguel took over the other guys"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,720",
+				"to": "00:00:14,480"
+			},
+			"offsets": {
+				"from": 12720,
+				"to": 14480
+			},
+			"text": " who's been doing a great job so far today."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,480",
+				"to": "00:00:15,760"
+			},
+			"offsets": {
+				"from": 14480,
+				"to": 15760
+			},
+			"text": " We have a great communication,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,760",
+				"to": "00:00:17,840"
+			},
+			"offsets": {
+				"from": 15760,
+				"to": 17840
+			},
+			"text": " which is I really, really appreciate that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,840",
+				"to": "00:00:22,000"
+			},
+			"offsets": {
+				"from": 17840,
+				"to": 22000
+			},
+			"text": " I believe so, this is gonna be working real good for me."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,000",
+				"to": "00:00:27,000"
+			},
+			"offsets": {
+				"from": 22000,
+				"to": 27000
+			},
+			"text": " And I've been here a lot of people that they say"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,240",
+				"to": "00:00:29,400"
+			},
+			"offsets": {
+				"from": 27240,
+				"to": 29400
+			},
+			"text": " in that system work for things."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,400",
+				"to": "00:00:32,040"
+			},
+			"offsets": {
+				"from": 29400,
+				"to": 32040
+			},
+			"text": " I'm gonna put my 100% that is going to be working for me."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,040",
+				"to": "00:00:33,980"
+			},
+			"offsets": {
+				"from": 32040,
+				"to": 33980
+			},
+			"text": " Thank you, Miguel, for your time."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,880",
+				"to": "00:00:38,840"
+			},
+			"offsets": {
+				"from": 36880,
+				"to": 38840
+			},
+			"text": " For the job and best with me today,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,840",
+				"to": "00:00:40,480"
+			},
+			"offsets": {
+				"from": 38840,
+				"to": 40480
+			},
+			"text": " I really do appreciate that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,480",
+				"to": "00:00:41,540"
+			},
+			"offsets": {
+				"from": 40480,
+				"to": 41540
+			},
+			"text": " Thank you so much."
+		}
+	]
+}

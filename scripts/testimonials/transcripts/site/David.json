@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:07,360"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 7360
+			},
+			"text": " Hello, I'm a small business owner and I'm a mobile dog grooming business, and I wasn't"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,360",
+				"to": "00:00:13,640"
+			},
+			"offsets": {
+				"from": 7360,
+				"to": 13640
+			},
+			"text": " doing too well on the web as the traffic flow."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,640",
+				"to": "00:00:21,800"
+			},
+			"offsets": {
+				"from": 13640,
+				"to": 21800
+			},
+			"text": " Once Kai got ahold of me and we started explaining what his services are, I gave it a try, you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,800",
+				"to": "00:00:29,560"
+			},
+			"offsets": {
+				"from": 21800,
+				"to": 29560
+			},
+			"text": " know, he said it doesn't go well in the first 15 days, you can cancel, and I just seen"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,560",
+				"to": "00:00:33,000"
+			},
+			"offsets": {
+				"from": 29560,
+				"to": 33000
+			},
+			"text": " a significant improvement within my business."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,000",
+				"to": "00:00:40,800"
+			},
+			"offsets": {
+				"from": 33000,
+				"to": 40800
+			},
+			"text": " I have a link that now I send out to all my clients so they can do a review."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,800",
+				"to": "00:00:48,960"
+			},
+			"offsets": {
+				"from": 40800,
+				"to": 48960
+			},
+			"text": " I also get reminders on a daily basis of the clients that I just work with for me to send"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,960",
+				"to": "00:00:52,200"
+			},
+			"offsets": {
+				"from": 48960,
+				"to": 52200
+			},
+			"text": " them that link, and I just see my business improved significantly."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:52,200",
+				"to": "00:00:58,840"
+			},
+			"offsets": {
+				"from": 52200,
+				"to": 58840
+			},
+			"text": " It makes my life a lot easier, stress is a lot better."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:58,840",
+				"to": "00:01:04,840"
+			},
+			"offsets": {
+				"from": 58840,
+				"to": 64840
+			},
+			"text": " We all know how that goes, and if you're a smaller big business owner, give them a try."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:04,840",
+				"to": "00:01:06,800"
+			},
+			"offsets": {
+				"from": 64840,
+				"to": 66800
+			},
+			"text": " I'm 100% satisfied with them."
+		}
+	]
+}

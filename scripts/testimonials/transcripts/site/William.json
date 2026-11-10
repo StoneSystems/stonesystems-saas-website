@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5000
+			},
+			"text": " Hey, this is Scott from Cut My Kill-A-Watts. I just wanted to give a shout out to Kai."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,000",
+				"to": "00:00:13,000"
+			},
+			"offsets": {
+				"from": 5000,
+				"to": 13000
+			},
+			"text": " Man, he got my internet really going, starting to get leads in organic leads that don't cost me money,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,000",
+				"to": "00:00:20,000"
+			},
+			"offsets": {
+				"from": 13000,
+				"to": 20000
+			},
+			"text": " and it's just been really wonderful, plus he set up some systems for me that really helped my business."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,000",
+				"to": "00:00:26,000"
+			},
+			"offsets": {
+				"from": 20000,
+				"to": 26000
+			},
+			"text": " You know, if I get a phone call and I miss it, then I get a text alert, and I call the people back."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:26,000",
+				"to": "00:00:29,000"
+			},
+			"offsets": {
+				"from": 26000,
+				"to": 29000
+			},
+			"text": " I mean, he's really helped me automate my little installation business."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,000",
+				"to": "00:00:34,000"
+			},
+			"offsets": {
+				"from": 29000,
+				"to": 34000
+			},
+			"text": " So I definitely recommend getting Kai to help you out with your internet, your Google page,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,000",
+				"to": "00:00:40,000"
+			},
+			"offsets": {
+				"from": 34000,
+				"to": 40000
+			},
+			"text": " and getting a really nice website that's efficient, clean, and easy to use."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,000",
+				"to": "00:00:44,000"
+			},
+			"offsets": {
+				"from": 40000,
+				"to": 44000
+			},
+			"text": " Thanks, Kai. Really appreciate it. Have a great day, man."
+		}
+	]
+}

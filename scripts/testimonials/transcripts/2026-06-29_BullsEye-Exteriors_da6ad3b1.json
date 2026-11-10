@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,560"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5560
+			},
+			"text": " Hey everyone my name is Brady. I just wanted to give a quick shout out to Stone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,560",
+				"to": "00:00:10,960"
+			},
+			"offsets": {
+				"from": 5560,
+				"to": 10960
+			},
+			"text": " They've helped my business a ton. I run a door-to-door roofing company and they helped"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,960",
+				"to": "00:00:15,360"
+			},
+			"offsets": {
+				"from": 10960,
+				"to": 15360
+			},
+			"text": " build me an amazing website and get me out on the map. Hopefully over the next couple"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,360",
+				"to": "00:00:19,480"
+			},
+			"offsets": {
+				"from": 15360,
+				"to": 19480
+			},
+			"text": " months, I'll be top three in Google and I can start getting some leads by not having"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,480",
+				"to": "00:00:25,200"
+			},
+			"offsets": {
+				"from": 19480,
+				"to": 25200
+			},
+			"text": " to pound the pavement. But I can't recommend Sebastian enough over there at Stone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,200",
+				"to": "00:00:30,880"
+			},
+			"offsets": {
+				"from": 25200,
+				"to": 30880
+			},
+			"text": " He's answered all my questions in a super timely manner, as well as, you know, any questions"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,880",
+				"to": "00:00:35,320"
+			},
+			"offsets": {
+				"from": 30880,
+				"to": 35320
+			},
+			"text": " or concerns that I do have. I just reach out to him and I get a reply typically to him"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,320",
+				"to": "00:00:38,320"
+			},
+			"offsets": {
+				"from": 35320,
+				"to": 38320
+			},
+			"text": " like an hour, which is awesome. So 10 hours then."
+		}
+	]
+}

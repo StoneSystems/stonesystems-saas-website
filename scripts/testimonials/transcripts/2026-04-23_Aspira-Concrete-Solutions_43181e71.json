@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,460"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5460
+			},
+			"text": " Hi, my name is Kirsten, I own a spherical and great solutions out of Washington State."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,460",
+				"to": "00:00:08,840"
+			},
+			"offsets": {
+				"from": 5460,
+				"to": 8840
+			},
+			"text": " I started working with stone systems a couple of months ago."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,840",
+				"to": "00:00:13,840"
+			},
+			"offsets": {
+				"from": 8840,
+				"to": 13840
+			},
+			"text": " Adrian in particular has been amazing, he is a great manager."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,840",
+				"to": "00:00:19,080"
+			},
+			"offsets": {
+				"from": 13840,
+				"to": 19080
+			},
+			"text": " We have had several failed attempts at getting our website where we want it to be and allowing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,080",
+				"to": "00:00:23,880"
+			},
+			"offsets": {
+				"from": 19080,
+				"to": 23880
+			},
+			"text": " it to just be simplified enough to generate leads."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,880",
+				"to": "00:00:29,880"
+			},
+			"offsets": {
+				"from": 23880,
+				"to": 29880
+			},
+			"text": " We've tried custom design websites, we've tried going with companies that promise SEO"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,880",
+				"to": "00:00:34,480"
+			},
+			"offsets": {
+				"from": 29880,
+				"to": 34480
+			},
+			"text": " in the world and all of them have fell short."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,480",
+				"to": "00:00:41,760"
+			},
+			"offsets": {
+				"from": 34480,
+				"to": 41760
+			},
+			"text": " Since working with Adrian and stone systems, we have actually picked up our lead generation."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,760",
+				"to": "00:00:47,640"
+			},
+			"offsets": {
+				"from": 41760,
+				"to": 47640
+			},
+			"text": " Our clients find it easy to use, they even tell me, \"Hey, you've made it really easy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,640",
+				"to": "00:00:49,640"
+			},
+			"offsets": {
+				"from": 47640,
+				"to": 49640
+			},
+			"text": " to get ahold of you.\""
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,640",
+				"to": "00:00:58,120"
+			},
+			"offsets": {
+				"from": 49640,
+				"to": 58120
+			},
+			"text": " They really follow the process of keep it simple and simple and scalable."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:58,120",
+				"to": "00:01:04,200"
+			},
+			"offsets": {
+				"from": 58120,
+				"to": 64200
+			},
+			"text": " It's been a real pleasure, I plan on sticking with them and from somebody who has tried"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:04,200",
+				"to": "00:01:10,800"
+			},
+			"offsets": {
+				"from": 64200,
+				"to": 70800
+			},
+			"text": " it all and is really enjoying it, I'd say give it a shot and Adrian is fantastic."
+		}
+	]
+}

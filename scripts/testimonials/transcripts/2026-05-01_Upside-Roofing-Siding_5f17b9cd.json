@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6920
+			},
+			"text": " Sebastian, thank you so much for all the support and guidance you're giving us on launching"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,920",
+				"to": "00:00:08,280"
+			},
+			"offsets": {
+				"from": 6920,
+				"to": 8280
+			},
+			"text": " our website."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,280",
+				"to": "00:00:09,760"
+			},
+			"offsets": {
+				"from": 8280,
+				"to": 9760
+			},
+			"text": " You are top notch."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,760",
+				"to": "00:00:11,960"
+			},
+			"offsets": {
+				"from": 9760,
+				"to": 11960
+			},
+			"text": " We could not have done it without you."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,960",
+				"to": "00:00:14,760"
+			},
+			"offsets": {
+				"from": 11960,
+				"to": 14760
+			},
+			"text": " Once again, upside roofing is lucky to have you."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,760",
+				"to": "00:00:15,080"
+			},
+			"offsets": {
+				"from": 14760,
+				"to": 15080
+			},
+			"text": " Thank you."
+		}
+	]
+}

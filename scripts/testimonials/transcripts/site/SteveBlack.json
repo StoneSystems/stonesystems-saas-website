@@ -1,0 +1,109 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,200"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5200
+			},
+			"text": " Hey, this is Steve Larkin, owner of the outside shade company here in beautiful Tempe, Arizona."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,200",
+				"to": "00:00:11,240"
+			},
+			"offsets": {
+				"from": 5200,
+				"to": 11240
+			},
+			"text": " Hey, I just want to drop a quick little testimonial from stone systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,240",
+				"to": "00:00:15,880"
+			},
+			"offsets": {
+				"from": 11240,
+				"to": 15880
+			},
+			"text": " I'm telling you, I have been through the ringer with these companies out here trying"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,880",
+				"to": "00:00:17,960"
+			},
+			"offsets": {
+				"from": 15880,
+				"to": 17960
+			},
+			"text": " my best to find a legit company."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,960",
+				"to": "00:00:22,320"
+			},
+			"offsets": {
+				"from": 17960,
+				"to": 22320
+			},
+			"text": " Well, one thing I can tell you is these guys are the truth."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,320",
+				"to": "00:00:29,860"
+			},
+			"offsets": {
+				"from": 22320,
+				"to": 29860
+			},
+			"text": " 100% real, spot on, communication is phenomenal, you cannot go wrong."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,860",
+				"to": "00:00:33,320"
+			},
+			"offsets": {
+				"from": 29860,
+				"to": 33320
+			},
+			"text": " If these guys are tried, I promise you you'll be happy, thank you."
+		}
+	]
+}

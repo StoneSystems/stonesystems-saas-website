@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8400
+			},
+			"text": " >> Hi, everybody. My name is Marvin, and I own Groundwork Exploring in Phoenix, Arizona."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,400",
+				"to": "00:00:16,100"
+			},
+			"offsets": {
+				"from": 8400,
+				"to": 16100
+			},
+			"text": " I've been in business for over 30 years, and I have done my shift of marketing, and I just"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,100",
+				"to": "00:00:23,980"
+			},
+			"offsets": {
+				"from": 16100,
+				"to": 23980
+			},
+			"text": " joined stone systems, and thus far it has been fantastic. They are taking very good"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,980",
+				"to": "00:00:29,580"
+			},
+			"offsets": {
+				"from": 23980,
+				"to": 29580
+			},
+			"text": " care of me. Specifically, I want to shout out to Ashley. Ashley, you're wonderful. Thank"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,580",
+				"to": "00:00:34,900"
+			},
+			"offsets": {
+				"from": 29580,
+				"to": 34900
+			},
+			"text": " you for your grace, thank you for your patience, thank you for being able to teach an old dog"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,900",
+				"to": "00:00:40,900"
+			},
+			"offsets": {
+				"from": 34900,
+				"to": 40900
+			},
+			"text": " some new tricks, and I'm learning. I'm learning a lot along the way, and I'm very, very, very"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,900",
+				"to": "00:00:47,980"
+			},
+			"offsets": {
+				"from": 40900,
+				"to": 47980
+			},
+			"text": " excited for the future. So, in a short amount of time, there's already buzz with my company."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,980",
+				"to": "00:00:56,020"
+			},
+			"offsets": {
+				"from": 47980,
+				"to": 56020
+			},
+			"text": " I'm already seeing new interests in Groundwork Exploring, and that's really what I signed"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,020",
+				"to": "00:01:01,760"
+			},
+			"offsets": {
+				"from": 56020,
+				"to": 61760
+			},
+			"text": " on for. So, Ashley, stone systems, everybody over there, thank you very much. Looking forward"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:01,760",
+				"to": "00:01:05,620"
+			},
+			"offsets": {
+				"from": 61760,
+				"to": 65620
+			},
+			"text": " to the future, and let's grow together. Thank you so much. Bye-bye."
+		}
+	]
+}

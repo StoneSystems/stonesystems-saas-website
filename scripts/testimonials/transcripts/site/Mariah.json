@@ -1,0 +1,109 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,720"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6720
+			},
+			"text": " Hi, my name is Mariah Martinez with MAC Concrete LLC and I want to extend my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,720",
+				"to": "00:00:11,720"
+			},
+			"offsets": {
+				"from": 6720,
+				"to": 11720
+			},
+			"text": " deepest gratitude to Kai and the team at Stone Systems. Kai was incredibly helpful"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,720",
+				"to": "00:00:16,280"
+			},
+			"offsets": {
+				"from": 11720,
+				"to": 16280
+			},
+			"text": " and provided outstanding assistance to myself and my husband for developing our"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,280",
+				"to": "00:00:20,560"
+			},
+			"offsets": {
+				"from": 16280,
+				"to": 20560
+			},
+			"text": " new website for our company. His expertise and dedication made the entire"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,560",
+				"to": "00:00:24,080"
+			},
+			"offsets": {
+				"from": 20560,
+				"to": 24080
+			},
+			"text": " process smooth and efficient. We're thrilled with the final product and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,080",
+				"to": "00:00:28,420"
+			},
+			"offsets": {
+				"from": 24080,
+				"to": 28420
+			},
+			"text": " highly recommend Stone Systems for anyone in need of top-notch web developing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,420",
+				"to": "00:00:31,260"
+			},
+			"offsets": {
+				"from": 28420,
+				"to": 31260
+			},
+			"text": " Services reached out to Kai. Thank you again. Have a great day."
+		}
+	]
+}

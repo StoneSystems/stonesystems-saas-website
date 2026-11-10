@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,320"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4320
+			},
+			"text": " I just wanted to give a quick shout out to Kai from Stone Systems. They set up my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,320",
+				"to": "00:00:08,760"
+			},
+			"offsets": {
+				"from": 4320,
+				"to": 8760
+			},
+			"text": " website. They did it real professional and did it really quick. I am very happy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,760",
+				"to": "00:00:13,360"
+			},
+			"offsets": {
+				"from": 8760,
+				"to": 13360
+			},
+			"text": " with them and would highly recommend going with them. Businesses wrapped up"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,360",
+				"to": "00:00:18,320"
+			},
+			"offsets": {
+				"from": 13360,
+				"to": 18320
+			},
+			"text": " like overnight. Their prices were a lot cheaper and reasonable with other"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,320",
+				"to": "00:00:23,720"
+			},
+			"offsets": {
+				"from": 18320,
+				"to": 23720
+			},
+			"text": " companies I shop with. I would definitely wouldn't even hesitate going with them."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,720",
+				"to": "00:00:28,480"
+			},
+			"offsets": {
+				"from": 23720,
+				"to": 28480
+			},
+			"text": " I'm very happy and I'm looking forward to like every single day in my phone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,480",
+				"to": "00:00:33,440"
+			},
+			"offsets": {
+				"from": 28480,
+				"to": 33440
+			},
+			"text": " rings and it's another new client. So don't even hesitate to sign up with them."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,440",
+				"to": "00:00:39,480"
+			},
+			"offsets": {
+				"from": 33440,
+				"to": 39480
+			},
+			"text": " Any questions? Feel free to reach out to me for a reference or any questions. You"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,480",
+				"to": "00:00:42,680"
+			},
+			"offsets": {
+				"from": 39480,
+				"to": 42680
+			},
+			"text": " won't regret it. Thank you."
+		}
+	]
+}

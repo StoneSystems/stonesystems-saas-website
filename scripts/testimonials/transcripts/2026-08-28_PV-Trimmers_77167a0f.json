@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,080"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3080
+			},
+			"text": " - Hi there, I'm Ravel Thompson in Phoenix, Arizona."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,080",
+				"to": "00:00:06,120"
+			},
+			"offsets": {
+				"from": 3080,
+				"to": 6120
+			},
+			"text": " And Stone System is helping me get my business up and going."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,120",
+				"to": "00:00:08,120"
+			},
+			"offsets": {
+				"from": 6120,
+				"to": 8120
+			},
+			"text": " And it's been very, very easy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,120",
+				"to": "00:00:09,680"
+			},
+			"offsets": {
+				"from": 8120,
+				"to": 9680
+			},
+			"text": " and the communication has been awesome."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,680",
+				"to": "00:00:11,080"
+			},
+			"offsets": {
+				"from": 9680,
+				"to": 11080
+			},
+			"text": " So thank you, Stone Systems."
+		}
+	]
+}

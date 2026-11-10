@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,380"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6380
+			},
+			"text": " Hey everybody, this is Tom at Avery Roo Services just wanting to give a quick shout out to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,380",
+				"to": "00:00:10,680"
+			},
+			"offsets": {
+				"from": 6380,
+				"to": 10680
+			},
+			"text": " Stone Systems Sebastian over there was a great help to us."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,680",
+				"to": "00:00:15,440"
+			},
+			"offsets": {
+				"from": 10680,
+				"to": 15440
+			},
+			"text": " They reworked our website, they added a chat widget which got people immediately getting"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,440",
+				"to": "00:00:22,080"
+			},
+			"offsets": {
+				"from": 15440,
+				"to": 22080
+			},
+			"text": " in touch with us and we started getting five star reviews from a bunch of customers and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,080",
+				"to": "00:00:27,960"
+			},
+			"offsets": {
+				"from": 22080,
+				"to": 27960
+			},
+			"text": " have been very successful in closing jobs based on the fact that they can text me from"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,960",
+				"to": "00:00:31,080"
+			},
+			"offsets": {
+				"from": 27960,
+				"to": 31080
+			},
+			"text": " my website and immediately get a response."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,080",
+				"to": "00:00:34,320"
+			},
+			"offsets": {
+				"from": 31080,
+				"to": 34320
+			},
+			"text": " So we re happy that we made the choice to go with these guys to help us with that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,320",
+				"to": "00:00:38,200"
+			},
+			"offsets": {
+				"from": 34320,
+				"to": 38200
+			},
+			"text": " It s really been working out well for us so far and I would recommend them to anyone."
+		}
+	]
+}

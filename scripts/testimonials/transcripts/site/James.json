@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,160"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4160
+			},
+			"text": " A a just wanted to drop in and say thanks to Kai"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,200",
+				"to": "00:00:08,900"
+			},
+			"offsets": {
+				"from": 6200,
+				"to": 8900
+			},
+			"text": " This James with arrowhead heating and air conditioning"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,440",
+				"to": "00:00:13,440"
+			},
+			"offsets": {
+				"from": 11440,
+				"to": 13440
+			},
+			"text": " After going through"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,960",
+				"to": "00:00:21,240"
+			},
+			"offsets": {
+				"from": 15960,
+				"to": 21240
+			},
+			"text": " Two or three other people feeding me a line of bullshit finally count somebody they'll tell me the truth"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,080",
+				"to": "00:00:26,320"
+			},
+			"offsets": {
+				"from": 22080,
+				"to": 26320
+			},
+			"text": " It's straight up. He ain't gonna lie to you. He ain't gonna. I'll try to teach you. I don't know money"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,120",
+				"to": "00:00:30,380"
+			},
+			"offsets": {
+				"from": 27120,
+				"to": 30380
+			},
+			"text": " He's a good dude easy to get in contact with"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,200",
+				"to": "00:00:33,200"
+			},
+			"offsets": {
+				"from": 31200,
+				"to": 33200
+			},
+			"text": " really respects his customers and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,160",
+				"to": "00:00:37,840"
+			},
+			"offsets": {
+				"from": 34160,
+				"to": 37840
+			},
+			"text": " The people he works with or for I suppose"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,440",
+				"to": "00:00:47,280"
+			},
+			"offsets": {
+				"from": 40440,
+				"to": 47280
+			},
+			"text": " If you're trying to get in fucked around by everybody else a bunch of guys telling you they're gonna do this that in the third and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:48,040",
+				"to": "00:00:50,040"
+			},
+			"offsets": {
+				"from": 48040,
+				"to": 50040
+			},
+			"text": " Not producing shit"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,160",
+				"to": "00:00:54,740"
+			},
+			"offsets": {
+				"from": 50160,
+				"to": 54740
+			},
+			"text": " And you want to work with somebody that's actually gonna do what they said they're gonna do in a timely manner"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:55,640",
+				"to": "00:01:00,320"
+			},
+			"offsets": {
+				"from": 55640,
+				"to": 60320
+			},
+			"text": " I'd sign on with stone systems. I don't regret the choice one bit"
+		}
+	]
+}

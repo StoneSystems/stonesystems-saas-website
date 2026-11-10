@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,720"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6720
+			},
+			"text": " Uh, whenever you're ready, you can either brag or talk shit about me, man."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,720",
+				"to": "00:00:18,860"
+			},
+			"offsets": {
+				"from": 7720,
+				"to": 18860
+			},
+			"text": " Uh, I mean, honestly, so with these guys, uh, over some systems, uh, it's, it's been great so far that our website looks great to own with you."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,860",
+				"to": "00:00:19,920"
+			},
+			"offsets": {
+				"from": 18860,
+				"to": 19920
+			},
+			"text": " Andreas all the time."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,920",
+				"to": "00:00:22,560"
+			},
+			"offsets": {
+				"from": 19920,
+				"to": 22560
+			},
+			"text": " It's, it's been really nice, easy to communicate."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,040",
+				"to": "00:00:29,760"
+			},
+			"offsets": {
+				"from": 23040,
+				"to": 29760
+			},
+			"text": " Um, I feel very comfortable and confident that we're going to be working together for a long time, going in the right direction."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,760",
+				"to": "00:00:36,800"
+			},
+			"offsets": {
+				"from": 29760,
+				"to": 36800
+			},
+			"text": " And, uh, these guys are making this stuff, I don't know, simple and easy for me to understand, and I appreciate it."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,240",
+				"to": "00:00:38,640"
+			},
+			"offsets": {
+				"from": 37240,
+				"to": 38640
+			},
+			"text": " All right, thank you so much."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,640",
+				"to": "00:00:39,640"
+			},
+			"offsets": {
+				"from": 38640,
+				"to": 39640
+			},
+			"text": " That was great."
+		}
+	]
+}

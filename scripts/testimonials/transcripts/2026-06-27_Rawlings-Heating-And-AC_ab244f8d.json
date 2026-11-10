@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,940"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5940
+			},
+			"text": " My name is Lori Hessler. My husband and I are the owners of Rawlings Heating in AC."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,940",
+				"to": "00:00:12,960"
+			},
+			"offsets": {
+				"from": 5940,
+				"to": 12960
+			},
+			"text": " We started working with Oscar back in March. Very attentive in any website updates that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,960",
+				"to": "00:00:23,480"
+			},
+			"offsets": {
+				"from": 12960,
+				"to": 23480
+			},
+			"text": " we need. And then forward to May, we got a Google denial for our business account and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,480",
+				"to": "00:00:32,060"
+			},
+			"offsets": {
+				"from": 23480,
+				"to": 32060
+			},
+			"text": " he has been instrumental in working with Google to get our verification back up. It's been"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:32,060",
+				"to": "00:00:38,000"
+			},
+			"offsets": {
+				"from": 32060,
+				"to": 38000
+			},
+			"text": " a two month process. I cannot say enough about his communication and his updates that he"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,000",
+				"to": "00:00:46,440"
+			},
+			"offsets": {
+				"from": 38000,
+				"to": 46440
+			},
+			"text": " has given us along the way and his persistence at going to Google on a regular basis to allow"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:46,440",
+				"to": "00:00:56,120"
+			},
+			"offsets": {
+				"from": 46440,
+				"to": 56120
+			},
+			"text": " for our verification to finally be cleared. And I can't say enough about his worth ethic,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:56,120",
+				"to": "00:01:02,260"
+			},
+			"offsets": {
+				"from": 56120,
+				"to": 62260
+			},
+			"text": " his communication with me via email or text message and even on his days off, really getting"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,260",
+				"to": "00:01:08,360"
+			},
+			"offsets": {
+				"from": 62260,
+				"to": 68360
+			},
+			"text": " us through this Google process. You have an amazing employee with Oscar and I look forward"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:08,360",
+				"to": "00:01:09,560"
+			},
+			"offsets": {
+				"from": 68360,
+				"to": 69560
+			},
+			"text": " to working with him in the future."
+		}
+	]
+}

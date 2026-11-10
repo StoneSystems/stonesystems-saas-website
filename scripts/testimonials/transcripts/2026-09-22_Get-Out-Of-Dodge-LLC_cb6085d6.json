@@ -1,0 +1,197 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1680
+			},
+			"text": " - Okay, so I've been with Stone Systems"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,680",
+				"to": "00:00:03,640"
+			},
+			"offsets": {
+				"from": 1680,
+				"to": 3640
+			},
+			"text": " for about three months now,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,640",
+				"to": "00:00:07,020"
+			},
+			"offsets": {
+				"from": 3640,
+				"to": 7020
+			},
+			"text": " and the onboarding process was super easy, super quick."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,120",
+				"to": "00:00:09,600"
+			},
+			"offsets": {
+				"from": 8120,
+				"to": 9600
+			},
+			"text": " I got very lucky with Zach,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,600",
+				"to": "00:00:12,840"
+			},
+			"offsets": {
+				"from": 9600,
+				"to": 12840
+			},
+			"text": " and he's very, very responsive."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,840",
+				"to": "00:00:14,720"
+			},
+			"offsets": {
+				"from": 12840,
+				"to": 14720
+			},
+			"text": " He's always communicating,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,720",
+				"to": "00:00:16,200"
+			},
+			"offsets": {
+				"from": 14720,
+				"to": 16200
+			},
+			"text": " and I was reading some of the bad reviews"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,200",
+				"to": "00:00:17,160"
+			},
+			"offsets": {
+				"from": 16200,
+				"to": 17160
+			},
+			"text": " before I signed on,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,160",
+				"to": "00:00:19,080"
+			},
+			"offsets": {
+				"from": 17160,
+				"to": 19080
+			},
+			"text": " saying they're not as communicative."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,080",
+				"to": "00:00:21,080"
+			},
+			"offsets": {
+				"from": 19080,
+				"to": 21080
+			},
+			"text": " I disagree with those wholeheartedly."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,080",
+				"to": "00:00:24,200"
+			},
+			"offsets": {
+				"from": 21080,
+				"to": 24200
+			},
+			"text": " I get a response back within 12, 15 hours."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,200",
+				"to": "00:00:25,040"
+			},
+			"offsets": {
+				"from": 24200,
+				"to": 25040
+			},
+			"text": " It's super quick."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,040",
+				"to": "00:00:28,760"
+			},
+			"offsets": {
+				"from": 25040,
+				"to": 28760
+			},
+			"text": " I've been getting clients calling me,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,760",
+				"to": "00:00:30,400"
+			},
+			"offsets": {
+				"from": 28760,
+				"to": 30400
+			},
+			"text": " And my website's just night and day,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:30,400",
+				"to": "00:00:31,880"
+			},
+			"offsets": {
+				"from": 30400,
+				"to": 31880
+			},
+			"text": " so can't be more thankful."
+		}
+	]
+}

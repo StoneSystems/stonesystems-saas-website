@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:07,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 7000
+			},
+			"text": " My Smith owner at Higher Ground Land Management just wanted to give a shout out to Kyra Stone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,000",
+				"to": "00:00:15,000"
+			},
+			"offsets": {
+				"from": 7000,
+				"to": 15000
+			},
+			"text": " I really appreciate what he was able to do for us with the services he offers building our website."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,000",
+				"to": "00:00:24,000"
+			},
+			"offsets": {
+				"from": 15000,
+				"to": 24000
+			},
+			"text": " He got our website built and he actually integrated our Google Business page into their platform,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,000",
+				"to": "00:00:29,000"
+			},
+			"offsets": {
+				"from": 24000,
+				"to": 29000
+			},
+			"text": " which makes it very, very easy on us to automate things."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,000",
+				"to": "00:00:35,000"
+			},
+			"offsets": {
+				"from": 29000,
+				"to": 35000
+			},
+			"text": " His software automates it to where it sends you messages to your phone,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,000",
+				"to": "00:00:39,000"
+			},
+			"offsets": {
+				"from": 35000,
+				"to": 39000
+			},
+			"text": " scheduling the whole deal just from top to bottom."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,000",
+				"to": "00:00:41,000"
+			},
+			"offsets": {
+				"from": 39000,
+				"to": 41000
+			},
+			"text": " Can't thank him enough."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:41,000",
+				"to": "00:00:44,000"
+			},
+			"offsets": {
+				"from": 41000,
+				"to": 44000
+			},
+			"text": " Y'all got to check him out at Stone Systems."
+		}
+	]
+}
