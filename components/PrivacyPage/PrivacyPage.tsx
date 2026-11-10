@@ -3,7 +3,7 @@ import classes from './PrivacyPage.module.css';
 import { getPolicyReviewInfo } from '@/lib/policyReview';
 
 export function PrivacyPage() {
-  const review = getPolicyReviewInfo('2026-10-19');
+  const review = getPolicyReviewInfo('2026-11-10');
 
   return (
     <div className={classes.outer}>
@@ -262,7 +262,8 @@ export function PrivacyPage() {
                   </td>
                   <td>
                     A push-notification token for your device, its platform (iOS or Android) and App
-                    version, and when you last used the App
+                    version, a random installation ID created when the App is installed, and when
+                    you last used the App
                   </td>
                 </tr>
                 <tr>
@@ -335,7 +336,7 @@ export function PrivacyPage() {
               <strong>Provide and operate the Services and the App</strong> — account creation,
               billing, customer support, communications about your account; delivering the
               business&apos;s text messages and calls; sending push notifications for new messages
-              and calls; metering text and call usage for billing.
+              and calls; delivering updates to the App; metering text and call usage for billing.
             </li>
             <li className={classes.listItem}>
               <strong>Sales and marketing</strong> — respond to inquiries, follow up on leads, send
@@ -404,8 +405,8 @@ export function PrivacyPage() {
                       Service providers for the App: Supabase (authentication and database), Railway
                       (application hosting), Signal House (telephony carrier that delivers text
                       messages and calls), Apple and Google (push notifications through Apple Push
-                      Notification service and Firebase Cloud Messaging), Cloudflare (network
-                      security)
+                      Notification service and Firebase Cloud Messaging), Expo (delivering updates
+                      to the App), Cloudflare (network security)
                     </strong>
                   </td>
                   <td>
