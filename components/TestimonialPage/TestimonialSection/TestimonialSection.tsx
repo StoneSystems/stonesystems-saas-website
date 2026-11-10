@@ -646,30 +646,10 @@ const data = [
   },
   {
     testimonial:
-      '"So far so good. The website looks great. The people have all been awesome. Not sure, maybe a few kinks in some apps, but everything seems to be coming together nicely."',
-    videoSrc: '/videos/SmithsHomeAndPropertySolutions.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/SmithsHomeAndPropertySolutions.jpg',
-    personName: '-Aaron',
-  },
-  {
-    testimonial:
-      '"Working with Rashaan Caine has been an absolute fantastic experience. I am not tech savvy, so having them take the wheel and guide me through this has been a great weight lifted off me. I am looking forward to the future."',
-    videoSrc: '/videos/OnTheSpotCarpetCleaning.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/OnTheSpotCarpetCleaning.jpg',
-    personName: '-Brian',
-  },
-  {
-    testimonial:
       '"I\'ve been with Stone Systems for about three months. The onboarding was super easy and Zach is very responsive, I get a response back within 12 to 15 hours. I\'ve been getting clients calling me, and my website is just night and day."',
     videoSrc: '/videos/GetOutOfDodge.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/GetOutOfDodge.jpg',
     personName: '-Get Out Of Dodge',
-  },
-  {
-    testimonial: '"Great and relatable staff. Very upfront and transparent."',
-    videoSrc: '/videos/KingdomConstructionRemodeling.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/KingdomConstructionRemodeling.jpg',
-    personName: '-Brian',
   },
   {
     testimonial:
@@ -677,27 +657,6 @@ const data = [
     videoSrc: '/videos/PlumbAddictServices.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/PlumbAddictServices.jpg',
     personName: '-Jordan',
-  },
-  {
-    testimonial:
-      '"RJ has been exceptional to work with. He\'s been very patient, explained everything thoroughly, always does what he says he\'s gonna do. Great company."',
-    videoSrc: '/videos/NortheastDevelopment.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/NortheastDevelopment.jpg',
-    personName: '-Joe',
-  },
-  {
-    testimonial:
-      '"I\'ve been working with Rashaan and so far am extremely satisfied. The communication is great. His response time has been remarkable. Working with a marketing company has always been an iffy thing for me, but I am very happy with the results so far."',
-    videoSrc: '/videos/WilsonBuilders.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/WilsonBuilders.jpg',
-    personName: '-Laroy',
-  },
-  {
-    testimonial:
-      '"Rashaan has been great to work with! He is very professional, knowledgeable, and explains everything in a way that is easy to understand. I would definitely recommend him to anyone looking for help with their marketing!"',
-    videoSrc: '/videos/TruWater.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/TruWater.jpg',
-    personName: '-Brittany',
   },
   {
     testimonial:
@@ -831,20 +790,6 @@ const data = [
     videoSrc: '/videos/GladiatorLandscapingAndDesign.mp4#t=0.1',
     videoThumbnail: '/images/thumbnails/GladiatorLandscapingAndDesign.jpg',
     personName: '-Gladiator Landscaping',
-  },
-  {
-    testimonial:
-      '"I want to thank Rashaan for making my onboarding experience very easy and stress free. I am pretty naive to this and he was very patient and helpful through the whole process. I can\'t thank him enough for getting me through it and following up on an almost daily basis."',
-    videoSrc: '/videos/JavelynConstruction.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/JavelynConstruction.jpg',
-    personName: '-Stephen',
-  },
-  {
-    testimonial:
-      '"Rashaan was an excellent guide. He explained everything clearly and made sure I understood all the details. Highly recommend!"',
-    videoSrc: '/videos/ProFastSheetMetalAndDuctwork.mp4#t=0.1',
-    videoThumbnail: '/images/thumbnails/ProFastSheetMetalAndDuctwork.jpg',
-    personName: '-Elvis',
   },
   {
     testimonial:
