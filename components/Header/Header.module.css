@@ -30,6 +30,18 @@
   }
 }
 
+/* Desktop bar: logo left, links in the true centre, Log In + Book A Call right.
+   The two outer parts share the leftover space equally so the links sit mid-bar. */
+.barStart,
+.barEnd {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.barCenter {
+  flex: 0 0 auto;
+}
+
 .link,
 .linkModal,
 .linkLogin {

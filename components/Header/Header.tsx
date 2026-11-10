@@ -210,10 +210,23 @@ export function Header() {
     <Box className={classes.stickyHeader}>
       <header className={classes.header}>
         <Group justify="space-between" w="100%" maw={rem(1328)} h="100%" wrap="nowrap">
-          <Group h="100%" gap={0} wrap="nowrap" className={classes.desktopOnly}>
+          <Group
+            h="100%"
+            gap={0}
+            wrap="nowrap"
+            className={`${classes.desktopOnly} ${classes.barStart}`}
+          >
             <a href="/" className={classes.link}>
               <Image loading="eager" src="/images/newlogo.png" alt="logo" width={200} height={81} />
             </a>
+          </Group>
+
+          <Group
+            h="100%"
+            gap={0}
+            wrap="nowrap"
+            className={`${classes.desktopOnly} ${classes.barCenter}`}
+          >
             <a
               href="/"
               className={linkClass(pathname === '/')}
@@ -298,7 +311,11 @@ export function Header() {
             </HoverCard>
           </Group>
 
-          <Group wrap="nowrap" className={classes.desktopOnly}>
+          <Group
+            wrap="nowrap"
+            justify="flex-end"
+            className={`${classes.desktopOnly} ${classes.barEnd}`}
+          >
             <a
               href="https://app.stonesystems.io"
               target="_blank"
