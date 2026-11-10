@@ -276,9 +276,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2022770,
-      "posterBytes": 45876
+      "posterBytes": 41487
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-05-28_Adams-Drywall-And-Paint_16cc036a.mp4",
@@ -315,9 +316,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1714063,
-      "posterBytes": 37421
+      "posterBytes": 32355
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-01_Edwards-Sealcoating-and-Asphalt-Repairs_b5cec239.mpg4",
@@ -353,9 +355,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 786079,
-      "posterBytes": 13877
+      "posterBytes": 12172
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-02_ASB-Renovation-Design-Build-LLC_520ea865.mp4",
@@ -393,9 +396,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 259586,
-      "posterBytes": 7864
+      "posterBytes": 7649
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-02_Out-In-Concrete_519d0b92.mp4",
@@ -433,9 +437,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 243912,
-      "posterBytes": 5594
+      "posterBytes": 5223
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-05_Kenai-Construction_72888c2b.mp4",
@@ -473,9 +478,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3484957,
-      "posterBytes": 96128
+      "posterBytes": 99395
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-12_Groundworks-Flooring-LLC_105adb2f.mov",
@@ -511,9 +517,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 483314,
-      "posterBytes": 6409
+      "posterBytes": 6076
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-15_Ridge-Line-Landscaping_eebdf83d.mov",
@@ -543,9 +550,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7693677,
-      "posterBytes": 52500
+      "posterBytes": 55673
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-17_Four-Seasons-Painting-Services_b9e7caf4.mp4",
@@ -582,9 +590,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 664748,
-      "posterBytes": 36052
+      "posterBytes": 34759
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-18_Affordable-Gutter-Guards-Colorado_8d0e2c88.mp4",
@@ -614,9 +623,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7986658,
-      "posterBytes": 69250
+      "posterBytes": 70498
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-22_Allied-Roofing_c369fee0.mp4",
@@ -652,9 +662,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 275546,
-      "posterBytes": 5650
+      "posterBytes": 5760
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-22_Brunner-Builders-513_cba097fd.mp4",
@@ -684,9 +695,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1056548,
-      "posterBytes": 7289
+      "posterBytes": 6619
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-27_Rawlings-Heating-And-AC_ab244f8d.mp4",
@@ -722,9 +734,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7993408,
-      "posterBytes": 72049
+      "posterBytes": 65591
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-06-29_BullsEye-Exteriors_da6ad3b1.mp4",
@@ -761,9 +774,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 370697,
-      "posterBytes": 5033
+      "posterBytes": 4994
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-07-01_The-Bs-renovations-and-upgrades_eb6b148d.mp4",
@@ -780,7 +794,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "TheBsRenovationsAndUpgrades",
-    "videoSrc": "/videos/TheBsRenovationsAndUpgrades.mp4#t=0.1",
+    "videoSrc": "/videos/TheBsRenovationsAndUpgrades.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/TheBsRenovationsAndUpgrades.jpg",
     "personName": "-Derrick",
     "transcript": "- Okay, yeah, awesome. All right, hey, I appreciate all your guys's work on the website and everything that you guys have done to help us, it looks amazing. I couldn't recommend any more than what I'm showing you right now. It's awesome to support, it's been great. It's nine o'clock at night and these guys are getting back with me and helping me out and trying to help us grow our business, so it's greatly appreciated.",
@@ -801,9 +815,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2125945,
-      "posterBytes": 75689
+      "posterBytes": 73401
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-07-02_Rescreening-4-Less_d49c84aa.mp4",
@@ -833,9 +848,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 704476,
-      "posterBytes": 19098
+      "posterBytes": 19712
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-07-03_Gregs-Roofing-LLC_df044eed.mp4",
@@ -874,9 +890,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2027538,
-      "posterBytes": 28454
+      "posterBytes": 27318
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-07-06_EverClearPools_bc481ef9.mp4",
@@ -912,9 +929,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 781678,
-      "posterBytes": 34016
+      "posterBytes": 26259
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-07-07_WB-Paving_982ff698.mp4",
@@ -952,9 +970,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 729503,
-      "posterBytes": 13477
+      "posterBytes": 12273
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-07-14_Mountain-Man-Roofing_777517e2.mp4",
@@ -992,9 +1011,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1635501,
-      "posterBytes": 49226
+      "posterBytes": 45313
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-07-24_American-Power-Washing-Exterior-Services_83fe6f98.mpg",
@@ -1031,9 +1051,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 316413,
-      "posterBytes": 2892
+      "posterBytes": 2292
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-01_Blue-J-Paint-Stain_9252b5f0.mp4",
@@ -1071,9 +1092,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2417909,
-      "posterBytes": 65498
+      "posterBytes": 55985
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-10_Corley-Contemporary-Painting-Inc_ee0d186d.mp4",
@@ -1103,9 +1125,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 401117,
-      "posterBytes": 2408
+      "posterBytes": 2197
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-15_Zippys-AC-and-Ice_2755ca46.mp4",
@@ -1143,9 +1166,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 986805,
-      "posterBytes": 40586
+      "posterBytes": 55385
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-16_Calabrese-Tree-Care-LLC_a179f25a.mp4",
@@ -1175,9 +1199,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 742467,
-      "posterBytes": 45622
+      "posterBytes": 41488
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-16_Calabrese-Tree-Care-LLC_e31adeb2.mp4",
@@ -1230,9 +1255,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 717281,
-      "posterBytes": 39368
+      "posterBytes": 38187
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-16_Tru-North-Pipe_6bfb3f5e.mp4",
@@ -1269,9 +1295,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2133557,
-      "posterBytes": 69203
+      "posterBytes": 66951
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-19_Floor-Kandy-Coatings_ac36f5b6.mp4",
@@ -1307,9 +1334,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 245798,
-      "posterBytes": 4934
+      "posterBytes": 4698
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-19_Williams-Dirt-Work-LLC_bf77acef.mp4",
@@ -1347,9 +1375,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 184246,
-      "posterBytes": 2854
+      "posterBytes": 2694
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-24_Hernandez-Tile-and-Construction-LLC_44120e0b.mp4",
@@ -1379,9 +1408,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1345736,
-      "posterBytes": 40806
+      "posterBytes": 38320
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-25_Living-Air-Design_2ebb57ff.mp4",
@@ -1411,9 +1441,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 649576,
-      "posterBytes": 44252
+      "posterBytes": 40827
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-26_Lighthouse-Exterminators-LLC_dea51a8d.mp4",
@@ -1449,9 +1480,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 4514474,
-      "posterBytes": 47744
+      "posterBytes": 47748
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-27_Flesner-Energy-LLC_0a0a7417.mp4",
@@ -1489,9 +1521,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 798072,
-      "posterBytes": 26252
+      "posterBytes": 23456
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-27_Gator-Strong_8b6b6901.mp4",
@@ -1508,7 +1541,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "GatorStrong",
-    "videoSrc": "/videos/GatorStrong.mp4#t=0.1",
+    "videoSrc": "/videos/GatorStrong.mp4#t=6",
     "videoThumbnail": "/images/thumbnails/GatorStrong.jpg",
     "personName": "-Mike",
     "transcript": "one of those. All right, let me know when you want me to go. All right, three, two, one. Go ahead. Yeah, my name is Mike Rice. I work with Gator Strong Systems in Wilmington, North Carolina. Rashawn over Stone Systems did an excellent job in terms of changing the appearance, the flow, the overall just vibe of the website. We're very excited to see what kind of traffic that's going to bring to us. But overall, very pleased with his responsiveness, his attendance to detail, and just where he's taken us from from the beginning to where we are today. All right, thanks Mike.",
@@ -1531,7 +1564,8 @@
       "bytes": 793496,
       "posterBytes": 16159
     },
-    "posterTimeSec": 6
+    "posterTimeSec": 6,
+    "startTimeSec": 6
   },
   {
     "source": "2026-08-28_American-tree-service_8b4f23cf.mp4",
@@ -1568,9 +1602,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 700926,
-      "posterBytes": 32296
+      "posterBytes": 29451
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-28_PV-Trimmers_77167a0f.mp4",
@@ -1600,9 +1635,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1082297,
-      "posterBytes": 81578
+      "posterBytes": 76798
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-08-31_North-Texas-Environmental_b3d48789.mp4",
@@ -1619,7 +1655,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "NorthTexasEnvironmental",
-    "videoSrc": "/videos/NorthTexasEnvironmental.mp4#t=0.1",
+    "videoSrc": "/videos/NorthTexasEnvironmental.mp4#t=1.3",
     "videoThumbnail": "/images/thumbnails/NorthTexasEnvironmental.jpg",
     "personName": "-David",
     "transcript": "My name's David. I have been an HVAC owner of a long time, always been skeptical about some marketing stuff, especially things you find online. Took a chance, give these guys my money, and so far it's been really cool. Great process so far. They've kind of walked me through everything, completely understand all of what they're gonna do, how it's gonna work. Very simple, very easy for someone who is not marketing smart at all. These guys are making it really, really easy so far.",
@@ -1639,9 +1675,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2275098,
-      "posterBytes": 47292
+      "posterBytes": 46830
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 1.3,
+    "startTimeSec": 1.3
   },
   {
     "source": "2026-09-01_Roofcheck-roofing_f0d80197.mp4",
@@ -1658,7 +1695,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "RoofcheckRoofing",
-    "videoSrc": "/videos/RoofcheckRoofing.mp4#t=0.1",
+    "videoSrc": "/videos/RoofcheckRoofing.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/RoofcheckRoofing.jpg",
     "personName": "-Tony",
     "transcript": "I looked at the website that they put together for me. I was quite impressed and with the level of service and patience and expertise. I don't have a lot of experience with the computers and all that and Mr. Sanchez did a very good job of explaining things and being patient with me and helping me get through it to understand it. And so I would recommend it to others that are looking to further their website presence.",
@@ -1678,9 +1715,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1832232,
-      "posterBytes": 73411
+      "posterBytes": 69956
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-09-02_Hartman-Pacific-Construction-HPC_4a2bdd6f.mp4",
@@ -1697,7 +1735,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "HartmanPacificConstructionHPC",
-    "videoSrc": "/videos/HartmanPacificConstructionHPC.mp4#t=0.1",
+    "videoSrc": "/videos/HartmanPacificConstructionHPC.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/HartmanPacificConstructionHPC.jpg",
     "personName": "-Richard",
     "transcript": "- Yeah, I highly recommend stone systems and McGill's help onboarding. It's an amazing experience. It's gonna bring me a lot of opportunity. It's a straightforward system and a very user-friendly.",
@@ -1710,9 +1748,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 719474,
-      "posterBytes": 34747
+      "posterBytes": 35412
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-09-08_AceKimble-Services_226eb63a.mp4",
@@ -1729,7 +1768,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "AceKimbleServices",
-    "videoSrc": "/videos/AceKimbleServices.mp4#t=0.1",
+    "videoSrc": "/videos/AceKimbleServices.mp4#t=1.3",
     "videoThumbnail": "/images/thumbnails/AceKimbleServices.jpg",
     "personName": "-Amanda",
     "transcript": ">> Okay. Well, we've been very pleased with Stone Systems so far. We're very excited to get our website up and going and get some more leads from it. Daniel has been extremely helpful throughout the whole process and we are very excited.",
@@ -1742,9 +1781,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1643901,
-      "posterBytes": 65508
+      "posterBytes": 65813
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 1.3,
+    "startTimeSec": 1.3
   },
   {
     "source": "2026-09-08_All-About-Construction-Inc_8dcc5963.mp4",
@@ -1781,9 +1821,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2462872,
-      "posterBytes": 38522
+      "posterBytes": 33821
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-09_Grand-Strand-Disposal_1fa987c3.mp4",
@@ -1813,9 +1854,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 4196009,
-      "posterBytes": 51109
+      "posterBytes": 48134
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-09_Irish-Roofing-Company_78f455ba.mp4",
@@ -1845,9 +1887,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 779402,
-      "posterBytes": 64760
+      "posterBytes": 63588
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-09_RoofRenu-LLC_3ea8cdbb.mp4",
@@ -1884,9 +1927,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2635878,
-      "posterBytes": 72709
+      "posterBytes": 69920
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-13_U-1st-Services-llc_c06ed84f.mp4",
@@ -1916,9 +1960,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 906163,
-      "posterBytes": 24462
+      "posterBytes": 21695
     },
-    "posterTimeSec": 9
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-14_Fresh-Air-Solutions-and-Tech-LLC_8899e53e.mp4",
@@ -1955,9 +2000,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1890031,
-      "posterBytes": 70071
+      "posterBytes": 67185
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-15_Collective-Roofing_ae0a34bb.mp4",
@@ -1987,9 +2033,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 4046601,
-      "posterBytes": 40454
+      "posterBytes": 39866
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-16_Queue-Electrical-contractors_b4c5bbcb.mp4",
@@ -2019,9 +2066,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 685676,
-      "posterBytes": 33843
+      "posterBytes": 33358
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-17_BL-Tree-and-Lawn-Service_028475f3.mp4",
@@ -2051,9 +2099,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 8638835,
-      "posterBytes": 51046
+      "posterBytes": 51313
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-18_Smiths-Home-and-Property-Solutions_c0e3cac1.mov",
@@ -2138,9 +2187,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2827161,
-      "posterBytes": 33130
+      "posterBytes": 33081
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-22_Kingdom-Construction-Remodeling_629b38bb.mov",
@@ -2201,9 +2251,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2367477,
-      "posterBytes": 28312
+      "posterBytes": 30596
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-24_Northeast-development_92200eea.mov",
@@ -2311,9 +2362,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2736812,
-      "posterBytes": 18398
+      "posterBytes": 19370
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-29_Nicks-Property-Maintenance_d93410f1.mp4",
@@ -2343,9 +2395,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1030044,
-      "posterBytes": 27614
+      "posterBytes": 24870
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-30_Junkhead-Demolition-LLC_9e6e7e62.mov",
@@ -2375,9 +2428,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 819094,
-      "posterBytes": 85890
+      "posterBytes": 71534
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-30_LCB-Custom-Kitchen-Installs_ce80dd97.mp4",
@@ -2394,7 +2448,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "LCBCustomKitchenInstalls",
-    "videoSrc": "/videos/LCBCustomKitchenInstalls.mp4#t=0.1",
+    "videoSrc": "/videos/LCBCustomKitchenInstalls.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/LCBCustomKitchenInstalls.jpg",
     "personName": "-Steven",
     "transcript": "I just want to thank Miguel for helping me through everything very easy, well going guy, answered all my questions, couldn't ask for a better OCM.",
@@ -2407,9 +2461,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 513773,
-      "posterBytes": 35122
+      "posterBytes": 34658
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-09-30_Patchmaster-Sealcoating_c306dcca.mp4",
@@ -2426,7 +2481,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "PatchmasterSealcoating",
-    "videoSrc": "/videos/PatchmasterSealcoating.mp4#t=0.1",
+    "videoSrc": "/videos/PatchmasterSealcoating.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/PatchmasterSealcoating.jpg",
     "personName": "-Tony",
     "transcript": "Stolen systems have really helped me putting together my business. Dave helped me with Google and just about everything else. I strongly suggest you try these guys out, you won't be sorry.",
@@ -2439,9 +2494,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 595146,
-      "posterBytes": 27895
+      "posterBytes": 27723
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-09-30_Patriot-Patio-Solutions-LLC_aa0eeb12.mp4",
@@ -2471,9 +2527,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 357516,
-      "posterBytes": 33581
+      "posterBytes": 65934
     },
-    "posterTimeSec": 3.74
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-30_Renew-Paver-Sealing_f4743cd7.mp4",
@@ -2511,9 +2568,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3115189,
-      "posterBytes": 34237
+      "posterBytes": 31535
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-09-30_Rise-Tile_18312efd.mp4",
@@ -2543,9 +2601,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 597666,
-      "posterBytes": 34842
+      "posterBytes": 32934
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-01_Freshwater-Finish_9d02b8a2.mp4",
@@ -2575,9 +2634,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1048971,
-      "posterBytes": 66804
+      "posterBytes": 62881
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-05_Alliance-Design-and-Construction-LLC_23555b81.mp4",
@@ -2607,9 +2667,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 2161443,
-      "posterBytes": 33353
+      "posterBytes": 32291
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-06_The-Home-Team-Property-Services_7ae2e4de.mp4",
@@ -2626,7 +2687,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "TheHomeTeamPropertyServices",
-    "videoSrc": "/videos/TheHomeTeamPropertyServices.mp4#t=0.1",
+    "videoSrc": "/videos/TheHomeTeamPropertyServices.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/TheHomeTeamPropertyServices.jpg",
     "personName": "-Corey",
     "transcript": "Ah, so yeah, I look for what it is. I mean, it's been it's been a pleasure so far working with Danny and the stone systems. Danny's been a great help getting our website up and running so far here and he's been very responsive and you know, he's been able to put out a couple of fires for us already, which is great. So definitely appreciate the the responsiveness and what you guys, you know, the protection and the knowledge that you guys have to appreciate that more and you know, look forward to seeing what the results have to offer once we go live here.",
@@ -2646,9 +2707,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3914720,
-      "posterBytes": 54827
+      "posterBytes": 51238
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-10-08_SL-Painting-LLC_f639f9bb.mp4",
@@ -2665,7 +2727,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "SLPainting",
-    "videoSrc": "/videos/SLPainting.mp4#t=0.1",
+    "videoSrc": "/videos/SLPainting.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/SLPainting.jpg",
     "personName": "-Salvador",
     "transcript": "- No, your performance, it has been, it has been great. I mean, no complaints, first time I have like a guy, like you guiding me through the process. I mean, I know you represent, you know, a STEM system, but a STEM system and the way you do it is good because I have experience with other guys. And they only told me, oh yeah, the picture is now live, just check it back, just in the message, you know, not like a meeting, no guiding me, go through the process. So much better, good with that for all of you guys. And so far, I see a positive, one to 10, I will give you 20, the whole system and you guys. Maybe I can take back that trust and miss him because these past experiences, it hasn't been good. So, I'm just giving you the benefit of doubt now. So, yeah, so far, so good, so far, so good.",
@@ -2678,9 +2740,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 3495597,
-      "posterBytes": 38724
+      "posterBytes": 36120
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-10-09_Windowpros-LLC_74812be9.mp4",
@@ -2697,7 +2760,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "Windowpros",
-    "videoSrc": "/videos/Windowpros.mp4#t=0.1",
+    "videoSrc": "/videos/Windowpros.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/Windowpros.jpg",
     "personName": "-Windowpros",
     "transcript": "everybody just wanted to let you know I've been using stone systems for a few months now and I'm getting some leads from chat GPT that's working really well I've done a wonderful job on my website Miguel's been helping me out he's done a fantastic job and I just want to let everybody know it's a great deal if you're thinking about having someone do your website for you and that type of thing we it's a great great opportunity",
@@ -2717,9 +2780,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1241945,
-      "posterBytes": 35849
+      "posterBytes": 33860
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-10-15_Lucas-Management-LLC_e71fe71c.mov",
@@ -2756,9 +2820,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 7227534,
-      "posterBytes": 58204
+      "posterBytes": 54266
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-16_Rivas-Roofing_6cac6786.mp4",
@@ -2788,9 +2853,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 753030,
-      "posterBytes": 78300
+      "posterBytes": 74898
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-16_Rodriguez-Rodent-Defense-LLC_d9c3f369.mp4",
@@ -2807,7 +2873,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "RodriguezRodentDefense",
-    "videoSrc": "/videos/RodriguezRodentDefense.mp4#t=0.1",
+    "videoSrc": "/videos/RodriguezRodentDefense.mp4#t=0.7",
     "videoThumbnail": "/images/thumbnails/RodriguezRodentDefense.jpg",
     "personName": "-Ruben",
     "transcript": "Okay, well, I just wanted to give out a shout out to Stone Systems. They help set up a good website, runevigable, it's already bringing leads just a week or two in. So, really happy with them, simple process, and it was easy on board.",
@@ -2827,9 +2893,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 831884,
-      "posterBytes": 23560
+      "posterBytes": 22522
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.7,
+    "startTimeSec": 0.7
   },
   {
     "source": "2026-10-20_Reh-construction-LLC_8acd8050.mp4",
@@ -2846,7 +2913,7 @@
     "status": "new",
     "matchedSiteVideo": null,
     "slug": "RehConstruction",
-    "videoSrc": "/videos/RehConstruction.mp4#t=0.1",
+    "videoSrc": "/videos/RehConstruction.mp4#t=1.3",
     "videoThumbnail": "/images/thumbnails/RehConstruction.jpg",
     "personName": "-Kaw",
     "transcript": "Yeah, so Miguel helped me a lot with explaining to me, sending my profile up on the Google, my business, and he's explaining to me very thoroughly, and he's a very good, and I would recommend Miguel or the stole system.",
@@ -2867,9 +2934,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1087465,
-      "posterBytes": 19895
+      "posterBytes": 19667
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 1.3,
+    "startTimeSec": 1.3
   },
   {
     "source": "2026-10-27_Genesis-Property-Development_e94184f7.mp4",
@@ -2906,9 +2974,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1653519,
-      "posterBytes": 43753
+      "posterBytes": 41844
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-27_Gladiator-Landscaping-and-Design-LLC_39d27c39.mp4",
@@ -2938,9 +3007,10 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 898327,
-      "posterBytes": 24903
+      "posterBytes": 19318
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   },
   {
     "source": "2026-10-29_JJC-Pressure-and-Softwash_9424a6e3.mp4",
@@ -3064,8 +3134,9 @@
       "rotation": 0,
       "codec": "h264",
       "bytes": 1308525,
-      "posterBytes": 42229
+      "posterBytes": 42010
     },
-    "posterTimeSec": 5.0
+    "posterTimeSec": 0.1,
+    "startTimeSec": 0.1
   }
 ]

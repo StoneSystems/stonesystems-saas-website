@@ -1,24 +1,33 @@
-"""Regenerate posters for new entries from the 5 s mark so Zoom recordings show the client,
-not the CSM who is on screen first. Optional per-slug overrides in poster-times.json."""
+"""Set each new card's start fragment (#t=) and poster to the same moment.
+
+Browsers seek to the #t fragment as soon as metadata loads and Chrome then shows that
+frame instead of the poster, so the fragment is what visitors actually see. Zoom
+recordings open on the CSM; start-times.json gives those clips a later start (first
+frame with the client on screen). Everything else starts at 0.1 s like the legacy cards.
+"""
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from common import FFMPEG, HERE, THUMBS_DIR, VIDEOS_DIR, load_manifest, save_manifest
+from common import COMPONENT, FFMPEG, HERE, THUMBS_DIR, VIDEOS_DIR, load_manifest, save_manifest
 
-overrides = json.loads((HERE / "poster-times.json").read_text()) if (HERE / "poster-times.json").exists() else {}
+starts = json.loads((HERE / "start-times.json").read_text())
 entries = load_manifest()
+src = COMPONENT.read_text()
 for e in entries:
     if e["status"] != "new":
         continue
-    d = e["output"]["durationSec"]
-    t = overrides.get(e["slug"], 5.0 if d >= 7 else round(d * 0.6, 2))
-    t = min(t, d - 0.5)
+    t = starts.get(e["slug"], 0.1)
+    new_src = f"/videos/{e['slug']}.mp4#t={t:g}"
+    src, n = re.subn(r"videoSrc: '/videos/%s\.mp4#t=[0-9.]+'" % re.escape(e["slug"]), f"videoSrc: '{new_src}'", src)
+    assert n == 1, (e["slug"], n)
+    e["videoSrc"], e["startTimeSec"], e["posterTimeSec"] = new_src, t, t
     poster = THUMBS_DIR / f"{e['slug']}.jpg"
     subprocess.run([FFMPEG, "-v", "error", "-y", "-ss", str(t), "-i", str(VIDEOS_DIR / f"{e['slug']}.mp4"),
                     "-vframes", "1", "-q:v", "3", str(poster)], check=True)
-    e["posterTimeSec"] = t
     e["output"]["posterBytes"] = poster.stat().st_size
+COMPONENT.write_text(src)
 save_manifest(entries)
-print("posters regenerated:", sum(1 for e in entries if e["status"] == "new"))
+print("updated", sum(1 for e in entries if e["status"] == "new"), "cards; custom starts:", len(starts))

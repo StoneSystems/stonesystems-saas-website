@@ -402,7 +402,7 @@ const data = [
   {
     testimonial:
       "\"I appreciate all your work on the website and everything you've done to help us. It looks amazing. It's nine o'clock at night and these guys are getting back to me, helping me out and trying to help us grow our business.\"",
-    videoSrc: '/videos/TheBsRenovationsAndUpgrades.mp4#t=0.1',
+    videoSrc: '/videos/TheBsRenovationsAndUpgrades.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/TheBsRenovationsAndUpgrades.jpg',
     personName: '-Derrick',
   },
@@ -535,7 +535,7 @@ const data = [
   {
     testimonial:
       '"They did an excellent job changing the appearance, the flow, and the overall vibe of the website. We\'re very excited to see what kind of traffic that\'s going to bring us. Very pleased with the responsiveness and attention to detail."',
-    videoSrc: '/videos/GatorStrong.mp4#t=0.1',
+    videoSrc: '/videos/GatorStrong.mp4#t=6',
     videoThumbnail: '/images/thumbnails/GatorStrong.jpg',
     personName: '-Mike',
   },
@@ -556,28 +556,28 @@ const data = [
   {
     testimonial:
       "\"I've been an HVAC owner a long time and always been skeptical about marketing, especially things you find online. Took a chance, and so far it's been really cool. They've walked me through everything. Very simple, very easy for someone who is not marketing smart at all.\"",
-    videoSrc: '/videos/NorthTexasEnvironmental.mp4#t=0.1',
+    videoSrc: '/videos/NorthTexasEnvironmental.mp4#t=1.3',
     videoThumbnail: '/images/thumbnails/NorthTexasEnvironmental.jpg',
     personName: '-David',
   },
   {
     testimonial:
       '"I looked at the website they put together for me and I was quite impressed with the level of service, patience, and expertise. I don\'t have a lot of experience with computers, and they did a very good job of explaining things and being patient with me."',
-    videoSrc: '/videos/RoofcheckRoofing.mp4#t=0.1',
+    videoSrc: '/videos/RoofcheckRoofing.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/RoofcheckRoofing.jpg',
     personName: '-Tony',
   },
   {
     testimonial:
       '"I highly recommend Stone Systems. The onboarding was an amazing experience. It\'s going to bring me a lot of opportunity. It\'s a straightforward system and very user-friendly."',
-    videoSrc: '/videos/HartmanPacificConstructionHPC.mp4#t=0.1',
+    videoSrc: '/videos/HartmanPacificConstructionHPC.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/HartmanPacificConstructionHPC.jpg',
     personName: '-Richard',
   },
   {
     testimonial:
       '"We\'ve been very pleased with Stone Systems so far. We\'re very excited to get our website up and going and get some more leads from it. Daniel has been extremely helpful throughout the whole process."',
-    videoSrc: '/videos/AceKimbleServices.mp4#t=0.1',
+    videoSrc: '/videos/AceKimbleServices.mp4#t=1.3',
     videoThumbnail: '/images/thumbnails/AceKimbleServices.jpg',
     personName: '-Amanda',
   },
@@ -682,14 +682,14 @@ const data = [
   {
     testimonial:
       '"I just want to thank Miguel for helping me through everything. Very easy-going guy, answered all my questions. Couldn\'t ask for a better CSM."',
-    videoSrc: '/videos/LCBCustomKitchenInstalls.mp4#t=0.1',
+    videoSrc: '/videos/LCBCustomKitchenInstalls.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/LCBCustomKitchenInstalls.jpg',
     personName: '-Steven',
   },
   {
     testimonial:
       '"Stone Systems has really helped me put together my business. Dave helped me with Google and just about everything else. I strongly suggest you try these guys out, you won\'t be sorry."',
-    videoSrc: '/videos/PatchmasterSealcoating.mp4#t=0.1',
+    videoSrc: '/videos/PatchmasterSealcoating.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/PatchmasterSealcoating.jpg',
     personName: '-Tony',
   },
@@ -731,21 +731,21 @@ const data = [
   {
     testimonial:
       "\"It's been a pleasure working with Danny and Stone Systems. He's been a great help getting our website up and running, he's very responsive, and he's already put out a couple of fires for us. Looking forward to seeing the results once we go live.\"",
-    videoSrc: '/videos/TheHomeTeamPropertyServices.mp4#t=0.1',
+    videoSrc: '/videos/TheHomeTeamPropertyServices.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/TheHomeTeamPropertyServices.jpg',
     personName: '-Corey',
   },
   {
     testimonial:
       "\"First time I have a guy guiding me through the process. Other guys just told me 'your page is live' in a message, no meeting, no guidance. This is so much better. On a scale of one to ten, I'd give you guys a twenty.\"",
-    videoSrc: '/videos/SLPainting.mp4#t=0.1',
+    videoSrc: '/videos/SLPainting.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/SLPainting.jpg',
     personName: '-Salvador',
   },
   {
     testimonial:
       "\"I've been using Stone Systems for a few months now and I'm getting leads from ChatGPT, which is working really well. Miguel did a fantastic job on my website. If you're thinking about having someone do your website, it's a great opportunity.\"",
-    videoSrc: '/videos/Windowpros.mp4#t=0.1',
+    videoSrc: '/videos/Windowpros.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/Windowpros.jpg',
     personName: '-Windowpros',
   },
@@ -766,14 +766,14 @@ const data = [
   {
     testimonial:
       '"They set up a good website that\'s easy to navigate, and it\'s already bringing leads just a week or two in. Really happy with them. Simple process, and it was easy to onboard."',
-    videoSrc: '/videos/RodriguezRodentDefense.mp4#t=0.1',
+    videoSrc: '/videos/RodriguezRodentDefense.mp4#t=0.7',
     videoThumbnail: '/images/thumbnails/RodriguezRodentDefense.jpg',
     personName: '-Ruben',
   },
   {
     testimonial:
       '"Miguel helped me a lot setting up my Google business profile and explained everything very thoroughly. I would recommend Miguel and Stone Systems."',
-    videoSrc: '/videos/RehConstruction.mp4#t=0.1',
+    videoSrc: '/videos/RehConstruction.mp4#t=1.3',
     videoThumbnail: '/images/thumbnails/RehConstruction.jpg',
     personName: '-Kaw',
   },
