@@ -1,0 +1,186 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,060"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8060
+			},
+			"text": " It's it's been it's it's been great man. I get leads almost right now on the daily. I get one or two to leads"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,760",
+				"to": "00:00:16,520"
+			},
+			"offsets": {
+				"from": 8760,
+				"to": 16520
+			},
+			"text": " I'm I'm able to convert them into jobs and I've been busy with you guys and then with the other companies that I work for"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,840",
+				"to": "00:00:24,120"
+			},
+			"offsets": {
+				"from": 16840,
+				"to": 24120
+			},
+			"text": " With you know as the marketing and it seems like they always wanted more you know, I mean, mm-hmm. It's my my feeling was"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,440",
+				"to": "00:00:28,040"
+			},
+			"offsets": {
+				"from": 25440,
+				"to": 28040
+			},
+			"text": " they're always asking to"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,080",
+				"to": "00:00:33,080"
+			},
+			"offsets": {
+				"from": 29080,
+				"to": 33080
+			},
+			"text": " To have more money to do more stuff and to to pay for more things"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,440",
+				"to": "00:00:39,040"
+			},
+			"offsets": {
+				"from": 33440,
+				"to": 39040
+			},
+			"text": " And I'm a small business. I got a payroll. I got I got people to that I need to pay and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,480",
+				"to": "00:00:42,480"
+			},
+			"offsets": {
+				"from": 39480,
+				"to": 42480
+			},
+			"text": " You guys are taking you know, we want to take half of the bread"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,720",
+				"to": "00:00:50,360"
+			},
+			"offsets": {
+				"from": 43720,
+				"to": 50360
+			},
+			"text": " So with you guys, it's been honest, you know, you guys do what you guys say. You got the website. I get I know"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:51,160",
+				"to": "00:00:53,400"
+			},
+			"offsets": {
+				"from": 51160,
+				"to": 53400
+			},
+			"text": " Some people find me on chat GPT now"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:54,520",
+				"to": "00:00:59,220"
+			},
+			"offsets": {
+				"from": 54520,
+				"to": 59220
+			},
+			"text": " So that's new that's that's something that I because I had clients"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:59,220",
+				"to": "00:01:03,880"
+			},
+			"offsets": {
+				"from": 59220,
+				"to": 63880
+			},
+			"text": " I always say hey, how did you find us or how did you hear about because I want to see what's working and what's not?"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:03,880",
+				"to": "00:01:10,180"
+			},
+			"offsets": {
+				"from": 63880,
+				"to": 70180
+			},
+			"text": " You know, I'm doing my homework and and they say, you know, I found it on I asked you at GPT and you came out"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:10,180",
+				"to": "00:01:13,600"
+			},
+			"offsets": {
+				"from": 70180,
+				"to": 73600
+			},
+			"text": " So I'm like, oh, that's that's that's nice. That's nice. And that's something you guys"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:14,320",
+				"to": "00:01:16,320"
+			},
+			"offsets": {
+				"from": 74320,
+				"to": 76320
+			},
+			"text": " Advertise so I know it's working"
+		}
+	]
+}

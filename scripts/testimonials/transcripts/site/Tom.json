@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:04,320"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 4320
+			},
+			"text": " Hi, it's Tom Adams with Installers Direct."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,320",
+				"to": "00:00:05,960"
+			},
+			"offsets": {
+				"from": 4320,
+				"to": 5960
+			},
+			"text": " Just shut out to my boy Kai."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,960",
+				"to": "00:00:10,880"
+			},
+			"offsets": {
+				"from": 5960,
+				"to": 10880
+			},
+			"text": " Hey, if you're looking for somebody to build a website, help your business really grow"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,880",
+				"to": "00:00:14,600"
+			},
+			"offsets": {
+				"from": 10880,
+				"to": 14600
+			},
+			"text": " and boom, this is the guy."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,600",
+				"to": "00:00:20,360"
+			},
+			"offsets": {
+				"from": 14600,
+				"to": 20360
+			},
+			"text": " This is well worth the money spent, probably 10 times more value than what I'm spending."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,360",
+				"to": "00:00:22,880"
+			},
+			"offsets": {
+				"from": 20360,
+				"to": 22880
+			},
+			"text": " So get my boy Kai, try."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,880",
+				"to": "00:00:25,040"
+			},
+			"offsets": {
+				"from": 22880,
+				"to": 25040
+			},
+			"text": " I think he won't be disappointed."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,040",
+				"to": "00:00:25,440"
+			},
+			"offsets": {
+				"from": 25040,
+				"to": 25440
+			},
+			"text": " Peace out."
+		}
+	]
+}

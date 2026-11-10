@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,940"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6940
+			},
+			"text": " We want to say thank you to Kai Stone Systems and their wonderful team. Our company finally"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,940",
+				"to": "00:00:12,960"
+			},
+			"offsets": {
+				"from": 6940,
+				"to": 12960
+			},
+			"text": " has that web presence that was looking for. Our sales have multiplied, our profits have"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,960",
+				"to": "00:00:19,140"
+			},
+			"offsets": {
+				"from": 12960,
+				"to": 19140
+			},
+			"text": " grown. We finally found this company that we were looking for to partner up and work"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,140",
+				"to": "00:00:27,840"
+			},
+			"offsets": {
+				"from": 19140,
+				"to": 27840
+			},
+			"text": " with. Out of thousands of ads out there, thousands of offerings and many failing services that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,840",
+				"to": "00:00:34,020"
+			},
+			"offsets": {
+				"from": 27840,
+				"to": 34020
+			},
+			"text": " did not provide for us what we were looking for. We finally found this company that is"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,020",
+				"to": "00:00:40,020"
+			},
+			"offsets": {
+				"from": 34020,
+				"to": 40020
+			},
+			"text": " very dedicated to what they do, very professional as to the results that they present and therefore"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,020",
+				"to": "00:00:45,220"
+			},
+			"offsets": {
+				"from": 40020,
+				"to": 45220
+			},
+			"text": " we want to say once again thank you very much for all the help. We look for working"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,220",
+				"to": "00:00:46,860"
+			},
+			"offsets": {
+				"from": 45220,
+				"to": 46860
+			},
+			"text": " with you for many years to come."
+		}
+	]
+}

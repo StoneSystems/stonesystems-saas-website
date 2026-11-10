@@ -1,0 +1,76 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,840"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5840
+			},
+			"text": " Okay, well, I just wanted to give out a shout out to Stone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,840",
+				"to": "00:00:14,160"
+			},
+			"offsets": {
+				"from": 5840,
+				"to": 14160
+			},
+			"text": " They help set up a good website, runevigable, it's already bringing leads just a week or"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,160",
+				"to": "00:00:15,160"
+			},
+			"offsets": {
+				"from": 14160,
+				"to": 15160
+			},
+			"text": " two in."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,160",
+				"to": "00:00:19,480"
+			},
+			"offsets": {
+				"from": 15160,
+				"to": 19480
+			},
+			"text": " So, really happy with them, simple process, and it was easy on board."
+		}
+	]
+}

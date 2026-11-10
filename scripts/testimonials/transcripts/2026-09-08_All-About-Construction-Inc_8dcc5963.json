@@ -1,0 +1,175 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5780
+			},
+			"text": " Honestly, if I was gonna be I've been with other clients and other people and it would spin like yeah"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,780",
+				"to": "00:00:09,540"
+			},
+			"offsets": {
+				"from": 5780,
+				"to": 9540
+			},
+			"text": " Yeah, I promise you everything the world and at the end of the day I"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,700",
+				"to": "00:00:14,180"
+			},
+			"offsets": {
+				"from": 11700,
+				"to": 14180
+			},
+			"text": " Didn't see things moving they were you know, whoever"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,300",
+				"to": "00:00:17,660"
+			},
+			"offsets": {
+				"from": 15300,
+				"to": 17660
+			},
+			"text": " Started me would pass me along to somebody else"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,980",
+				"to": "00:00:22,260"
+			},
+			"offsets": {
+				"from": 17980,
+				"to": 22260
+			},
+			"text": " But I think now with you it's totally different where you you're handling my"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,220",
+				"to": "00:00:25,220"
+			},
+			"offsets": {
+				"from": 23220,
+				"to": 25220
+			},
+			"text": " account from A to Z"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,580",
+				"to": "00:00:28,860"
+			},
+			"offsets": {
+				"from": 25580,
+				"to": 28860
+			},
+			"text": " And passing everything along which just makes it a lot easier and a lot"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,860",
+				"to": "00:00:36,040"
+			},
+			"offsets": {
+				"from": 29860,
+				"to": 36040
+			},
+			"text": " Better because I can communicate with you about it and then also you're kind of you're keeping it real with me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,040",
+				"to": "00:00:39,020"
+			},
+			"offsets": {
+				"from": 36040,
+				"to": 39020
+			},
+			"text": " I'm like hey making sure, you know, you're not spent"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,020",
+				"to": "00:00:43,600"
+			},
+			"offsets": {
+				"from": 39020,
+				"to": 43600
+			},
+			"text": " I'm not gonna take the fifteen hundred dollars from you right now because there's no way there's no point of it"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,600",
+				"to": "00:00:48,780"
+			},
+			"offsets": {
+				"from": 43600,
+				"to": 48780
+			},
+			"text": " We're losing money by losing time and money and I think and more importantly we're losing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:49,980",
+				"to": "00:00:55,740"
+			},
+			"offsets": {
+				"from": 49980,
+				"to": 55740
+			},
+			"text": " Trusts within within each other by doing that and I think you're you're taking that into account and I appreciate that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:55,740",
+				"to": "00:01:00,440"
+			},
+			"offsets": {
+				"from": 55740,
+				"to": 60440
+			},
+			"text": " because it's definitely you're definitely looking out for me and that's what I really appreciate that"
+		}
+	]
+}

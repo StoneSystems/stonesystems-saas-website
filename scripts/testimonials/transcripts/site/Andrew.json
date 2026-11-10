@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,600"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5600
+			},
+			"text": " I'm Andrew Stall, owner of HDH Residential Services. Since we started working with"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,600",
+				"to": "00:00:11,180"
+			},
+			"offsets": {
+				"from": 5600,
+				"to": 11180
+			},
+			"text": " stone systems, our website has been on point. These guys really know what"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,180",
+				"to": "00:00:17,040"
+			},
+			"offsets": {
+				"from": 11180,
+				"to": 17040
+			},
+			"text": " they're doing. I had a website before, it was up, it was down, couldn't keep the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,040",
+				"to": "00:00:22,520"
+			},
+			"offsets": {
+				"from": 17040,
+				"to": 22520
+			},
+			"text": " thing up, bringing in leads, stone systems, worked everything out. I highly"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,520",
+				"to": "00:00:27,160"
+			},
+			"offsets": {
+				"from": 22520,
+				"to": 27160
+			},
+			"text": " recommend these guys, they really know what they're doing."
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:09,980"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 9980
+			},
+			"text": " Yeah, so Miguel helped me a lot with explaining to me, sending my profile up on the Google,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,980",
+				"to": "00:00:17,860"
+			},
+			"offsets": {
+				"from": 9980,
+				"to": 17860
+			},
+			"text": " my business, and he's explaining to me very thoroughly, and he's a very good, and I would"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,860",
+				"to": "00:00:21,480"
+			},
+			"offsets": {
+				"from": 17860,
+				"to": 21480
+			},
+			"text": " recommend Miguel or the stole system."
+		}
+	]
+}

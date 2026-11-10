@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:07,280"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 7280
+			},
+			"text": " Ah, so yeah, I look for what it is. I mean, it's been it's been a pleasure so far working with"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,280",
+				"to": "00:00:14,800"
+			},
+			"offsets": {
+				"from": 7280,
+				"to": 14800
+			},
+			"text": " Danny and the stone systems. Danny's been a great help getting our website up and running so far here"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,800",
+				"to": "00:00:22,720"
+			},
+			"offsets": {
+				"from": 14800,
+				"to": 22720
+			},
+			"text": " and he's been very responsive and you know, he's been able to put out a couple of fires for us"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,720",
+				"to": "00:00:31,200"
+			},
+			"offsets": {
+				"from": 22720,
+				"to": 31200
+			},
+			"text": " already, which is great. So definitely appreciate the the responsiveness and what you guys, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,200",
+				"to": "00:00:35,040"
+			},
+			"offsets": {
+				"from": 31200,
+				"to": 35040
+			},
+			"text": " the protection and the knowledge that you guys have to appreciate that more and"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,000",
+				"to": "00:00:40,400"
+			},
+			"offsets": {
+				"from": 36000,
+				"to": 40400
+			},
+			"text": " you know, look forward to seeing what the results have to offer once we go live here."
+		}
+	]
+}

@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,680"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3680
+			},
+			"text": " Good morning, this is Dwayne with Zippy's AC and Ice."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,680",
+				"to": "00:00:07,600"
+			},
+			"offsets": {
+				"from": 3680,
+				"to": 7600
+			},
+			"text": " Really happy to be on board with these guys, and we're going to give it a shot and see"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,600",
+				"to": "00:00:10,600"
+			},
+			"offsets": {
+				"from": 7600,
+				"to": 10600
+			},
+			"text": " if we can't boost our business."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,600",
+				"to": "00:00:16,380"
+			},
+			"offsets": {
+				"from": 10600,
+				"to": 16380
+			},
+			"text": " We're kind of a plateau right now, and I think these guys are going to take us to the next"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,380",
+				"to": "00:00:20,960"
+			},
+			"offsets": {
+				"from": 16380,
+				"to": 20960
+			},
+			"text": " step, and we should be good to go."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,960",
+				"to": "00:00:21,920"
+			},
+			"offsets": {
+				"from": 20960,
+				"to": 21920
+			},
+			"text": " Looking forward to the partnership."
+		}
+	]
+}

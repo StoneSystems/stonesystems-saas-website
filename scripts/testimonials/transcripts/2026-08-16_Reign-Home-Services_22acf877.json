@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:01,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 1920
+			},
+			"text": " How's it going, my name is Chris."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:01,920",
+				"to": "00:00:04,120"
+			},
+			"offsets": {
+				"from": 1920,
+				"to": 4120
+			},
+			"text": " Working with these guys here has been a blast."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,120",
+				"to": "00:00:06,760"
+			},
+			"offsets": {
+				"from": 4120,
+				"to": 6760
+			},
+			"text": " Super easy, super fun."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,760",
+				"to": "00:00:08,820"
+			},
+			"offsets": {
+				"from": 6760,
+				"to": 8820
+			},
+			"text": " They're good guys, they'll take care of you."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,820",
+				"to": "00:00:10,480"
+			},
+			"offsets": {
+				"from": 8820,
+				"to": 10480
+			},
+			"text": " I'm excited to see where they bring."
+		}
+	]
+}

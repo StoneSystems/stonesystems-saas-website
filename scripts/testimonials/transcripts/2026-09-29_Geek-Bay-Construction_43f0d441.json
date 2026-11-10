@@ -1,0 +1,439 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,580"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2580
+			},
+			"text": " You know, I like the honesty power, you guys."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,580",
+				"to": "00:00:04,080"
+			},
+			"offsets": {
+				"from": 2580,
+				"to": 4080
+			},
+			"text": " I mean, that's one of the things, like I said,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:04,080",
+				"to": "00:00:09,080"
+			},
+			"offsets": {
+				"from": 4080,
+				"to": 9080
+			},
+			"text": " I mean, when I saw you guys on social media,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,400",
+				"to": "00:00:11,120"
+			},
+			"offsets": {
+				"from": 9400,
+				"to": 11120
+			},
+			"text": " the way you guys talk, I mean, I used, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,120",
+				"to": "00:00:14,320"
+			},
+			"offsets": {
+				"from": 11120,
+				"to": 14320
+			},
+			"text": " you guys, I can tell, you guys don't, don't bullshit it."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,320",
+				"to": "00:00:18,240"
+			},
+			"offsets": {
+				"from": 14320,
+				"to": 18240
+			},
+			"text": " So, I mean, that's me, like I said, I, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,240",
+				"to": "00:00:20,120"
+			},
+			"offsets": {
+				"from": 18240,
+				"to": 20120
+			},
+			"text": " I consider myself had a gift to see, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,120",
+				"to": "00:00:21,720"
+			},
+			"offsets": {
+				"from": 20120,
+				"to": 21720
+			},
+			"text": " I like people who act, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,720",
+				"to": "00:00:24,840"
+			},
+			"offsets": {
+				"from": 21720,
+				"to": 24840
+			},
+			"text": " the one that talked like that, and they had, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:24,840",
+				"to": "00:00:27,600"
+			},
+			"offsets": {
+				"from": 24840,
+				"to": 27600
+			},
+			"text": " like, okay, I offer you this, and, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,600",
+				"to": "00:00:29,680"
+			},
+			"offsets": {
+				"from": 27600,
+				"to": 29680
+			},
+			"text": " it's no bullshit, I mean, I love that."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,680",
+				"to": "00:00:31,960"
+			},
+			"offsets": {
+				"from": 29680,
+				"to": 31960
+			},
+			"text": " I mean, I can tell you guys have, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,960",
+				"to": "00:00:34,480"
+			},
+			"offsets": {
+				"from": 31960,
+				"to": 34480
+			},
+			"text": " you guys had a good team so far."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,480",
+				"to": "00:00:36,000"
+			},
+			"offsets": {
+				"from": 34480,
+				"to": 36000
+			},
+			"text": " I mean, I'm okay with it."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,000",
+				"to": "00:00:37,760"
+			},
+			"offsets": {
+				"from": 36000,
+				"to": 37760
+			},
+			"text": " I'm always running around, so, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,760",
+				"to": "00:00:40,800"
+			},
+			"offsets": {
+				"from": 37760,
+				"to": 40800
+			},
+			"text": " so I'm really better replying things back sometimes,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:40,800",
+				"to": "00:00:43,080"
+			},
+			"offsets": {
+				"from": 40800,
+				"to": 43080
+			},
+			"text": " but, you know, so I got so many things."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,080",
+				"to": "00:00:44,960"
+			},
+			"offsets": {
+				"from": 43080,
+				"to": 44960
+			},
+			"text": " Like, today I got like five different yabs"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:44,960",
+				"to": "00:00:45,880"
+			},
+			"offsets": {
+				"from": 44960,
+				"to": 45880
+			},
+			"text": " that I need to go through it,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,880",
+				"to": "00:00:47,920"
+			},
+			"offsets": {
+				"from": 45880,
+				"to": 47920
+			},
+			"text": " and I need to be with a canceled tour already,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:47,920",
+				"to": "00:00:50,520"
+			},
+			"offsets": {
+				"from": 47920,
+				"to": 50520
+			},
+			"text": " and I'm right here at the store,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,520",
+				"to": "00:00:52,560"
+			},
+			"offsets": {
+				"from": 50520,
+				"to": 52560
+			},
+			"text": " speaking of stuff with my son's calling me,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:52,560",
+				"to": "00:00:54,720"
+			},
+			"offsets": {
+				"from": 52560,
+				"to": 54720
+			},
+			"text": " and I need this, I need that, and I used to go crazy, man."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:54,720",
+				"to": "00:00:59,240"
+			},
+			"offsets": {
+				"from": 54720,
+				"to": 59240
+			},
+			"text": " So, I don't know, man, I don't know."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:59,240",
+				"to": "00:01:02,480"
+			},
+			"offsets": {
+				"from": 59240,
+				"to": 62480
+			},
+			"text": " This is how this is a little bit too much for me, but..."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,480",
+				"to": "00:01:03,880"
+			},
+			"offsets": {
+				"from": 62480,
+				"to": 63880
+			},
+			"text": " - Hey, I still had a dream,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:03,880",
+				"to": "00:01:05,120"
+			},
+			"offsets": {
+				"from": 63880,
+				"to": 65120
+			},
+			"text": " and hopefully that can make it happen."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:05,120",
+				"to": "00:01:07,800"
+			},
+			"offsets": {
+				"from": 65120,
+				"to": 67800
+			},
+			"text": " So, if you guys, you know, down for it,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:07,800",
+				"to": "00:01:10,040"
+			},
+			"offsets": {
+				"from": 67800,
+				"to": 70040
+			},
+			"text": " and you guys, you know, we'll see how everything go."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:10,040",
+				"to": "00:01:11,920"
+			},
+			"offsets": {
+				"from": 70040,
+				"to": 71920
+			},
+			"text": " I mean, so far, I'm happy with everything."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:11,920",
+				"to": "00:01:14,760"
+			},
+			"offsets": {
+				"from": 71920,
+				"to": 74760
+			},
+			"text": " You know, I will definitely refer you guys to somebody else."
+		},
+		{
+			"timestamps": {
+				"from": "00:01:14,760",
+				"to": "00:01:16,480"
+			},
+			"offsets": {
+				"from": 74760,
+				"to": 76480
+			},
+			"text": " I got a bunch of people like myself,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:16,480",
+				"to": "00:01:18,440"
+			},
+			"offsets": {
+				"from": 76480,
+				"to": 78440
+			},
+			"text": " they didn't, you know, we on the same field,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:18,440",
+				"to": "00:01:19,720"
+			},
+			"offsets": {
+				"from": 78440,
+				"to": 79720
+			},
+			"text": " and a lot of other contractors,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:19,720",
+				"to": "00:01:21,520"
+			},
+			"offsets": {
+				"from": 79720,
+				"to": 81520
+			},
+			"text": " and I definitely, definitely,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:21,520",
+				"to": "00:01:25,480"
+			},
+			"offsets": {
+				"from": 81520,
+				"to": 85480
+			},
+			"text": " I'll be able to, you know, to refer you guys to, you know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:25,480",
+				"to": "00:01:26,320"
+			},
+			"offsets": {
+				"from": 85480,
+				"to": 86320
+			},
+			"text": " to that."
+		}
+	]
+}

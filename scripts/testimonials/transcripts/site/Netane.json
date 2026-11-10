@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,400"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8400
+			},
+			"text": " I say hello everyone. My name is the Thomas Savole. I have a landscaping and machinery"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,400",
+				"to": "00:00:20,040"
+			},
+			"offsets": {
+				"from": 8400,
+				"to": 20040
+			},
+			"text": " company and I am fortunate that Kai reached out and was helping me with building my website."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,040",
+				"to": "00:00:29,880"
+			},
+			"offsets": {
+				"from": 20040,
+				"to": 29880
+			},
+			"text": " Kai has been nothing but professional and awesome in every way in accomplishing a website."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,880",
+				"to": "00:00:36,560"
+			},
+			"offsets": {
+				"from": 29880,
+				"to": 36560
+			},
+			"text": " I love Kai because if I don't get back to him he will reach out to me and you know how"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,560",
+				"to": "00:00:43,680"
+			},
+			"offsets": {
+				"from": 36560,
+				"to": 43680
+			},
+			"text": " it is when we are busy as entrepreneurs and when we run old companies we get too busy"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:43,680",
+				"to": "00:00:54,000"
+			},
+			"offsets": {
+				"from": 43680,
+				"to": 54000
+			},
+			"text": " with all the everyday things and Kai constantly reminds me to send him things that he needs,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:54,000",
+				"to": "00:01:02,000"
+			},
+			"offsets": {
+				"from": 54000,
+				"to": 62000
+			},
+			"text": " giving me pictures and I am grateful for him making it happen and also for him collecting"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:02,000",
+				"to": "00:01:13,680"
+			},
+			"offsets": {
+				"from": 62000,
+				"to": 73680
+			},
+			"text": " my Google account to our website. Kai has been awesome from the get go all the way to"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:13,680",
+				"to": "00:01:20,980"
+			},
+			"offsets": {
+				"from": 73680,
+				"to": 80980
+			},
+			"text": " you know I depend on him for anything relating to our website so I appreciate you Kai and"
+		},
+		{
+			"timestamps": {
+				"from": "00:01:20,980",
+				"to": "00:01:27,360"
+			},
+			"offsets": {
+				"from": 80980,
+				"to": 87360
+			},
+			"text": " I hope everybody has a Merry Christmas and I am happy having it, a lot."
+		}
+	]
+}

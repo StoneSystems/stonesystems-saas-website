@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,100"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8100
+			},
+			"text": " Hey there, my name's Miguel with Allied Roofing Stone Systems, started helping me out about"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,100",
+				"to": "00:00:11,220"
+			},
+			"offsets": {
+				"from": 8100,
+				"to": 11220
+			},
+			"text": " a couple weeks ago, and they've been great."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,220",
+				"to": "00:00:16,600"
+			},
+			"offsets": {
+				"from": 11220,
+				"to": 16600
+			},
+			"text": " Sebastian's been awesome, very helpful, it's always there when you meet them and man the"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,600",
+				"to": "00:00:17,600"
+			},
+			"offsets": {
+				"from": 16600,
+				"to": 17600
+			},
+			"text": " website."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,600",
+				"to": "00:00:21,580"
+			},
+			"offsets": {
+				"from": 17600,
+				"to": 21580
+			},
+			"text": " The website's great, it's the website, we love it."
+		}
+	]
+}

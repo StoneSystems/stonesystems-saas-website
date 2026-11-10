@@ -1,0 +1,87 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,920"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5920
+			},
+			"text": " Hey, what's up guys? This is John with Mount Man Roofing, just a small local outfit here"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,920",
+				"to": "00:00:12,040"
+			},
+			"offsets": {
+				"from": 5920,
+				"to": 12040
+			},
+			"text": " in Pennsylvania. I saw Kai's ads on Facebook. You know, I thought everybody else was kind"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,040",
+				"to": "00:00:18,280"
+			},
+			"offsets": {
+				"from": 12040,
+				"to": 18280
+			},
+			"text": " of bullshit, but a screen to call with them and Sebastian got me hooked up here. We got"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,280",
+				"to": "00:00:22,720"
+			},
+			"offsets": {
+				"from": 18280,
+				"to": 22720
+			},
+			"text": " the website rocking them all on the first day, so I really stoked about this and looking"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,720",
+				"to": "00:00:26,440"
+			},
+			"offsets": {
+				"from": 22720,
+				"to": 26440
+			},
+			"text": " forward to doing more work in the future. So really stoked."
+		}
+	]
+}

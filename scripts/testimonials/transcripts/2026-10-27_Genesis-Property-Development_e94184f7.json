@@ -1,0 +1,164 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:03,880"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 3880
+			},
+			"text": " - Hi, my name is Gabriel from Genesis Proper Development."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:03,880",
+				"to": "00:00:05,740"
+			},
+			"offsets": {
+				"from": 3880,
+				"to": 5740
+			},
+			"text": " I'm from Albuquerque, New Mexico."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,740",
+				"to": "00:00:07,840"
+			},
+			"offsets": {
+				"from": 5740,
+				"to": 7840
+			},
+			"text": " I highly recommend Miguel."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:07,840",
+				"to": "00:00:10,480"
+			},
+			"offsets": {
+				"from": 7840,
+				"to": 10480
+			},
+			"text": " He helped me with my business."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,480",
+				"to": "00:00:12,120"
+			},
+			"offsets": {
+				"from": 10480,
+				"to": 12120
+			},
+			"text": " He answered all the questions I had."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,120",
+				"to": "00:00:15,280"
+			},
+			"offsets": {
+				"from": 12120,
+				"to": 15280
+			},
+			"text": " It means like super effective and super grateful"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,280",
+				"to": "00:00:17,360"
+			},
+			"offsets": {
+				"from": 15280,
+				"to": 17360
+			},
+			"text": " for these opportunities used to work with him."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,360",
+				"to": "00:00:21,200"
+			},
+			"offsets": {
+				"from": 17360,
+				"to": 21200
+			},
+			"text": " If you guys need any support or any advertising"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:21,200",
+				"to": "00:00:23,000"
+			},
+			"offsets": {
+				"from": 21200,
+				"to": 23000
+			},
+			"text": " for your business, that's the best way"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,000",
+				"to": "00:00:25,360"
+			},
+			"offsets": {
+				"from": 23000,
+				"to": 25360
+			},
+			"text": " of music going with Miguel and with the STO system."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,360",
+				"to": "00:00:29,520"
+			},
+			"offsets": {
+				"from": 25360,
+				"to": 29520
+			},
+			"text": " So like IT is gonna be a really good option for you guys."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,520",
+				"to": "00:00:32,620"
+			},
+			"offsets": {
+				"from": 29520,
+				"to": 32620
+			},
+			"text": " I hope you guys like it and that's it."
+		}
+	]
+}

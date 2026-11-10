@@ -1,0 +1,98 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:08,480"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 8480
+			},
+			"text": " one of those. All right, let me know when you want me to go. All right, three, two, one. Go ahead."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,480",
+				"to": "00:00:14,720"
+			},
+			"offsets": {
+				"from": 10480,
+				"to": 14720
+			},
+			"text": " Yeah, my name is Mike Rice. I work with Gator Strong Systems in Wilmington, North Carolina."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,160",
+				"to": "00:00:22,960"
+			},
+			"offsets": {
+				"from": 16160,
+				"to": 22960
+			},
+			"text": " Rashawn over Stone Systems did an excellent job in terms of changing the appearance, the flow,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,760",
+				"to": "00:00:29,280"
+			},
+			"offsets": {
+				"from": 23760,
+				"to": 29280
+			},
+			"text": " the overall just vibe of the website. We're very excited to see what kind of traffic that's going"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,280",
+				"to": "00:00:35,920"
+			},
+			"offsets": {
+				"from": 29280,
+				"to": 35920
+			},
+			"text": " to bring to us. But overall, very pleased with his responsiveness, his attendance to detail,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,560",
+				"to": "00:00:42,720"
+			},
+			"offsets": {
+				"from": 36560,
+				"to": 42720
+			},
+			"text": " and just where he's taken us from from the beginning to where we are today. All right, thanks Mike."
+		}
+	]
+}

@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2780
+			},
+			"text": " This is George from TCD Development out in Jersey."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,780",
+				"to": "00:00:06,660"
+			},
+			"offsets": {
+				"from": 2780,
+				"to": 6660
+			},
+			"text": " I just want to send a shout out to Kai and Remy for an amazing job that they did doing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,660",
+				"to": "00:00:11,800"
+			},
+			"offsets": {
+				"from": 6660,
+				"to": 11800
+			},
+			"text": " my website, getting everything in order, I've been painting the butt every now and then,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:11,800",
+				"to": "00:00:17,020"
+			},
+			"offsets": {
+				"from": 11800,
+				"to": 17020
+			},
+			"text": " but they did it right and they got it done at a very timely fashion, I got to say that"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,020",
+				"to": "00:00:18,020"
+			},
+			"offsets": {
+				"from": 17020,
+				"to": 18020
+			},
+			"text": " much."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,020",
+				"to": "00:00:19,020"
+			},
+			"offsets": {
+				"from": 18020,
+				"to": 19020
+			},
+			"text": " All right."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,020",
+				"to": "00:00:20,020"
+			},
+			"offsets": {
+				"from": 19020,
+				"to": 20020
+			},
+			"text": " Check them out."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,020",
+				"to": "00:00:20,540"
+			},
+			"offsets": {
+				"from": 20020,
+				"to": 20540
+			},
+			"text": " You guys will not be disappointed."
+		}
+	]
+}

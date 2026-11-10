@@ -1,0 +1,142 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,780"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6780
+			},
+			"text": " Hey, this is Tyrone, Lucas of Lucas Management on a pressure washing, power washing, business."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,780",
+				"to": "00:00:13,060"
+			},
+			"offsets": {
+				"from": 6780,
+				"to": 13060
+			},
+			"text": " I want to just give a quick shout out and come to me to Stone Systems, especially Ghee."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,060",
+				"to": "00:00:14,980"
+			},
+			"offsets": {
+				"from": 13060,
+				"to": 14980
+			},
+			"text": " He's helped me transform my website."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,980",
+				"to": "00:00:17,880"
+			},
+			"offsets": {
+				"from": 14980,
+				"to": 17880
+			},
+			"text": " I'm really excited about where it's going to be going with in the early stages right"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,880",
+				"to": "00:00:18,880"
+			},
+			"offsets": {
+				"from": 17880,
+				"to": 18880
+			},
+			"text": " now."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,880",
+				"to": "00:00:23,000"
+			},
+			"offsets": {
+				"from": 18880,
+				"to": 23000
+			},
+			"text": " But if you're considering somebody to put up a website for you and do your SEO and all"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,000",
+				"to": "00:00:27,720"
+			},
+			"offsets": {
+				"from": 23000,
+				"to": 27720
+			},
+			"text": " that other techy stuff that I don't know, I would reach out to Stone Systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,720",
+				"to": "00:00:33,800"
+			},
+			"offsets": {
+				"from": 27720,
+				"to": 33800
+			},
+			"text": " These guys are great at communicating what is big for me and you don't have any problems"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,800",
+				"to": "00:00:35,800"
+			},
+			"offsets": {
+				"from": 33800,
+				"to": 35800
+			},
+			"text": " reaching out to them and then reaching back to you."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:35,800",
+				"to": "00:00:37,840"
+			},
+			"offsets": {
+				"from": 35800,
+				"to": 37840
+			},
+			"text": " So give Stone Systems a try, thank you."
+		}
+	]
+}

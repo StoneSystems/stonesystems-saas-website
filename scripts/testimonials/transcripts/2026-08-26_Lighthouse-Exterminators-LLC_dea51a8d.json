@@ -1,0 +1,131 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:09,340"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 9340
+			},
+			"text": " But working with stone systems has been seamless from the very beginning."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:09,340",
+				"to": "00:00:15,840"
+			},
+			"offsets": {
+				"from": 9340,
+				"to": 15840
+			},
+			"text": " We have an idea and they're going to help us out with an instant text back to our phone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:15,840",
+				"to": "00:00:22,000"
+			},
+			"offsets": {
+				"from": 15840,
+				"to": 22000
+			},
+			"text": " because our major problem was not getting to the calls immediately and the customers will"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,000",
+				"to": "00:00:23,000"
+			},
+			"offsets": {
+				"from": 22000,
+				"to": 23000
+			},
+			"text": " move on."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:23,000",
+				"to": "00:00:28,800"
+			},
+			"offsets": {
+				"from": 23000,
+				"to": 28800
+			},
+			"text": " So streamlining everything through the website and through this number really will help us"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,800",
+				"to": "00:00:31,980"
+			},
+			"offsets": {
+				"from": 28800,
+				"to": 31980
+			},
+			"text": " increase our revenue and sales."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:31,980",
+				"to": "00:00:39,000"
+			},
+			"offsets": {
+				"from": 31980,
+				"to": 39000
+			},
+			"text": " Miguel has been nothing but right on point and everything that was promised in the contract"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:39,000",
+				"to": "00:00:45,680"
+			},
+			"offsets": {
+				"from": 39000,
+				"to": 45680
+			},
+			"text": " is coming through and we're very happy with our new website and we're looking forward"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:45,680",
+				"to": "00:00:49,680"
+			},
+			"offsets": {
+				"from": 45680,
+				"to": 49680
+			},
+			"text": " to working with the stone systems for a long time."
+		}
+	]
+}

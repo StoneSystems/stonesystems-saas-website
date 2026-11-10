@@ -1,0 +1,120 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:05,800"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 5800
+			},
+			"text": " Hi, this is Brandon, the general manager of Brink Painting Construction and we are new"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,800",
+				"to": "00:00:12,320"
+			},
+			"offsets": {
+				"from": 5800,
+				"to": 12320
+			},
+			"text": " clients to stone systems and just wanted to give a testimonial to how well it's worked"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:12,320",
+				"to": "00:00:17,760"
+			},
+			"offsets": {
+				"from": 12320,
+				"to": 17760
+			},
+			"text": " just in our first month or so in business with them."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:17,760",
+				"to": "00:00:19,440"
+			},
+			"offsets": {
+				"from": 17760,
+				"to": 19440
+			},
+			"text": " We've gotten several leads."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:19,440",
+				"to": "00:00:22,080"
+			},
+			"offsets": {
+				"from": 19440,
+				"to": 22080
+			},
+			"text": " The website is performing wonderfully."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,080",
+				"to": "00:00:27,960"
+			},
+			"offsets": {
+				"from": 22080,
+				"to": 27960
+			},
+			"text": " We are on the first page at Google and these guys really know what they're doing so we"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,960",
+				"to": "00:00:29,800"
+			},
+			"offsets": {
+				"from": 27960,
+				"to": 29800
+			},
+			"text": " appreciate them a lot and thank you very much."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,800",
+				"to": "00:00:37,380"
+			},
+			"offsets": {
+				"from": 29800,
+				"to": 37380
+			},
+			"text": " [BLANK_AUDIO]"
+		}
+	]
+}

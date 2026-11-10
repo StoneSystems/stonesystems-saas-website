@@ -1,0 +1,219 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:02,760"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 2760
+			},
+			"text": " My name is Dale Monger, I've been working with stone systems."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:02,760",
+				"to": "00:00:05,700"
+			},
+			"offsets": {
+				"from": 2760,
+				"to": 5700
+			},
+			"text": " For the last few months, it's been absolutely amazing."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:05,700",
+				"to": "00:00:08,840"
+			},
+			"offsets": {
+				"from": 5700,
+				"to": 8840
+			},
+			"text": " My website looks absolutely phenomenal."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:08,840",
+				"to": "00:00:10,960"
+			},
+			"offsets": {
+				"from": 8840,
+				"to": 10960
+			},
+			"text": " And it's just so easy for someone like me"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:10,960",
+				"to": "00:00:14,640"
+			},
+			"offsets": {
+				"from": 10960,
+				"to": 14640
+			},
+			"text": " that doesn't really know much about that technology today."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:14,640",
+				"to": "00:00:16,880"
+			},
+			"offsets": {
+				"from": 14640,
+				"to": 16880
+			},
+			"text": " And I am super grateful and honored"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:16,880",
+				"to": "00:00:18,800"
+			},
+			"offsets": {
+				"from": 16880,
+				"to": 18800
+			},
+			"text": " and humbled to be working with these guys."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,800",
+				"to": "00:00:20,720"
+			},
+			"offsets": {
+				"from": 18800,
+				"to": 20720
+			},
+			"text": " And if you're out there and you're thinking,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:20,720",
+				"to": "00:00:22,000"
+			},
+			"offsets": {
+				"from": 20720,
+				"to": 22000
+			},
+			"text": " you need someone that's gonna be there for you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:22,000",
+				"to": "00:00:25,840"
+			},
+			"offsets": {
+				"from": 22000,
+				"to": 25840
+			},
+			"text": " and help you a team of people that don't know my family"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,840",
+				"to": "00:00:28,040"
+			},
+			"offsets": {
+				"from": 25840,
+				"to": 28040
+			},
+			"text": " and went to bat for me,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:28,040",
+				"to": "00:00:29,760"
+			},
+			"offsets": {
+				"from": 28040,
+				"to": 29760
+			},
+			"text": " it's hard to find a company like that today."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:29,760",
+				"to": "00:00:33,080"
+			},
+			"offsets": {
+				"from": 29760,
+				"to": 33080
+			},
+			"text": " So stone systems, Kai, I'm Rami that I'm working with."
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,080",
+				"to": "00:00:34,520"
+			},
+			"offsets": {
+				"from": 33080,
+				"to": 34520
+			},
+			"text": " I just want you guys to know,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:34,520",
+				"to": "00:00:36,120"
+			},
+			"offsets": {
+				"from": 34520,
+				"to": 36120
+			},
+			"text": " for the bottom of my heart, my wife's heart,"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:36,120",
+				"to": "00:00:38,440"
+			},
+			"offsets": {
+				"from": 36120,
+				"to": 38440
+			},
+			"text": " my family's heart, we're grateful and thankful"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:38,440",
+				"to": "00:00:40,160"
+			},
+			"offsets": {
+				"from": 38440,
+				"to": 40160
+			},
+			"text": " and we love working with you guys."
+		}
+	]
+}

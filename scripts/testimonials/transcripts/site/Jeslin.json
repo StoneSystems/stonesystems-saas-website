@@ -1,0 +1,153 @@
+{
+	"systeminfo": "WHISPER : VITISAI = 0 | COREML = 0 | OPENVINO = 0 | MTL : EMBED_LIBRARY = 1 | CPU : NEON = 1 | ARM_FMA = 1 | FP16_VA = 1 | MATMUL_INT8 = 1 | DOTPROD = 1 | SME = 1 | ACCELERATE = 1 | OPENMP = 1 | REPACK = 1 | ",
+	"model": {
+		"type": "base",
+		"multilingual": false,
+		"vocab": 51864,
+		"audio": {
+			"ctx": 1500,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"text": {
+			"ctx": 448,
+			"state": 512,
+			"head": 8,
+			"layer": 6
+		},
+		"mels": 80,
+		"ftype": 1
+	},
+	"params": {
+		"model": "/Users/manuelojeda/.cache/whisper/ggml-base.en.bin",
+		"language": "en",
+		"translate": false
+	},
+	"result": {
+		"language": "en"
+	},
+	"transcription": [
+		{
+			"timestamps": {
+				"from": "00:00:00,000",
+				"to": "00:00:06,000"
+			},
+			"offsets": {
+				"from": 0,
+				"to": 6000
+			},
+			"text": " Hello, my name is Jesslyn. I'm with Dave Suppliance. We have been with Stone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:06,860",
+				"to": "00:00:12,260"
+			},
+			"offsets": {
+				"from": 6860,
+				"to": 12260
+			},
+			"text": " Systems for a very short time. They redid our website. They are"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:13,440",
+				"to": "00:00:18,540"
+			},
+			"offsets": {
+				"from": 13440,
+				"to": 18540
+			},
+			"text": " Amazing at getting you five star reviews. I just wanted to read this off to you"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:18,840",
+				"to": "00:00:24,580"
+			},
+			"offsets": {
+				"from": 18840,
+				"to": 24580
+			},
+			"text": " If you're looking to get your business found more on Google, you need to give stone"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:25,480",
+				"to": "00:00:27,480"
+			},
+			"offsets": {
+				"from": 25480,
+				"to": 27480
+			},
+			"text": " systems a call"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:27,560",
+				"to": "00:00:32,920"
+			},
+			"offsets": {
+				"from": 27560,
+				"to": 32920
+			},
+			"text": " Five days ago, we had two five star reviews four days ago. We had one"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:33,760",
+				"to": "00:00:37,000"
+			},
+			"offsets": {
+				"from": 33760,
+				"to": 37000
+			},
+			"text": " One day ago. We had four five star reviews"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:37,760",
+				"to": "00:00:42,360"
+			},
+			"offsets": {
+				"from": 37760,
+				"to": 42360
+			},
+			"text": " five in the last 22 hours five star reviews"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:42,920",
+				"to": "00:00:48,760"
+			},
+			"offsets": {
+				"from": 42920,
+				"to": 48760
+			},
+			"text": " One five star review and two hours ago that 16 new reviews"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:50,760",
+				"to": "00:00:52,760"
+			},
+			"offsets": {
+				"from": 50760,
+				"to": 52760
+			},
+			"text": " That's amazing"
+		},
+		{
+			"timestamps": {
+				"from": "00:00:55,160",
+				"to": "00:00:58,600"
+			},
+			"offsets": {
+				"from": 55160,
+				"to": 58600
+			},
+			"text": " Give them a call. You will not regret it"
+		}
+	]
+}
