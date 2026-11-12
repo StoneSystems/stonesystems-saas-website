@@ -1,0 +1,54 @@
+.outer {
+  background-color: var(--gray);
+}
+
+.wrapper {
+  padding-bottom: var(--mantine-spacing-xl);
+}
+
+.mainTitle {
+  color: var(--blue);
+  font-size: var(--title-font-size);
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: center;
+  padding: calc(var(--space-40) * 2) 0;
+
+  @media (max-width: 30em) {
+    font-size: rem(28px);
+    padding: var(--space-40) 0;
+  }
+}
+
+.item {
+  border-radius: var(--mantine-radius-md);
+  margin-bottom: var(--mantine-spacing-lg);
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-4));
+}
+
+.itemTitle {
+  font-size: 26px;
+  color: var(--blue);
+
+  @media (max-width: 30em) {
+    font-size: 19px;
+  }
+
+  > * {
+    font-weight: 600 !important;
+
+    @media (max-width: 30em) {
+    font-weight: 800 !important;
+    }
+  }
+
+  svg {
+    height: 30px !important;
+    width: 30px !important;
+    stroke: var(--blue);
+  }
+}
+
+.itemDescription {
+  font-size: 18px;
+}
