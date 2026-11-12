@@ -63,3 +63,31 @@
     background-color: var(--dark-yellow) !important;
   }
 }
+
+/* Service pages written for a trade, listed under its name on the card. */
+.pageLinks {
+  list-style: none;
+  width: 100%;
+  margin: var(--mantine-spacing-xs) 0 0;
+  padding: 0 var(--mantine-spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  a {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  a:hover {
+    background-color: var(--yellow);
+  }
+}

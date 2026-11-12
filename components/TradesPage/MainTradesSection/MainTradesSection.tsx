@@ -12,20 +12,34 @@ import {
 } from '@mantine/core';
 import Image from 'next/image';
 import { bookingUrl } from '@/lib/site';
+import { ServicePageLink, groupByTrade, servicePagePath } from '@/lib/servicePageLinks';
 import classes from './MainTradesSection.module.css';
 
 interface CardProps {
   tradeName: string;
   imageSrc: string;
+  /** The service pages written for this trade. Most trades have none yet. */
+  pages?: ServicePageLink[];
 }
 
-function Card({ tradeName, imageSrc }: CardProps) {
+function Card({ tradeName, imageSrc, pages = [] }: CardProps) {
   return (
     <Paper radius="md" className={classes.card}>
       <Image width={329} height={185} src={imageSrc} alt={tradeName} className={classes.video} />
       <Title order={3} className={classes.tradeName}>
         {tradeName}
       </Title>
+      {pages.length > 0 && (
+        <ul className={classes.pageLinks}>
+          {pages.map((page) => (
+            <li key={page.slug}>
+              <a href={servicePagePath(page.slug)}>
+                {page.trade} {page.service}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </Paper>
   );
 }
@@ -117,10 +131,21 @@ const data = [
   },
 ];
 
-export function MainTradesSection() {
+/** A card named "Roofing" shows the pages whose trade is "Roofing". */
+function pagesFor(
+  tradeName: string,
+  byTrade: Record<string, ServicePageLink[]>
+): ServicePageLink[] {
+  return byTrade[tradeName.trim().toLowerCase()] ?? [];
+}
+
+export function MainTradesSection({ servicePages = [] }: { servicePages?: ServicePageLink[] }) {
   const theme = useMantineTheme();
   const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
-  const slides = data.map((item) => <Card key={item.tradeName} {...item} />);
+  const byTrade = groupByTrade(servicePages);
+  const slides = data.map((item) => (
+    <Card key={item.tradeName} {...item} pages={pagesFor(item.tradeName, byTrade)} />
+  ));
 
   return (
     <div className={classes.outer}>

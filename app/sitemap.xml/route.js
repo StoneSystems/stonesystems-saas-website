@@ -18,6 +18,26 @@ async function getBlogSlugs() {
   }
 }
 
+async function getServicePageSlugs() {
+  try {
+    const query = encodeURIComponent(
+      '*[_type == "servicePage" && status == "Published"] { "slug": slug.current }'
+    );
+    const res = await fetch(
+      `https://0797qc4z.api.sanity.io/v2024-01-01/data/query/production?query=${query}`,
+      {
+        headers: { Authorization: `Bearer ${process.env.SANITY_API_TOKEN}` },
+        next: { revalidate: 60 },
+      }
+    );
+    if (!res.ok) return [];
+    const data = await res.json();
+    return data.result || [];
+  } catch {
+    return [];
+  }
+}
+
 export async function GET() {
   const baseUrl = 'https://stonesystems.io';
 
@@ -34,6 +54,7 @@ export async function GET() {
   ];
 
   const blogSlugs = await getBlogSlugs();
+  const servicePageSlugs = await getServicePageSlugs();
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -52,6 +73,16 @@ export async function GET() {
           ({ slug }) => `
         <url>
           <loc>${baseUrl}/blog/${slug}</loc>
+          <changefreq>monthly</changefreq>
+        </url>
+      `
+        )
+        .join('')}
+      ${servicePageSlugs
+        .map(
+          ({ slug }) => `
+        <url>
+          <loc>${baseUrl}/trades/${slug}</loc>
           <changefreq>monthly</changefreq>
         </url>
       `
