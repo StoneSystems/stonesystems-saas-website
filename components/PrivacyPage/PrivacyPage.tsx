@@ -3,7 +3,7 @@ import classes from './PrivacyPage.module.css';
 import { getPolicyReviewInfo } from '@/lib/policyReview';
 
 export function PrivacyPage() {
-  const review = getPolicyReviewInfo('2026-11-10');
+  const review = getPolicyReviewInfo('2026-11-16');
 
   return (
     <div className={classes.outer}>
@@ -634,6 +634,54 @@ export function PrivacyPage() {
               a business can reply STOP at any time; the App honors it automatically.
             </li>
           </ul>
+
+          <Title order={3} className={classes.tercaryTitle}>
+            10.1 Google Calendar and other connected calendars
+          </Title>
+          <Text className={classes.text}>
+            You can choose to connect a Google account (or another calendar account) to the App.
+            Connecting is optional, and you can disconnect at any time.
+          </Text>
+          <ul className={classes.list}>
+            <li className={classes.listItem}>
+              <strong>What we access.</strong> The list of calendars on the account you connect, and
+              the events on those calendars.
+            </li>
+            <li className={classes.listItem}>
+              <strong>How we use it.</strong> Only to (1) show when you are busy, so you are not
+              double-booked, and (2) add appointments booked in the App to the calendar you choose,
+              and keep them up to date.
+            </li>
+            <li className={classes.listItem}>
+              <strong>What we store.</strong> The start and end times of events that mark you as
+              busy, not their titles, descriptions, or attendees, plus the appointments we create.
+            </li>
+            <li className={classes.listItem}>
+              <strong>What we never do.</strong> We do not sell this data, share it with third
+              parties, use it for advertising, or use it to train artificial intelligence or machine
+              learning models. Stone Systems staff do not read your calendar events.
+            </li>
+            <li className={classes.listItem}>
+              <strong>Disconnecting.</strong> Disconnect in the App&apos;s calendar settings and we
+              delete the synced calendar data. You can also revoke our access at any time at{' '}
+              <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">
+                myaccount.google.com/permissions
+              </a>
+              .
+            </li>
+          </ul>
+          <Text className={classes.text}>
+            Stone Systems&apos; use and transfer of information received from Google APIs to any
+            other app will adhere to the{' '}
+            <a
+              href="https://developers.google.com/terms/api-services-user-data-policy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google API Services User Data Policy
+            </a>
+            , including the Limited Use requirements.
+          </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
             11. Data Retention
