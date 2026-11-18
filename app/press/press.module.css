@@ -1,0 +1,62 @@
+.page {
+  background-color: var(--gray);
+  min-height: 100vh;
+}
+
+.hero {
+  background-color: var(--blue);
+  background-image: url('/images/bg_blue.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 80px 1.5rem 120px;
+  text-align: center;
+  margin-bottom: -1px;
+
+  @media (max-width: 30em) {
+    padding: 60px 1.5rem 90px;
+  }
+}
+
+.heroInner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--yellow);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+
+  @media (max-width: 30em) {
+    font-size: 30px;
+  }
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--text-gray);
+  line-height: 1.7;
+
+  @media (max-width: 30em) {
+    font-size: 16px;
+  }
+}
+
+.content {
+  max-width: 83em;
+  margin: 0 auto;
+  padding: 60px 1.5rem 100px;
+}
+
