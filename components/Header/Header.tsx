@@ -34,6 +34,7 @@ import {
   IconUsers,
   IconTool,
   IconNews,
+  IconNotebook,
   IconBriefcase,
   IconPhoneCall,
 } from '@tabler/icons-react';
@@ -117,6 +118,12 @@ const aboutData = [
     title: 'Blog',
     description: 'Tips, stories and updates',
     href: '/blog',
+  },
+  {
+    icon: IconNotebook,
+    title: 'Press',
+    description: 'Stone Systems in the news',
+    href: '/press',
   },
   {
     icon: IconBriefcase,

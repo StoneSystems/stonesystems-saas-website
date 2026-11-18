@@ -14,6 +14,7 @@ const data = [
       { label: 'Trades', link: '/trades' },
       { label: 'About Us', link: '/about-us' },
       { label: 'Blog', link: '/blog' },
+      { label: 'Press', link: '/press' },
       { label: 'Careers', link: '/careers' },
       { label: 'Contact', link: '/contact' },
       { label: 'Log in', link: 'https://app.stonesystems.io' },
