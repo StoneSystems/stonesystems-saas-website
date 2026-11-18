@@ -47,3 +47,19 @@
   }
 }
 
+.viewAll {
+  border-color: var(--blue) !important;
+  color: var(--blue) !important;
+  font-weight: 600 !important;
+  transition: all 0.25s;
+  white-space: nowrap;
+
+  @media (max-width: 48em) {
+    align-self: flex-start;
+  }
+}
+
+.viewAll:hover {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}

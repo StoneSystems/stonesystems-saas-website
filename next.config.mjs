@@ -13,7 +13,7 @@ export default withBundleAnalyzer({
     optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
   },
   async redirects() {
-    const home = ['/pricing', '/our-work', '/our-process', '/partners', '/press', '/press/:slug*'];
+    const home = ['/pricing', '/our-work', '/our-process', '/partners'];
     return [
       ...home.map((source) => ({ source, destination: '/', permanent: true })),
       { source: '/testimonials', destination: '/results', permanent: true },
