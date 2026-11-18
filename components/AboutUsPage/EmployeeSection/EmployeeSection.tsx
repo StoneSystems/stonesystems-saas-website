@@ -51,14 +51,9 @@ const data = [
     imageSrc: '/images/people/umer.jpg',
   },
   {
-    name: 'Hussain',
+    name: 'Manuel O.',
     title: 'Software Engineer',
-    imageSrc: '/images/people/hussain.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Shahzeb',
-    title: 'Software Engineer',
-    imageSrc: '/images/people/shahzeb.jpg', // NEEDS HEADSHOT
+    imageSrc: '/images/people/manuel_ojeda.jpg',
   },
 
   // ── Customer Success ───────────────────────────────────────────────────────
@@ -130,38 +125,6 @@ const data = [
     imageSrc: '/images/people/natalia.jpg', // NEEDS HEADSHOT
   },
 
-  // ── Service Delivery ───────────────────────────────────────────────────────
-  {
-    name: 'Astrid',
-    title: 'VA Team Lead',
-    imageSrc: '/images/people/astrid.jpeg',
-  },
-  {
-    name: 'Alejandra',
-    title: 'Web Developer',
-    imageSrc: '/images/people/alejandra.jpeg',
-  },
-  {
-    name: 'Camila',
-    title: 'Web Developer',
-    imageSrc: '/images/people/camila.jpeg',
-  },
-  {
-    name: 'Oriana',
-    title: 'Web Developer',
-    imageSrc: '/images/people/oriana.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Saray',
-    title: 'Web Developer',
-    imageSrc: '/images/people/saray.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Victor',
-    title: 'Web Developer',
-    imageSrc: '/images/people/victor.jpg', // NEEDS HEADSHOT
-  },
-
   // ── HR ─────────────────────────────────────────────────────────────────────
   {
     name: 'Laura',
@@ -170,16 +133,6 @@ const data = [
   },
 
   // ── Customer Success (continued) ─────────────────────────────────────────
-  {
-    name: 'Andres',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/andres.jpg',
-  },
-  {
-    name: 'Charlie',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/charlie.jpg',
-  },
   {
     name: 'Adrian',
     title: 'Customer Success Manager',
@@ -201,49 +154,14 @@ const data = [
     imageSrc: '/images/people/brian.jpg',
   },
   {
-    name: 'Maria',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/maria.jpg',
-  },
-  {
-    name: 'Sergio',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/sergio.jpg',
-  },
-  {
-    name: 'Ashley',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/ashley.jpg',
-  },
-  {
-    name: 'Michael S.',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/michael_scott.jpg',
-  },
-  {
-    name: 'Jose',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/jose.jpg',
-  },
-  {
     name: 'Oscar',
     title: 'Customer Success Manager',
     imageSrc: '/images/people/oscar.jpg',
   },
   {
-    name: 'Yusef',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/yusef.jpg',
-  },
-  {
     name: 'Manuel',
     title: 'Customer Success Manager',
     imageSrc: '/images/people/manuel.jpg',
-  },
-  {
-    name: 'Andy',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/andy.jpg',
   },
   {
     name: 'James',
