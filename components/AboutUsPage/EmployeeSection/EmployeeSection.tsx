@@ -42,11 +42,11 @@ function Card({ name, title, imageSrc }: CardProps) {
 }
 
 // Roster mirrors the Notion "People Directory" (names, job titles, departments).
-// People without imageSrc still need a headshot.
+// Headshots come from each person's Notion page; omit imageSrc to show initials.
 const data: CardProps[] = [
   // ── Executive ──────────────────────────────────────────────────────────────
-  { name: 'Kai', title: 'Founder', imageSrc: '/images/people/kai.jpeg' },
-  { name: 'Michael', title: 'CEO / Founder', imageSrc: '/images/people/michael.jpg' },
+  { name: 'Kai', title: 'Founder', imageSrc: '/images/people/kai_stone.jpg' },
+  { name: 'Michael', title: 'CEO / Founder', imageSrc: '/images/people/michael_vanhoutte.jpg' },
   { name: 'Chelsea', title: 'Executive Assistant', imageSrc: '/images/people/chelsea.jpg' },
 
   // ── Engineering ────────────────────────────────────────────────────────────
@@ -55,8 +55,8 @@ const data: CardProps[] = [
   { name: 'Adrian', title: 'Software Engineer', imageSrc: '/images/people/adrian.jpg' },
 
   // ── Customer Success ───────────────────────────────────────────────────────
-  { name: 'Glen', title: 'CSM Team Lead', imageSrc: '/images/people/glen.jpg' },
-  { name: 'Ben', title: 'GMB Expert', imageSrc: '/images/people/ben.jpeg' },
+  { name: 'Glen', title: 'CSM Team Lead', imageSrc: '/images/people/gediminas_margis.jpg' },
+  { name: 'Ben', title: 'GMB Expert', imageSrc: '/images/people/ben_zazueta.jpg' },
   { name: 'Brian', title: 'Customer Success Manager', imageSrc: '/images/people/brian.jpg' },
   {
     name: 'Sebastian V.',
@@ -66,23 +66,35 @@ const data: CardProps[] = [
   { name: 'James', title: 'Customer Success Manager', imageSrc: '/images/people/james.jpg' },
   { name: 'Oscar', title: 'Customer Success Manager', imageSrc: '/images/people/oscar.jpg' },
   { name: 'Manuel P.', title: 'Customer Success Manager', imageSrc: '/images/people/manuel.jpg' },
-  { name: 'Sebastian I.', title: 'Customer Success Manager' },
-  { name: 'Zac', title: 'Customer Success Manager' },
-  { name: 'Josh', title: 'Customer Success Manager' },
-  { name: 'Rashaan', title: 'Customer Success Manager' },
-  { name: 'Dani', title: 'Customer Success Manager' },
-  { name: 'Guilherme', title: 'Customer Success Manager' },
+  {
+    name: 'Sebastian I.',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/sebastian_idarraga.jpg',
+  },
+  { name: 'Zac', title: 'Customer Success Manager', imageSrc: '/images/people/zlatan_mizdrak.jpg' },
+  { name: 'Josh', title: 'Customer Success Manager', imageSrc: '/images/people/josue_vallejo.jpg' },
+  {
+    name: 'Rashaan',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/rashaan_cain.jpg',
+  },
+  { name: 'Dani', title: 'Customer Success Manager', imageSrc: '/images/people/dani_diaz.jpg' },
+  {
+    name: 'Guilherme',
+    title: 'Customer Success Manager',
+    imageSrc: '/images/people/guilherme_barros.jpg',
+  },
 
   // ── Sales ──────────────────────────────────────────────────────────────────
-  { name: 'Calvin', title: 'Sales Manager' },
-  { name: 'Dale', title: 'Closer', imageSrc: '/images/people/dale.jpeg' },
+  { name: 'Calvin', title: 'Sales Manager', imageSrc: '/images/people/calvin_pereira.jpg' },
+  { name: 'Dale', title: 'Closer', imageSrc: '/images/people/dale_kelley.jpg' },
   { name: 'Alex', title: 'Closer', imageSrc: '/images/people/alex.jpg' },
-  { name: 'Tanner', title: 'Closer' },
-  { name: 'Isaac', title: 'Closer' },
+  { name: 'Tanner', title: 'Closer', imageSrc: '/images/people/tanner_martin.jpg' },
+  { name: 'Isaac', title: 'Closer', imageSrc: '/images/people/isaac_gomez.jpg' },
   { name: 'Natalia', title: 'Appointment Setter', imageSrc: '/images/people/natalia.jpg' },
-  { name: 'Jeffrey', title: 'Appointment Setter' },
-  { name: 'David', title: 'Appointment Setter' },
-  { name: 'Luis', title: 'Appointment Setter' },
+  { name: 'Jeffrey', title: 'Appointment Setter', imageSrc: '/images/people/jeffrey_kay.jpg' },
+  { name: 'David', title: 'Appointment Setter', imageSrc: '/images/people/david_saint.jpg' },
+  { name: 'Luis', title: 'Appointment Setter', imageSrc: '/images/people/luis_morales.jpg' },
 ];
 
 export function EmployeeSection() {
