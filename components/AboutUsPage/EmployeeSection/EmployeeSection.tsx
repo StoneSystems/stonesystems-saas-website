@@ -8,13 +8,29 @@ import classes from './EmployeeSection.module.css';
 interface CardProps {
   name: string;
   title: string;
-  imageSrc: string;
+  /** Omit until a headshot is in /public/images/people/ — the card shows initials instead. */
+  imageSrc?: string;
+}
+
+function initials(name: string) {
+  return name
+    .replace(/\./g, '')
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join('')
+    .toUpperCase();
 }
 
 function Card({ name, title, imageSrc }: CardProps) {
   return (
     <Paper py="lg" radius="md" bg="var(--white)">
-      <Image className={classes.avatar} src={imageSrc} width={200} height={200} alt={name} />
+      {imageSrc ? (
+        <Image className={classes.avatar} src={imageSrc} width={200} height={200} alt={name} />
+      ) : (
+        <div className={classes.initials} role="img" aria-label={name}>
+          {initials(name)}
+        </div>
+      )}
       <Text className={classes.name} ta="center" mt="md">
         {name}
       </Text>
@@ -25,165 +41,60 @@ function Card({ name, title, imageSrc }: CardProps) {
   );
 }
 
-// NOTE: People marked with placeholder.jpg need headshots uploaded to /public/images/people/
-const data = [
+// Roster mirrors the Notion "People Directory" (names, job titles, departments).
+// Headshots come from each person's Notion page; omit imageSrc to show initials.
+const data: CardProps[] = [
   // ── Executive ──────────────────────────────────────────────────────────────
-  {
-    name: 'Kai',
-    title: 'CEO / Founder',
-    imageSrc: '/images/people/kai.jpeg',
-  },
-  {
-    name: 'Michael',
-    title: 'COO / Co-Founder',
-    imageSrc: '/images/people/michael.jpg',
-  },
-  {
-    name: 'Chelsea',
-    title: 'Executive Assistant',
-    imageSrc: '/images/people/chelsea.jpg', // NEEDS HEADSHOT
-  },
+  { name: 'Kai', title: 'Founder', imageSrc: '/images/people/kai_stone.jpg' },
+  { name: 'Michael', title: 'CEO / Founder', imageSrc: '/images/people/michael_vanhoutte.jpg' },
+  { name: 'Chelsea', title: 'Executive Assistant', imageSrc: '/images/people/chelsea.jpg' },
 
   // ── Engineering ────────────────────────────────────────────────────────────
-  {
-    name: 'Umer',
-    title: 'Senior Software Engineer',
-    imageSrc: '/images/people/umer.jpg',
-  },
-  {
-    name: 'Manuel O.',
-    title: 'Software Engineer',
-    imageSrc: '/images/people/manuel_ojeda.jpg',
-  },
+  { name: 'Umer', title: 'Software Engineer', imageSrc: '/images/people/umer.jpg' },
+  { name: 'Manuel O.', title: 'Software Engineer', imageSrc: '/images/people/manuel_ojeda.jpg' },
+  { name: 'Adrian', title: 'Software Engineer', imageSrc: '/images/people/adrian.jpg' },
 
   // ── Customer Success ───────────────────────────────────────────────────────
+  { name: 'Glen', title: 'CSM Team Lead', imageSrc: '/images/people/gediminas_margis.jpg' },
+  { name: 'Ben', title: 'GMB Expert', imageSrc: '/images/people/ben_zazueta.jpg' },
+  { name: 'Brian', title: 'Customer Success Manager', imageSrc: '/images/people/brian.jpg' },
   {
-    name: 'Eric',
-    title: 'Head of Customer Success',
-    imageSrc: '/images/people/eric.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Ryan',
-    title: 'CSM Team Lead',
-    imageSrc: '/images/people/ryan.jpeg',
-  },
-  {
-    name: 'Ben',
-    title: 'CSM Team Lead',
-    imageSrc: '/images/people/ben.jpeg',
-  },
-  {
-    name: 'Fabio',
-    title: 'GMB Expert',
-    imageSrc: '/images/people/fabio.png',
-  },
-  {
-    name: 'Henry',
-    title: 'GMB Expert',
-    imageSrc: '/images/people/henry.jpeg',
-  },
-
-  // ── Sales ──────────────────────────────────────────────────────────────────
-  {
-    name: 'Dale',
-    title: 'Sales Manager',
-    imageSrc: '/images/people/dale.jpeg',
-  },
-  {
-    name: 'Jay',
-    title: 'Closer',
-    imageSrc: '/images/people/jhovany.png',
-  },
-  {
-    name: 'Daniel',
-    title: 'Closer',
-    imageSrc: '/images/people/daniel.jpeg',
-  },
-  {
-    name: 'Martin',
-    title: 'Closer',
-    imageSrc: '/images/people/martin.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Carlos',
-    title: 'Closer',
-    imageSrc: '/images/people/carlos.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Alex',
-    title: 'Closer',
-    imageSrc: '/images/people/alex.jpg', // NEEDS HEADSHOT
-  },
-  {
-    name: 'Juan',
-    title: 'Setter',
-    imageSrc: '/images/people/juan_saldivar.jpg',
-  },
-  {
-    name: 'Natalia',
-    title: 'Setter',
-    imageSrc: '/images/people/natalia.jpg', // NEEDS HEADSHOT
-  },
-
-  // ── HR ─────────────────────────────────────────────────────────────────────
-  {
-    name: 'Laura',
-    title: 'HR / Recruiter',
-    imageSrc: '/images/people/laura.jpg', // NEEDS HEADSHOT
-  },
-
-  // ── Customer Success (continued) ─────────────────────────────────────────
-  {
-    name: 'Adrian',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/adrian.jpg',
-  },
-  {
-    name: 'Glen',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/glen.jpg',
-  },
-  {
-    name: 'Sebastian',
+    name: 'Sebastian V.',
     title: 'Customer Success Manager',
     imageSrc: '/images/people/sebastian.jpg',
   },
+  { name: 'James', title: 'Customer Success Manager', imageSrc: '/images/people/james.jpg' },
+  { name: 'Oscar', title: 'Customer Success Manager', imageSrc: '/images/people/oscar.jpg' },
+  { name: 'Manuel P.', title: 'Customer Success Manager', imageSrc: '/images/people/manuel.jpg' },
   {
-    name: 'Brian',
+    name: 'Sebastian I.',
     title: 'Customer Success Manager',
-    imageSrc: '/images/people/brian.jpg',
+    imageSrc: '/images/people/sebastian_idarraga.jpg',
   },
+  { name: 'Zac', title: 'Customer Success Manager', imageSrc: '/images/people/zlatan_mizdrak.jpg' },
+  { name: 'Josh', title: 'Customer Success Manager', imageSrc: '/images/people/josue_vallejo.jpg' },
   {
-    name: 'Oscar',
+    name: 'Rashaan',
     title: 'Customer Success Manager',
-    imageSrc: '/images/people/oscar.jpg',
+    imageSrc: '/images/people/rashaan_cain.jpg',
   },
+  { name: 'Dani', title: 'Customer Success Manager', imageSrc: '/images/people/dani_diaz.jpg' },
   {
-    name: 'Manuel',
+    name: 'Guilherme',
     title: 'Customer Success Manager',
-    imageSrc: '/images/people/manuel.jpg',
+    imageSrc: '/images/people/guilherme_barros.jpg',
   },
-  {
-    name: 'James',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/james.jpg',
-  },
-  {
-    name: 'Esteban',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/esteban.jpg',
-  },
-  {
-    name: 'Juan L.',
-    title: 'Customer Success Manager',
-    imageSrc: '/images/people/juan_lopez.jpg',
-  },
-  // ── Sales (continued) ────────────────────────────────────────────────────
-  {
-    name: 'Allan',
-    title: 'Closer',
-    imageSrc: '/images/people/stoneman.jpeg',
-  },
+
+  // ── Sales ──────────────────────────────────────────────────────────────────
+  { name: 'Calvin', title: 'Sales Manager', imageSrc: '/images/people/calvin_pereira.jpg' },
+  { name: 'Dale', title: 'Closer', imageSrc: '/images/people/dale_kelley.jpg' },
+  { name: 'Alex', title: 'Closer', imageSrc: '/images/people/alex.jpg' },
+  { name: 'Tanner', title: 'Closer', imageSrc: '/images/people/tanner_martin.jpg' },
+  { name: 'Isaac', title: 'Closer', imageSrc: '/images/people/isaac_gomez.jpg' },
+  { name: 'Natalia', title: 'Appointment Setter', imageSrc: '/images/people/natalia.jpg' },
+  { name: 'Jeffrey', title: 'Appointment Setter', imageSrc: '/images/people/jeffrey_kay.jpg' },
+  { name: 'David', title: 'Appointment Setter', imageSrc: '/images/people/david_saint.jpg' },
+  { name: 'Luis', title: 'Appointment Setter', imageSrc: '/images/people/luis_morales.jpg' },
 ];
 
 export function EmployeeSection() {
