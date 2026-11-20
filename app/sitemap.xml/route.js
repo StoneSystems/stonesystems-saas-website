@@ -50,6 +50,13 @@ async function getPublishedSlugs(type) {
   }
 }
 
+/** Nine posts per page of the blog list; `/blog` is page 1, the rest live at `/blog/page/N`. Keep equal to BLOG_PAGE_SIZE in components/Blog/blogPaging.ts. */
+const BLOG_PAGE_SIZE = 9;
+function blogListPages(postCount) {
+  const total = Math.ceil(postCount / BLOG_PAGE_SIZE);
+  return Array.from({ length: Math.max(0, total - 1) }, (_, i) => i + 2);
+}
+
 /** `_updatedAt` is an ISO datetime; the sitemap protocol accepts the date alone. */
 function lastmod(updatedAt) {
   if (typeof updatedAt !== 'string') return '';
@@ -86,6 +93,16 @@ export async function GET() {
         <url>
           <loc>${baseUrl}/${page}</loc>
           <changefreq>${page === '' ? 'weekly' : page === 'blog' ? 'daily' : 'monthly'}</changefreq>
+        </url>
+      `
+        )
+        .join('')}
+      ${blogListPages(blogSlugs.length)
+        .map(
+          (page) => `
+        <url>
+          <loc>${baseUrl}/blog/page/${page}</loc>
+          <changefreq>daily</changefreq>
         </url>
       `
         )

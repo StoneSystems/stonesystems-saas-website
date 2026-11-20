@@ -1,25 +1,32 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { TextInput, Group, Text, Button } from '@mantine/core';
 import { IconSearch, IconChevronLeft, IconChevronRight, IconX } from '@tabler/icons-react';
 import { SanityBlogCard } from '@/components/Blog/SanityBlogCard/SanityBlogCard';
 import { SanityBlogPost } from '@/lib/sanity';
+import { BLOG_PAGE_SIZE, blogPageHref as pageHref } from '@/components/Blog/blogPaging';
 import classes from './BlogGrid.module.css';
 
-const PAGE_SIZE = 9;
-
 interface BlogGridProps {
+  /** Every published post, newest first: the search box looks through all of them. */
   posts: SanityBlogPost[];
+  /** Which nine to show when nobody is searching; comes from the address. */
+  page: number;
 }
 
-export function BlogGrid({ posts }: BlogGridProps) {
+/**
+ * Nine cards per page, and the pager is made of real links (`/blog`, `/blog/page/2`, …), so each
+ * page can be crawled, bookmarked and shared. A search runs in the browser over every post and
+ * shows all of its matches at once; clearing it returns to the page of the address.
+ */
+export function BlogGrid({ posts, page }: BlogGridProps) {
   const [query, setQuery] = useState('');
-  const [page, setPage] = useState(1);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return posts;
+    if (!q) return null;
     return posts.filter(
       (p) =>
         p.title.toLowerCase().includes(q) ||
@@ -29,13 +36,8 @@ export function BlogGrid({ posts }: BlogGridProps) {
     );
   }, [posts, query]);
 
-  const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
-  const paginated = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-
-  const handleSearch = (val: string) => {
-    setQuery(val);
-    setPage(1);
-  };
+  const totalPages = Math.max(1, Math.ceil(posts.length / BLOG_PAGE_SIZE));
+  const shown = filtered ?? posts.slice((page - 1) * BLOG_PAGE_SIZE, page * BLOG_PAGE_SIZE);
 
   return (
     <>
@@ -44,25 +46,25 @@ export function BlogGrid({ posts }: BlogGridProps) {
           className={classes.searchInput}
           placeholder="Search articles..."
           value={query}
-          onChange={(e) => handleSearch(e.currentTarget.value)}
+          onChange={(e) => setQuery(e.currentTarget.value)}
           leftSection={<IconSearch size={16} />}
           rightSection={
             query ? (
-              <IconX size={16} className={classes.clearIcon} onClick={() => handleSearch('')} />
+              <IconX size={16} className={classes.clearIcon} onClick={() => setQuery('')} />
             ) : null
           }
           size="md"
         />
-        {query && (
+        {filtered && (
           <Text className={classes.resultCount}>
             {filtered.length} result{filtered.length !== 1 ? 's' : ''} for &ldquo;{query}&rdquo;
           </Text>
         )}
       </div>
 
-      {paginated.length > 0 ? (
+      {shown.length > 0 ? (
         <div className={classes.grid}>
-          {paginated.map((post) => (
+          {shown.map((post) => (
             <SanityBlogCard key={post._id} post={post} />
           ))}
         </div>
@@ -72,37 +74,41 @@ export function BlogGrid({ posts }: BlogGridProps) {
         </div>
       )}
 
-      {totalPages > 1 && (
-        <Group justify="center" className={classes.pagination}>
+      {!filtered && totalPages > 1 && (
+        <Group justify="center" className={classes.pagination} component="nav" aria-label="Blog pages">
           <Button
+            component={Link}
+            href={pageHref(page - 1)}
             variant="default"
             size="sm"
             leftSection={<IconChevronLeft size={16} />}
-            onClick={() => setPage((p) => Math.max(1, p - 1))}
             disabled={page === 1}
             className={classes.pageBtn}
+            aria-disabled={page === 1}
           >
             Prev
           </Button>
           <Group gap={6}>
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((n) => (
-              <button
-                type="button"
+              <Link
                 key={n}
-                onClick={() => setPage(n)}
+                href={pageHref(n)}
+                aria-current={n === page ? 'page' : undefined}
                 className={`${classes.pageNumber} ${n === page ? classes.pageNumberActive : ''}`}
               >
                 {n}
-              </button>
+              </Link>
             ))}
           </Group>
           <Button
+            component={Link}
+            href={pageHref(page + 1)}
             variant="default"
             size="sm"
             rightSection={<IconChevronRight size={16} />}
-            onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
             disabled={page === totalPages}
             className={classes.pageBtn}
+            aria-disabled={page === totalPages}
           >
             Next
           </Button>
