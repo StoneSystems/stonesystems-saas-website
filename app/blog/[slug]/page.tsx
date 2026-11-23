@@ -2,10 +2,16 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Container, Title, Group, Badge, Text } from '@mantine/core';
 import Image from 'next/image';
+import type { CSSProperties } from 'react';
 import { PortableText } from '@portabletext/react';
 import { IconUser, IconCalendar, IconTarget } from '@tabler/icons-react';
 import { client, SINGLE_POST_QUERY, ALL_SLUGS_QUERY, urlFor, SanityBlogPost } from '@/lib/sanity';
 import classes from './post.module.css';
+
+// Containment for the `fill` hero image lives inline so a late or missing stylesheet
+// cannot let the photo escape its banner and cover the viewport.
+const heroImageWrapperStyle: CSSProperties = { position: 'relative', overflow: 'hidden' };
+const heroImageStyle: CSSProperties = { objectFit: 'cover', objectPosition: 'center' };
 
 export const revalidate = 60;
 
@@ -117,13 +123,13 @@ export default async function BlogPostPage({ params }: PageProps) {
       <div className={classes.outer}>
         {/* Hero image */}
         {imageUrl && (
-          <div className={classes.heroImageWrapper}>
+          <div className={classes.heroImageWrapper} style={heroImageWrapperStyle}>
             <Image
               src={imageUrl}
               alt={post.alternativeText || post.title}
               fill
               priority
-              className={classes.heroImage}
+              style={heroImageStyle}
             />
             <div className={classes.heroOverlay} />
           </div>

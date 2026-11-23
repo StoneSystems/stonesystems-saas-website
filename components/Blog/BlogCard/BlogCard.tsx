@@ -1,6 +1,7 @@
 import { Text, Badge, Group } from '@mantine/core';
 import { IconArrowRight, IconNews, IconUser } from '@tabler/icons-react';
 import Image from 'next/image';
+import type { CSSProperties } from 'react';
 import classes from './BlogCard.module.css';
 
 export interface BlogPost {
@@ -25,6 +26,11 @@ interface BlogCardProps {
   post: BlogPost;
 }
 
+// Containment for the `fill` image lives inline on purpose. `fill` positions the photo
+// absolutely against the nearest positioned ancestor; if this component's stylesheet is
+// late or missing, the photo must stay clipped to the card instead of covering the viewport.
+const imageWrapperStyle: CSSProperties = { position: 'relative', overflow: 'hidden' };
+
 function formatDate(dateStr: string): string {
   if (!dateStr) return '';
   const date = new Date(dateStr);
@@ -39,22 +45,17 @@ export function BlogCard({ post }: BlogCardProps) {
       rel="noopener noreferrer"
       className={classes.card}
     >
-      <div className={classes.imageWrapper}>
+      <div className={classes.imageWrapper} style={imageWrapperStyle}>
         {post.imageUrl ? (
           <Image
             src={post.imageUrl}
             alt={post.title}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className={classes.image}
-            style={
-              post.imageStyle
-                ? {
-                    objectFit: post.imageStyle.objectFit,
-                    objectPosition: post.imageStyle.objectPosition,
-                  }
-                : undefined
-            }
+            style={{
+              objectFit: post.imageStyle?.objectFit ?? 'cover',
+              objectPosition: post.imageStyle?.objectPosition ?? 'top',
+            }}
           />
         ) : (
           <div className={classes.imageFallback}>
