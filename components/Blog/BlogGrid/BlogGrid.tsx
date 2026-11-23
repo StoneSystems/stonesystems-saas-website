@@ -75,7 +75,12 @@ export function BlogGrid({ posts, page }: BlogGridProps) {
       )}
 
       {!filtered && totalPages > 1 && (
-        <Group justify="center" className={classes.pagination} component="nav" aria-label="Blog pages">
+        <Group
+          justify="center"
+          className={classes.pagination}
+          component="nav"
+          aria-label="Blog pages"
+        >
           <Button
             component={Link}
             href={pageHref(page - 1)}
