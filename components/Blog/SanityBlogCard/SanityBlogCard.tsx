@@ -2,12 +2,18 @@ import { Text, Badge, Group } from '@mantine/core';
 import { IconArrowRight, IconUser } from '@tabler/icons-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import type { CSSProperties } from 'react';
 import { SanityBlogPost, urlFor } from '@/lib/sanity';
 import classes from './SanityBlogCard.module.css';
 
 interface SanityBlogCardProps {
   post: SanityBlogPost;
 }
+
+// Containment for the `fill` image lives inline so a late or missing stylesheet cannot
+// let the photo escape the card and cover the viewport.
+const imageWrapperStyle: CSSProperties = { position: 'relative', overflow: 'hidden' };
+const imageStyle: CSSProperties = { objectFit: 'cover', objectPosition: 'center' };
 
 function formatDate(dateStr?: string): string {
   if (!dateStr) return '';
@@ -22,14 +28,14 @@ export function SanityBlogCard({ post }: SanityBlogCardProps) {
 
   return (
     <Link href={`/blog/${post.slug.current}`} className={classes.card}>
-      <div className={classes.imageWrapper}>
+      <div className={classes.imageWrapper} style={imageWrapperStyle}>
         {imageUrl ? (
           <Image
             src={imageUrl}
             alt={post.alternativeText || post.title}
             fill
             sizes="(max-width: 768px) 100vw, 33vw"
-            className={classes.image}
+            style={imageStyle}
           />
         ) : (
           <div className={classes.imageFallback}>
