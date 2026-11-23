@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import { Metadata } from 'next';
 import Image from 'next/image';
+import type { CSSProperties } from 'react';
 import { Badge, Button, Group } from '@mantine/core';
 import { IconExternalLink, IconArrowLeft, IconUser } from '@tabler/icons-react';
 import { getPostBySlug } from '@/lib/markdown';
@@ -10,6 +11,13 @@ import classes from './post.module.css';
 interface PageProps {
   params: { slug: string };
 }
+
+// Layout-critical hero styles live inline so they cannot be lost with the stylesheet.
+const heroStyle: CSSProperties = { position: 'relative', overflow: 'hidden' };
+const coverStyle: CSSProperties = { position: 'absolute', inset: 0 };
+const heroImageStyle: CSSProperties = { objectFit: 'cover', objectPosition: 'top' };
+const heroOverlayStyle: CSSProperties = { ...coverStyle, background: 'rgba(31, 34, 54, 0.82)' };
+const heroContentStyle: CSSProperties = { position: 'relative', zIndex: 2 };
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const post = await getPostBySlug(params.slug);
@@ -41,23 +49,27 @@ export default async function PressPostPage({ params }: PageProps) {
 
   return (
     <div className={classes.page}>
-      <div className={classes.hero}>
+      {/* The hero's containment is inline on purpose. The photo uses Next's `fill` mode,
+          which positions it absolutely against the nearest positioned ancestor. If this
+          page's stylesheet is ever late or missing, the photo must still be clipped to
+          the hero and kept behind the text instead of covering the whole viewport. */}
+      <div className={classes.hero} style={heroStyle}>
         {imageUrl ? (
-          <div className={classes.heroImageWrapper}>
+          <div style={coverStyle}>
             <Image
               src={imageUrl}
               alt={post.title}
               fill
               sizes="100vw"
-              className={classes.heroImage}
+              style={heroImageStyle}
               priority
             />
-            <div className={classes.heroOverlay} />
+            <div style={heroOverlayStyle} />
           </div>
         ) : (
-          <div className={classes.heroFallback} />
+          <div className={classes.heroFallback} style={coverStyle} />
         )}
-        <div className={classes.heroContent}>
+        <div className={classes.heroContent} style={heroContentStyle}>
           <Badge className={classes.badge}>{post.category}</Badge>
           {post.date && <p className={classes.date}>{formatDate(post.date)}</p>}
           <h1 className={classes.title}>{post.title}</h1>

@@ -3,37 +3,19 @@
   min-height: 100vh;
 }
 
+/* Positioning and containment for the hero, its image, overlay and content are set
+   inline in page.tsx so the layout survives a missing stylesheet. Only decoration here. */
 .hero {
-  position: relative;
   background-color: var(--blue);
   padding: 80px 1.5rem;
   text-align: center;
-  overflow: hidden;
 
   @media (max-width: 30em) {
     padding: 60px 1.5rem;
   }
 }
 
-.heroImageWrapper {
-  position: absolute;
-  inset: 0;
-}
-
-.heroImage {
-  object-fit: cover;
-  object-position: top;
-}
-
-.heroOverlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(31, 34, 54, 0.82);
-}
-
 .heroFallback {
-  position: absolute;
-  inset: 0;
   background-color: var(--blue);
   background-image: url('/images/bg_blue.svg');
   background-position: 50% 100%;
@@ -42,8 +24,6 @@
 }
 
 .heroContent {
-  position: relative;
-  z-index: 2;
   max-width: 780px;
   margin: 0 auto;
 }
