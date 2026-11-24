@@ -13,9 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default async function SEOPage() {
-  const seoPages = (await getServicePageLinks()).filter((page) =>
-    /\bseo\b/i.test(page.service)
-  );
+  const seoPages = (await getServicePageLinks()).filter((page) => /\bseo\b/i.test(page.service));
 
   const benefits = [
     {

@@ -171,7 +171,9 @@ function tradeStems(trade: string): string[] {
   return trade
     .split(/[\s&/,]+/)
     .map(stem)
-    .filter((root) => root.length >= 3 && !['and', 'service', 'company', 'companie'].includes(root));
+    .filter(
+      (root) => root.length >= 3 && !['and', 'service', 'company', 'companie'].includes(root)
+    );
 }
 
 /**
