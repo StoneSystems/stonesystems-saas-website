@@ -6,6 +6,8 @@ import type { CSSProperties } from 'react';
 import { PortableText } from '@portabletext/react';
 import { IconUser, IconCalendar, IconTarget } from '@tabler/icons-react';
 import { client, SINGLE_POST_QUERY, ALL_SLUGS_QUERY, urlFor, SanityBlogPost } from '@/lib/sanity';
+import { getServicePagesForPost } from '@/lib/servicePage';
+import { ServicePagesByTrade } from '@/components/ServicePage/ServicePagesByTrade/ServicePagesByTrade';
 import classes from './post.module.css';
 
 // Containment for the `fill` hero image lives inline so a late or missing stylesheet
@@ -92,6 +94,9 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post: SanityBlogPost = await client.fetch(SINGLE_POST_QUERY, { slug: params.slug });
   if (!post) notFound();
 
+  // The service pages for the trade this post is about, so the pages link both ways.
+  const servicePages = await getServicePagesForPost(post);
+
   const imageUrl = post.featuredImage
     ? urlFor(post.featuredImage).width(1200).height(600).url()
     : null;
@@ -177,6 +182,13 @@ export default async function BlogPostPage({ params }: PageProps) {
               <PortableText value={post.content} components={portableTextComponents} />
             </div>
           )}
+
+          <ServicePagesByTrade
+            heading="Service pages for your trade"
+            text="What we do for contractors in your trade, and how it gets the phone ringing."
+            pages={servicePages}
+            width="narrow"
+          />
 
           {/* Back link */}
           <div className={classes.backWrapper}>

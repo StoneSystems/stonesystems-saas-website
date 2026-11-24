@@ -22,7 +22,9 @@ export function OurProcessSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <Title className={classes.mainTitle}>What working with us looks like...</Title>
+        <Title order={2} className={classes.mainTitle}>
+          What working with us looks like...
+        </Title>
         <div className={classes.card}>
           <SimpleGrid cols={mobile ? 1 : 3}>
             <Flex direction="column" align="center" ta="center" px="2rem">

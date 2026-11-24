@@ -36,6 +36,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const url = `${SITE}${servicePagePath(params.slug)}`;
   const title = page.metaTitle || `${page.title} | Stone Systems`;
   const image = pictureUrl(page.hero.picture, 1200);
+  const images = image
+    ? [{ url: image.startsWith('/') ? `${SITE}${image}` : image, alt: page.hero.picture?.alt }]
+    : undefined;
 
   return {
     title,
@@ -47,9 +50,13 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url,
       siteName: 'Stone Systems',
       type: 'website',
-      images: image
-        ? [{ url: image.startsWith('/') ? `${SITE}${image}` : image, alt: page.hero.picture?.alt }]
-        : undefined,
+      images,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description: page.metaDescription,
+      images,
     },
   };
 }

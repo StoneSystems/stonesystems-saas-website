@@ -30,18 +30,18 @@ function Card({ personName, testimonial, videoSrc, videoThumbnail }: CardProps) 
       <LazyLoadVideo
         src={videoSrc}
         poster={videoThumbnail}
-        alt={`${personName} testimonial`}
+        alt={`${personName.replace(/^-\s*/, '')}, Stone Systems client`}
         type="video/mp4"
         width="100%"
         height="auto"
       />
       <div>
         <div className={classes.stars}>
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
         </div>
         <Text className={classes.testimonial}>{testimonial}</Text>
         <Text className={classes.personName}>{personName}</Text>

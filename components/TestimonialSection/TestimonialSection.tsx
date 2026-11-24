@@ -32,7 +32,7 @@ function Card({
       <LazyLoadVideo
         src={videoSrc}
         poster={videoThumbnail}
-        alt={`${personName} testimonial`}
+        alt={`${personName.replace(/^-\s*/, '')}, Stone Systems client`}
         type="video/mp4"
         width="100%"
         height="auto"
@@ -42,11 +42,11 @@ function Card({
       />
       <div>
         <div className={classes.stars}>
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
-          <Image src="/images/star.png" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
+          <Image src="/images/star.png" alt="" className={classes.star} />
         </div>
         <Text className={classes.testimonial}>{testimonial}</Text>
         <div className={classes.bottomDiv}>
@@ -263,7 +263,7 @@ export function TestimonialSection() {
   return (
     <div className={classes.outer}>
       <Container size="lg">
-        <Title className={classes.mainTitle}>
+        <Title order={2} className={classes.mainTitle}>
           The proof is in the pudding... <br /> Let&apos;s see what our clients have to say
         </Title>
       </Container>

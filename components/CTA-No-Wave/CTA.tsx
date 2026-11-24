@@ -9,7 +9,9 @@ export function CTANoWave() {
     <div className={classes.outer}>
       <Container size="lg" className={classes.wrapper}>
         <div className={classes.body}>
-          <Title className={classes.title}>Want to schedule a time to talk?</Title>
+          <Title order={2} className={classes.title}>
+            Want to schedule a time to talk?
+          </Title>
           <Text className={classes.description} c="dimmed">
             See everything we do to help you grow your business so you can implement it yourself or
             let us do it for you.
@@ -30,7 +32,7 @@ export function CTANoWave() {
           width={1080}
           height={1080}
           src="/images/cta-stoneman.png"
-          alt="cta image"
+          alt="Stone Systems mascot in a yellow hard hat, arms open"
           className={classes.image}
         />
       </Container>

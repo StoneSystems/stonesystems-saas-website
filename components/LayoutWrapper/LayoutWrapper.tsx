@@ -21,7 +21,7 @@ export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ childre
   return (
     <>
       <Header />
-      {children}
+      <main>{children}</main>
       {!showNothing && (
         <>
           {shouldShowOurProcessSection ? <CTA /> : <CTANoWave />}
