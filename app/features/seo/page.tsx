@@ -1,5 +1,10 @@
 import { Metadata } from 'next';
 import { IntroSection } from '@/components/FeaturePages/IntroSection/IntroSection';
+import { ServicePagesByTrade } from '@/components/ServicePage/ServicePagesByTrade/ServicePagesByTrade';
+import { getServicePageLinks } from '@/lib/servicePage';
+
+/** The service pages under /trades sell SEO to one trade each; this page links to all of them. */
+export const revalidate = 60;
 
 export const metadata: Metadata = {
   title: 'Stone Systems - Local SEO',
@@ -7,7 +12,11 @@ export const metadata: Metadata = {
     'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
 };
 
-export default function SEOPage() {
+export default async function SEOPage() {
+  const seoPages = (await getServicePageLinks()).filter((page) =>
+    /\bseo\b/i.test(page.service)
+  );
+
   const benefits = [
     {
       title: 'On-Site SEO',
@@ -67,6 +76,11 @@ export default function SEOPage() {
         title2="What is local SEO?"
         videoSrc="/videos/local-seo.mp4#t=0.1"
         videoThumbnail="/images/thumbnails/local-seo.jpg"
+      />
+      <ServicePagesByTrade
+        heading="Local SEO by trade"
+        text="What local SEO looks like for your trade, and what we do for it."
+        pages={seoPages}
       />
     </>
   );

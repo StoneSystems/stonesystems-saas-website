@@ -46,6 +46,8 @@ export interface SanityServicePage {
   publishDate?: string;
   updatedDate?: string;
   hero: { subheading: string; picture?: ServicePagePicture };
+  /** The hero picture's real size, read from the asset so the <img> can reserve its space. */
+  heroDimensions?: { width: number; height: number } | null;
   /** The short answer to "what is <keyword>", right after the hero. */
   intro: { heading: string; text: string; points?: string[] };
   benefits: { heading: string; items: { title: string; text: string }[] };
@@ -67,8 +69,10 @@ export interface SanityServicePage {
   videoUrl?: string;
 }
 
-const SERVICE_PAGE_QUERY =
-  '*[_type == "servicePage" && slug.current == $slug && status == "Published"][0]';
+const SERVICE_PAGE_QUERY = `*[_type == "servicePage" && slug.current == $slug && status == "Published"][0] {
+  ...,
+  "heroDimensions": hero.picture.image.asset->metadata.dimensions { width, height }
+}`;
 
 const SERVICE_PAGE_LINKS_QUERY = `*[_type == "servicePage" && status == "Published"] | order(trade asc, title asc) {
   title,
@@ -151,8 +155,40 @@ export async function getRelatedPosts(trade: string): Promise<SanityBlogPost[]> 
   }
 }
 
+/**
+ * The URL of a page picture at the given width. `auto('format')` lets Sanity's CDN answer with
+ * WebP or AVIF when the browser accepts it (measured 2026-11-24: the electrician hero went from a
+ * 1,731 KB PNG to a 70 KB WebP); `fit('max')` never upscales a small original.
+ */
 export function pictureUrl(picture: ServicePagePicture | undefined, width: number): string | null {
   if (!picture) return null;
-  if (picture.image) return urlFor(picture.image).width(width).url();
+  if (picture.image) return urlFor(picture.image).width(width).fit('max').auto('format').url();
   return picture.path ?? null;
+}
+
+/** "Roofing" -> ["roof"], "Windows & Doors" -> ["window", "door"]: the word stems a post about that trade would carry. */
+function tradeStems(trade: string): string[] {
+  return trade
+    .split(/[\s&/,]+/)
+    .map(stem)
+    .filter((root) => root.length >= 3 && !['and', 'service', 'company', 'companie'].includes(root));
+}
+
+/**
+ * The published service pages about the trade a blog post covers, read off the post's title and
+ * keyword the same way `getRelatedPosts` finds posts for a page: a word of the post starts with a
+ * stem of the trade's name. None is fine: the block hides.
+ */
+export async function getServicePagesForPost(post: {
+  title: string;
+  targetKeyword?: string;
+}): Promise<ServicePageLink[]> {
+  const words = `${post.title} ${post.targetKeyword ?? ''}`
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter(Boolean);
+  const links = await getServicePageLinks();
+  return links.filter((link) =>
+    tradeStems(link.trade).some((root) => words.some((word) => word.startsWith(root)))
+  );
 }

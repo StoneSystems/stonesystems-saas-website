@@ -4,6 +4,11 @@ import { bookingUrl } from '@/lib/site';
 import { SanityServicePage, pictureUrl } from '@/lib/servicePage';
 import classes from './ServiceHero.module.css';
 
+/** The widths the hero is offered at; the last one is the `src`. */
+const HERO_WIDTHS = [600, 900, 1100] as const;
+/** The hero column: full width under 62em (see ServiceHero.module.css), two fifths of the row above it. */
+const HERO_SIZES = '(max-width: 62em) 100vw, 40vw';
+
 const REVIEW_SITES = [
   { name: 'Google', logo: '/images/google.webp' },
   { name: 'Facebook', logo: '/images/facebook.png' },
@@ -12,7 +17,12 @@ const REVIEW_SITES = [
 
 export function ServiceHero({ page }: { page: SanityServicePage }) {
   const slug = page.slug.current;
-  const picture = pictureUrl(page.hero.picture, 1100);
+  const picture = pictureUrl(page.hero.picture, HERO_WIDTHS[HERO_WIDTHS.length - 1]);
+  // The real size reserves the right box before the picture arrives; the CSS forces 16 / 10 anyway.
+  const { width, height } = page.heroDimensions ?? { width: 1100, height: 688 };
+  const srcSet = page.hero.picture?.image
+    ? HERO_WIDTHS.map((w) => `${pictureUrl(page.hero.picture, w)} ${w}w`).join(', ')
+    : undefined;
 
   return (
     <div className={classes.outer}>
@@ -72,12 +82,19 @@ export function ServiceHero({ page }: { page: SanityServicePage }) {
 
           {picture && (
             <div className={classes.pictureFrame}>
+              {/* A plain <img>, not next/image, so the picture survives a missing stylesheet. */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={picture}
+                srcSet={srcSet}
+                sizes={srcSet ? HERO_SIZES : undefined}
                 alt={page.hero.picture?.alt ?? ''}
+                width={width}
+                height={height}
                 className={classes.picture}
                 loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
             </div>
           )}
