@@ -1,5 +1,6 @@
 'use client';
 
+import type { ReactNode } from 'react';
 import { Text, Container, ActionIcon, Group, rem, Flex, Divider, Button } from '@mantine/core';
 import { IconBrandYoutube, IconBrandInstagram } from '@tabler/icons-react';
 import Image from 'next/image';
@@ -40,7 +41,12 @@ const data = [
   },
 ];
 
-export function Footer() {
+interface FooterProps {
+  /** The Blog column, rendered on the server (`FooterBlogLinks`) and handed in, since this file runs in the browser. */
+  blogColumn?: ReactNode;
+}
+
+export function Footer({ blogColumn }: FooterProps) {
   const groups = data.map((group, groupIndex) => {
     const links = group.links.map((linkItem) => (
       <Text
@@ -108,7 +114,10 @@ export function Footer() {
             Book A Call
           </Button>
         </div>
-        <div className={classes.groups}>{groups}</div>
+        <div className={classes.groups}>
+          {groups}
+          {blogColumn}
+        </div>
       </Container>
       <Container size="lg" className={classes.afterFooter}>
         <Flex className={classes.complianceLinks}>

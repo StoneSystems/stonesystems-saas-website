@@ -10,7 +10,13 @@ import { Header } from '@/components/Header/Header';
 import { StickyCta } from '@/components/StickyCta/StickyCta';
 import { CTANoWave } from '../CTA-No-Wave/CTA';
 
-export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+interface LayoutWrapperProps {
+  children: React.ReactNode;
+  /** Server-rendered footer content (the Blog column) from the root layout. */
+  footerBlog?: React.ReactNode;
+}
+
+export const LayoutWrapper: React.FC<LayoutWrapperProps> = ({ children, footerBlog }) => {
   const pathname = usePathname();
 
   const shouldShowOurProcessSection = !['/about-us', '/'].includes(pathname);
@@ -29,7 +35,7 @@ export const LayoutWrapper: React.FC<{ children: React.ReactNode }> = ({ childre
           <TestimonialSection />
         </>
       )}
-      <Footer />
+      <Footer blogColumn={footerBlog} />
       <StickyCta />
     </>
   );

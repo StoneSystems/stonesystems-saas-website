@@ -5,8 +5,17 @@ import Image from 'next/image';
 import type { CSSProperties } from 'react';
 import { PortableText } from '@portabletext/react';
 import { IconUser, IconCalendar, IconTarget } from '@tabler/icons-react';
-import { client, SINGLE_POST_QUERY, ALL_SLUGS_QUERY, urlFor, SanityBlogPost } from '@/lib/sanity';
-import { getServicePagesForPost } from '@/lib/servicePage';
+import {
+  client,
+  SINGLE_POST_QUERY,
+  ALL_SLUGS_QUERY,
+  ALL_POSTS_QUERY,
+  urlFor,
+  SanityBlogPost,
+} from '@/lib/sanity';
+import { getServicePagesForPost, getServicePageLinks } from '@/lib/servicePage';
+import { pickRelatedPosts, pickRelatedServicePages, postNeighbours } from '@/lib/relatedPosts';
+import { KeepReading } from '@/components/Blog/KeepReading/KeepReading';
 import { ServicePagesByTrade } from '@/components/ServicePage/ServicePagesByTrade/ServicePagesByTrade';
 import classes from './post.module.css';
 
@@ -95,7 +104,21 @@ export default async function BlogPostPage({ params }: PageProps) {
   if (!post) notFound();
 
   // The service pages for the trade this post is about, so the pages link both ways.
-  const servicePages = await getServicePagesForPost(post);
+  const [servicePages, allPosts, allServicePages] = await Promise.all([
+    getServicePagesForPost(post),
+    client.fetch(ALL_POSTS_QUERY) as Promise<SanityBlogPost[]>,
+    getServicePageLinks(),
+  ]);
+  // Links out of this post: three posts about the same things, the service pages they point to,
+  // and the posts on either side in time, so no post is reachable from the list pages alone.
+  const relatedPosts = pickRelatedPosts(post, allPosts, 3);
+  const relatedServicePages = pickRelatedServicePages(
+    post,
+    allServicePages,
+    2,
+    servicePages.map((page) => page.slug)
+  );
+  const { newer, older } = postNeighbours(post, allPosts);
 
   const imageUrl = post.featuredImage
     ? urlFor(post.featuredImage).width(1200).height(600).url()
@@ -188,6 +211,13 @@ export default async function BlogPostPage({ params }: PageProps) {
             text="What we do for contractors in your trade, and how it gets the phone ringing."
             pages={servicePages}
             width="narrow"
+          />
+
+          <KeepReading
+            posts={relatedPosts}
+            servicePages={relatedServicePages}
+            newer={newer}
+            older={older}
           />
 
           {/* Back link */}

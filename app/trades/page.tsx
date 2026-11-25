@@ -7,9 +7,20 @@ import { getServicePageLinks } from '@/lib/servicePage';
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: 'Stone Systems - Trades',
+  title: 'Contractor Marketing and SEO by Trade | Stone Systems',
   description:
-    'Contractors trust us to transform their business with marketing systems, website design, reputation management and automation. And we do all of that at an affordable price!',
+    'Marketing, SEO, websites and lead generation for roofers, plumbers, HVAC companies, electricians and home service contractors. Pick your trade to see the plan.',
+  openGraph: {
+    title: 'Contractor Marketing and SEO by Trade | Stone Systems',
+    description:
+      'Marketing, SEO, websites and lead generation for roofers, plumbers, HVAC companies, electricians and home service contractors.',
+    url: 'https://stonesystems.io/trades',
+    siteName: 'Stone Systems',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://stonesystems.io/trades',
+  },
 };
 export default async function TradesPage() {
   const servicePages = await getServicePageLinks();
