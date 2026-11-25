@@ -16,7 +16,7 @@ function sanityHeaders() {
 /** One query of the public dataset. `withToken` false sends no Authorization header at all. */
 async function querySanity(type, withToken) {
   const query = encodeURIComponent(
-    `*[_type == "${type}" && status == "Published" && defined(slug.current)] { "slug": slug.current, "updatedAt": _updatedAt }`
+    `*[_type == "${type}" && status == "Published" && defined(slug.current)] | order(publishDate desc) { "slug": slug.current, "updatedAt": _updatedAt }`
   );
   return fetch(`${SANITY_QUERY_URL}?query=${query}`, {
     headers: withToken ? sanityHeaders() : {},
@@ -57,6 +57,24 @@ function blogListPages(postCount) {
   return Array.from({ length: Math.max(0, total - 1) }, (_, i) => i + 2);
 }
 
+/** The latest `_updatedAt` among some posts, or undefined when there are none. */
+function newestUpdatedAt(posts) {
+  return posts.reduce(
+    (newest, { updatedAt }) => (typeof updatedAt === 'string' && updatedAt > (newest ?? '') ? updatedAt : newest),
+    undefined
+  );
+}
+
+/**
+ * The posts shown on page N of the blog list, in the order the list shows them (newest first), so
+ * the page's lastmod is the newest change among the posts on it. A list page with a fresh date is
+ * worth a crawl to Google; one with no date is not (measured 2026-11-25: all six list pages were
+ * still unknown to Google after five days in the sitemap).
+ */
+function postsOnListPage(posts, page) {
+  return posts.slice((page - 1) * BLOG_PAGE_SIZE, page * BLOG_PAGE_SIZE);
+}
+
 /** `_updatedAt` is an ISO datetime; the sitemap protocol accepts the date alone. */
 function lastmod(updatedAt) {
   if (typeof updatedAt !== 'string') return '';
@@ -91,7 +109,7 @@ export async function GET() {
         .map(
           (page) => `
         <url>
-          <loc>${baseUrl}/${page}</loc>
+          <loc>${baseUrl}/${page}</loc>${page === 'blog' ? lastmod(newestUpdatedAt(blogSlugs)) : ''}
           <changefreq>${page === '' ? 'weekly' : page === 'blog' ? 'daily' : 'monthly'}</changefreq>
         </url>
       `
@@ -101,7 +119,7 @@ export async function GET() {
         .map(
           (page) => `
         <url>
-          <loc>${baseUrl}/blog/page/${page}</loc>
+          <loc>${baseUrl}/blog/page/${page}</loc>${lastmod(newestUpdatedAt(postsOnListPage(blogSlugs, page)))}
           <changefreq>daily</changefreq>
         </url>
       `

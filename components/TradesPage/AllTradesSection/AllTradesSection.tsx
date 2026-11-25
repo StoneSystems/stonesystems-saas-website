@@ -299,7 +299,9 @@ export function AllTradesSection() {
 
   return (
     <div className={classes.outer}>
-      <Title className={classes.mainTitle}>All Trades by Category</Title>
+      <Title order={2} className={classes.mainTitle}>
+        All Trades by Category
+      </Title>
       <Container size="lg">
         <SimpleGrid cols={mobile ? 1 : 4}>{slides}</SimpleGrid>
       </Container>

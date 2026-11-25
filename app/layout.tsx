@@ -8,6 +8,7 @@ import { Sora } from 'next/font/google';
 import Script from 'next/script';
 import { theme } from '../theme';
 import { LayoutWrapper } from '@/components/LayoutWrapper/LayoutWrapper';
+import { FooterBlogLinks } from '@/components/Footer/FooterBlogLinks';
 import { ConsentTracking } from '@/components/Tracking/ConsentTracking';
 
 const APP_NAME = 'Stone Systems';
@@ -76,7 +77,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script async src="https://app.usecortana.ai/api/widgets/cmhapx2wt000hjy04gs3ipqjf.js" />
         <MantineProvider theme={theme}>
           <ConsentTracking />
-          <LayoutWrapper>{children}</LayoutWrapper>
+          <LayoutWrapper footerBlog={<FooterBlogLinks />}>{children}</LayoutWrapper>
         </MantineProvider>
       </body>
     </html>

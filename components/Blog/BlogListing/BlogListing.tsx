@@ -1,6 +1,7 @@
 import { Container, Title } from '@mantine/core';
 import { client, ALL_POSTS_QUERY, SanityBlogPost } from '@/lib/sanity';
 import { BlogGrid } from '@/components/Blog/BlogGrid/BlogGrid';
+import { AllArticles } from '@/components/Blog/AllArticles/AllArticles';
 import classes from '@/app/blog/blog.module.css';
 
 export async function fetchPublishedPosts(): Promise<SanityBlogPost[]> {
@@ -34,7 +35,10 @@ export function BlogListing({ posts, page }: { posts: SanityBlogPost[]; page: nu
             <Title order={3}>No posts yet — check back soon!</Title>
           </div>
         ) : (
-          <BlogGrid posts={posts} page={page} />
+          <>
+            <BlogGrid posts={posts} page={page} />
+            <AllArticles posts={posts} />
+          </>
         )}
       </Container>
     </div>
