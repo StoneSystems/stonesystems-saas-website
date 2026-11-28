@@ -20,8 +20,8 @@ export function StaffAppPage() {
             same permissions as CSP on the desktop. It is for Stone Systems staff only.
           </Text>
           <Text className={classes.text}>
-            Are you a Stone Systems customer? This is not your app. Use the Stonesystems app, or
-            contact your account manager.
+            Are you a Stone Systems customer? This is not your app. Use the{' '}
+            <a href="/app">Stonesystems app</a>, or contact your account manager.
           </Text>
 
           <Title order={2} className={classes.secondaryTitle}>
