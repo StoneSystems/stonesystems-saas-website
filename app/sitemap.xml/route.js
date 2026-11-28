@@ -91,6 +91,7 @@ export async function GET() {
     'about-us',
     'trades',
     'careers',
+    'app',
     'privacy-policy',
     'terms',
     'sms',
